@@ -1,0 +1,18 @@
+{
+  "name": "cahier-de-francais",
+  "version": "1.0.0",
+  "description": "Cahier de français: дневной план изучения французского с личным прогрессом",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-password": "node scripts/reset-password.js"
+  },
+  "engines": {
+    "node": ">=22.13 <25"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,22 @@
+# Чертёж для Render: New → Blueprint → выбрать этот репозиторий.
+# База — файл SQLite на постоянном диске. Диск бывает только на платных тарифах:
+# на бесплатном файлы стираются при каждом засыпании и деплое, и аккаунты с прогрессом пропали бы.
+services:
+  - type: web
+    name: cahier-de-francais
+    runtime: node
+    plan: 0.5c-512mb
+    region: frankfurt
+    buildCommand: npm ci --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    autoDeployTrigger: commit
+    disk:
+      name: cahier-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_FILE
+        value: /var/data/cahier.db

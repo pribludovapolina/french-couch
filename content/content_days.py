@@ -1,0 +1,276 @@
+# -*- coding: utf-8 -*-
+"""Контент уроков месяца 1. Каждый день — словарь с теорией, словами, темами-карточками, упражнениями и домашкой.
+
+Схемы:
+  theory:    [{h, p, table?: [[a, b]], ex?: [[fr, ru]]}]
+  vocab:     [{id, fr, ru, g: "m"|"f"|None, ex, exRu, forms?}]
+  topics:    [{id, title, quiz: [{q, o: [...], a: index}]}]
+  exercises: choice | listen | gap | conj | match | order | dictation | translate
+  homework:  {task, example, minWords}
+"""
+
+SIM = "https://apprendre.tv5monde.com/fr/tcf/simulation-du-tcf"
+PIMSLEUR = "https://drive.google.com/drive/folders/1b5_nBYan7rJt0qyTf-kOKC_jps3y8en7"
+
+
+def w(id, fr, ru, ex, exRu, g=None, forms=None):
+    return {"id": "w-" + id, "fr": fr, "ru": ru, "g": g, "ex": ex, "exRu": exRu, "forms": forms or []}
+
+
+CONTENT = {}
+
+# =====================================================================
+# 1 октября — диагностика TCF + звуки французского
+# =====================================================================
+CONTENT["2026-10-01"] = {
+    "topic": "Звуки французского",
+    "steps": [
+        {"kind": "review", "title": "Повторение", "min": 0},
+        {"kind": "tcf", "title": "TCF: диагностика", "min": 90, "url": SIM,
+         "task": "Пройди пробный TCF целиком, даже если почти ничего не понятно. Это точка отсчёта: через месяц сравнишь результат. Запиши его в поле ниже."},
+        {"kind": "theory", "title": "Теория: звуки", "min": 10},
+        {"kind": "vocab", "title": "Словарь дня", "min": 5},
+        {"kind": "exercises", "title": "Упражнения", "min": 20},
+        {"kind": "listening", "title": "Аудирование", "min": 20, "items": [
+            {"src": "Easy French", "title": "Super Easy French 1 — for absolute beginners", "dur": "5:00",
+             "url": "https://www.youtube.com/watch?v=fq_4V-Ia1z0",
+             "task": "Посмотри 2–3 раза: сначала просто слушай, потом с французскими субтитрами и повторяй фразы вслух."}]},
+        {"kind": "pimsleur", "title": "Pimsleur", "min": 60, "url": PIMSLEUR, "lessons": "French I, уроки 1–2"},
+        {"kind": "homework", "title": "Домашка", "min": 5},
+    ],
+    "theory": [
+        {"h": "Последняя согласная обычно молчит",
+         "p": "В конце слова согласные чаще всего не читаются: petit — [пти], Paris — [пари], vous — [ву]. Исключения часто — буквы c, r, f, l (запомни английское слово CaReFuL): avec, bonjour, neuf, il.",
+         "ex": [["petit", "маленький"], ["Paris", "Париж"], ["vous", "вы"], ["avec", "с"], ["bonjour", "здравствуйте"]]},
+        {"h": "Буквосочетания, которые звучат как один звук",
+         "p": "ou — [у], как в vous. u — губы трубочкой, язык как для [и]: tu. oi — [уа]: moi. au и eau — [о]: beau. ai — [э]: j’ai. ch — [ш]: chat.",
+         "ex": [["vous", "вы"], ["tu", "ты"], ["moi", "я (ударное)"], ["beau", "красивый"], ["j’ai", "у меня есть"], ["chat", "кот"]]},
+        {"h": "Носовые гласные",
+         "p": "Когда за гласной идёт n или m, звук идёт «в нос», а сама n почти не звучит: on — bon, an/en — enfant, in/ain — vin, pain.",
+         "ex": [["bon", "хороший"], ["enfant", "ребёнок"], ["vin", "вино"], ["pain", "хлеб"]]},
+        {"h": "Ударение, связывание, сокращение",
+         "p": "Ударение всегда на последний слог: merci, bonjour. Связывание (liaison): немая согласная оживает перед гласной — vous‿avez [вузаве]. Сокращение (élision): je, le, la, ne теряют гласную перед гласной — j’ai, l’ami.",
+         "ex": [["merci", "спасибо"], ["vous avez", "у вас есть"], ["j’ai", "у меня есть"], ["l’ami", "друг"]]},
+        {"h": "Надстрочные знаки",
+         "p": "é — закрытое [е]: café. è и ê — открытое [э]: mère, fête. ç — всегда [с]: ça. Знаки меняют звук, поэтому в письме их не пропускай.",
+         "ex": [["café", "кофе"], ["mère", "мама"], ["fête", "праздник"], ["ça", "это"]]},
+    ],
+    "vocab": [
+        w("bonjour", "bonjour", "здравствуйте, добрый день", "Bonjour, madame !", "Здравствуйте, мадам!"),
+        w("bonsoir", "bonsoir", "добрый вечер", "Bonsoir, monsieur.", "Добрый вечер, месье."),
+        w("salut", "salut", "привет; пока (с друзьями)", "Salut, ça va ?", "Привет, как дела?"),
+        w("au-revoir", "au revoir", "до свидания", "Au revoir et merci !", "До свидания и спасибо!"),
+        w("merci", "merci", "спасибо", "Merci beaucoup !", "Большое спасибо!", forms=["beaucoup"]),
+        w("svp", "s’il vous plaît", "пожалуйста (вежливо, на «вы»)", "Un café, s’il vous plaît.", "Кофе, пожалуйста.", forms=["plaît"]),
+        w("oui", "oui", "да", "Oui, bien sûr.", "Да, конечно."),
+        w("non", "non", "нет", "Non, merci.", "Нет, спасибо."),
+        w("pardon", "pardon", "простите", "Pardon, madame.", "Простите, мадам."),
+        w("excusez-moi", "excusez-moi", "извините (чтобы обратиться)", "Excusez-moi, où est la gare ?", "Извините, где вокзал?", forms=["excusez"]),
+        w("je-m-appelle", "je m’appelle", "меня зовут", "Je m’appelle Marie.", "Меня зовут Мари.", forms=["appelle"]),
+        w("enchante", "enchanté(e)", "очень приятно", "Enchantée, Paul !", "Очень приятно, Поль!", forms=["enchanté", "enchantée"]),
+        w("comment-ca-va", "comment ça va ?", "как дела?", "Salut Léa, comment ça va ?", "Привет, Леа, как дела?", forms=["comment"]),
+        w("ca-va-bien", "ça va bien", "всё хорошо", "Ça va bien, merci.", "Всё хорошо, спасибо.", forms=["ça", "va"]),
+        w("de-rien", "de rien", "не за что", "— Merci ! — De rien.", "— Спасибо! — Не за что.", forms=["rien"]),
+        w("a-bientot", "à bientôt", "до скорого", "À bientôt, Marie !", "До скорого, Мари!", forms=["bientôt"]),
+    ],
+    "topics": [
+        {"id": "t-sons", "title": "Звуки французского", "quiz": [
+            {"q": "Как читается «oi» в слове moi?", "o": ["[уа]", "[ои]", "[оу]"], "a": 0},
+            {"q": "Читается ли последняя t в слове petit?", "o": ["Нет", "Да"], "a": 0},
+            {"q": "Как звучит «eau» в слове beau?", "o": ["[о]", "[эа]", "[еу]"], "a": 0},
+            {"q": "Какой звук в «ou» (vous)?", "o": ["[у]", "[о]", "[ю]"], "a": 0},
+        ]},
+    ],
+    "exercises": [
+        {"id": "e1", "type": "listen", "say": "merci", "q": "Какое слово прозвучало?", "o": ["merci", "mardi", "marcher"], "a": 0},
+        {"id": "e2", "type": "listen", "say": "salut", "q": "Какое слово прозвучало?", "o": ["salade", "salut", "salon"], "a": 1},
+        {"id": "e3", "type": "listen", "say": "bonsoir", "q": "Какое слово прозвучало?", "o": ["bonjour", "bonsoir", "bonbon"], "a": 1},
+        {"id": "e4", "type": "listen", "say": "à bientôt", "q": "Что прозвучало?", "o": ["au revoir", "à bientôt", "bien sûr"], "a": 1},
+        {"id": "e5", "type": "choice", "q": "Какая буква не читается в слове petit?", "o": ["p", "i", "последняя t"], "a": 2},
+        {"id": "e6", "type": "choice", "q": "В каком слове звук [у]?", "o": ["vous", "tu", "vu"], "a": 0},
+        {"id": "e7", "type": "choice", "q": "«oi» в слове moi читается как…", "o": ["[уа]", "[ои]", "[о]"], "a": 0},
+        {"id": "e8", "type": "choice", "q": "«eau» в слове beau читается как…", "o": ["[о]", "[еау]", "[эу]"], "a": 0},
+        {"id": "e9", "type": "choice", "q": "Где слышно связывание (liaison)?", "o": ["vous avez", "vous parlez"], "a": 0},
+        {"id": "e10", "type": "choice", "q": "Как правильно написать «у меня есть»?", "o": ["je ai", "j’ai"], "a": 1},
+        {"id": "e11", "type": "match", "q": "Соедини пары", "pairs": [["bonjour", "здравствуйте"], ["merci", "спасибо"], ["oui", "да"], ["non", "нет"], ["au revoir", "до свидания"]]},
+        {"id": "e12", "type": "match", "q": "Соедини пары", "pairs": [["pardon", "простите"], ["salut", "привет"], ["de rien", "не за что"], ["à bientôt", "до скорого"], ["bonsoir", "добрый вечер"]]},
+        {"id": "e13", "type": "gap", "q": "Je m’___ Marie.", "ru": "Меня зовут Мари.", "a": ["appelle"]},
+        {"id": "e14", "type": "gap", "q": "Comment ça ___ ?", "ru": "Как дела?", "a": ["va"]},
+        {"id": "e15", "type": "gap", "q": "Merci ___ !", "ru": "Большое спасибо!", "a": ["beaucoup"]},
+        {"id": "e16", "type": "dictation", "say": "Bonjour !", "a": ["bonjour"]},
+        {"id": "e17", "type": "dictation", "say": "Merci beaucoup.", "a": ["merci beaucoup"]},
+        {"id": "e18", "type": "dictation", "say": "S’il vous plaît.", "a": ["s'il vous plaît"]},
+        {"id": "e19", "type": "order", "q": "Собери фразу «Всё хорошо»", "words": ["va", "bien", "ça"], "a": ["ça va bien"]},
+        {"id": "e20", "type": "translate", "q": "Спасибо, до свидания!", "a": ["merci au revoir"]},
+        {"id": "e21", "type": "translate", "q": "Нет, спасибо.", "a": ["non merci"]},
+    ],
+    "homework": {
+        "task": "Напиши 3 фразы по-французски: поздоровайся, представься (Je m’appelle …) и попрощайся.",
+        "example": "Bonjour ! Je m’appelle Marie. Au revoir !",
+        "minWords": 5,
+    },
+}
+
+# =====================================================================
+# 2 октября — местоимения, être, avoir, ne … pas; 50 частых слов
+# =====================================================================
+CONTENT["2026-10-02"] = {
+    "topic": "Личные местоимения, être и avoir",
+    "steps": [
+        {"kind": "review", "title": "Повторение", "min": 10},
+        {"kind": "theory", "title": "Теория", "min": 25},
+        {"kind": "vocab", "title": "Словарь дня", "min": 20},
+        {"kind": "exercises", "title": "Упражнения", "min": 40},
+        {"kind": "listening", "title": "Аудирование", "min": 45, "items": [
+            {"src": "innerFrench", "title": "E01 Apprendre le français naturellement", "dur": "28:15",
+             "url": "https://www.youtube.com/watch?v=MHoDEP-rF4c",
+             "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, так и задумано в методике."},
+            {"src": "Easy French", "title": "How To Introduce Yourself in French · Super Easy French 196", "dur": "6:58",
+             "url": "https://www.youtube.com/watch?v=tCd_4uCD5eo",
+             "task": "Смотри с французскими субтитрами. Лови je suis и j’ai — сегодняшнюю грамматику."}]},
+        {"kind": "pimsleur", "title": "Pimsleur", "min": 60, "url": PIMSLEUR, "lessons": "French I, уроки 3–4"},
+        {"kind": "homework", "title": "Домашка", "min": 10},
+    ],
+    "theory": [
+        {"h": "Личные местоимения",
+         "p": "Во французском глагол почти никогда не стоит без местоимения: «иду» — это всегда «je vais». On — разговорное «мы» или «люди вообще», глагол после него в форме как у il.",
+         "table": [["je (j’)", "я"], ["tu", "ты"], ["il / elle", "он / она"], ["on", "мы (разг.), люди"], ["nous", "мы"], ["vous", "вы"], ["ils", "они (м. или смешанная группа)"], ["elles", "они (только ж.)"]]},
+        {"h": "tu или vous",
+         "p": "tu — друзьям, семье, детям. vous — незнакомым, старшим, на работе и всегда группе людей. Если сомневаешься, говори vous.",
+         "ex": [["Tu es fatigué ?", "Ты устал?"], ["Vous êtes madame Martin ?", "Вы мадам Мартен?"]]},
+        {"h": "être — быть",
+         "p": "В русском «быть» в настоящем времени пропадает, во французском — никогда: «Я студентка» = Je suis étudiante.",
+         "table": [["je suis", "я есть"], ["tu es", "ты есть"], ["il / elle / on est", "он / она есть"], ["nous sommes", "мы есть"], ["vous êtes", "вы есть"], ["ils / elles sont", "они есть"]],
+         "ex": [["Je suis à Paris.", "Я в Париже."], ["Nous sommes amis.", "Мы друзья."], ["Elle est française.", "Она француженка."]]},
+        {"h": "avoir — иметь",
+         "p": "«У меня есть» = j’ai. Возраст тоже через avoir: «мне двадцать лет» = j’ai vingt ans. Перед гласной je сокращается до j’.",
+         "table": [["j’ai", "у меня есть"], ["tu as", "у тебя есть"], ["il / elle / on a", "у него / неё есть"], ["nous avons", "у нас есть"], ["vous avez", "у вас есть"], ["ils / elles ont", "у них есть"]],
+         "ex": [["J’ai vingt ans.", "Мне двадцать лет."], ["Tu as un chat ?", "У тебя есть кот?"], ["Ils ont deux amis.", "У них двое друзей."]]},
+        {"h": "Отрицание ne … pas",
+         "p": "Глагол берут «в рамку»: ne перед ним, pas после. Перед гласной ne превращается в n’.",
+         "ex": [["Je ne suis pas fatiguée.", "Я не устала."], ["Il n’a pas le temps.", "У него нет времени."], ["Nous ne sommes pas à Paris.", "Мы не в Париже."]]},
+    ],
+    "vocab": [
+        w("le", "le / la / les", "определённый артикль (тот самый)", "Le chat et la maison.", "Кот и дом.", forms=["le", "la", "les", "l’", "l'"]),
+        w("de", "de", "из, от; «кого/чего»", "Je suis de Moscou.", "Я из Москвы.", forms=["de", "d’", "d'"]),
+        w("un", "un / une", "неопределённый артикль; один / одна", "J’ai un frère et une sœur.", "У меня есть брат и сестра.", forms=["un", "une"]),
+        w("etre", "être", "быть", "Je suis contente.", "Я довольна.", forms=["suis", "es", "est", "sommes", "êtes", "sont", "été"]),
+        w("et", "et", "и", "Paul et Marie.", "Поль и Мари."),
+        w("a-prep", "à", "в, на, к (место, направление)", "Je suis à Paris.", "Я в Париже."),
+        w("il", "il", "он", "Il est grand.", "Он высокий."),
+        w("avoir", "avoir", "иметь", "J’ai un chat.", "У меня есть кот.", forms=["ai", "as", "a", "avons", "avez", "ont", "eu"]),
+        w("ne-pas", "ne … pas", "не (отрицание)", "Je ne sais pas.", "Я не знаю.", forms=["ne", "n’", "n'"]),
+        w("je", "je", "я", "Je suis là.", "Я здесь.", forms=["je", "j’", "j'"]),
+        w("son", "son / sa / ses", "его, её (притяжательное)", "C’est sa maison.", "Это его (её) дом.", forms=["son", "sa", "ses"]),
+        w("que", "que", "что (союз)", "Je pense que oui.", "Думаю, что да.", forms=["que", "qu’", "qu'"]),
+        w("se", "se", "себя, -ся", "Il se lave.", "Он моется.", forms=["se", "s’", "s'"]),
+        w("qui", "qui", "кто; который", "Qui est-ce ?", "Кто это?"),
+        w("ce", "ce / c’", "это", "C’est bien.", "Это хорошо.", forms=["ce", "c’", "c'", "cet", "cette", "ces"]),
+        w("dans", "dans", "в, внутри", "Le livre est dans le sac.", "Книга в сумке."),
+        w("en", "en", "в (страна ж. р., месяц, год)", "Je suis en France.", "Я во Франции."),
+        w("du", "du", "= de + le", "Le livre du professeur.", "Книга преподавателя."),
+        w("elle", "elle", "она", "Elle est française.", "Она француженка.", forms=["elles"]),
+        w("au", "au", "= à + le (в, на)", "Je suis au café.", "Я в кафе.", forms=["aux"]),
+        w("pour", "pour", "для; чтобы", "C’est pour toi.", "Это для тебя."),
+        w("pas", "pas", "не (вторая часть отрицания)", "Pas maintenant.", "Не сейчас."),
+        w("vous", "vous", "вы", "Vous êtes français ?", "Вы француз?"),
+        w("par", "par", "через, по", "par exemple", "например"),
+        w("sur", "sur", "на (поверхности)", "Le café est sur la table.", "Кофе на столе."),
+        w("faire", "faire", "делать", "Je fais du sport.", "Я занимаюсь спортом.", forms=["fais", "fait", "faisons", "faites", "font"]),
+        w("plus", "plus", "больше; ещё", "Plus de café ?", "Ещё кофе?"),
+        w("dire", "dire", "сказать, говорить", "Je dis bonjour.", "Я говорю «здравствуйте».", forms=["dis", "dit", "disons", "dites", "disent"]),
+        w("me", "me", "меня, мне", "Il me parle.", "Он говорит со мной.", forms=["me", "m’", "m'"]),
+        w("on", "on", "мы (разг.); люди", "On y va !", "Пошли!"),
+        w("mon", "mon / ma / mes", "мой / моя / мои", "Mon frère et ma sœur.", "Мой брат и моя сестра.", forms=["mon", "ma", "mes"]),
+        w("lui", "lui", "ему, ей; он (ударное)", "Je parle avec lui.", "Я говорю с ним."),
+        w("nous", "nous", "мы", "Nous sommes là.", "Мы здесь."),
+        w("comme", "comme", "как", "Comme toi.", "Как ты."),
+        w("mais", "mais", "но", "Petit mais bon.", "Маленький, но хороший."),
+        w("pouvoir", "pouvoir", "мочь", "Je peux venir.", "Я могу прийти.", forms=["peux", "peut", "pouvons", "pouvez", "peuvent"]),
+        w("avec", "avec", "с", "Avec plaisir !", "С удовольствием!"),
+        w("tout", "tout", "всё; весь", "Tout va bien.", "Всё хорошо.", forms=["tout", "toute", "tous", "toutes"]),
+        w("y", "y", "там, туда", "J’y vais.", "Я туда иду."),
+        w("aller", "aller", "идти, ехать", "Je vais à Paris.", "Я еду в Париж.", forms=["vais", "vas", "va", "allons", "allez", "vont"]),
+        w("voir", "voir", "видеть", "Je vois la mer.", "Я вижу море.", forms=["vois", "voit", "voyons", "voyez", "voient"]),
+        w("bien", "bien", "хорошо", "Ça va bien.", "Всё хорошо."),
+        w("ou-where", "où", "где, куда", "Où es-tu ?", "Где ты?"),
+        w("sans", "sans", "без", "Un café sans sucre.", "Кофе без сахара."),
+        w("tu", "tu", "ты", "Tu es là ?", "Ты здесь?"),
+        w("ou-or", "ou", "или", "Thé ou café ?", "Чай или кофе?"),
+        w("leur", "leur", "им; их", "C’est leur maison.", "Это их дом.", forms=["leur", "leurs"]),
+        w("homme", "homme", "мужчина; человек", "Un homme grand.", "Высокий мужчина.", g="m", forms=["hommes"]),
+        w("si", "si", "если; так; да (в ответ на отрицание)", "Si tu veux.", "Если хочешь."),
+        w("deux", "deux", "два", "Deux cafés, s’il vous plaît.", "Два кофе, пожалуйста."),
+    ],
+    "topics": [
+        {"id": "t-pronoms", "title": "Личные местоимения", "quiz": [
+            {"q": "«Они» о группе, где только женщины", "o": ["elles", "ils", "on"], "a": 0},
+            {"q": "Вежливое «вы» одному человеку", "o": ["vous", "tu", "on"], "a": 0},
+            {"q": "Разговорное «мы», глагол как у il", "o": ["on", "nous", "ils"], "a": 0},
+        ]},
+        {"id": "t-etre", "title": "Глагол être", "quiz": [
+            {"q": "nous ___", "o": ["sommes", "êtes", "sont"], "a": 0},
+            {"q": "ils ___", "o": ["sont", "ont", "est"], "a": 0},
+            {"q": "tu ___", "o": ["es", "est", "as"], "a": 0},
+            {"q": "vous ___", "o": ["êtes", "avez", "sommes"], "a": 0},
+        ]},
+        {"id": "t-avoir", "title": "Глагол avoir", "quiz": [
+            {"q": "j’___", "o": ["ai", "a", "as"], "a": 0},
+            {"q": "vous ___", "o": ["avez", "êtes", "avons"], "a": 0},
+            {"q": "elles ___", "o": ["ont", "sont", "a"], "a": 0},
+            {"q": "«Мне двадцать лет»", "o": ["J’ai vingt ans.", "Je suis vingt ans."], "a": 0},
+        ]},
+    ],
+    "exercises": [
+        {"id": "e1", "type": "conj", "verb": "être", "rows": [["je", "suis"], ["tu", "es"], ["il", "est"], ["nous", "sommes"], ["vous", "êtes"], ["elles", "sont"]]},
+        {"id": "e2", "type": "conj", "verb": "avoir", "rows": [["j’", "ai"], ["tu", "as"], ["elle", "a"], ["nous", "avons"], ["vous", "avez"], ["ils", "ont"]]},
+        {"id": "e3", "type": "choice", "q": "Ты говоришь с преподавателем. Как к нему обратиться?", "o": ["tu", "vous"], "a": 1},
+        {"id": "e4", "type": "choice", "q": "Marie et Anne → …", "o": ["ils", "elles"], "a": 1},
+        {"id": "e5", "type": "choice", "q": "Paul et Marie → …", "o": ["ils", "elles"], "a": 0},
+        {"id": "e6", "type": "choice", "q": "on + être → on …", "o": ["est", "sont", "sommes"], "a": 0},
+        {"id": "e7", "type": "gap", "q": "Nous ___ étudiants.", "ru": "Мы студенты. (être)", "a": ["sommes"]},
+        {"id": "e8", "type": "gap", "q": "Elle ___ un chat.", "ru": "У неё есть кот. (avoir)", "a": ["a"]},
+        {"id": "e9", "type": "gap", "q": "J’___ vingt ans.", "ru": "Мне двадцать лет. (avoir)", "a": ["ai"]},
+        {"id": "e10", "type": "gap", "q": "Vous ___ français ?", "ru": "Вы француз? (être)", "a": ["êtes"]},
+        {"id": "e11", "type": "gap", "q": "Je ne ___ pas fatiguée.", "ru": "Я не устала.", "a": ["suis"]},
+        {"id": "e12", "type": "gap", "q": "Il n’___ pas le temps.", "ru": "У него нет времени.", "a": ["a"]},
+        {"id": "e13", "type": "choice", "q": "Как правильно?", "o": ["Je ne ai pas le temps.", "Je n’ai pas le temps."], "a": 1},
+        {"id": "e14", "type": "match", "q": "Соедини местоимения", "pairs": [["je", "я"], ["tu", "ты"], ["nous", "мы"], ["vous", "вы"], ["elles", "они (ж.)"]]},
+        {"id": "e15", "type": "match", "q": "Слова из списка 1–50", "pairs": [["avec", "с"], ["sans", "без"], ["mais", "но"], ["où", "где"], ["bien", "хорошо"]]},
+        {"id": "e16", "type": "order", "q": "Собери фразу «У тебя есть кот»", "words": ["as", "un", "Tu", "chat"], "a": ["tu as un chat"]},
+        {"id": "e17", "type": "order", "q": "Собери фразу «Мы не в Париже»", "words": ["ne", "Nous", "pas", "sommes", "à", "Paris"], "a": ["nous ne sommes pas à paris"]},
+        {"id": "e18", "type": "dictation", "say": "Il est avec elle.", "a": ["il est avec elle"]},
+        {"id": "e19", "type": "dictation", "say": "Vous avez deux amis.", "a": ["vous avez deux amis"]},
+        {"id": "e20", "type": "translate", "q": "Ты француз?", "a": ["tu es français", "es-tu français"]},
+        {"id": "e21", "type": "translate", "q": "Она с ним.", "a": ["elle est avec lui"]},
+        {"id": "e22", "type": "translate", "q": "Я не устала.", "a": ["je ne suis pas fatiguée", "je ne suis pas fatigué"]},
+    ],
+    "homework": {
+        "task": "Напиши 5 предложений о себе с être и avoir: кто ты, где ты, сколько тебе лет, что у тебя есть, и одно предложение с ne … pas.",
+        "example": "Je suis étudiante. Je suis à Moscou. J’ai vingt ans. J’ai un frère. Je ne suis pas fatiguée.",
+        "minWords": 15,
+    },
+}
+
+# Формы, которые встречаются в примерах, но не в словарях дня
+LEXICON_EXTRA = {
+    "fatigué": {"lemma": "fatigué", "ru": "уставший"}, "fatiguée": {"lemma": "fatigué", "ru": "уставшая"},
+    "étudiant": {"lemma": "étudiant", "ru": "студент"}, "étudiante": {"lemma": "étudiant", "ru": "студентка"}, "étudiants": {"lemma": "étudiant", "ru": "студенты"},
+    "français": {"lemma": "français", "ru": "француз; французский"}, "française": {"lemma": "français", "ru": "француженка; французская"},
+    "chat": {"lemma": "chat", "ru": "кот"}, "ans": {"lemma": "an", "ru": "год (лет)"}, "vingt": {"lemma": "vingt", "ru": "двадцать"},
+    "ami": {"lemma": "ami", "ru": "друг"}, "amis": {"lemma": "ami", "ru": "друзья"}, "temps": {"lemma": "temps", "ru": "время; погода"},
+    "enfant": {"lemma": "enfant", "ru": "ребёнок"}, "madame": {"lemma": "madame", "ru": "мадам, госпожа"}, "monsieur": {"lemma": "monsieur", "ru": "месье, господин"},
+    "maison": {"lemma": "maison", "ru": "дом"}, "café": {"lemma": "café", "ru": "кофе; кафе"}, "table": {"lemma": "table", "ru": "стол"},
+    "livre": {"lemma": "livre", "ru": "книга"}, "frère": {"lemma": "frère", "ru": "брат"}, "sœur": {"lemma": "sœur", "ru": "сестра"},
+    "grand": {"lemma": "grand", "ru": "большой; высокий"}, "petit": {"lemma": "petit", "ru": "маленький"}, "bon": {"lemma": "bon", "ru": "хороший"},
+    "moi": {"lemma": "moi", "ru": "я, меня (ударное)"}, "toi": {"lemma": "toi", "ru": "ты, тебя (ударное)"}, "là": {"lemma": "là", "ru": "здесь, там"},
+    "beau": {"lemma": "beau", "ru": "красивый"}, "pain": {"lemma": "pain", "ru": "хлеб"}, "vin": {"lemma": "vin", "ru": "вино"},
+    "mère": {"lemma": "mère", "ru": "мама"}, "père": {"lemma": "père", "ru": "папа"}, "fête": {"lemma": "fête", "ru": "праздник"},
+    "sac": {"lemma": "sac", "ru": "сумка"}, "sucre": {"lemma": "sucre", "ru": "сахар"}, "mer": {"lemma": "mer", "ru": "море"},
+    "thé": {"lemma": "thé", "ru": "чай"}, "sport": {"lemma": "sport", "ru": "спорт"}, "professeur": {"lemma": "professeur", "ru": "преподаватель"},
+    "gare": {"lemma": "gare", "ru": "вокзал"}, "sûr": {"lemma": "sûr", "ru": "уверенный (bien sûr — конечно)"},
+    "maintenant": {"lemma": "maintenant", "ru": "сейчас"}, "exemple": {"lemma": "exemple", "ru": "пример"}, "plaisir": {"lemma": "plaisir", "ru": "удовольствие"},
+    "contente": {"lemma": "content", "ru": "довольная"}, "content": {"lemma": "content", "ru": "довольный"},
+    "sais": {"lemma": "savoir", "ru": "знаю / знаешь"}, "pense": {"lemma": "penser", "ru": "думаю / думает"}, "lave": {"lemma": "se laver", "ru": "моет(ся)"},
+    "parle": {"lemma": "parler", "ru": "говорю / говорит"}, "veux": {"lemma": "vouloir", "ru": "хочу / хочешь"}, "venir": {"lemma": "venir", "ru": "прийти"},
+}
