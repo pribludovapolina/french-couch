@@ -1,22 +1,20 @@
 # Чертёж для Render: New → Blueprint → выбрать этот репозиторий.
-# База — файл SQLite на постоянном диске. Диск бывает только на платных тарифах:
-# на бесплатном файлы стираются при каждом засыпании и деплое, и аккаунты с прогрессом пропали бы.
+# Бесплатный тариф: своих постоянных файлов у сервиса нет, поэтому база живёт в Turso.
 services:
   - type: web
     name: cahier-de-francais
     runtime: node
-    plan: 0.5c-512mb
+    plan: free
     region: frankfurt
     buildCommand: npm ci --omit=dev
     startCommand: node server.js
     healthCheckPath: /healthz
     autoDeployTrigger: commit
-    disk:
-      name: cahier-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: NODE_ENV
         value: production
-      - key: DB_FILE
-        value: /var/data/cahier.db
+      - key: TURSO_DATABASE_URL
+        value: libsql://fr-pribludovapolina.aws-eu-north-1.turso.io
+      # Токен базы — секрет: Render спросит его при создании сервиса, в репозиторий он не попадает.
+      - key: TURSO_AUTH_TOKEN
+        sync: false

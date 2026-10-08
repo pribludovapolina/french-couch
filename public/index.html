@@ -387,7 +387,7 @@ function speak(text, rate = 0.9) {
 }
 const speakBtn = (text, rate) => el('button', { class: 'speak', type: 'button', 'aria-label': 'Озвучить: ' + text, onclick: e => { e.stopPropagation(); speak(text, rate); } }, ICON.speak());
 
-/* ---------------- data store (свой сервер: /api, SQLite) ---------------- */
+/* ---------------- data store (свой сервер: /api, база Turso) ---------------- */
 const listeners = new Set();
 const emit = t => listeners.forEach(f => f(t));
 async function api(method, url, body) {
@@ -771,6 +771,7 @@ const AUTH_ERR = {
   rate_limited: 'Слишком много попыток. Попробуй через 15 минут.',
   network: 'Нет связи с сервером. Попробуй ещё раз.',
   timeout: 'Сервер долго не отвечает. Попробуй ещё раз.',
+  db_unavailable: 'Сервер ещё просыпается. Попробуй через полминуты.',
 };
 const authMsg = e => AUTH_ERR[e && e.code] || 'Не получилось. Попробуй ещё раз.';
 const gateKey = () => [Store.mode, UI.authMode || 'login', DATA ? 1 : 0, DATA_ERR ? 1 : 0, Store.invite ? 1 : 0].join('|');
@@ -778,7 +779,7 @@ function renderGate() {
   if (Store.mode === 'connecting') return el('p', { class: 'lead', text: 'Подключаюсь…' });
   if (Store.mode === 'offline') return el('div', {},
     el('p', { class: 'lead', text: 'Нет связи с сервером.' }),
-    el('p', { class: 'small muted', text: 'Проверь интернет и попробуй ещё раз.' }),
+    el('p', { class: 'small muted', text: 'Если сайт давно не открывали, сервер просыпается около минуты.' }),
     el('p', {}, el('button', { class: 'btn', onclick: () => Store.connect() }, 'Повторить')));
   if (Store.mode === 'db') return DATA_ERR
     ? el('div', {}, el('p', { class: 'lead', text: 'Не удалось загрузить уроки: медленная связь или сервер недоступен.' }), el('p', {}, el('button', { class: 'btn', onclick: () => { ensureData(); render(); } }, 'Попробовать ещё раз')))

@@ -10,9 +10,10 @@
     "reset-password": "node scripts/reset-password.js"
   },
   "engines": {
-    "node": ">=22.13 <25"
+    "node": ">=20"
   },
   "dependencies": {
+    "@libsql/client": "^0.18.0",
     "express": "^5.2.1"
   }
 }
