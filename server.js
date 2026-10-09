@@ -72,7 +72,7 @@ async function serveStatic(req, res, next) {
   if (!f) return next();
   const closed = req.path.startsWith('/data/'); // уроки отдаём только вошедшим
   if (closed) {
-    if (!db.isReady()) return res.status(503).json({ error: 'db_unavailable' });
+    if (!db.isReady()) return res.status(503).json({ error: db.problem() || 'db_unavailable' });
     if (!(await currentUser(req, res))) return res.status(401).json({ error: 'unauthorized' });
   }
   res.set({ 'Content-Type': f.type, ETag: f.etag, 'Cache-Control': closed ? 'private, no-cache' : 'no-cache', Vary: 'Accept-Encoding' });
@@ -98,14 +98,14 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/healthz', (req, res) => res.json({ ok: true, db: db.isReady() }));
+app.get('/healthz', (req, res) => res.json({ ok: true, db: db.isReady(), store: db.store, problem: db.problem() || undefined }));
 app.use(serveStatic);
 
 const api = express.Router();
 app.use('/api', api);
 api.use((req, res, next) => {
   res.set('Cache-Control', 'no-store');
-  if (!db.isReady()) return res.status(503).json({ error: 'db_unavailable' });
+  if (!db.isReady()) return res.status(503).json({ error: db.problem() || 'db_unavailable' });
   // Изменяющие запросы принимаем только от своей страницы: чужой сайт не сможет поставить этот заголовок.
   if (req.method !== 'GET' && req.method !== 'HEAD') {
     if (req.headers['x-cahier'] !== '1') return res.status(403).json({ error: 'forbidden' });

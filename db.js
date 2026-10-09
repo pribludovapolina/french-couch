@@ -7,11 +7,15 @@ const path = require('path');
 const { createClient } = require('@libsql/client');
 
 const LOCAL = path.join(__dirname, 'data', 'cahier.db');
-const DB_URL = process.env.TURSO_DATABASE_URL || 'file:' + LOCAL;
+const DB_URL = (process.env.TURSO_DATABASE_URL || '').trim() || 'file:' + LOCAL;
 const remote = !DB_URL.startsWith('file:');
-if (!remote && DB_URL === 'file:' + LOCAL) fs.mkdirSync(path.dirname(LOCAL), { recursive: true });
+// На боевом сервере файл вместо базы недопустим: у Render он стирается при каждом засыпании и деплое,
+// и аккаунты молча пропадали бы. Поэтому без адреса Turso сайт честно сообщает, что база не подключена.
+const PROD = process.env.NODE_ENV === 'production' || !!process.env.RENDER;
+const blocked = PROD && !remote && process.env.ALLOW_LOCAL_DB !== '1';
+if (!blocked && DB_URL === 'file:' + LOCAL) fs.mkdirSync(path.dirname(LOCAL), { recursive: true });
 
-const client = createClient({ url: DB_URL, authToken: process.env.TURSO_AUTH_TOKEN || undefined });
+const client = blocked ? null : createClient({ url: DB_URL, authToken: (process.env.TURSO_AUTH_TOKEN || '').trim() || undefined });
 
 const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS users (
@@ -46,16 +50,20 @@ const SCHEMA = [
 ];
 
 let ready = false;
+let problem = blocked ? 'db_not_configured' : 'db_unavailable'; // почему база не готова; уходит в ответ сайта
 // Сервер поднимается сразу, а к базе переподключается сам, пока она не ответит.
 async function init() {
+  if (blocked) { console.error('[db] БАЗА НЕ ПОДКЛЮЧЕНА: не задан TURSO_DATABASE_URL. Задай его и TURSO_AUTH_TOKEN в настройках сервиса (Environment).'); return; }
   for (let n = 1; ; n++) {
     try {
       await client.batch(SCHEMA, 'write');
-      ready = true;
+      ready = true; problem = null;
       console.log(`[db] готово: ${remote ? DB_URL : "локальный файл " + DB_URL.slice(5)}`);
       return;
     } catch (e) {
-      const hint = /\b401\b/.test(e.message || '') ? ' — проверь TURSO_AUTH_TOKEN: токен не задан или не подходит к этой базе' : '';
+      const badToken = /\b401\b/.test(e.message || '');
+      problem = badToken ? 'db_bad_token' : 'db_unavailable';
+      const hint = badToken ? ' — проверь TURSO_AUTH_TOKEN: токен не задан или не подходит к этой базе' : '';
       console.error(`[db] база не отвечает (попытка ${n}): ${e.code || ''} ${e.message}${hint}`);
       await new Promise(r => setTimeout(r, Math.min(30000, 2000 * n)));
     }
@@ -68,7 +76,9 @@ const isUnique = e => !!e && (String(e.code || '').startsWith('SQLITE_CONSTRAINT
 module.exports = {
   init,
   isReady: () => ready,
-  where: remote ? DB_URL : 'локальный файл',
+  problem: () => problem,
+  store: blocked ? 'none' : remote ? 'turso' : 'file', // где лежат данные; видно в /healthz
+  where: blocked ? 'не подключена' : remote ? DB_URL : 'локальный файл',
   isUnique,
   get: async (sql, ...args) => (await client.execute({ sql, args })).rows[0],
   all: async (sql, ...args) => (await client.execute({ sql, args })).rows,

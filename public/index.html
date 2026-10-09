@@ -266,6 +266,7 @@ h2.sec{font-size:24px;font-weight:600;margin:28px 0 4px;letter-spacing:-.01em}
 .auth .btn.primary{width:100%;justify-content:center;margin-top:18px;padding-block:12px}
 .auth .switch{margin-top:16px;font-size:14px;color:var(--muted)}
 .auth .switch button{appearance:none;border:0;background:none;color:var(--accent);cursor:pointer;padding:0;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.auth .showpw{appearance:none;border:0;background:none;color:var(--muted);cursor:pointer;padding:8px 0 0;font-size:13px;text-decoration:underline;text-underline-offset:3px}
 .err{color:var(--bad);font-size:14px;min-height:1.5em;margin:10px 0 0}
 .acctform .btn{margin-top:10px}
 .sheet h2{font-family:var(--serif);font-weight:500;font-size:22px;margin:0 0 4px}
@@ -479,8 +480,13 @@ const Store = {
     this._loading = false;
   },
   retry() { if (this.mode === 'offline') return this.connect(); this.error = null; emit('sync'); this.flushProgress(); this.pump(); this.refresh(true); },
-  async login(login, password) { const r = await api('POST', '/api/login', { login, password }); this.reset(); this.user = r.user; await this.load(true); },
-  async register(login, password, invite) { const r = await api('POST', '/api/register', { login, password, invite }); this.reset(); this.user = r.user; await this.load(true); },
+  async login(login, password) { return this.enter(await api('POST', '/api/login', { login, password })); },
+  async register(login, password, invite) { return this.enter(await api('POST', '/api/register', { login, password, invite })); },
+  async enter(r) {
+    this.reset(); this.user = r.user;
+    try { await this.load(true); }
+    catch (e) { this.reset(); throw e && e.status === 401 ? { code: 'no_cookie' } : e; } // сервер впустил, но браузер не вернул ему cookie
+  },
   async logout() { try { await api('POST', '/api/logout', {}); } catch (e) {} this.reset(); this.mode = 'anon'; this.error = null; emit('sync'); emit('data'); },
   changePassword(old, password) { return api('POST', '/api/password', { old, password }); },
 
@@ -772,13 +778,16 @@ const AUTH_ERR = {
   network: 'Нет связи с сервером. Попробуй ещё раз.',
   timeout: 'Сервер долго не отвечает. Попробуй ещё раз.',
   db_unavailable: 'Сервер ещё просыпается. Попробуй через полминуты.',
+  db_not_configured: 'Сайт не подключён к базе данных. Это исправляет владелец сайта в настройках сервера.',
+  db_bad_token: 'Сайт не может войти в свою базу данных. Это исправляет владелец сайта в настройках сервера.',
+  no_cookie: 'Вход прошёл, но браузер не сохранил его: похоже, в нём запрещены cookie. Открой сайт в обычном Safari или Chrome и разреши cookie.',
 };
 const authMsg = e => AUTH_ERR[e && e.code] || 'Не получилось. Попробуй ещё раз.';
-const gateKey = () => [Store.mode, UI.authMode || 'login', DATA ? 1 : 0, DATA_ERR ? 1 : 0, Store.invite ? 1 : 0].join('|');
+const gateKey = () => [Store.mode, Store.error || '', UI.authMode || 'login', DATA ? 1 : 0, DATA_ERR ? 1 : 0, Store.invite ? 1 : 0].join('|');
 function renderGate() {
   if (Store.mode === 'connecting') return el('p', { class: 'lead', text: 'Подключаюсь…' });
   if (Store.mode === 'offline') return el('div', {},
-    el('p', { class: 'lead', text: 'Нет связи с сервером.' }),
+    el('p', { class: 'lead', text: /^db_(not_configured|bad_token)$/.test(Store.error) ? AUTH_ERR[Store.error] : 'Нет связи с сервером.' }),
     el('p', { class: 'small muted', text: 'Если сайт давно не открывали, сервер просыпается около минуты.' }),
     el('p', {}, el('button', { class: 'btn', onclick: () => Store.connect() }, 'Повторить')));
   if (Store.mode === 'db') return DATA_ERR
@@ -810,6 +819,7 @@ function renderAuth() {
     el('p', { class: 'small muted', style: 'margin:0', text: reg ? 'Аккаунт нужен, чтобы прогресс и карточки сохранялись и были одинаковыми на ноутбуке и телефоне.' : 'Войди, чтобы продолжить занятия.' }),
     el('label', { for: 'au-login', text: 'Логин' }), login,
     el('label', { for: 'au-pass', text: reg ? 'Пароль, от 8 символов' : 'Пароль' }), pass,
+    el('button', { type: 'button', class: 'showpw', 'aria-pressed': 'false', onclick: e => { const on = pass.type === 'password'; pass.type = on ? 'text' : 'password'; e.currentTarget.textContent = on ? 'скрыть пароль' : 'показать пароль'; e.currentTarget.setAttribute('aria-pressed', String(on)); } }, 'показать пароль'),
     inv ? [el('label', { for: 'au-inv', text: 'Код приглашения' }), inv] : null,
     btn, err,
     reg ? el('p', { class: 'small faint', style: 'margin:6px 0 0', text: 'Почта не нужна. Забытый пароль может сбросить только владелец сайта, так что запиши его.' }) : null,
