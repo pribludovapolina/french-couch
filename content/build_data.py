@@ -30,6 +30,26 @@ INNER = {
     9: ("ub9ZNmMawLA", "E09 La décroissance", "30:52"),
     10: ("qyT269VhDeA", "E10 L’expérience de Milgram", "32:27"),
 }
+# С 14 октября вместо innerFrench — мультфильмы. Уроки FluentU: отрывок из мультфильма на французском и разбор слов;
+# Totally Spies — целая серия без разбора, для удовольствия. Все ролики проверены в YouTube 14.10.2026.
+FLUENTU = "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
+SPIES = "Целая серия на французском, без разбора. Включи французские субтитры и смотри, сколько интересно. Задач нет."
+CARTOON = {
+    "2026-10-14": [("6i6g-0HJuPs", "Les Simpson — A Dangerous Ride!", "FluentU French", "11:42", FLUENTU)],
+    "2026-10-15": [("c1BvxMg5QrU", "Bob l’éponge (SpongeBob)", "FluentU French", "14:44", FLUENTU)],
+    "2026-10-16": [("PSKhYAgdQu4", "Les Simpson au Costa Rica", "FluentU French", "12:29", FLUENTU)],
+    "2026-10-17": [("IqpwmM41jBg", "Totally Spies ! Les Robots Attaquent (saison 1, épisode 24)", "Totally Spies! Français", "21:18", SPIES)],
+    "2026-10-19": [("eWzShqYEFh0", "Les Simpson — Side Effects?!", "FluentU French", "14:22", FLUENTU)],
+    "2026-10-20": [("IXo8ea9NhIg", "Les Simpson — Bart’s New Superpower!", "FluentU French", "15:51", FLUENTU)],
+    "2026-10-21": [("WJHt2aNz6cU", "Bob l’éponge — Spongebob has a twin???", "FluentU French", "15:50", FLUENTU)],
+    "2026-10-22": [("t7Dj6rV2wRc", "Les Simpson — Marge watches what???", "FluentU French", "17:30", FLUENTU)],
+    "2026-10-23": [("mBrhWJPFxxI", "Les Simpson — Homer goes Hulk!", "FluentU French", "16:36", FLUENTU)],
+    "2026-10-26": [("qgEWg9RXRyA", "Bob l’éponge — SpongeBob Gets Tanned?!", "FluentU French", "18:28", FLUENTU)],
+    "2026-10-27": [("nL_t5X-bgKg", "Ratatouille", "FluentU French", "5:55", FLUENTU),
+                   ("nqJuaqFjebc", "Totally Spies ! Le Retour de Géraldine (saison 5, épisode 6)", "Totally Spies! Français", "21:53", "Первые 15 минут серии, с французскими субтитрами. Задач нет.")],
+    "2026-10-28": [("GOCYcQ7Dghk", "Les Simpson — The School Strikes Oil!", "FluentU French", "25:41", FLUENTU)],
+    "2026-10-29": [("n3WtFQBlJBE", "Les Simpson — Bart’s Prank Call to… Australia?", "FluentU French", "23:24", FLUENTU)],
+}
 # Super Easy French под тему дня (проверено поиском YouTube 25.09.2026)
 SEF = {
     "01": ("fq_4V-Ia1z0", "Super Easy French 1 — for absolute beginners", "5:00"),
@@ -157,6 +177,8 @@ for part in (C0, C1, C2, C3, C4):
     CONTENT.update(part)
 
 from drills import DRILLS
+from translations import TR
+from transcr import TRS
 
 # Новое распределение времени: Pimsleur — 1 урок (30 мин), освободившееся время — на практику
 MINUTES = {
@@ -200,6 +222,12 @@ for day in days:
                 st["min"] = mins[st["kind"]]
         day["steps"].sort(key=lambda st: ORDER2.index(st["kind"]))
     for st in day["steps"]:
+        if st["kind"] == "listening" and day["date"] in CARTOON:
+            cart = [{"src": ch, "title": t, "dur": dur, "url": yt(vid), "task": task} for vid, t, ch, dur, task in CARTOON[day["date"]]]
+            rest = [it for it in st.get("items", []) if it["src"] != "innerFrench"]
+            st["items"] = cart + rest
+            if st["title"].startswith("Подкаст для удовольствия"):
+                st["title"] = "Мультфильм для удовольствия"
         if st["kind"] == "listening":
             for i, it in enumerate(st.get("items", [])):
                 vid = parse_qs(urlparse(it["url"]).query).get("v", [""])[0]
@@ -242,6 +270,28 @@ for day in days:
         vid, t, ch, dur = FUN[day["date"]]
         day["fun"] = {"url": "https://www.youtube.com/watch?v=" + vid, "title": t, "channel": ch, "dur": dur}
 
+# перевод фразы — к упражнениям и практикуму, произношение русскими буквами — к словам
+LATIN = lambda s: len(re.findall(r"[A-Za-zÀ-ÿœ]", s)) > len(re.findall(r"[А-Яа-яЁё]", s))
+def fr_sentence(ex):
+    t = ex["type"]
+    if t in ("dictation", "listen"): return ex.get("say")
+    if t == "transform": return ex["a"][0]
+    if t == "gap": return None if ex.get("ru") else ex["q"].replace("___", ex["a"][0])
+    if t == "choice":
+        q = ex["q"]
+        if "___" in q and LATIN(q): return q.replace("___", ex["o"][ex["a"]])
+        if LATIN(q) and not re.search(r"[А-Яа-я]", q): return q
+    return None
+no_tr, no_tsc = [], []
+for day in days:
+    for ex in (day.get("exercises") or []) + (day.get("drill") or []):
+        s = fr_sentence(ex)
+        if s and s in TR: ex["tr"] = TR[s]
+        elif s and "→" not in s: no_tr.append(s)
+    for w in day.get("vocab") or []:
+        if w["fr"] in TRS: w["tr"] = TRS[w["fr"]]
+        else: no_tsc.append(w["fr"])
+
 # лексикон для перевода по нажатию: формы → {lemma, ru}
 lex = {}
 for day in days:
@@ -274,3 +324,6 @@ print("dup topic ids", [k for k, v in tids.items() if v > 1])
 for d in days:
     if any(st["kind"] == "exercises" for st in d["steps"]):
         print(d["date"], d["type"], "ex", len(d.get("exercises", [])), "words", len(d.get("vocab", [])), "min", sum(st["min"] for st in d["steps"] if not st.get("optional")), "/", d["minutes"])
+
+print("без перевода:", len(no_tr), no_tr[:20])
+print("без транскрипции:", len(no_tsc), no_tsc[:20])

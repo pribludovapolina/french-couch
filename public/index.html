@@ -170,16 +170,40 @@ body.has-player{padding-bottom:110px}
 .match .col{display:flex;flex-direction:column;gap:8px}
 .match .opt{width:100%;text-align:left}
 .fb{margin-top:10px;font-size:15px;padding:9px 12px;border-radius:10px}
+.gapans{display:inline-flex;gap:8px;align-items:baseline;font-family:var(--serif);font-size:19px;padding:0 4px}
+.gapans .mine.ok,.gapans .right{color:var(--ok);font-weight:500}
+.gapans .mine.wrong{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.gapans .mine.almost{color:var(--warn)}
+.tr{margin-top:8px;font-size:15px;color:var(--muted)}
+.tr .lbl,.vrow .lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-right:8px}
+.conj.checked{grid-template-columns:auto 1fr auto}
+.conj .fix{color:var(--ok);font-family:var(--serif);font-size:17px;white-space:nowrap}
 .fb.ok{background:var(--ok-soft);color:var(--ok)}
 .fb.almost{background:var(--warn-soft);color:var(--warn)}
 .fb.wrong{background:var(--bad-soft);color:var(--bad)}
 .fb b{font-family:var(--serif);font-weight:500}
-.fb mark{background:none;color:inherit;text-decoration:underline 2px;text-underline-offset:3px;font-weight:700}
+.ans{margin-top:10px;display:flex;flex-direction:column;gap:4px;font-size:18px;line-height:1.35}
+.ans .fr{font-family:var(--serif)}
+.ans .ic{display:inline-block;width:1.4em;font-family:var(--sans);font-weight:600}
+.ans .mine.ok{color:var(--ok)} .ans .mine.almost{color:var(--warn)} .ans .mine.wrong{color:var(--bad)}
+.ans .mine.wrong .fr{text-decoration:line-through;text-decoration-thickness:1px}
+.ans .right{color:var(--ok);font-weight:500}
+.ans .note{font-size:14px;color:var(--warn)}
+.ans mark,.fb mark{background:none;color:inherit;text-decoration:underline 2px;text-underline-offset:3px;font-weight:700}
 .play{display:flex;gap:8px;margin-bottom:10px}
 
 /* review */
 .card{border:1px solid var(--line);border-radius:var(--r);padding:26px 20px;margin-top:14px;background:var(--bg);text-align:center}
 .card .front{font-family:var(--serif);font-size:34px;line-height:1.2;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.tsc{font-family:var(--sans);font-size:14px;color:var(--faint);font-weight:400;letter-spacing:.01em}
+.tsc::before{content:'['}.tsc::after{content:']'}
+.card .tsc{margin-top:6px;font-size:16px}
+.card .front.ru{font-family:var(--sans);font-size:26px}
+.inp.rv{margin-top:14px;font-size:19px;text-align:center}
+.inp.rv:not(.frin){font-family:var(--sans)}
+.qcount{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ditem .res,.legend .sw{display:inline-flex;gap:6px;align-items:center}
+.res i,.legend .sw i{display:inline-block;width:8px;height:8px;border-radius:2px}
 .card .back{margin-top:16px;display:flex;flex-direction:column;gap:6px}
 .card .back .t{font-size:20px}
 .card .back .e{color:var(--muted);font-size:15px}
@@ -213,8 +237,12 @@ textarea.inp{min-height:150px;resize:vertical;line-height:1.5}
 .cell{appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:10px;aspect-ratio:1/1;max-width:100%;padding:6px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;cursor:pointer;font-variant-numeric:tabular-nums;font-size:15px;min-width:0}
 .cell.rest{background:var(--soft);border-color:transparent;color:var(--faint)}
 .cell.today{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.cell .mini{width:100%;height:4px;border-radius:99px;background:var(--soft);overflow:hidden}
-.cell .mini i{display:block;height:100%;background:var(--accent)}
+.cell .mini{width:100%;height:5px;border-radius:99px;background:var(--soft);overflow:hidden}
+.cell .mini{display:flex}
+.cell .mini i{display:block;height:100%}
+.mini i.ok,.seg-ok{background:var(--ok)} .mini i.almost,.seg-almost{background:var(--warn)} .mini i.wrong,.seg-wrong{background:var(--bad)} .mini i.plain,.seg-plain{background:var(--accent)}
+.ditem .n{display:flex;flex-direction:column;gap:2px}
+.ditem .res{font-size:12px;color:var(--faint);gap:10px}
 .cell.missed .mini{background:var(--warn-soft)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted);margin-top:12px}
 .dlist{margin-top:26px;border-top:1px solid var(--line)}
@@ -232,7 +260,7 @@ h2.sec{font-size:24px;font-weight:600;margin:28px 0 4px;letter-spacing:-.01em}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-top:14px}
 .clist{margin-top:10px}
 .crow{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
-.crow .w{font-family:var(--serif);font-size:17px}
+.crow .w{font-family:var(--serif);font-size:17px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .crow .t{color:var(--muted);font-size:14px}
 .crow .due{font-size:12px;color:var(--faint);text-align:right}
 
@@ -343,6 +371,8 @@ function el(tag, attrs, ...kids) {
   for (const c of kids.flat(Infinity)) { if (c == null || c === false) continue; e.append(c.nodeType ? c : document.createTextNode(String(c))); }
   return e;
 }
+// append без пустых значений: родной append превращает null в текст «null»
+const put = (parent, ...kids) => parent.append(...kids.filter(k => k != null && k !== false));
 const svg = (d, vb = '0 0 24 24') => { const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); s.setAttribute('viewBox', vb); s.setAttribute('fill', 'none'); s.setAttribute('stroke', 'currentColor'); s.setAttribute('stroke-width', '2'); s.setAttribute('stroke-linecap', 'round'); s.setAttribute('stroke-linejoin', 'round'); s.setAttribute('aria-hidden', 'true'); s.innerHTML = d; return s; };
 const ICON = {
   check: () => svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>'),
@@ -364,27 +394,70 @@ function norm(s) {
   return String(s).toLowerCase().replace(/[’`´ʼ]/g, "'").replace(/[«»"“”.,!?;:—–…]/g, ' ').replace(/\s*'\s*/g, "'").replace(/\s+/g, ' ').trim();
 }
 const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+// Апостроф за ошибку не считаем: «jai», «j ai» и «j’ai» — одно и то же.
+const noApo = s => norm(s).replace(/(^| )(qu|[cdjlmnst]) (?=[aeiouyhàâéèêëîïôûœ])/g, '$1$2').replace(/'/g, '');
 function check(input, answers) {
   const n = norm(input); if (!n) return null;
-  for (const a of answers) if (norm(a) === n) return 'ok';
-  for (const a of answers) if (strip(norm(a)) === strip(n)) return 'almost';
+  for (const a of answers) if (noApo(a) === noApo(n)) return 'ok';
+  for (const a of answers) if (strip(noApo(a)) === strip(noApo(n))) return 'almost';
   return 'wrong';
 }
 
 /* ---------------- speech ---------------- */
-let frVoice = null;
+// Голос выбирается по качеству: премиальные и улучшенные голоса выше, «игрушечные» голоса iOS и macOS (Eddy, Grandma, Rocko…) — никогда.
+// Выбор можно поменять вручную в панели аккаунта; он хранится в этом браузере.
+const NOVELTY = /eloquence|\b(Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley|Albert|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Zarvox|Trinoids|Whisper|Organ|Superstar|Jester)\b/i;
+const VOICE_KEY = 'cahier-voice';
+let frVoice = null, frVoices = [];
+function voiceScore(v) {
+  const id = (v.name || '') + ' ' + (v.voiceURI || '');
+  if (!/^fr/i.test(v.lang) || NOVELTY.test(id)) return -1;
+  let sc = /^fr[-_]FR/i.test(v.lang) ? 40 : 10;
+  if (/premium/i.test(id)) sc += 30;
+  else if (/enhanced|улучш|neural|natural|online/i.test(id)) sc += 22;
+  if (/Google/i.test(id)) sc += 18;
+  if (/Audrey|Thomas|Aurélie|Aurelie|Marie|Amélie|Amelie|Denise|Henri|Vivienne|Remy|Eloise/i.test(id)) sc += 6;
+  if (v.localService === false) sc += 2;
+  return sc;
+}
 function pickVoice() {
   if (!('speechSynthesis' in window)) return;
-  const vs = speechSynthesis.getVoices();
-  frVoice = vs.find(v => /^fr[-_]FR/i.test(v.lang) && /Amélie|Amelie|Thomas|Audrey|Marie|Google/i.test(v.name)) || vs.find(v => /^fr[-_]FR/i.test(v.lang)) || vs.find(v => /^fr/i.test(v.lang)) || null;
+  frVoices = speechSynthesis.getVoices().filter(v => voiceScore(v) >= 0).sort((a, b) => voiceScore(b) - voiceScore(a));
+  let saved = ''; try { saved = localStorage.getItem(VOICE_KEY) || ''; } catch (e) {}
+  frVoice = (saved && frVoices.find(v => v.voiceURI === saved)) || frVoices[0] || null;
 }
-try { if ('speechSynthesis' in window) { pickVoice(); if (speechSynthesis.addEventListener) speechSynthesis.addEventListener('voiceschanged', pickVoice); } } catch (e) {}
+try { if ('speechSynthesis' in window) { pickVoice(); if (speechSynthesis.addEventListener) speechSynthesis.addEventListener('voiceschanged', pickVoice); else speechSynthesis.onvoiceschanged = pickVoice; } } catch (e) {}
+function setVoice(uri) { try { if (uri) localStorage.setItem(VOICE_KEY, uri); else localStorage.removeItem(VOICE_KEY); } catch (e) {} pickVoice(); }
+// Медленное чтение: фраза идёт кусками по 2–3 слова с паузами. Так она звучит медленнее даже там,
+// где голос не слушается настройки скорости.
+function slowChunks(text) {
+  const out = [];
+  text.split(/(?<=[,.;:!?…])\s+/).forEach(part => {
+    const w = part.split(/\s+/).filter(Boolean);
+    for (let i = 0; i < w.length;) { const left = w.length - i, n = left <= 3 ? left : left === 4 ? 2 : 3; out.push(w.slice(i, i + n).join(' ')); i += n; }
+  });
+  return out.length ? out : [text];
+}
+let speakSeq = 0;
+const UTTER = []; // ссылки на фразы, чтобы браузер не потерял их до конца чтения
 function speak(text, rate = 0.9) {
   if (!('speechSynthesis' in window)) { toast('Озвучка недоступна в этом браузере'); return; }
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text.replace(/[’]/g, "'"));
-  u.lang = 'fr-FR'; if (frVoice) u.voice = frVoice; u.rate = rate;
-  speechSynthesis.speak(u);
+  if (!frVoice) pickVoice();
+  const seq = ++speakSeq, slow = rate < 0.8;
+  const clean = String(text).replace(/[’]/g, "'").replace(/\s+/g, ' ').trim();
+  const queue = slow ? slowChunks(clean) : [clean];
+  const next = () => {
+    if (seq !== speakSeq || !queue.length) return;
+    const u = new SpeechSynthesisUtterance(queue.shift());
+    u.lang = frVoice ? frVoice.lang : 'fr-FR'; if (frVoice) u.voice = frVoice;
+    u.rate = slow ? 0.75 : rate;
+    u.onend = () => { if (queue.length) setTimeout(next, 280); };
+    UTTER.push(u); if (UTTER.length > 30) UTTER.shift();
+    speechSynthesis.speak(u);
+  };
+  // Chrome теряет фразу, если запустить её сразу после cancel(); на iPhone первую фразу нужно начать прямо в нажатии.
+  if (speechSynthesis.speaking || speechSynthesis.pending) { speechSynthesis.cancel(); setTimeout(next, 120); }
+  else next();
 }
 const speakBtn = (text, rate) => el('button', { class: 'speak', type: 'button', 'aria-label': 'Озвучить: ' + text, onclick: e => { e.stopPropagation(); speak(text, rate); } }, ICON.speak());
 
@@ -600,7 +673,7 @@ const SRS = {
 const dueCards = () => Object.values(Store.cards).filter(c => c.due && c.due <= today()).sort((a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : (a.added || '') < (b.added || '') ? -1 : 1);
 
 /* ---------------- plan data ---------------- */
-let DATA = null, DAYS = {}, LEX = {}, DATA_ERR = false, dataLoading = null;
+let DATA = null, DAYS = {}, LEX = {}, TRS = {}, DATA_ERR = false, dataLoading = null;
 function ensureData() {
   if (DATA || dataLoading) return;
   DATA_ERR = false;
@@ -609,8 +682,10 @@ function ensureData() {
 async function loadData() {
   const r = await withTimeout(fetch('data/month1.json', { cache: 'no-cache', credentials: 'same-origin' }), 25000, 'data');
   if (!r.ok) throw { code: 'http_' + r.status, status: r.status };
-  DATA = await r.json(); DATA.days.forEach(d => { DAYS[d.date] = d; }); LEX = DATA.lexicon || {};
+  DATA = await r.json(); DATA.days.forEach(d => { DAYS[d.date] = d; (d.vocab || []).forEach(w => { if (w.tr) TRS[w.fr] = w.tr; }); }); LEX = DATA.lexicon || {}; Object.assign(TRS, DATA.tr || {});
 }
+// Русская транскрипция слова: «бонжур». Ищем по точному написанию, потом без регистра.
+const trOf = fr => fr ? TRS[fr] || TRS[String(fr).toLowerCase()] || '' : '';
 const inMonth = d => d >= DATA.start && d <= DATA.end;
 function currentDay() { const t = today(); if (t < DATA.start) return DATA.start; if (t > DATA.end) return DATA.end; return t; }
 
@@ -680,6 +755,7 @@ function openWord(word, sentence) {
   const paint = (info, state) => {
     body.replaceChildren(
       el('div', { class: 'w' }, word, speakBtn(word)),
+      trOf(word) || (info && trOf(info.lemma)) ? el('div', { class: 'tsc', text: trOf(word) || (info && info.lemma && info.lemma.toLowerCase() === word.toLowerCase() ? trOf(info.lemma) : '') }) : null,
       info && info.lemma && info.lemma.toLowerCase() !== word.toLowerCase() ? el('div', { class: 'lem', text: 'начальная форма: ' + info.lemma + (info.note ? ' · ' + info.note : '') }) : (info && info.note ? el('div', { class: 'lem', text: info.note }) : null),
       el('div', { class: 't' }, state === 'loading' ? el('span', { class: 'muted', text: 'Перевожу…' }) : info && info.ru ? info.ru : el('span', { class: 'muted', text: state || 'Нет в словаре урока.' })),
       el('div', { class: 'stepfoot' },
@@ -828,6 +904,22 @@ function renderAuth() {
 }
 
 /* ---------------- аккаунт ---------------- */
+// Голос озвучки: свой на каждом устройстве. На iPhone хорошие голоса нужно один раз скачать в настройках.
+function voicePicker() {
+  pickVoice();
+  const isApple = /iPhone|iPad|Macintosh/.test(navigator.userAgent);
+  if (!('speechSynthesis' in window)) return el('p', { class: 'small muted', style: 'margin-top:14px', text: 'В этом браузере нет озвучки.' });
+  let saved = ''; try { saved = localStorage.getItem(VOICE_KEY) || ''; } catch (e) {}
+  const sel = el('select', { class: 'inp', id: 'voice', style: 'font-family:var(--sans);font-size:15px' },
+    el('option', { value: '', text: 'Автоматически' + (frVoices[0] ? ': ' + frVoices[0].name : '') }),
+    frVoices.map(v => el('option', { value: v.voiceURI, text: v.name + ' · ' + v.lang, selected: v.voiceURI === saved })));
+  sel.addEventListener('change', () => { setVoice(sel.value); speak('Bonjour, je m’appelle Léa. Comment ça va ?'); });
+  return el('div', { style: 'margin-top:14px' },
+    el('label', { for: 'voice', class: 'small muted', style: 'display:block;margin-bottom:6px', text: 'Голос озвучки на этом устройстве' }),
+    el('div', { class: 'line' }, sel, el('button', { class: 'btn', type: 'button', onclick: () => speak('Bonjour, je m’appelle Léa. Comment ça va ?') }, 'Прослушать')),
+    !frVoices.length ? el('p', { class: 'small muted', style: 'margin:6px 0 0', text: 'Французских голосов не нашлось: озвучка будет голосом по умолчанию.' }) : null,
+    isApple ? el('p', { class: 'small muted', style: 'margin:6px 0 0', text: 'Если голос звучит плохо, скачай хороший: Настройки → Универсальный доступ → Устный контент → Голоса → Французский → Audrey или Thomas (улучшенный). Потом перезагрузи сайт и выбери его здесь.' }) : null);
+}
 function openAccount() {
   if (!Store.user) return;
   closeSheet();
@@ -867,6 +959,7 @@ function openAccount() {
     el('div', { class: 'line' },
       el('button', { class: 'btn', type: 'button', onclick: download }, 'Скачать прогресс'),
       el('button', { class: 'btn', type: 'button', onclick: () => file.click() }, 'Загрузить из файла'), file),
+    voicePicker(),
     el('details', { style: 'margin-top:14px' }, el('summary', { class: 'small', style: 'cursor:pointer', text: 'Сменить пароль' }), pwForm),
     msg,
     el('div', { class: 'line' },
@@ -1007,10 +1100,10 @@ const STEP_RENDER = {
     if (!day.vocab) return el('div', {}, pending(), planBlock(day));
     const inDeck = day.vocab.filter(w => Store.cards[w.id]).length;
     return el('div', {},
-      el('p', { class: 'lead' }, day.vocab.length + ' ' + plural(day.vocab.length, 'слово', 'слова', 'слов') + '. Произнеси каждое вслух вместе с озвучкой. ',
+      el('p', { class: 'lead' }, day.vocab.length + ' ' + plural(day.vocab.length, 'слово', 'слова', 'слов') + '. Произнеси каждое вслух вместе с озвучкой. Рядом — подсказка русскими буквами: ударение во французском всегда на последний слог, «н» после гласной не произносится, а делает гласную носовой. ',
         inDeck ? el('span', { text: 'В карточках: ' + inDeck + '.' }) : 'После «Готово» все слова попадут в карточки, первое повторение — завтра.'),
       el('div', { class: 'vocab' }, day.vocab.map(w => el('div', { class: 'vrow' },
-        el('div', { class: 'w' }, w.fr, w.g ? el('span', { class: 'g', text: w.g === 'm' ? 'm.' : 'f.' }) : null),
+        el('div', { class: 'w' }, w.fr, w.g ? el('span', { class: 'g', text: w.g === 'm' ? 'm.' : 'f.' }) : null, w.tr ? el('span', { class: 'tsc', text: w.tr }) : null),
         speakBtn(w.fr.replace(/ \/ /g, ', ').replace(/\(e\)/, '').replace(/ … /, ' ')),
         el('div', { class: 't', text: w.ru }),
         w.ex ? el('div', { class: 'e' }, frText(w.ex), ' — ', w.exRu) : null))));
@@ -1092,6 +1185,36 @@ function pastedReader(day, kind, intro, hint) {
 }
 
 /* ---------------- review ---------------- */
+// Карточка проверяется вводом: видишь слово — пишешь перевод (или наоборот), оценка ставится сама.
+// В свободной тренировке (UI.review.free) расписание повторений не меняется.
+const ARTICLE = /^(le|la|les|l'|un|une|des|du|de la|de l')\s*/;
+const ruNorm = s => String(s).toLowerCase().replace(/ё/g, 'е').replace(/\([^)]*\)/g, ' ').replace(/[«»"“”.,!?;:—–…]/g, ' ').replace(/\s+/g, ' ').trim();
+function lev(a, b) {
+  if (Math.abs(a.length - b.length) > 1) return 2;
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+function checkRu(input, ru) {
+  const n = ruNorm(input); if (!n) return null;
+  const vs = [ruNorm(ru)].concat(String(ru).split(/[;,/]| или /).map(ruNorm)).filter(Boolean);
+  if (vs.includes(n)) return 'ok';
+  if (vs.some(v => v.length >= 5 && lev(v, n) <= 1)) return 'almost';
+  return 'wrong';
+}
+function frVariants(fr) {
+  return String(fr).split(/\s*\/\s*/).flatMap(v => { const x = v.replace(/\s*\(.*?\)/g, '').replace(/ … /g, ' ').trim(); const y = norm(x).replace(ARTICLE, ''); return y && y !== norm(x) ? [x, y] : [x]; });
+}
+function checkFr(input, fr) {
+  const vs = frVariants(fr), r = check(input, vs);
+  if (r !== 'wrong') return r;
+  const n = strip(noApo(input));
+  return vs.some(v => { const x = strip(noApo(v)); return x.length >= 5 && lev(x, n) <= 1; }) ? 'almost' : 'wrong';
+}
+const sayFr = fr => String(fr).replace(/\s*\/.*$/, '').replace(/\s*\(.*?\)/g, '');
+function dirFor(card) { return !(card.reps > 0) ? 'fr' : hash(card.id + (card.last || '') + (UI.review && UI.review.done)) % 2 ? 'ru' : 'fr'; }
+function startReview(queue, opts) { UI.review = Object.assign({ queue, done: 0, right: 0, total: queue.length, cur: null }, opts); render(); setTimeout(() => { const i = document.getElementById('rv-in'); if (i) i.focus(); }, 80); }
 function renderReview(day, standalone) {
   const due = dueCards();
   const box = el('div');
@@ -1103,7 +1226,8 @@ function renderReview(day, standalone) {
     }
     const n = Math.min(due.length, 50);
     box.append(el('p', { class: 'lead' }, 'К повторению: ', el('b', { class: 'num', text: String(due.length) }), due.length > 50 ? ' (сегодня — первые 50)' : '', '. Пока очередь не пройдена, остальные шаги закрыты.'),
-      el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => { UI.review = { queue: due.slice(0, n).map(c => c.id), shown: false, quiz: {}, done: 0, day: day && day.date }; render(); } }, 'Начать повторение')));
+      el('p', { class: 'small muted', style: 'margin:6px 0 0', text: 'Видишь слово — впиши перевод. Иногда наоборот: по-русски → по-французски. Оценка ставится сама.' }),
+      el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => startReview(due.slice(0, n).map(c => c.id), { day: day && day.date }) }, 'Начать повторение')));
     return box;
   }
   const R = UI.review;
@@ -1114,11 +1238,11 @@ function renderReview(day, standalone) {
     if (!R.queue.length) return finishReview();
     return renderReview(day, standalone);
   }
-  box.append(el('div', { class: 'qcount num', text: 'Осталось ' + R.queue.length + ' · пройдено ' + R.done }));
-  const gradeRow = (sug) => el('div', { class: 'grades' }, ['Снова', 'Трудно', 'Хорошо', 'Легко'].map((lbl, g) => el('button', { class: 'grade' + (sug === g ? ' sug' : ''), onclick: () => doGrade(card, g) }, lbl, el('small', { text: SRS.preview(card, g) }))));
+  box.append(el('div', { class: 'qcount num' }, (R.free ? 'Тренировка · ' : '') + 'осталось ' + R.queue.length + ' · пройдено ' + R.done + (R.done ? ' · верно ' + R.right : ''),
+    el('button', { class: 'btn ghost small', style: 'padding:0 0 0 10px', onclick: () => { UI.review = null; render(); } }, 'Прервать')));
   if (card.type === 'topic') {
     const quiz = card.quiz || [];
-    const answers = R.quiz;
+    const answers = (R.cur && R.cur.id === id ? R.cur : (R.cur = { id, quiz: {} })).quiz;
     const c = el('div', { class: 'card topic' }, el('div', { class: 'faint small', text: 'Тема' }), el('div', { class: 'front', text: card.title }));
     quiz.forEach((q, qi) => {
       const order = shuffled(q.o.map((o, i) => i), card.id + qi + (card.reps || 0));
@@ -1128,42 +1252,68 @@ function renderReview(day, standalone) {
         onclick: () => { answers[qi] = i; render(); } }, q.o[i])))));
     });
     box.append(c);
-    const answered = quiz.filter((q, qi) => answers[qi] != null).length;
-    if (answered === quiz.length) {
+    if (quiz.filter((q, qi) => answers[qi] != null).length === quiz.length) {
       const right = quiz.filter((q, qi) => answers[qi] === q.a).length;
-      const sug = right === quiz.length ? 2 : right >= quiz.length - 1 ? 1 : 0;
-      box.append(el('p', { class: 'lead num', text: 'Верно ' + right + ' из ' + quiz.length + '. Оцени, насколько легко было:' }), gradeRow(sug));
+      const g = right === quiz.length ? 2 : right >= quiz.length - 1 ? 1 : 0;
+      box.append(el('p', { class: 'lead num', text: 'Верно ' + right + ' из ' + quiz.length + '.' }),
+        el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, g) }, 'Дальше')));
     }
-  } else {
-    const c = el('div', { class: 'card' }, el('div', { class: 'front' }, card.fr, card.g ? el('span', { class: 'g', text: card.g === 'm' ? 'm.' : 'f.' }) : null, speakBtn(card.fr.replace(/\s*\/.*$/, ''))));
-    if (R.shown) c.append(el('div', { class: 'back' }, el('div', { class: 't', text: card.ru }), card.ex ? el('div', { class: 'e' }, frText(card.ex), card.exRu ? ' — ' + card.exRu : '') : null));
-    box.append(c);
-    if (!R.shown) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', id: 'reveal', onclick: () => { R.shown = true; render(); } }, 'Показать перевод')));
-    else box.append(gradeRow(null));
+    return box;
   }
+  const cur = R.cur && R.cur.id === id ? R.cur : (R.cur = { id, dir: dirFor(card), val: '', r: null });
+  const fr = card.fr, toRu = cur.dir === 'fr';
+  const frFront = () => el('div', { class: 'front' }, fr, card.g ? el('span', { class: 'g', text: card.g === 'm' ? 'm.' : 'f.' }) : null, speakBtn(sayFr(fr)));
+  const c = el('div', { class: 'card' },
+    el('div', { class: 'faint small', text: toRu ? 'Переведи на русский' : 'Переведи на французский' }),
+    toRu ? frFront() : el('div', { class: 'front ru', text: card.ru }),
+    toRu && trOf(fr) ? el('div', { class: 'tsc', text: trOf(fr) }) : null);
+  box.append(c);
+  if (!cur.r) {
+    const inp = el('input', { class: 'inp rv' + (toRu ? '' : ' frin'), id: 'rv-in', value: cur.val, placeholder: toRu ? 'перевод' : 'по-французски', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', autocorrect: 'off', lang: toRu ? 'ru' : 'fr', 'aria-label': toRu ? 'Перевод на русский' : 'Перевод на французский' });
+    inp.addEventListener('input', () => { cur.val = inp.value; });
+    const doCheck = () => { const r = toRu ? checkRu(inp.value, card.ru) : checkFr(inp.value, fr); if (!r) { inp.focus(); return; } cur.val = inp.value; cur.r = r; inp.blur(); if (!toRu || r !== 'wrong') speak(sayFr(fr)); render(); };
+    const giveUp = () => { cur.val = ''; cur.r = 'wrong'; speak(sayFr(fr)); render(); };
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); doCheck(); } }); // иначе тот же Enter сразу листает дальше
+    box.append(inp, el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: doCheck }, 'Проверить'), el('button', { class: 'btn ghost', onclick: giveUp }, 'Не помню')));
+    return box;
+  }
+  const answer = toRu ? card.ru : fr;
+  const res = el('div', { class: 'ans', role: 'status' });
+  if (cur.val) res.append(el('div', { class: 'mine ' + cur.r }, el('span', { class: 'ic', text: RES_ICON[cur.r] }), el('span', { class: toRu ? '' : 'fr', text: cur.val })));
+  if (cur.r !== 'ok' || !cur.val) res.append(el('div', { class: 'right' }, el('span', { class: 'ic', text: '→' }), el('span', { class: toRu ? '' : 'fr', text: answer })));
+  if (cur.r === 'almost') res.append(el('div', { class: 'note', text: toRu ? 'Почти: похоже на опечатку.' : 'Почти: опечатка или надстрочные знаки.' }));
+  c.append(el('div', { class: 'back' },
+    toRu ? null : frFront(),
+    toRu ? null : (trOf(fr) ? el('div', { class: 'tsc', text: trOf(fr) }) : null),
+    toRu ? null : el('div', { class: 't', text: card.ru }),
+    card.ex ? el('div', { class: 'e' }, frText(card.ex), card.exRu ? ' — ' + card.exRu : '') : null));
+  const g = cur.r === 'ok' ? 2 : cur.r === 'almost' ? 1 : 0;
+  box.append(res, el('div', { class: 'stepfoot' },
+    el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, g) }, 'Дальше'),
+    cur.r === 'ok' ? el('button', { class: 'btn ghost', onclick: () => doGrade(card, 3) }, 'Слишком легко') : el('button', { class: 'btn ghost', onclick: () => doGrade(card, 2) }, 'Засчитать как верно')));
+  if (!R.free) box.append(el('p', { class: 'small faint', style: 'margin:6px 0 0', text: 'Следующий показ: ' + SRS.preview(card, g) + '.' }));
   return box;
 }
 function doGrade(card, g) {
-  const R = UI.review; const n = SRS.grade(card, g);
-  Store.putCard(n);
-  R.queue.shift(); R.done++;
-  if (g === 0) R.queue.push(card.id);
-  R.shown = false; R.quiz = {};
+  const R = UI.review;
+  if (!R.free) Store.putCard(SRS.grade(card, g));
+  R.queue.shift(); R.done++; if (g >= 2) R.right++;
+  if (g === 0 && !(R.free && R.retried && R.retried[card.id])) { R.queue.push(card.id); if (R.free) (R.retried = R.retried || {})[card.id] = 1; }
+  R.cur = null;
   if (!R.queue.length) { finishReview(); return; }
   render();
+  setTimeout(() => { const i = document.getElementById('rv-in'); if (i) i.focus(); }, 60);
 }
 function finishReview() {
   const R = UI.review; UI.review = null;
-  if (R && R.day) setStep(R.day, 'review', true);
-  toast('Повторение завершено');
+  if (R && R.day && !R.free) setStep(R.day, 'review', true);
+  toast(R && R.free ? 'Тренировка окончена: верно ' + R.right + ' из ' + R.done : 'Повторение завершено');
   render();
   return el('div');
 }
 document.addEventListener('keydown', e => {
-  if (!UI.review || /INPUT|TEXTAREA/.test(document.activeElement && document.activeElement.tagName)) return;
-  if (e.key === ' ' && document.getElementById('reveal')) { e.preventDefault(); document.getElementById('reveal').click(); }
-  const card = Store.cards[UI.review.queue[0]];
-  if (card && card.type === 'word' && UI.review.shown && ['1', '2', '3', '4'].includes(e.key)) doGrade(card, Number(e.key) - 1);
+  if (!UI.review || e.key !== 'Enter' || /INPUT|TEXTAREA/.test(document.activeElement && document.activeElement.tagName)) return;
+  const b = document.getElementById('rv-next'); if (b) { e.preventDefault(); b.click(); }
 });
 
 /* ---------------- exercises ---------------- */
@@ -1186,15 +1336,21 @@ function pretty(s) {
   return s;
 }
 function diffAnswer(answer, mine) {
-  const have = new Set(strip(norm(mine || '')).split(' '));
+  const key = w => strip(noApo(w));
+  const have = new Set(noApo(mine || '').split(' ').map(w => strip(w)));
   const words = pretty(answer).split(' ');
-  return words.flatMap((w, i) => [i ? ' ' : '', have.has(strip(norm(w))) ? w : el('mark', { text: w })]);
+  return words.flatMap((w, i) => [i ? ' ' : '', have.has(key(w)) ? w : el('mark', { text: w })]);
 }
-function fbNode(r, answer, mine) {
-  if (r === 'ok') return el('div', { class: 'fb ok', role: 'status' }, 'Верно');
-  if (r === 'almost') return el('div', { class: 'fb almost', role: 'status' }, 'Почти — проверь надстрочные знаки: ', el('b', {}, diffAnswer(answer, mine)));
-  return el('div', { class: 'fb wrong', role: 'status' }, el('div', {}, 'Неверно. Правильно: ', el('b', {}, mine != null ? diffAnswer(answer, mine) : pretty(answer))), mine ? el('div', { class: 'small', style: 'opacity:.8;margin-top:2px' }, 'Твой ответ: ', el('span', { class: 'fr', text: mine })) : null);
+const RES_ICON = { ok: '✓', almost: '≈', wrong: '✗' };
+// Ответ и правильный вариант — сразу под заданием, рядом друг с другом; ниже перевод фразы.
+function answerNode(r, answer, mine) {
+  const box = el('div', { class: 'ans', role: 'status' });
+  if (mine) box.append(el('div', { class: 'mine ' + r }, el('span', { class: 'ic', text: RES_ICON[r] }), el('span', { class: 'fr', text: mine })));
+  if (r !== 'ok' || !mine) box.append(el('div', { class: 'right' }, el('span', { class: 'ic', text: mine ? '→' : '✓' }), el('span', { class: 'fr' }, mine ? diffAnswer(answer, mine) : pretty(answer))));
+  if (r === 'almost') box.append(el('div', { class: 'note', text: 'Почти: проверь надстрочные знаки.' }));
+  return box;
 }
+const trNode = ex => ex.tr ? el('div', { class: 'tr' }, el('span', { class: 'lbl', text: 'Перевод' }), ex.tr) : null;
 function disputeBtn(day, ex, st, task) {
   if (!aiReady() || !st.val || st.r === 'ok') return null;
   const out = el('span', { class: 'small muted' });
@@ -1224,7 +1380,7 @@ function renderEx(day, ex, num) {
     box.append(el('div', { class: 'opts' }, order.map(i => { const o = ex.o[i]; return el('button', {
       class: 'opt' + (/[a-zà-ÿ]/i.test(o) && !/[а-я]/i.test(o) ? ' fr' : '') + (result ? (i === ex.a ? ' right' : i === pick ? ' wrong' : '') : ''), disabled: !!result,
       onclick: () => { st.pick = i; st.r = i === ex.a ? 'ok' : 'wrong'; if (ex.type === 'listen') speak(ex.say); saveEx(day, ex, st.r); } }, o); })));
-    if (result) box.append(el('div', { class: 'line' }, fbNode(result, ex.o[ex.a]), retry));
+    if (result) put(box, trNode(ex), el('div', { class: 'line' }, el('div', { class: 'fb ' + (result === 'ok' ? 'ok' : 'wrong'), role: 'status', text: result === 'ok' ? 'Верно' : 'Неверно — правильный вариант отмечен зелёным' }), retry));
     return box;
   }
 
@@ -1234,20 +1390,27 @@ function renderEx(day, ex, num) {
     const doCheck = () => { const r = check(inp.value, ex.a); if (!r) { inp.focus(); return; } st.val = inp.value; st.r = r; saveEx(day, ex, r); inp.blur(); };
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') doCheck(); });
     if (result) inp.disabled = true;
+    const answer = ex.type === 'dictation' ? ex.say : ex.a[0];
+    const mine = result ? st.val : null;
     if (ex.type === 'gap') {
       const [a, b] = ex.q.split('___');
-      box.append(el('div', { class: 'gapline' }, frText(a, 'fr'), inp, frText(b || '', 'fr')));
+      // После проверки слово встаёт прямо в предложение: твоё зачёркнуто, если неверно, правильное рядом.
+      const slot = !result ? inp : el('span', { class: 'gapans' },
+        mine ? el('span', { class: 'mine ' + result, text: mine }) : null,
+        result !== 'ok' || !mine ? el('span', { class: 'right', text: ex.a[0].replace(/'/g, '’') }) : null);
+      box.append(el('div', { class: 'gapline' }, frText(a, 'fr'), slot, frText(b || '', 'fr')));
       if (ex.ru) box.append(el('div', { class: 'hint', text: ex.ru }));
+      if (result === 'almost') box.append(el('div', { class: 'ans' }, el('div', { class: 'note', text: 'Почти: проверь надстрочные знаки.' })));
     } else if (ex.type === 'dictation') {
       box.append(el('div', { class: 'play' }, el('button', { class: 'btn', onclick: () => speak(ex.say) }, ICON.speak(), 'Прослушать'), el('button', { class: 'btn ghost', onclick: () => speak(ex.say, 0.6) }, 'медленнее')),
-        el('div', { class: 'hint', text: 'Напиши, что услышала.' }), inp);
+        el('div', { class: 'hint', text: 'Напиши, что услышала.' }), result ? answerNode(result, answer, mine) : inp);
     } else if (ex.type === 'transform') {
-      box.append(el('div', { class: 'hint', style: 'margin:0 0 6px', text: ex.q }), el('div', { class: 'exq fr' }, frText(ex.src)), inp);
+      box.append(el('div', { class: 'hint', style: 'margin:0 0 6px', text: ex.q }), el('div', { class: 'exq fr' }, frText(ex.src)), result ? answerNode(result, answer, mine) : inp);
     } else {
-      box.append(el('div', { class: 'exq', text: ex.q }), el('div', { class: 'hint', text: 'Напиши по-французски.' }), inp);
+      box.append(el('div', { class: 'exq', text: ex.q }), el('div', { class: 'hint', text: 'Напиши по-французски.' }), result ? answerNode(result, answer, mine) : inp);
     }
     if (!result) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn', onclick: doCheck }, 'Проверить')));
-    else box.append(el('div', { class: 'line' }, fbNode(result, ex.type === 'dictation' ? ex.say : ex.a[0], st.val), retry, ex.type !== 'dictation' ? disputeBtn(day, ex, st, ex.type === 'transform' ? ex.q + ': ' + ex.src : ex.type === 'gap' ? ex.q + (ex.ru ? ' (' + ex.ru + ')' : '') : 'Переведи на французский: ' + ex.q) : null));
+    else put(box, ex.type !== 'translate' ? trNode(ex) : null, el('div', { class: 'line' }, retry, ex.type !== 'dictation' ? disputeBtn(day, ex, st, ex.type === 'transform' ? ex.q + ': ' + ex.src : ex.type === 'gap' ? ex.q + (ex.ru ? ' (' + ex.ru + ')' : '') : 'Переведи на французский: ' + ex.q) : null));
     return box;
   }
 
@@ -1259,11 +1422,14 @@ function renderEx(day, ex, num) {
       const inp = el('input', { class: 'inp', id: 'in-' + key + '-' + i, autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': p + ' …', value: st.vals[i] || '' });
       inp.addEventListener('input', () => { st.vals[i] = inp.value; });
       if (result) inp.disabled = true;
-      const rr = st.rows && st.rows[i];
+      const rr = result && st.rows ? st.rows[i] : null;
       if (rr && rr !== 'ok') inp.style.borderColor = rr === 'almost' ? 'var(--warn)' : 'var(--bad)';
+      if (rr === 'ok') inp.style.borderColor = 'var(--ok)';
       grid.append(el('div', { class: 'p', text: p }), inp);
+      if (result && st.rows) grid.append(el('div', { class: 'fix', text: rr && rr !== 'ok' ? '→ ' + a : '' }));
       return inp;
     });
+    if (result && st.rows) grid.classList.add('checked');
     box.append(grid);
     const doCheck = () => {
       const rows = ex.rows.map(([p, a], i) => check(inputs[i].value, [a]) || 'wrong');
@@ -1271,7 +1437,7 @@ function renderEx(day, ex, num) {
       saveEx(day, ex, st.r);
     };
     if (!result) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn', onclick: doCheck }, 'Проверить')));
-    else box.append(el('div', { class: 'line' }, fbNode(result, ex.rows.map(([p, a]) => p + (p.endsWith('’') ? '' : ' ') + a).join(' · ')), retry));
+    else put(box, st.rows ? null : answerNode(result, ex.rows.map(([p, a]) => p + (p.endsWith('’') ? '' : ' ') + a).join(' · '), null), el('div', { class: 'line' }, retry));
     return box;
   }
 
@@ -1281,7 +1447,7 @@ function renderEx(day, ex, num) {
     box.append(el('div', { class: 'exq', text: ex.q }));
     const line = el('div', { class: 'answerline', 'aria-label': 'Твоя фраза' }, st.used.map((i, k) => el('button', { class: 'opt fr chip', 'data-k': String(k), disabled: !!result, onclick: () => { if (UI.dragging) return; st.used.splice(k, 1); render(); } }, ex.words[i])));
     const pool = el('div', { class: 'opts' }, words.map(i => el('button', { class: 'opt fr' + (st.used.includes(i) ? ' gone' : ''), disabled: !!result || st.used.includes(i), onclick: () => { st.used.push(i); render(); } }, ex.words[i])));
-    box.append(line, result ? null : pool);
+    put(box, result ? null : line, result ? null : pool);
     if (!result && st.used.length > 1) box.append(el('div', { class: 'hint', style: 'margin-top:8px', text: 'Перетаскивай слова в строке, чтобы поменять порядок. Нажми на слово, чтобы убрать его.' }));
     if (!result && window.Sortable && st.used.length) {
       window.Sortable.create(line, { animation: 150, delay: 120, delayOnTouchOnly: true, ghostClass: 'ghost',
@@ -1290,7 +1456,7 @@ function renderEx(day, ex, num) {
     }
     const doCheck = () => { const s = st.used.map(i => ex.words[i]).join(' '); st.r = check(s, ex.a) || 'wrong'; saveEx(day, ex, st.r); };
     if (!result) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn', disabled: st.used.length !== ex.words.length, onclick: doCheck }, 'Проверить'), st.used.length ? el('button', { class: 'btn ghost', onclick: () => { st.used = []; render(); } }, 'Сбросить') : null));
-    else box.append(el('div', { class: 'line' }, fbNode(result, ex.a[0].charAt(0).toUpperCase() + ex.a[0].slice(1)), retry));
+    else put(box, answerNode(result, ex.a[0], st.used.length ? st.used.map(i => ex.words[i]).join(' ') : null), trNode(ex), el('div', { class: 'line' }, retry));
     return box;
   }
 
@@ -1322,12 +1488,16 @@ function conjSprint(day) {
   if (rows.length < 6) return null;
   return { id: 'S-1', type: 'conj', q: 'Спряжение на скорость: 10 форм из всех пройденных глаголов', verb: '', rows: shuffled(rows, 'sprint' + day.date).slice(0, 10) };
 }
-function renderDrill(day) {
+function drillItems(day) {
   const items = [];
   const sp = conjSprint(day); if (sp) items.push(sp);
   (day.drill || []).forEach(x => items.push(x));
   const older = lessonDays().filter(d => d.date < day.date && d.drill).flatMap(d => d.drill.map(x => Object.assign({}, x, { id: 'DR-' + d.date.slice(5) + '-' + x.id, from: d.date })));
   shuffled(older, 'drold' + day.date).slice(0, 4).forEach(x => items.push(x));
+  return items;
+}
+function renderDrill(day) {
+  const items = drillItems(day);
   if (!items.length) return pending();
   const p = Store.peekDay(day.date).ex || {};
   const done = items.filter(x => p[x.id]).length, right = items.filter(x => p[x.id] === 'ok').length;
@@ -1508,32 +1678,62 @@ function renderHomework(day) {
 }
 
 /* ---------------- plan view ---------------- */
+// Из чего сложился день: каждому шагу — равная доля полоски. Шаги с ответами делятся на верно / почти / неверно,
+// шаги без проверки (теория, словарь, повторение, домашка…) закрашиваются основным цветом, когда пройдены.
+function stepIds(day, step) {
+  if (step.kind === 'exercises') return (day.exercises || []).map(e => e.id);
+  if (step.kind === 'drill') return drillItems(day).map(x => x.id);
+  if (step.kind === 'listening') return (step.items || []).flatMap(it => (it.quiz || []).map(q => q.id));
+  if (step.kind === 'reading') return (step.quiz || []).map(q => q.id);
+  return [];
+}
+function dayBreakdown(day) {
+  const steps = (day.steps || []).filter(s => !s.optional);
+  const p = Store.peekDay(day.date), ex = p.ex || {};
+  const out = { ok: 0, almost: 0, wrong: 0, plain: 0, n: { ok: 0, almost: 0, wrong: 0 } };
+  steps.forEach(s => {
+    const ids = stepIds(day, s), done = s.kind === 'review' ? !!p.steps.review : stepDone(day, s);
+    if (!ids.length) { if (done) out.plain += 1; return; }
+    const res = ids.map(id => ex[id]).filter(r => r === 'ok' || r === 'almost' || r === 'wrong');
+    res.forEach(r => { out.n[r]++; out[r] += 1 / ids.length; });
+    if (done) out.plain += (ids.length - res.length) / ids.length;
+  });
+  if (steps.length) ['ok', 'almost', 'wrong', 'plain'].forEach(k => { out[k] /= steps.length; });
+  return out;
+}
+const SEG = [['ok', 'верно'], ['almost', 'почти'], ['wrong', 'неверно'], ['plain', 'пройдено, без проверки']];
+const segBar = b => el('span', { class: 'mini' }, SEG.map(([k]) => b[k] > 0 ? el('i', { class: k, style: 'width:' + (b[k] * 100).toFixed(1) + '%' }) : null));
 function renderPlan() {
   const t = today();
   const root = el('div');
   const doneDays = DATA.days.filter(d => d.type !== 'выходной' && dayStats(d).done === dayStats(d).total).length;
   const studyDays = DATA.days.filter(d => d.type !== 'выходной').length;
   const minutesDone = DATA.days.reduce((a, d) => a + (d.steps || []).filter(s => s.kind !== 'review' && !s.optional && stepDone(d, s)).reduce((x, s) => x + s.min, 0), 0);
+  const all = { ok: 0, almost: 0, wrong: 0 };
+  DATA.days.forEach(d => { const n = dayBreakdown(d).n; Object.keys(all).forEach(k => { all[k] += n[k]; }); });
+  const answered = all.ok + all.almost + all.wrong;
   root.append(el('h2', { class: 'sec', text: 'Октябрь 2026' }),
-    el('p', { class: 'lead num', text: 'Выполнено дней: ' + doneDays + ' из ' + studyDays + ' · ~' + Math.round(minutesDone / 6) / 10 + ' ч из 80,8' }));
+    el('p', { class: 'lead num', text: 'Выполнено дней: ' + doneDays + ' из ' + studyDays + ' · ~' + Math.round(minutesDone / 6) / 10 + ' ч из 80,8' + (answered ? ' · верных ответов ' + Math.round(all.ok / answered * 100) + '%' : '') }));
   const cal = el('div', { class: 'cal' }, ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'].map(w => el('div', { class: 'wd', text: w })));
   const first = parse(DATA.start); const offset = (first.getDay() + 6) % 7;
   for (let i = 0; i < offset; i++) cal.append(el('div'));
   DATA.days.forEach(d => {
-    const s = dayStats(d); const rest = d.type === 'выходной';
+    const s = dayStats(d); const rest = d.type === 'выходной'; const b = dayBreakdown(d);
     const missed = !rest && d.date < t && s.done < s.total;
-    cal.append(el('button', { class: 'cell' + (rest ? ' rest' : '') + (d.date === t ? ' today' : '') + (missed ? ' missed' : ''), 'aria-label': ruDate(d.date) + (rest ? ', выходной' : ', выполнено ' + Math.round(s.frac * 100) + '%'), onclick: () => go('d-' + d.date) },
+    cal.append(el('button', { class: 'cell' + (rest ? ' rest' : '') + (d.date === t ? ' today' : '') + (missed ? ' missed' : ''), 'aria-label': ruDate(d.date) + (rest ? ', выходной' : ', выполнено ' + Math.round(s.frac * 100) + '%, верно ' + b.n.ok + ', почти ' + b.n.almost + ', неверно ' + b.n.wrong), onclick: () => go('d-' + d.date) },
       el('span', { text: String(parse(d.date).getDate()) }),
-      rest ? null : el('span', { class: 'mini' }, el('i', { style: 'width:' + Math.round(s.frac * 100) + '%' }))));
+      rest ? null : segBar(b)));
   });
-  root.append(cal, el('div', { class: 'legend' }, el('span', { text: 'полоска — доля выполненных шагов' }), el('span', { text: 'серый — выходной' }), el('span', { text: 'рамка — сегодня' })));
+  root.append(cal, el('div', { class: 'legend' },
+    SEG.map(([k, label]) => el('span', { class: 'sw' }, el('i', { class: 'seg-' + k }), label)),
+    el('span', { text: 'рамка — сегодня' })));
   const list = el('div', { class: 'dlist' });
   DATA.days.forEach(d => {
-    const s = dayStats(d); const x = parse(d.date);
+    const s = dayStats(d); const x = parse(d.date); const n = dayBreakdown(d).n;
     const name = d.type === 'выходной' ? 'Отдых' : d.topic || (d.plan.b1 || '').replace(/^Грамматика: /, '').replace(/ — .*$/, '');
     list.append(el('button', { class: 'ditem', onclick: () => go('d-' + d.date) },
       el('span', { class: 'd num', text: pad(x.getDate()) + ' ' + RU_WD_S[x.getDay()] }),
-      el('span', { class: 'n', text: name }),
+      el('span', { class: 'n' }, name, n.ok + n.almost + n.wrong ? el('span', { class: 'res num' }, [['ok', n.ok], ['almost', n.almost], ['wrong', n.wrong]].filter(([, v]) => v).map(([k, v]) => el('span', { class: 'sw' }, el('i', { class: 'seg-' + k }), String(v)))) : null),
       el('span', { class: 's num', text: d.type === 'выходной' ? '' : s.done === s.total ? 'готово' : s.done + '/' + s.total })));
   });
   root.append(list);
@@ -1544,6 +1744,7 @@ function renderPlan() {
 function renderCards() {
   const root = el('div');
   const all = Object.values(Store.cards);
+  const words = all.filter(c => c.type === 'word');
   const due = dueCards();
   const learned = all.filter(c => (c.ivl || 0) >= 21).length;
   root.append(el('h2', { class: 'sec', text: 'Карточки' }),
@@ -1552,6 +1753,19 @@ function renderCards() {
       el('div', { class: 'stat' }, el('b', { text: String(due.length) }), el('span', { text: 'к повторению' })),
       el('div', { class: 'stat' }, el('b', { text: String(learned) }), el('span', { text: 'выучено (≥ 3 нед)' }))));
   if (UI.review || due.length) root.append(el('div', { class: 'panel' }, renderReview(null, true)));
+  if (!UI.review && words.length) {
+    const lastDay = words.reduce((m, c) => c.day && c.day > m ? c.day : m, '');
+    const hard = words.filter(c => c.lapses > 0);
+    const fromLast = words.filter(c => c.day === lastDay);
+    const go_ = list => startReview(shuffled(list, 'free' + Date.now()).slice(0, 20).map(c => c.id), { free: true });
+    root.append(el('div', { class: 'panel' },
+      el('div', { style: 'font-weight:500', text: 'Тренировка' }),
+      el('p', { class: 'small muted', style: 'margin:4px 0 10px', text: 'Вписываешь перевод, как в повторении, но расписание карточек не меняется: можно гонять сколько хочется.' }),
+      el('div', { class: 'line' },
+        el('button', { class: 'btn', onclick: () => go_(words) }, '20 случайных'),
+        hard.length ? el('button', { class: 'btn', onclick: () => go_(hard) }, 'Где ошибалась · ' + hard.length) : null,
+        fromLast.length ? el('button', { class: 'btn', onclick: () => go_(fromLast) }, 'Слова ' + parse(lastDay).getDate() + ' ' + RU_MON[parse(lastDay).getMonth()] + ' · ' + fromLast.length) : null)));
+  }
   const fr = el('input', { class: 'inp', id: 'add-fr', placeholder: 'слово по-французски', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
   const ru = el('input', { class: 'inp', id: 'add-ru', placeholder: aiReady() ? 'перевод (необязательно)' : 'перевод', autocomplete: 'off' });
   const msg = el('p', { class: 'small muted', text: UI.addMsg || '' });
@@ -1564,7 +1778,9 @@ function renderCards() {
     const s = norm(q.value); UI.cardQuery = q.value;
     const rows = all.filter(c => !s || norm(c.fr || c.title || '').includes(s) || norm(c.ru || '').includes(s)).sort((a, b) => (a.due || '') < (b.due || '') ? -1 : 1);
     listBox.replaceChildren(...rows.slice(0, 300).map(c => el('div', { class: 'crow' },
-      el('div', {}, el('div', { class: 'w' }, c.type === 'topic' ? 'Тема: ' + c.title : c.fr), c.ru ? el('div', { class: 't', text: c.ru }) : null),
+      el('div', {},
+        el('div', { class: 'w' }, c.type === 'topic' ? 'Тема: ' + c.title : c.fr, c.type === 'word' ? speakBtn(sayFr(c.fr)) : null, c.type === 'word' && trOf(c.fr) ? el('span', { class: 'tsc', text: trOf(c.fr) }) : null),
+        c.ru ? el('div', { class: 't', text: c.ru }) : null),
       el('div', { class: 'due num' }, c.due <= today() ? 'сегодня' : 'через ' + fmtIvl(diffDays(today(), c.due)),
         el('br'), el('button', { class: 'btn ghost small', style: 'padding:2px 0', onclick: (e) => { const b = e.currentTarget; if (b.dataset.sure) { Store.delCard(c.id); } else { b.dataset.sure = '1'; b.textContent = 'Точно удалить?'; } } }, 'Удалить')))));
     if (!rows.length) listBox.append(el('p', { class: 'lead', text: all.length ? 'Ничего не найдено.' : 'Колода пустая. Слова появятся после шага «Словарь дня».' }));

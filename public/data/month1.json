@@ -220,7 +220,8 @@
      "g": null,
      "ex": "Bonjour, madame !",
      "exRu": "Здравствуйте, мадам!",
-     "forms": []
+     "forms": [],
+     "tr": "бонжур"
     },
     {
      "id": "w-bonsoir",
@@ -229,7 +230,8 @@
      "g": null,
      "ex": "Bonsoir, monsieur.",
      "exRu": "Добрый вечер, месье.",
-     "forms": []
+     "forms": [],
+     "tr": "бонсуар"
     },
     {
      "id": "w-salut",
@@ -238,7 +240,8 @@
      "g": null,
      "ex": "Salut, ça va ?",
      "exRu": "Привет, как дела?",
-     "forms": []
+     "forms": [],
+     "tr": "салю"
     },
     {
      "id": "w-au-revoir",
@@ -247,7 +250,8 @@
      "g": null,
      "ex": "Au revoir et merci !",
      "exRu": "До свидания и спасибо!",
-     "forms": []
+     "forms": [],
+     "tr": "о рёвуар"
     },
     {
      "id": "w-merci",
@@ -258,7 +262,8 @@
      "exRu": "Большое спасибо!",
      "forms": [
       "beaucoup"
-     ]
+     ],
+     "tr": "мерси"
     },
     {
      "id": "w-svp",
@@ -269,7 +274,8 @@
      "exRu": "Кофе, пожалуйста.",
      "forms": [
       "plaît"
-     ]
+     ],
+     "tr": "силь ву пле"
     },
     {
      "id": "w-oui",
@@ -278,7 +284,8 @@
      "g": null,
      "ex": "Oui, bien sûr.",
      "exRu": "Да, конечно.",
-     "forms": []
+     "forms": [],
+     "tr": "уи"
     },
     {
      "id": "w-non",
@@ -287,7 +294,8 @@
      "g": null,
      "ex": "Non, merci.",
      "exRu": "Нет, спасибо.",
-     "forms": []
+     "forms": [],
+     "tr": "нон"
     },
     {
      "id": "w-pardon",
@@ -296,7 +304,8 @@
      "g": null,
      "ex": "Pardon, madame.",
      "exRu": "Простите, мадам.",
-     "forms": []
+     "forms": [],
+     "tr": "пардон"
     },
     {
      "id": "w-excusez-moi",
@@ -307,7 +316,8 @@
      "exRu": "Извините, где вокзал?",
      "forms": [
       "excusez"
-     ]
+     ],
+     "tr": "экскюзе-муа"
     },
     {
      "id": "w-je-m-appelle",
@@ -318,7 +328,8 @@
      "exRu": "Меня зовут Мари.",
      "forms": [
       "appelle"
-     ]
+     ],
+     "tr": "жё мапель"
     },
     {
      "id": "w-enchante",
@@ -330,7 +341,8 @@
      "forms": [
       "enchanté",
       "enchantée"
-     ]
+     ],
+     "tr": "аншанте"
     },
     {
      "id": "w-comment-ca-va",
@@ -341,7 +353,8 @@
      "exRu": "Привет, Леа, как дела?",
      "forms": [
       "comment"
-     ]
+     ],
+     "tr": "коман са ва"
     },
     {
      "id": "w-ca-va-bien",
@@ -353,7 +366,8 @@
      "forms": [
       "ça",
       "va"
-     ]
+     ],
+     "tr": "са ва бьен"
     },
     {
      "id": "w-de-rien",
@@ -364,7 +378,8 @@
      "exRu": "— Спасибо! — Не за что.",
      "forms": [
       "rien"
-     ]
+     ],
+     "tr": "дё рьен"
     },
     {
      "id": "w-a-bientot",
@@ -375,7 +390,8 @@
      "exRu": "До скорого, Мари!",
      "forms": [
       "bientôt"
-     ]
+     ],
+     "tr": "а бьенто"
     }
    ],
    "topics": [
@@ -432,7 +448,8 @@
       "mardi",
       "marcher"
      ],
-     "a": 0
+     "a": 0,
+     "tr": "спасибо"
     },
     {
      "id": "e2",
@@ -444,7 +461,8 @@
       "salut",
       "salon"
      ],
-     "a": 1
+     "a": 1,
+     "tr": "привет; пока"
     },
     {
      "id": "e3",
@@ -456,7 +474,8 @@
       "bonsoir",
       "bonbon"
      ],
-     "a": 1
+     "a": 1,
+     "tr": "добрый вечер"
     },
     {
      "id": "e4",
@@ -468,7 +487,8 @@
       "à bientôt",
       "bien sûr"
      ],
-     "a": 1
+     "a": 1,
+     "tr": "до скорого"
     },
     {
      "id": "e5",
@@ -621,7 +641,8 @@
      "say": "Bonjour !",
      "a": [
       "bonjour"
-     ]
+     ],
+     "tr": "Здравствуйте!"
     },
     {
      "id": "e17",
@@ -629,7 +650,8 @@
      "say": "Merci beaucoup.",
      "a": [
       "merci beaucoup"
-     ]
+     ],
+     "tr": "Большое спасибо."
     },
     {
      "id": "e18",
@@ -637,7 +659,8 @@
      "say": "S’il vous plaît.",
      "a": [
       "s'il vous plaît"
-     ]
+     ],
+     "tr": "Пожалуйста."
     },
     {
      "id": "e19",
@@ -682,7 +705,8 @@
      "a": [
       "j'ai"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "у меня есть"
     },
     {
      "type": "transform",
@@ -691,7 +715,8 @@
      "a": [
       "l'ami"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "друг"
     },
     {
      "type": "transform",
@@ -700,7 +725,8 @@
      "a": [
       "l'école"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "школа"
     },
     {
      "type": "transform",
@@ -709,7 +735,8 @@
      "a": [
       "je m'appelle anna"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "меня зовут Анна"
     },
     {
      "type": "transform",
@@ -718,7 +745,8 @@
      "a": [
       "bonjour"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "здравствуйте"
     },
     {
      "type": "transform",
@@ -727,7 +755,8 @@
      "a": [
       "de rien"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "не за что"
     },
     {
      "type": "transform",
@@ -736,7 +765,8 @@
      "a": [
       "l'ami de marie"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "друг Мари"
     },
     {
      "type": "transform",
@@ -745,7 +775,8 @@
      "a": [
       "l'hôtel est petit"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "гостиница маленькая"
     }
    ]
   },
@@ -1101,7 +1132,8 @@
       "les",
       "l’",
       "l'"
-     ]
+     ],
+     "tr": "лё / ля / ле"
     },
     {
      "id": "w-de",
@@ -1114,7 +1146,8 @@
       "de",
       "d’",
       "d'"
-     ]
+     ],
+     "tr": "дё"
     },
     {
      "id": "w-un",
@@ -1126,7 +1159,8 @@
      "forms": [
       "un",
       "une"
-     ]
+     ],
+     "tr": "эн / юн"
     },
     {
      "id": "w-etre",
@@ -1143,7 +1177,8 @@
       "êtes",
       "sont",
       "été"
-     ]
+     ],
+     "tr": "этр"
     },
     {
      "id": "w-et",
@@ -1152,7 +1187,8 @@
      "g": null,
      "ex": "Paul et Marie.",
      "exRu": "Поль и Мари.",
-     "forms": []
+     "forms": [],
+     "tr": "э"
     },
     {
      "id": "w-a-prep",
@@ -1161,7 +1197,8 @@
      "g": null,
      "ex": "Je suis à Paris.",
      "exRu": "Я в Париже.",
-     "forms": []
+     "forms": [],
+     "tr": "а"
     },
     {
      "id": "w-il",
@@ -1170,7 +1207,8 @@
      "g": null,
      "ex": "Il est grand.",
      "exRu": "Он высокий.",
-     "forms": []
+     "forms": [],
+     "tr": "иль"
     },
     {
      "id": "w-avoir",
@@ -1187,7 +1225,8 @@
       "avez",
       "ont",
       "eu"
-     ]
+     ],
+     "tr": "авуар"
     },
     {
      "id": "w-ne-pas",
@@ -1200,7 +1239,8 @@
       "ne",
       "n’",
       "n'"
-     ]
+     ],
+     "tr": "нё … па"
     },
     {
      "id": "w-je",
@@ -1213,7 +1253,8 @@
       "je",
       "j’",
       "j'"
-     ]
+     ],
+     "tr": "жё"
     },
     {
      "id": "w-son",
@@ -1226,7 +1267,8 @@
       "son",
       "sa",
       "ses"
-     ]
+     ],
+     "tr": "сон / са / се"
     },
     {
      "id": "w-que",
@@ -1239,7 +1281,8 @@
       "que",
       "qu’",
       "qu'"
-     ]
+     ],
+     "tr": "кё"
     },
     {
      "id": "w-se",
@@ -1252,7 +1295,8 @@
       "se",
       "s’",
       "s'"
-     ]
+     ],
+     "tr": "сё"
     },
     {
      "id": "w-qui",
@@ -1261,7 +1305,8 @@
      "g": null,
      "ex": "Qui est-ce ?",
      "exRu": "Кто это?",
-     "forms": []
+     "forms": [],
+     "tr": "ки"
     },
     {
      "id": "w-ce",
@@ -1277,7 +1322,8 @@
       "cet",
       "cette",
       "ces"
-     ]
+     ],
+     "tr": "сё / с"
     },
     {
      "id": "w-dans",
@@ -1286,7 +1332,8 @@
      "g": null,
      "ex": "Le livre est dans le sac.",
      "exRu": "Книга в сумке.",
-     "forms": []
+     "forms": [],
+     "tr": "дан"
     },
     {
      "id": "w-en",
@@ -1295,7 +1342,8 @@
      "g": null,
      "ex": "Je suis en France.",
      "exRu": "Я во Франции.",
-     "forms": []
+     "forms": [],
+     "tr": "ан"
     },
     {
      "id": "w-du",
@@ -1304,7 +1352,8 @@
      "g": null,
      "ex": "Le livre du professeur.",
      "exRu": "Книга преподавателя.",
-     "forms": []
+     "forms": [],
+     "tr": "дю"
     },
     {
      "id": "w-elle",
@@ -1315,7 +1364,8 @@
      "exRu": "Она француженка.",
      "forms": [
       "elles"
-     ]
+     ],
+     "tr": "эль"
     },
     {
      "id": "w-au",
@@ -1326,7 +1376,8 @@
      "exRu": "Я в кафе.",
      "forms": [
       "aux"
-     ]
+     ],
+     "tr": "о"
     },
     {
      "id": "w-pour",
@@ -1335,7 +1386,8 @@
      "g": null,
      "ex": "C’est pour toi.",
      "exRu": "Это для тебя.",
-     "forms": []
+     "forms": [],
+     "tr": "пур"
     },
     {
      "id": "w-pas",
@@ -1344,7 +1396,8 @@
      "g": null,
      "ex": "Pas maintenant.",
      "exRu": "Не сейчас.",
-     "forms": []
+     "forms": [],
+     "tr": "па"
     },
     {
      "id": "w-vous",
@@ -1353,7 +1406,8 @@
      "g": null,
      "ex": "Vous êtes français ?",
      "exRu": "Вы француз?",
-     "forms": []
+     "forms": [],
+     "tr": "ву"
     },
     {
      "id": "w-par",
@@ -1362,7 +1416,8 @@
      "g": null,
      "ex": "par exemple",
      "exRu": "например",
-     "forms": []
+     "forms": [],
+     "tr": "пар"
     },
     {
      "id": "w-sur",
@@ -1371,7 +1426,8 @@
      "g": null,
      "ex": "Le café est sur la table.",
      "exRu": "Кофе на столе.",
-     "forms": []
+     "forms": [],
+     "tr": "сюр"
     },
     {
      "id": "w-faire",
@@ -1386,7 +1442,8 @@
       "faisons",
       "faites",
       "font"
-     ]
+     ],
+     "tr": "фэр"
     },
     {
      "id": "w-plus",
@@ -1395,7 +1452,8 @@
      "g": null,
      "ex": "Plus de café ?",
      "exRu": "Ещё кофе?",
-     "forms": []
+     "forms": [],
+     "tr": "плю"
     },
     {
      "id": "w-dire",
@@ -1410,7 +1468,8 @@
       "disons",
       "dites",
       "disent"
-     ]
+     ],
+     "tr": "дир"
     },
     {
      "id": "w-me",
@@ -1423,7 +1482,8 @@
       "me",
       "m’",
       "m'"
-     ]
+     ],
+     "tr": "мё"
     },
     {
      "id": "w-on",
@@ -1432,7 +1492,8 @@
      "g": null,
      "ex": "On y va !",
      "exRu": "Пошли!",
-     "forms": []
+     "forms": [],
+     "tr": "он"
     },
     {
      "id": "w-mon",
@@ -1445,7 +1506,8 @@
       "mon",
       "ma",
       "mes"
-     ]
+     ],
+     "tr": "мон / ма / ме"
     },
     {
      "id": "w-lui",
@@ -1454,7 +1516,8 @@
      "g": null,
      "ex": "Je parle avec lui.",
      "exRu": "Я говорю с ним.",
-     "forms": []
+     "forms": [],
+     "tr": "люи"
     },
     {
      "id": "w-nous",
@@ -1463,7 +1526,8 @@
      "g": null,
      "ex": "Nous sommes là.",
      "exRu": "Мы здесь.",
-     "forms": []
+     "forms": [],
+     "tr": "ну"
     },
     {
      "id": "w-comme",
@@ -1472,7 +1536,8 @@
      "g": null,
      "ex": "Comme toi.",
      "exRu": "Как ты.",
-     "forms": []
+     "forms": [],
+     "tr": "ком"
     },
     {
      "id": "w-mais",
@@ -1481,7 +1546,8 @@
      "g": null,
      "ex": "Petit mais bon.",
      "exRu": "Маленький, но хороший.",
-     "forms": []
+     "forms": [],
+     "tr": "ме"
     },
     {
      "id": "w-pouvoir",
@@ -1496,7 +1562,8 @@
       "pouvons",
       "pouvez",
       "peuvent"
-     ]
+     ],
+     "tr": "пувуар"
     },
     {
      "id": "w-avec",
@@ -1505,7 +1572,8 @@
      "g": null,
      "ex": "Avec plaisir !",
      "exRu": "С удовольствием!",
-     "forms": []
+     "forms": [],
+     "tr": "авек"
     },
     {
      "id": "w-tout",
@@ -1519,7 +1587,8 @@
       "toute",
       "tous",
       "toutes"
-     ]
+     ],
+     "tr": "ту"
     },
     {
      "id": "w-y",
@@ -1528,7 +1597,8 @@
      "g": null,
      "ex": "J’y vais.",
      "exRu": "Я туда иду.",
-     "forms": []
+     "forms": [],
+     "tr": "и"
     },
     {
      "id": "w-aller",
@@ -1544,7 +1614,8 @@
       "allons",
       "allez",
       "vont"
-     ]
+     ],
+     "tr": "але"
     },
     {
      "id": "w-voir",
@@ -1559,7 +1630,8 @@
       "voyons",
       "voyez",
       "voient"
-     ]
+     ],
+     "tr": "вуар"
     },
     {
      "id": "w-bien",
@@ -1568,7 +1640,8 @@
      "g": null,
      "ex": "Ça va bien.",
      "exRu": "Всё хорошо.",
-     "forms": []
+     "forms": [],
+     "tr": "бьен"
     },
     {
      "id": "w-ou-where",
@@ -1577,7 +1650,8 @@
      "g": null,
      "ex": "Où es-tu ?",
      "exRu": "Где ты?",
-     "forms": []
+     "forms": [],
+     "tr": "у"
     },
     {
      "id": "w-sans",
@@ -1586,7 +1660,8 @@
      "g": null,
      "ex": "Un café sans sucre.",
      "exRu": "Кофе без сахара.",
-     "forms": []
+     "forms": [],
+     "tr": "сан"
     },
     {
      "id": "w-tu",
@@ -1595,7 +1670,8 @@
      "g": null,
      "ex": "Tu es là ?",
      "exRu": "Ты здесь?",
-     "forms": []
+     "forms": [],
+     "tr": "тю"
     },
     {
      "id": "w-ou-or",
@@ -1604,7 +1680,8 @@
      "g": null,
      "ex": "Thé ou café ?",
      "exRu": "Чай или кофе?",
-     "forms": []
+     "forms": [],
+     "tr": "у"
     },
     {
      "id": "w-leur",
@@ -1616,7 +1693,8 @@
      "forms": [
       "leur",
       "leurs"
-     ]
+     ],
+     "tr": "лёр"
     },
     {
      "id": "w-homme",
@@ -1627,7 +1705,8 @@
      "exRu": "Высокий мужчина.",
      "forms": [
       "hommes"
-     ]
+     ],
+     "tr": "ом"
     },
     {
      "id": "w-si",
@@ -1636,7 +1715,8 @@
      "g": null,
      "ex": "Si tu veux.",
      "exRu": "Если хочешь.",
-     "forms": []
+     "forms": [],
+     "tr": "си"
     },
     {
      "id": "w-deux",
@@ -1645,7 +1725,8 @@
      "g": null,
      "ex": "Deux cafés, s’il vous plaît.",
      "exRu": "Два кофе, пожалуйста.",
-     "forms": []
+     "forms": [],
+     "tr": "дё"
     }
    ],
    "topics": [
@@ -2024,7 +2105,8 @@
      "say": "Il est avec elle.",
      "a": [
       "il est avec elle"
-     ]
+     ],
+     "tr": "Он с ней."
     },
     {
      "id": "e19",
@@ -2032,7 +2114,8 @@
      "say": "Vous avez deux amis.",
      "a": [
       "vous avez deux amis"
-     ]
+     ],
+     "tr": "У вас двое друзей."
     },
     {
      "id": "e20",
@@ -2075,7 +2158,8 @@
       "nous sommes fatigués",
       "nous sommes fatiguées"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "мы устали"
     },
     {
      "type": "transform",
@@ -2084,7 +2168,8 @@
      "a": [
       "tu es français"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "ты француз"
     },
     {
      "type": "transform",
@@ -2093,7 +2178,8 @@
      "a": [
       "nous avons vingt ans"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "нам двадцать лет"
     },
     {
      "type": "transform",
@@ -2102,7 +2188,8 @@
      "a": [
       "il n'a pas le temps"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "у него нет времени"
     },
     {
      "type": "transform",
@@ -2111,7 +2198,8 @@
      "a": [
       "tu n'es pas à paris"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "ты не в Париже"
     },
     {
      "type": "transform",
@@ -2120,7 +2208,8 @@
      "a": [
       "ils ont un ami"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "у них есть друг"
     },
     {
      "type": "transform",
@@ -2129,7 +2218,8 @@
      "a": [
       "je n'ai pas le temps"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "у меня нет времени"
     },
     {
      "type": "transform",
@@ -2138,7 +2228,8 @@
      "a": [
       "nous sommes à moscou"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "мы в Москве"
     }
    ],
    "fun": {
@@ -2669,7 +2760,8 @@
      "forms": [
       "notre",
       "nos"
-     ]
+     ],
+     "tr": "нотр / но"
     },
     {
      "id": "w-votre",
@@ -2681,7 +2773,8 @@
      "forms": [
       "votre",
       "vos"
-     ]
+     ],
+     "tr": "вотр / во"
     },
     {
      "id": "w-jour",
@@ -2692,7 +2785,8 @@
      "exRu": "Однажды я поеду в Париж.",
      "forms": [
       "jours"
-     ]
+     ],
+     "tr": "жур"
     },
     {
      "id": "w-temps",
@@ -2701,7 +2795,8 @@
      "g": "m",
      "ex": "Je n’ai pas le temps.",
      "exRu": "У меня нет времени.",
-     "forms": []
+     "forms": [],
+     "tr": "тан"
     },
     {
      "id": "w-petit",
@@ -2715,7 +2810,8 @@
       "petite",
       "petits",
       "petites"
-     ]
+     ],
+     "tr": "пёти / пётит"
     },
     {
      "id": "w-grand",
@@ -2729,7 +2825,8 @@
       "grande",
       "grands",
       "grandes"
-     ]
+     ],
+     "tr": "гран / гранд"
     },
     {
      "id": "w-meme",
@@ -2738,7 +2835,8 @@
      "g": null,
      "ex": "On a le même livre.",
      "exRu": "У нас одна и та же книга.",
-     "forms": []
+     "forms": [],
+     "tr": "мэм"
     },
     {
      "id": "w-autre",
@@ -2749,7 +2847,8 @@
      "exRu": "Ещё один кофе?",
      "forms": [
       "autres"
-     ]
+     ],
+     "tr": "отр"
     },
     {
      "id": "w-encore",
@@ -2758,7 +2857,8 @@
      "g": null,
      "ex": "Encore une fois !",
      "exRu": "Ещё раз!",
-     "forms": []
+     "forms": [],
+     "tr": "анкор"
     },
     {
      "id": "w-aussi",
@@ -2767,7 +2867,8 @@
      "g": null,
      "ex": "Moi aussi.",
      "exRu": "Я тоже.",
-     "forms": []
+     "forms": [],
+     "tr": "оси"
     },
     {
      "id": "w-tres",
@@ -2776,7 +2877,8 @@
      "g": null,
      "ex": "C’est très bon.",
      "exRu": "Это очень вкусно.",
-     "forms": []
+     "forms": [],
+     "tr": "тре"
     },
     {
      "id": "w-rien",
@@ -2785,7 +2887,8 @@
      "g": null,
      "ex": "Je ne dis rien.",
      "exRu": "Я ничего не говорю.",
-     "forms": []
+     "forms": [],
+     "tr": "рьен"
     },
     {
      "id": "w-la-adv",
@@ -2794,7 +2897,8 @@
      "g": null,
      "ex": "Je suis là.",
      "exRu": "Я здесь.",
-     "forms": []
+     "forms": [],
+     "tr": "ля"
     },
     {
      "id": "w-alors",
@@ -2803,7 +2907,8 @@
      "g": null,
      "ex": "Alors, on y va ?",
      "exRu": "Итак, идём?",
-     "forms": []
+     "forms": [],
+     "tr": "алор"
     },
     {
      "id": "w-quand",
@@ -2812,7 +2917,8 @@
      "g": null,
      "ex": "Quand est-ce que tu arrives ?",
      "exRu": "Когда ты приезжаешь?",
-     "forms": []
+     "forms": [],
+     "tr": "кан"
     },
     {
      "id": "w-deja",
@@ -2821,7 +2927,8 @@
      "g": null,
      "ex": "Il est déjà là.",
      "exRu": "Он уже здесь.",
-     "forms": []
+     "forms": [],
+     "tr": "дежа"
     },
     {
      "id": "w-toujours",
@@ -2830,7 +2937,8 @@
      "g": null,
      "ex": "Elle travaille toujours.",
      "exRu": "Она всегда работает.",
-     "forms": []
+     "forms": [],
+     "tr": "тужур"
     },
     {
      "id": "w-jamais",
@@ -2841,7 +2949,8 @@
      "exRu": "Я никогда не ем мясо.",
      "forms": [
       "jamais"
-     ]
+     ],
+     "tr": "нё … жаме"
     },
     {
      "id": "w-peu",
@@ -2850,7 +2959,8 @@
      "g": null,
      "ex": "Je parle un peu français.",
      "exRu": "Я немного говорю по-французски.",
-     "forms": []
+     "forms": [],
+     "tr": "пё / эн пё"
     },
     {
      "id": "w-beaucoup",
@@ -2859,7 +2969,8 @@
      "g": null,
      "ex": "J’aime beaucoup Paris.",
      "exRu": "Я очень люблю Париж.",
-     "forms": []
+     "forms": [],
+     "tr": "боку"
     },
     {
      "id": "w-trop",
@@ -2868,7 +2979,8 @@
      "g": null,
      "ex": "C’est trop cher.",
      "exRu": "Это слишком дорого.",
-     "forms": []
+     "forms": [],
+     "tr": "тро"
     },
     {
      "id": "w-chose",
@@ -2879,7 +2991,8 @@
      "exRu": "Это хорошая вещь.",
      "forms": [
       "choses"
-     ]
+     ],
+     "tr": "шоз"
     },
     {
      "id": "w-vie",
@@ -2888,7 +3001,8 @@
      "g": "f",
      "ex": "C’est la vie !",
      "exRu": "Такова жизнь!",
-     "forms": []
+     "forms": [],
+     "tr": "ви"
     },
     {
      "id": "w-monde",
@@ -2897,7 +3011,8 @@
      "g": "m",
      "ex": "Tout le monde est là.",
      "exRu": "Все здесь.",
-     "forms": []
+     "forms": [],
+     "tr": "монд"
     },
     {
      "id": "w-main",
@@ -2908,7 +3023,8 @@
      "exRu": "Дай мне руку.",
      "forms": [
       "mains"
-     ]
+     ],
+     "tr": "мэн"
     },
     {
      "id": "w-fois",
@@ -2917,7 +3033,8 @@
      "g": "f",
      "ex": "Une fois par semaine.",
      "exRu": "Раз в неделю.",
-     "forms": []
+     "forms": [],
+     "tr": "фуа"
     },
     {
      "id": "w-annee",
@@ -2931,7 +3048,8 @@
       "années",
       "an",
       "ans"
-     ]
+     ],
+     "tr": "ане / ан"
     },
     {
      "id": "w-femme",
@@ -2942,7 +3060,8 @@
      "exRu": "Это умная женщина.",
      "forms": [
       "femmes"
-     ]
+     ],
+     "tr": "фам"
     },
     {
      "id": "w-enfant",
@@ -2953,7 +3072,8 @@
      "exRu": "У них двое детей.",
      "forms": [
       "enfants"
-     ]
+     ],
+     "tr": "анфан"
     },
     {
      "id": "w-moment",
@@ -2962,7 +3082,8 @@
      "g": "m",
      "ex": "Un moment, s’il vous plaît.",
      "exRu": "Минутку, пожалуйста.",
-     "forms": []
+     "forms": [],
+     "tr": "моман"
     },
     {
      "id": "w-ici",
@@ -2971,7 +3092,8 @@
      "g": null,
      "ex": "J’habite ici.",
      "exRu": "Я живу здесь.",
-     "forms": []
+     "forms": [],
+     "tr": "иси"
     },
     {
      "id": "w-maintenant",
@@ -2980,7 +3102,8 @@
      "g": null,
      "ex": "Je travaille maintenant.",
      "exRu": "Я сейчас работаю.",
-     "forms": []
+     "forms": [],
+     "tr": "мэнтнан"
     },
     {
      "id": "w-apres",
@@ -2989,7 +3112,8 @@
      "g": null,
      "ex": "Après le travail.",
      "exRu": "После работы.",
-     "forms": []
+     "forms": [],
+     "tr": "апре"
     },
     {
      "id": "w-avant",
@@ -2998,7 +3122,8 @@
      "g": null,
      "ex": "Avant le dîner.",
      "exRu": "Перед ужином.",
-     "forms": []
+     "forms": [],
+     "tr": "аван"
     },
     {
      "id": "w-depuis",
@@ -3007,7 +3132,8 @@
      "g": null,
      "ex": "J’habite ici depuis un an.",
      "exRu": "Я живу здесь уже год.",
-     "forms": []
+     "forms": [],
+     "tr": "дёпюи"
     },
     {
      "id": "w-sous",
@@ -3016,7 +3142,8 @@
      "g": null,
      "ex": "Le chat est sous la table.",
      "exRu": "Кот под столом.",
-     "forms": []
+     "forms": [],
+     "tr": "су"
     },
     {
      "id": "w-entre",
@@ -3025,7 +3152,8 @@
      "g": null,
      "ex": "Entre nous.",
      "exRu": "Между нами.",
-     "forms": []
+     "forms": [],
+     "tr": "антр"
     },
     {
      "id": "w-chez",
@@ -3034,7 +3162,8 @@
      "g": null,
      "ex": "Je suis chez moi.",
      "exRu": "Я дома.",
-     "forms": []
+     "forms": [],
+     "tr": "ше"
     },
     {
      "id": "w-parce-que",
@@ -3045,7 +3174,8 @@
      "exRu": "Я остаюсь, потому что мне это нравится.",
      "forms": [
       "parce"
-     ]
+     ],
+     "tr": "парс кё"
     },
     {
      "id": "w-donc",
@@ -3054,7 +3184,8 @@
      "g": null,
      "ex": "Je pense, donc je suis.",
      "exRu": "Я мыслю, значит, существую.",
-     "forms": []
+     "forms": [],
+     "tr": "донк"
     },
     {
      "id": "w-puis",
@@ -3063,7 +3194,8 @@
      "g": null,
      "ex": "D’abord le café, puis le travail.",
      "exRu": "Сначала кофе, потом работа.",
-     "forms": []
+     "forms": [],
+     "tr": "пюи"
     },
     {
      "id": "w-comment",
@@ -3072,7 +3204,8 @@
      "g": null,
      "ex": "Comment tu t’appelles ?",
      "exRu": "Как тебя зовут?",
-     "forms": []
+     "forms": [],
+     "tr": "коман"
     },
     {
      "id": "w-pourquoi",
@@ -3081,7 +3214,8 @@
      "g": null,
      "ex": "Pourquoi tu ris ?",
      "exRu": "Почему ты смеёшься?",
-     "forms": []
+     "forms": [],
+     "tr": "пуркуа"
     },
     {
      "id": "w-quel",
@@ -3095,7 +3229,8 @@
       "quelle",
       "quels",
       "quelles"
-     ]
+     ],
+     "tr": "кель / кель"
     },
     {
      "id": "w-bon",
@@ -3109,7 +3244,8 @@
       "bonne",
       "bons",
       "bonnes"
-     ]
+     ],
+     "tr": "бон / бонн"
     },
     {
      "id": "w-nouveau",
@@ -3123,7 +3259,8 @@
       "nouvelle",
       "nouveaux",
       "nouvelles"
-     ]
+     ],
+     "tr": "нуво / нувель"
     },
     {
      "id": "w-dernier",
@@ -3135,7 +3272,8 @@
      "forms": [
       "dernier",
       "dernière"
-     ]
+     ],
+     "tr": "дернье / дерньер"
     },
     {
      "id": "w-premier",
@@ -3147,7 +3285,8 @@
      "forms": [
       "premier",
       "première"
-     ]
+     ],
+     "tr": "прёмье / прёмьер"
     },
     {
      "id": "w-ami",
@@ -3161,7 +3300,8 @@
       "amie",
       "amis",
       "amies"
-     ]
+     ],
+     "tr": "ами / ами"
     },
     {
      "id": "w-heure",
@@ -3172,7 +3312,8 @@
      "exRu": "Сейчас два часа.",
      "forms": [
       "heures"
-     ]
+     ],
+     "tr": "ёр"
     }
    ],
    "topics": [
@@ -3359,7 +3500,8 @@
       "Ils habitent ici."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Мы живём здесь."
     },
     {
      "type": "match",
@@ -3451,7 +3593,8 @@
      "a": [
       "nous parlons un peu français"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Мы немного говорим по-французски."
     },
     {
      "type": "dictation",
@@ -3459,7 +3602,8 @@
      "a": [
       "elle habite ici depuis un an"
      ],
-     "id": "e16"
+     "id": "e16",
+     "tr": "Она живёт здесь уже год."
     },
     {
      "type": "translate",
@@ -3501,7 +3645,8 @@
      "a": [
       "nous parlons français"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "мы говорим по-французски"
     },
     {
      "type": "transform",
@@ -3510,7 +3655,8 @@
      "a": [
       "vous aimez le café"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "вы любите кофе"
     },
     {
      "type": "transform",
@@ -3519,7 +3665,8 @@
      "a": [
       "ils mangent à midi"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "они обедают в полдень"
     },
     {
      "type": "transform",
@@ -3528,7 +3675,8 @@
      "a": [
       "elle n'habite pas ici"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "она живёт не здесь"
     },
     {
      "type": "transform",
@@ -3537,7 +3685,8 @@
      "a": [
       "je n'aime pas le sport"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я не люблю спорт"
     },
     {
      "type": "transform",
@@ -3546,7 +3695,8 @@
      "a": [
       "je suis à paris"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "я в Париже"
     },
     {
      "type": "transform",
@@ -3555,7 +3705,8 @@
      "a": [
       "nous mangeons ensemble"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "мы едим вместе"
     },
     {
      "type": "transform",
@@ -3564,7 +3715,8 @@
      "a": [
       "j'aime paris"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "я люблю Париж"
     }
    ]
   },
@@ -3825,7 +3977,8 @@
       "parlons",
       "parlez",
       "parlent"
-     ]
+     ],
+     "tr": "парле"
     },
     {
      "id": "w-aimer",
@@ -3840,7 +3993,8 @@
       "aimons",
       "aimez",
       "aiment"
-     ]
+     ],
+     "tr": "эме"
     },
     {
      "id": "w-habiter",
@@ -3855,7 +4009,8 @@
       "habitons",
       "habitez",
       "habitent"
-     ]
+     ],
+     "tr": "абите"
     },
     {
      "id": "w-travailler",
@@ -3870,7 +4025,8 @@
       "travaillons",
       "travaillez",
       "travaillent"
-     ]
+     ],
+     "tr": "травайе"
     },
     {
      "id": "w-manger",
@@ -3885,7 +4041,8 @@
       "mangeons",
       "mangez",
       "mangent"
-     ]
+     ],
+     "tr": "манже"
     },
     {
      "id": "w-regarder",
@@ -3900,7 +4057,8 @@
       "regardons",
       "regardez",
       "regardent"
-     ]
+     ],
+     "tr": "рёгарде"
     },
     {
      "id": "w-ecouter",
@@ -3915,7 +4073,8 @@
       "écoutons",
       "écoutez",
       "écoutent"
-     ]
+     ],
+     "tr": "экуте"
     },
     {
      "id": "w-chercher",
@@ -3930,7 +4089,8 @@
       "cherchons",
       "cherchez",
       "cherchent"
-     ]
+     ],
+     "tr": "шерше"
     },
     {
      "id": "w-trouver",
@@ -3945,7 +4105,8 @@
       "trouvons",
       "trouvez",
       "trouvent"
-     ]
+     ],
+     "tr": "труве"
     },
     {
      "id": "w-donner",
@@ -3960,7 +4121,8 @@
       "donnons",
       "donnez",
       "donnent"
-     ]
+     ],
+     "tr": "доне"
     },
     {
      "id": "w-penser",
@@ -3975,7 +4137,8 @@
       "pensons",
       "pensez",
       "pensent"
-     ]
+     ],
+     "tr": "пансе"
     },
     {
      "id": "w-arriver",
@@ -3990,7 +4153,8 @@
       "arrivons",
       "arrivez",
       "arrivent"
-     ]
+     ],
+     "tr": "арриве"
     },
     {
      "id": "w-entrer",
@@ -4005,7 +4169,8 @@
       "entrons",
       "entrez",
       "entrent"
-     ]
+     ],
+     "tr": "антре"
     },
     {
      "id": "w-rester",
@@ -4020,7 +4185,8 @@
       "restons",
       "restez",
       "restent"
-     ]
+     ],
+     "tr": "ресте"
     },
     {
      "id": "w-passer",
@@ -4035,7 +4201,8 @@
       "passons",
       "passez",
       "passent"
-     ]
+     ],
+     "tr": "пасе"
     },
     {
      "id": "w-demander",
@@ -4050,7 +4217,8 @@
       "demandons",
       "demandez",
       "demandent"
-     ]
+     ],
+     "tr": "дёманде"
     },
     {
      "id": "w-jouer",
@@ -4065,7 +4233,8 @@
       "jouons",
       "jouez",
       "jouent"
-     ]
+     ],
+     "tr": "жуэ"
     },
     {
      "id": "w-commencer",
@@ -4080,7 +4249,8 @@
       "commençons",
       "commencez",
       "commencent"
-     ]
+     ],
+     "tr": "комансе"
     },
     {
      "id": "w-acheter",
@@ -4095,7 +4265,8 @@
       "achetons",
       "achetez",
       "achètent"
-     ]
+     ],
+     "tr": "аштэ"
     },
     {
      "id": "w-payer",
@@ -4110,7 +4281,8 @@
       "payons",
       "payez",
       "paient"
-     ]
+     ],
+     "tr": "пейе"
     },
     {
      "id": "w-appeler",
@@ -4125,7 +4297,8 @@
       "appelons",
       "appelez",
       "appellent"
-     ]
+     ],
+     "tr": "апле"
     },
     {
      "id": "w-preferer",
@@ -4140,7 +4313,8 @@
       "préférons",
       "préférez",
       "préfèrent"
-     ]
+     ],
+     "tr": "префере"
     },
     {
      "id": "w-finir",
@@ -4155,7 +4329,8 @@
       "finissons",
       "finissez",
       "finissent"
-     ]
+     ],
+     "tr": "финир"
     },
     {
      "id": "w-choisir",
@@ -4170,7 +4345,8 @@
       "choisissons",
       "choisissez",
       "choisissent"
-     ]
+     ],
+     "tr": "шуазир"
     },
     {
      "id": "w-reussir",
@@ -4185,7 +4361,8 @@
       "réussissons",
       "réussissez",
       "réussissent"
-     ]
+     ],
+     "tr": "реюсир"
     },
     {
      "id": "w-grandir",
@@ -4200,7 +4377,8 @@
       "grandissons",
       "grandissez",
       "grandissent"
-     ]
+     ],
+     "tr": "грандир"
     },
     {
      "id": "w-partir",
@@ -4215,7 +4393,8 @@
       "partons",
       "partez",
       "partent"
-     ]
+     ],
+     "tr": "партир"
     },
     {
      "id": "w-sortir",
@@ -4230,7 +4409,8 @@
       "sortons",
       "sortez",
       "sortent"
-     ]
+     ],
+     "tr": "сортир"
     },
     {
      "id": "w-dormir",
@@ -4245,7 +4425,8 @@
       "dormons",
       "dormez",
       "dorment"
-     ]
+     ],
+     "tr": "дормир"
     },
     {
      "id": "w-venir",
@@ -4260,7 +4441,8 @@
       "venons",
       "venez",
       "viennent"
-     ]
+     ],
+     "tr": "вёнир"
     },
     {
      "id": "w-prendre",
@@ -4275,7 +4457,8 @@
       "prenons",
       "prenez",
       "prennent"
-     ]
+     ],
+     "tr": "прандр"
     },
     {
      "id": "w-mettre",
@@ -4290,7 +4473,8 @@
       "mettons",
       "mettez",
       "mettent"
-     ]
+     ],
+     "tr": "метр"
     },
     {
      "id": "w-savoir",
@@ -4305,7 +4489,8 @@
       "savons",
       "savez",
       "savent"
-     ]
+     ],
+     "tr": "савуар"
     },
     {
      "id": "w-connaitre",
@@ -4320,7 +4505,8 @@
       "connaissons",
       "connaissez",
       "connaissent"
-     ]
+     ],
+     "tr": "конэтр"
     },
     {
      "id": "w-vouloir",
@@ -4336,7 +4522,8 @@
       "voulez",
       "veulent",
       "voudrais"
-     ]
+     ],
+     "tr": "вулуар"
     },
     {
      "id": "w-devoir",
@@ -4351,7 +4538,8 @@
       "devons",
       "devez",
       "doivent"
-     ]
+     ],
+     "tr": "дёвуар"
     },
     {
      "id": "w-lire",
@@ -4366,7 +4554,8 @@
       "lisons",
       "lisez",
       "lisent"
-     ]
+     ],
+     "tr": "лир"
     },
     {
      "id": "w-ecrire",
@@ -4381,7 +4570,8 @@
       "écrivons",
       "écrivez",
       "écrivent"
-     ]
+     ],
+     "tr": "экрир"
     },
     {
      "id": "w-boire",
@@ -4396,7 +4586,8 @@
       "buvons",
       "buvez",
       "boivent"
-     ]
+     ],
+     "tr": "буар"
     },
     {
      "id": "w-vivre",
@@ -4411,7 +4602,8 @@
       "vivons",
       "vivez",
       "vivent"
-     ]
+     ],
+     "tr": "вивр"
     },
     {
      "id": "w-comprendre",
@@ -4426,7 +4618,8 @@
       "comprenons",
       "comprenez",
       "comprennent"
-     ]
+     ],
+     "tr": "компрандр"
     },
     {
      "id": "w-apprendre",
@@ -4441,7 +4634,8 @@
       "apprenons",
       "apprenez",
       "apprennent"
-     ]
+     ],
+     "tr": "апрандр"
     },
     {
      "id": "w-attendre",
@@ -4456,7 +4650,8 @@
       "attendons",
       "attendez",
       "attendent"
-     ]
+     ],
+     "tr": "атандр"
     },
     {
      "id": "w-repondre",
@@ -4471,7 +4666,8 @@
       "répondons",
       "répondez",
       "répondent"
-     ]
+     ],
+     "tr": "репондр"
     },
     {
      "id": "w-entendre",
@@ -4486,7 +4682,8 @@
       "entendons",
       "entendez",
       "entendent"
-     ]
+     ],
+     "tr": "антандр"
     },
     {
      "id": "w-perdre",
@@ -4501,7 +4698,8 @@
       "perdons",
       "perdez",
       "perdent"
-     ]
+     ],
+     "tr": "пердр"
     },
     {
      "id": "w-croire",
@@ -4516,7 +4714,8 @@
       "croyons",
       "croyez",
       "croient"
-     ]
+     ],
+     "tr": "круар"
     },
     {
      "id": "w-ouvrir",
@@ -4531,7 +4730,8 @@
       "ouvrons",
       "ouvrez",
       "ouvrent"
-     ]
+     ],
+     "tr": "уврир"
     },
     {
      "id": "w-courir",
@@ -4546,7 +4746,8 @@
       "courons",
       "courez",
       "courent"
-     ]
+     ],
+     "tr": "курир"
     },
     {
      "id": "w-recevoir",
@@ -4561,7 +4762,8 @@
       "recevons",
       "recevez",
       "reçoivent"
-     ]
+     ],
+     "tr": "рёсёвуар"
     }
    ],
    "topics": [
@@ -4728,7 +4930,8 @@
       "Ils finissent à midi."
      ],
      "a": 1,
-     "id": "e9"
+     "id": "e9",
+     "tr": "Они заканчивают в полдень."
     },
     {
      "type": "match",
@@ -4820,7 +5023,8 @@
      "a": [
       "nous finissons le travail"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Мы заканчиваем работу."
     },
     {
      "type": "dictation",
@@ -4828,7 +5032,8 @@
      "a": [
       "tu choisis quel livre"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Какую книгу ты выбираешь?"
     },
     {
      "type": "translate",
@@ -4868,7 +5073,8 @@
      "a": [
       "nous finissons à six heures"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "мы заканчиваем в шесть часов"
     },
     {
      "type": "transform",
@@ -4877,7 +5083,8 @@
      "a": [
       "il choisit un film"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "он выбирает фильм"
     },
     {
      "type": "transform",
@@ -4886,7 +5093,8 @@
      "a": [
       "nous partons demain"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "мы уезжаем завтра"
     },
     {
      "type": "transform",
@@ -4895,7 +5103,8 @@
      "a": [
       "ils dorment bien"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "они хорошо спят"
     },
     {
      "type": "transform",
@@ -4904,7 +5113,8 @@
      "a": [
       "nous lisons un livre"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "мы читаем книгу"
     },
     {
      "type": "transform",
@@ -4913,7 +5123,8 @@
      "a": [
       "je ne comprends pas"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "я не понимаю"
     },
     {
      "type": "transform",
@@ -4922,7 +5133,8 @@
      "a": [
       "nous finissons le travail"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "мы заканчиваем работу"
     },
     {
      "type": "transform",
@@ -4931,7 +5143,8 @@
      "a": [
       "vous partez"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "вы уходите"
     }
    ]
   },
@@ -5224,7 +5437,8 @@
       "france",
       "français",
       "française"
-     ]
+     ],
+     "tr": "ля франс · франсе(з)"
     },
     {
      "id": "w-pays-ru",
@@ -5236,7 +5450,8 @@
      "forms": [
       "russie",
       "russe"
-     ]
+     ],
+     "tr": "ля рюси · рюс"
     },
     {
      "id": "w-pays-de",
@@ -5249,7 +5464,8 @@
       "allemagne",
       "allemand",
       "allemande"
-     ]
+     ],
+     "tr": "лальмань · альман(д)"
     },
     {
      "id": "w-pays-es",
@@ -5262,7 +5478,8 @@
       "espagne",
       "espagnol",
       "espagnole"
-     ]
+     ],
+     "tr": "леспань · эспаньоль"
     },
     {
      "id": "w-pays-it",
@@ -5275,7 +5492,8 @@
       "italie",
       "italien",
       "italienne"
-     ]
+     ],
+     "tr": "литали · италье(н)"
     },
     {
      "id": "w-pays-gb",
@@ -5288,7 +5506,8 @@
       "angleterre",
       "anglais",
       "anglaise"
-     ]
+     ],
+     "tr": "ланглётер · англе(з)"
     },
     {
      "id": "w-pays-us",
@@ -5300,7 +5519,8 @@
      "forms": [
       "américain",
       "américaine"
-     ]
+     ],
+     "tr": "лез этазюни · америкэн / америкен"
     },
     {
      "id": "w-pays-ca",
@@ -5313,7 +5533,8 @@
       "canada",
       "canadien",
       "canadienne"
-     ]
+     ],
+     "tr": "лё канада · канадье(н)"
     },
     {
      "id": "w-pays-cn",
@@ -5326,7 +5547,8 @@
       "chine",
       "chinois",
       "chinoise"
-     ]
+     ],
+     "tr": "ля шин · шинуа(з)"
     },
     {
      "id": "w-pays-jp",
@@ -5339,7 +5561,8 @@
       "japon",
       "japonais",
       "japonaise"
-     ]
+     ],
+     "tr": "лё жапон · жапоне(з)"
     },
     {
      "id": "w-pays-br",
@@ -5352,7 +5575,8 @@
       "brésil",
       "brésilien",
       "brésilienne"
-     ]
+     ],
+     "tr": "лё брезиль · брезилье(н)"
     },
     {
      "id": "w-pays-be",
@@ -5364,7 +5588,8 @@
      "forms": [
       "belgique",
       "belge"
-     ]
+     ],
+     "tr": "ля бельжик · бельж"
     },
     {
      "id": "w-pays-ch",
@@ -5375,7 +5600,8 @@
      "exRu": "Он работает в Швейцарии.",
      "forms": [
       "suisse"
-     ]
+     ],
+     "tr": "ля сюис · сюис"
     },
     {
      "id": "w-pays-pt",
@@ -5388,7 +5614,8 @@
       "portugal",
       "portugais",
       "portugaise"
-     ]
+     ],
+     "tr": "лё портюгаль · портюге(з)"
     },
     {
      "id": "w-pays-ma",
@@ -5401,7 +5628,8 @@
       "maroc",
       "marocain",
       "marocaine"
-     ]
+     ],
+     "tr": "лё марок · марокэн / марокен"
     },
     {
      "id": "w-pays-pl",
@@ -5414,7 +5642,8 @@
       "pologne",
       "polonais",
       "polonaise"
-     ]
+     ],
+     "tr": "ля полонь · полоне(з)"
     },
     {
      "id": "w-pays-nl",
@@ -5426,7 +5655,8 @@
      "forms": [
       "néerlandais",
       "néerlandaise"
-     ]
+     ],
+     "tr": "ле пеи-ба · нээрланде(з)"
     },
     {
      "id": "w-pays",
@@ -5435,7 +5665,8 @@
      "g": "m",
      "ex": "Un beau pays.",
      "exRu": "Красивая страна.",
-     "forms": []
+     "forms": [],
+     "tr": "эн пеи"
     },
     {
      "id": "w-ville",
@@ -5447,7 +5678,8 @@
      "forms": [
       "ville",
       "villes"
-     ]
+     ],
+     "tr": "юн виль"
     }
    ],
    "topics": [
@@ -5730,7 +5962,8 @@
       "Ils vont à Paris."
      ],
      "a": 2,
-     "id": "e12"
+     "id": "e12",
+     "tr": "Они едут в Париж."
     },
     {
      "type": "match",
@@ -5779,7 +6012,8 @@
      "a": [
       "ils font du sport"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Они занимаются спортом."
     },
     {
      "type": "dictation",
@@ -5787,7 +6021,8 @@
      "a": [
       "vous venez d'où"
      ],
-     "id": "e16"
+     "id": "e16",
+     "tr": "Откуда вы?"
     },
     {
      "type": "translate",
@@ -5829,7 +6064,8 @@
      "a": [
       "je vais au canada"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я еду в Канаду"
     },
     {
      "type": "transform",
@@ -5838,7 +6074,8 @@
      "a": [
       "il vient du japon"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "он из Японии"
     },
     {
      "type": "transform",
@@ -5847,7 +6084,8 @@
      "a": [
       "nous allons en espagne"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "мы едем в Испанию"
     },
     {
      "type": "transform",
@@ -5856,7 +6094,8 @@
      "a": [
       "ils font du sport"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "они занимаются спортом"
     },
     {
      "type": "transform",
@@ -5865,7 +6104,8 @@
      "a": [
       "je prends le bus"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я еду на автобусе"
     },
     {
      "type": "transform",
@@ -5874,7 +6114,8 @@
      "a": [
       "ils viennent avec nous"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "они идут с нами"
     },
     {
      "type": "transform",
@@ -5883,7 +6124,8 @@
      "a": [
       "vous faites quoi"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "что вы делаете?"
     },
     {
      "type": "transform",
@@ -5892,7 +6134,8 @@
      "a": [
       "elle est italienne"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "она итальянка"
     }
    ],
    "fun": {
@@ -6146,7 +6389,8 @@
      "g": "m",
      "ex": "Tu fais quel métier ?",
      "exRu": "Кем ты работаешь?",
-     "forms": []
+     "forms": [],
+     "tr": "эн метье"
     },
     {
      "id": "w-medecin",
@@ -6155,7 +6399,8 @@
      "g": "m",
      "ex": "Mon père est médecin.",
      "exRu": "Мой папа врач.",
-     "forms": []
+     "forms": [],
+     "tr": "медсэн"
     },
     {
      "id": "w-professeur",
@@ -6168,7 +6413,8 @@
       "professeur",
       "prof",
       "professeure"
-     ]
+     ],
+     "tr": "профэсёр / проф"
     },
     {
      "id": "w-etudiant",
@@ -6180,7 +6426,8 @@
      "forms": [
       "étudiant",
       "étudiante"
-     ]
+     ],
+     "tr": "этюдьян / этюдьянт"
     },
     {
      "id": "w-ingenieur",
@@ -6192,7 +6439,8 @@
      "forms": [
       "ingénieur",
       "ingénieure"
-     ]
+     ],
+     "tr": "энженьёр"
     },
     {
      "id": "w-avocat",
@@ -6204,7 +6452,8 @@
      "forms": [
       "avocat",
       "avocate"
-     ]
+     ],
+     "tr": "авока / авокат"
     },
     {
      "id": "w-infirmier",
@@ -6216,7 +6465,8 @@
      "forms": [
       "infirmier",
       "infirmière"
-     ]
+     ],
+     "tr": "энфирмье / энфирмьер"
     },
     {
      "id": "w-serveur",
@@ -6228,7 +6478,8 @@
      "forms": [
       "serveur",
       "serveuse"
-     ]
+     ],
+     "tr": "сервёр / сервёз"
     },
     {
      "id": "w-vendeur",
@@ -6240,7 +6491,8 @@
      "forms": [
       "vendeur",
       "vendeuse"
-     ]
+     ],
+     "tr": "вандёр / вандёз"
     },
     {
      "id": "w-acteur",
@@ -6252,7 +6504,8 @@
      "forms": [
       "acteur",
       "actrice"
-     ]
+     ],
+     "tr": "актёр / актрис"
     },
     {
      "id": "w-architecte",
@@ -6261,7 +6514,8 @@
      "g": null,
      "ex": "Paul est architecte.",
      "exRu": "Поль архитектор.",
-     "forms": []
+     "forms": [],
+     "tr": "аршитект"
     },
     {
      "id": "w-journaliste",
@@ -6270,7 +6524,8 @@
      "g": null,
      "ex": "Elle est journaliste.",
      "exRu": "Она журналистка.",
-     "forms": []
+     "forms": [],
+     "tr": "журналист"
     },
     {
      "id": "w-cuisinier",
@@ -6282,7 +6537,8 @@
      "forms": [
       "cuisinier",
       "cuisinière"
-     ]
+     ],
+     "tr": "кюизинье / кюизиньер"
     },
     {
      "id": "w-boulanger",
@@ -6294,7 +6550,8 @@
      "forms": [
       "boulanger",
       "boulangère"
-     ]
+     ],
+     "tr": "буланже / буланжер"
     },
     {
      "id": "w-policier",
@@ -6306,7 +6563,8 @@
      "forms": [
       "policier",
       "policière"
-     ]
+     ],
+     "tr": "полисье / полисьер"
     },
     {
      "id": "w-chanteur",
@@ -6318,7 +6576,8 @@
      "forms": [
       "chanteur",
       "chanteuse"
-     ]
+     ],
+     "tr": "шантёр / шантёз"
     },
     {
      "id": "w-designer",
@@ -6327,7 +6586,8 @@
      "g": null,
      "ex": "Je suis designer.",
      "exRu": "Я дизайнер.",
-     "forms": []
+     "forms": [],
+     "tr": "дизайнёр"
     },
     {
      "id": "w-photographe",
@@ -6336,7 +6596,8 @@
      "g": null,
      "ex": "Il est photographe.",
      "exRu": "Он фотограф.",
-     "forms": []
+     "forms": [],
+     "tr": "фотограф"
     },
     {
      "id": "w-directeur",
@@ -6348,7 +6609,8 @@
      "forms": [
       "directeur",
       "directrice"
-     ]
+     ],
+     "tr": "директёр / директрис"
     },
     {
      "id": "w-informaticien",
@@ -6360,7 +6622,8 @@
      "forms": [
       "informaticien",
       "informaticienne"
-     ]
+     ],
+     "tr": "энформатисьен / энформатисьен(н)"
     },
     {
      "id": "w-voudrais",
@@ -6371,7 +6634,8 @@
      "exRu": "Я бы хотела чай.",
      "forms": [
       "voudrais"
-     ]
+     ],
+     "tr": "жё вудре"
     }
    ],
    "topics": [
@@ -6630,7 +6894,8 @@
       "Ils peuvent venir."
      ],
      "a": 1,
-     "id": "e13"
+     "id": "e13",
+     "tr": "Они могут прийти."
     },
     {
      "type": "match",
@@ -6680,7 +6945,8 @@
      "a": [
       "vous devez parler lentement"
      ],
-     "id": "e16"
+     "id": "e16",
+     "tr": "Вам нужно говорить медленно."
     },
     {
      "type": "translate",
@@ -6723,7 +6989,8 @@
      "a": [
       "je veux manger"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я хочу есть"
     },
     {
      "type": "transform",
@@ -6732,7 +6999,8 @@
      "a": [
       "nous devons partir"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "нам нужно уходить"
     },
     {
      "type": "transform",
@@ -6741,7 +7009,8 @@
      "a": [
       "elle sait nager"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "она умеет плавать"
     },
     {
      "type": "transform",
@@ -6750,7 +7019,8 @@
      "a": [
       "tu peux venir"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "ты можешь прийти"
     },
     {
      "type": "transform",
@@ -6759,7 +7029,8 @@
      "a": [
       "je ne peux pas venir"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я не могу прийти"
     },
     {
      "type": "transform",
@@ -6768,7 +7039,8 @@
      "a": [
       "je voudrais un café"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "я бы хотела кофе"
     },
     {
      "type": "transform",
@@ -6777,7 +7049,8 @@
      "a": [
       "je suis médecin"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "я врач"
     },
     {
      "type": "transform",
@@ -6786,7 +7059,8 @@
      "a": [
       "ils peuvent venir"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "они могут прийти"
     }
    ]
   },
@@ -7060,7 +7334,8 @@
      "forms": [
       "chiens",
       "chienne"
-     ]
+     ],
+     "tr": "шьен"
     },
     {
      "id": "w-chat",
@@ -7072,7 +7347,8 @@
      "forms": [
       "chats",
       "chatte"
-     ]
+     ],
+     "tr": "ша"
     },
     {
      "id": "w-oiseau",
@@ -7083,7 +7359,8 @@
      "exRu": "Маленькая птичка.",
      "forms": [
       "oiseaux"
-     ]
+     ],
+     "tr": "уазо"
     },
     {
      "id": "w-cheval",
@@ -7094,7 +7371,8 @@
      "exRu": "Лошади бегут.",
      "forms": [
       "chevaux"
-     ]
+     ],
+     "tr": "шёваль"
     },
     {
      "id": "w-vache",
@@ -7105,7 +7383,8 @@
      "exRu": "Корова ест.",
      "forms": [
       "vaches"
-     ]
+     ],
+     "tr": "ваш"
     },
     {
      "id": "w-cochon",
@@ -7116,7 +7395,8 @@
      "exRu": "Поросёнок.",
      "forms": [
       "cochons"
-     ]
+     ],
+     "tr": "кошон"
     },
     {
      "id": "w-mouton-a",
@@ -7127,7 +7407,8 @@
      "exRu": "Нарисуй мне барашка!",
      "forms": [
       "moutons"
-     ]
+     ],
+     "tr": "мутон"
     },
     {
      "id": "w-lapin",
@@ -7138,7 +7419,8 @@
      "exRu": "Кролик белый.",
      "forms": [
       "lapins"
-     ]
+     ],
+     "tr": "лапэн"
     },
     {
      "id": "w-poisson",
@@ -7149,7 +7431,8 @@
      "exRu": "Я ем рыбу.",
      "forms": [
       "poissons"
-     ]
+     ],
+     "tr": "пуасон"
     },
     {
      "id": "w-souris",
@@ -7158,7 +7441,8 @@
      "g": "f",
      "ex": "Le chat et la souris.",
      "exRu": "Кот и мышь.",
-     "forms": []
+     "forms": [],
+     "tr": "сури"
     },
     {
      "id": "w-lion",
@@ -7169,7 +7453,8 @@
      "exRu": "Лев — король.",
      "forms": [
       "lions"
-     ]
+     ],
+     "tr": "льон"
     },
     {
      "id": "w-tigre",
@@ -7180,7 +7465,8 @@
      "exRu": "Большой тигр.",
      "forms": [
       "tigres"
-     ]
+     ],
+     "tr": "тигр"
     },
     {
      "id": "w-ours",
@@ -7189,7 +7475,8 @@
      "g": "m",
      "ex": "L’ours dort en hiver.",
      "exRu": "Медведь спит зимой.",
-     "forms": []
+     "forms": [],
+     "tr": "урс"
     },
     {
      "id": "w-singe",
@@ -7200,7 +7487,8 @@
      "exRu": "Обезьяна ест банан.",
      "forms": [
       "singes"
-     ]
+     ],
+     "tr": "сэнж"
     },
     {
      "id": "w-elephant",
@@ -7211,7 +7499,8 @@
      "exRu": "Слон серый.",
      "forms": [
       "éléphants"
-     ]
+     ],
+     "tr": "элефан"
     },
     {
      "id": "w-loup",
@@ -7222,7 +7511,8 @@
      "exRu": "Волк и ягнёнок.",
      "forms": [
       "loups"
-     ]
+     ],
+     "tr": "лу"
     },
     {
      "id": "w-renard",
@@ -7233,7 +7523,8 @@
      "exRu": "Лиса хитрая.",
      "forms": [
       "renards"
-     ]
+     ],
+     "tr": "рёнар"
     },
     {
      "id": "w-canard",
@@ -7244,7 +7535,8 @@
      "exRu": "Утки плавают.",
      "forms": [
       "canards"
-     ]
+     ],
+     "tr": "канар"
     },
     {
      "id": "w-poule",
@@ -7255,7 +7547,8 @@
      "exRu": "Курица несёт яйца.",
      "forms": [
       "poules"
-     ]
+     ],
+     "tr": "пуль"
     },
     {
      "id": "w-serpent",
@@ -7266,7 +7559,8 @@
      "exRu": "Удав.",
      "forms": [
       "serpents"
-     ]
+     ],
+     "tr": "серпан"
     },
     {
      "id": "w-animal",
@@ -7277,7 +7571,8 @@
      "exRu": "Обожаю животных.",
      "forms": [
       "animaux"
-     ]
+     ],
+     "tr": "анималь"
     }
    ],
    "topics": [
@@ -7324,7 +7619,8 @@
       "la"
      ],
      "a": 0,
-     "id": "e1"
+     "id": "e1",
+     "tr": "собака"
     },
     {
      "type": "choice",
@@ -7334,7 +7630,8 @@
       "le"
      ],
      "a": 0,
-     "id": "e2"
+     "id": "e2",
+     "tr": "мышь"
     },
     {
      "type": "choice",
@@ -7345,7 +7642,8 @@
       "la"
      ],
      "a": 0,
-     "id": "e3"
+     "id": "e3",
+     "tr": "птица"
     },
     {
      "type": "gap",
@@ -7455,7 +7753,8 @@
       "des cheveux"
      ],
      "a": 0,
-     "id": "e12"
+     "id": "e12",
+     "tr": "лошади"
     },
     {
      "type": "match",
@@ -7504,7 +7803,8 @@
      "a": [
       "le chien et le chat dorment"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Собака и кошка спят."
     },
     {
      "type": "translate",
@@ -7537,7 +7837,8 @@
      "a": [
       "je n'ai pas de chien"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "у меня нет собаки"
     },
     {
      "type": "transform",
@@ -7546,7 +7847,8 @@
      "a": [
       "il n'y a pas d'oiseaux"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "птиц нет"
     },
     {
      "type": "transform",
@@ -7555,7 +7857,8 @@
      "a": [
       "des chevaux"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "лошади"
     },
     {
      "type": "transform",
@@ -7564,7 +7867,8 @@
      "a": [
       "j'aime les chats"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "я люблю кошек"
     },
     {
      "type": "transform",
@@ -7573,7 +7877,8 @@
      "a": [
       "nous faisons du sport"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "мы занимаемся спортом"
     },
     {
      "type": "transform",
@@ -7582,7 +7887,8 @@
      "a": [
       "vous prenez le métro"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "вы едете на метро"
     },
     {
      "type": "transform",
@@ -7591,7 +7897,8 @@
      "a": [
       "j'ai trente ans"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "мне тридцать лет"
     },
     {
      "type": "transform",
@@ -7600,7 +7907,8 @@
      "a": [
       "j'adore les pâtes"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "я обожаю пасту"
     }
    ],
    "fun": {
@@ -8075,7 +8383,8 @@
       "réveillons",
       "réveillez",
       "réveillent"
-     ]
+     ],
+     "tr": "сё ревейе"
     },
     {
      "id": "w-se-lever",
@@ -8090,7 +8399,8 @@
       "levons",
       "levez",
       "lèvent"
-     ]
+     ],
+     "tr": "сё лёве"
     },
     {
      "id": "w-se-laver",
@@ -8105,7 +8415,8 @@
       "lavons",
       "lavez",
       "lavent"
-     ]
+     ],
+     "tr": "сё лаве"
     },
     {
      "id": "w-se-doucher",
@@ -8120,7 +8431,8 @@
       "douchons",
       "douchez",
       "douchent"
-     ]
+     ],
+     "tr": "сё душе"
     },
     {
      "id": "w-se-brosser",
@@ -8132,7 +8444,8 @@
      "forms": [
       "brosse",
       "brosses"
-     ]
+     ],
+     "tr": "сё бросе ле дан"
     },
     {
      "id": "w-s-habiller",
@@ -8147,7 +8460,8 @@
       "habillons",
       "habillez",
       "habillent"
-     ]
+     ],
+     "tr": "сабийе"
     },
     {
      "id": "w-se-maquiller",
@@ -8159,7 +8473,8 @@
      "forms": [
       "maquille",
       "maquilles"
-     ]
+     ],
+     "tr": "сё макийе"
     },
     {
      "id": "w-se-preparer",
@@ -8171,7 +8486,8 @@
      "forms": [
       "prépare",
       "prépares"
-     ]
+     ],
+     "tr": "сё препаре"
     },
     {
      "id": "w-se-depecher",
@@ -8184,7 +8500,8 @@
       "dépêche",
       "dépêches",
       "dépêchons"
-     ]
+     ],
+     "tr": "сё депеше"
     },
     {
      "id": "w-s-appeler",
@@ -8196,7 +8513,8 @@
      "forms": [
       "appelles",
       "appelle"
-     ]
+     ],
+     "tr": "сапле"
     },
     {
      "id": "w-se-reposer",
@@ -8209,7 +8527,8 @@
       "repose",
       "reposes",
       "reposons"
-     ]
+     ],
+     "tr": "сё рёпозе"
     },
     {
      "id": "w-se-promener",
@@ -8222,7 +8541,8 @@
       "promène",
       "promènes",
       "promenons"
-     ]
+     ],
+     "tr": "сё промнэ"
     },
     {
      "id": "w-s-amuser",
@@ -8234,7 +8554,8 @@
      "forms": [
       "amuse",
       "amusent"
-     ]
+     ],
+     "tr": "самюзе"
     },
     {
      "id": "w-se-coucher",
@@ -8249,7 +8570,8 @@
       "couchons",
       "couchez",
       "couchent"
-     ]
+     ],
+     "tr": "сё куше"
     },
     {
      "id": "w-tot",
@@ -8258,7 +8580,8 @@
      "g": null,
      "ex": "Je me lève tôt.",
      "exRu": "Я встаю рано.",
-     "forms": []
+     "forms": [],
+     "tr": "то"
     },
     {
      "id": "w-tard",
@@ -8267,7 +8590,8 @@
      "g": null,
      "ex": "Il se couche tard.",
      "exRu": "Он ложится поздно.",
-     "forms": []
+     "forms": [],
+     "tr": "тар"
     }
    ],
    "topics": [
@@ -8445,7 +8769,8 @@
       "Nous nous levons tôt ?"
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Вы рано встаёте?"
     },
     {
      "type": "match",
@@ -8511,7 +8836,8 @@
      "a": [
       "il se brosse les dents"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Он чистит зубы."
     },
     {
      "type": "dictation",
@@ -8519,7 +8845,8 @@
      "a": [
       "nous nous dépêchons"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Мы торопимся."
     },
     {
      "type": "translate",
@@ -8562,7 +8889,8 @@
      "a": [
       "nous nous levons tôt"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "мы рано встаём"
     },
     {
      "type": "transform",
@@ -8571,7 +8899,8 @@
      "a": [
       "je me couche tard"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "я поздно ложусь спать"
     },
     {
      "type": "transform",
@@ -8580,7 +8909,8 @@
      "a": [
       "ils s'habillent vite"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "они быстро одеваются"
     },
     {
      "type": "transform",
@@ -8589,7 +8919,8 @@
      "a": [
       "vous vous douchez le matin"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "вы принимаете душ утром"
     },
     {
      "type": "transform",
@@ -8598,7 +8929,8 @@
      "a": [
       "tu ne te réveilles pas tôt"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "ты не просыпаешься рано"
     },
     {
      "type": "transform",
@@ -8607,7 +8939,8 @@
      "a": [
       "je dois me lever"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "мне нужно вставать"
     },
     {
      "type": "transform",
@@ -8616,7 +8949,8 @@
      "a": [
       "je me lave"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "я умываюсь"
     },
     {
      "type": "transform",
@@ -8625,7 +8959,8 @@
      "a": [
       "nous nous levons"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "мы встаём"
     }
    ]
   },
@@ -8905,7 +9240,8 @@
      "forms": [
       "football",
       "foot"
-     ]
+     ],
+     "tr": "лё футболь / лё фут"
     },
     {
      "id": "w-tennis",
@@ -8914,7 +9250,8 @@
      "g": "m",
      "ex": "Je joue au tennis.",
      "exRu": "Я играю в теннис.",
-     "forms": []
+     "forms": [],
+     "tr": "лё тенис"
     },
     {
      "id": "w-basket",
@@ -8923,7 +9260,8 @@
      "g": "m",
      "ex": "On joue au basket ?",
      "exRu": "Поиграем в баскетбол?",
-     "forms": []
+     "forms": [],
+     "tr": "лё баскет"
     },
     {
      "id": "w-natation",
@@ -8932,7 +9270,8 @@
      "g": "f",
      "ex": "Je fais de la natation.",
      "exRu": "Я занимаюсь плаванием.",
-     "forms": []
+     "forms": [],
+     "tr": "ля натасьон"
     },
     {
      "id": "w-velo",
@@ -8943,7 +9282,8 @@
      "exRu": "Я катаюсь на велосипеде.",
      "forms": [
       "vélo"
-     ]
+     ],
+     "tr": "лё вело"
     },
     {
      "id": "w-course",
@@ -8954,7 +9294,8 @@
      "exRu": "Бег полезен для здоровья.",
      "forms": [
       "course"
-     ]
+     ],
+     "tr": "ля курс а пье"
     },
     {
      "id": "w-ski",
@@ -8963,7 +9304,8 @@
      "g": "m",
      "ex": "On fait du ski en hiver.",
      "exRu": "Зимой катаемся на лыжах.",
-     "forms": []
+     "forms": [],
+     "tr": "лё ски"
     },
     {
      "id": "w-danse",
@@ -8972,7 +9314,8 @@
      "g": "f",
      "ex": "Elle fait de la danse.",
      "exRu": "Она занимается танцами.",
-     "forms": []
+     "forms": [],
+     "tr": "ля данс"
     },
     {
      "id": "w-yoga",
@@ -8981,7 +9324,8 @@
      "g": "m",
      "ex": "Je fais du yoga le soir.",
      "exRu": "Я занимаюсь йогой вечером.",
-     "forms": []
+     "forms": [],
+     "tr": "лё йога"
     },
     {
      "id": "w-randonnee",
@@ -8990,7 +9334,8 @@
      "g": "f",
      "ex": "J’aime faire de la randonnée.",
      "exRu": "Люблю ходить в походы.",
-     "forms": []
+     "forms": [],
+     "tr": "ля рандоне"
     },
     {
      "id": "w-piano",
@@ -8999,7 +9344,8 @@
      "g": "m",
      "ex": "Tu joues du piano ?",
      "exRu": "Ты играешь на пианино?",
-     "forms": []
+     "forms": [],
+     "tr": "лё пьяно"
     },
     {
      "id": "w-guitare",
@@ -9008,7 +9354,8 @@
      "g": "f",
      "ex": "Il joue de la guitare.",
      "exRu": "Он играет на гитаре.",
-     "forms": []
+     "forms": [],
+     "tr": "ля гитар"
     },
     {
      "id": "w-violon",
@@ -9017,7 +9364,8 @@
      "g": "m",
      "ex": "Elle joue du violon.",
      "exRu": "Она играет на скрипке.",
-     "forms": []
+     "forms": [],
+     "tr": "лё вьолон"
     },
     {
      "id": "w-batterie",
@@ -9026,7 +9374,8 @@
      "g": "f",
      "ex": "Je joue de la batterie.",
      "exRu": "Я играю на барабанах.",
-     "forms": []
+     "forms": [],
+     "tr": "ля батри"
     },
     {
      "id": "w-flute",
@@ -9035,7 +9384,8 @@
      "g": "f",
      "ex": "La flûte est jolie.",
      "exRu": "Флейта красивая.",
-     "forms": []
+     "forms": [],
+     "tr": "ля флют"
     },
     {
      "id": "w-sport",
@@ -9044,7 +9394,8 @@
      "g": "m",
      "ex": "Tu fais du sport ?",
      "exRu": "Ты занимаешься спортом?",
-     "forms": []
+     "forms": [],
+     "tr": "лё спор"
     },
     {
      "id": "w-passe-temps",
@@ -9053,7 +9404,8 @@
      "g": "m",
      "ex": "Mon passe-temps, c’est la danse.",
      "exRu": "Моё хобби — танцы.",
-     "forms": []
+     "forms": [],
+     "tr": "эн пас-тан"
     }
    ],
    "topics": [
@@ -9134,7 +9486,8 @@
       "mes"
      ],
      "a": 0,
-     "id": "e1"
+     "id": "e1",
+     "tr": "моя сестра"
     },
     {
      "type": "choice",
@@ -9144,7 +9497,8 @@
       "ma"
      ],
      "a": 0,
-     "id": "e2"
+     "id": "e2",
+     "tr": "моя подруга"
     },
     {
      "type": "choice",
@@ -9154,7 +9508,8 @@
       "notre"
      ],
      "a": 0,
-     "id": "e3"
+     "id": "e3",
+     "tr": "наши родители"
     },
     {
      "type": "choice",
@@ -9164,7 +9519,8 @@
       "leur"
      ],
      "a": 0,
-     "id": "e4"
+     "id": "e4",
+     "tr": "их дети"
     },
     {
      "type": "gap",
@@ -9230,7 +9586,8 @@
       "mes amies"
      ],
      "a": 0,
-     "id": "e11"
+     "id": "e11",
+     "tr": "моя подруга"
     },
     {
      "type": "match",
@@ -9281,7 +9638,8 @@
      "a": [
       "tu fais du sport"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Ты занимаешься спортом?"
     },
     {
      "type": "dictation",
@@ -9289,7 +9647,8 @@
      "a": [
       "ses amis jouent au basket"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Его друзья играют в баскетбол."
     },
     {
      "type": "translate",
@@ -9330,7 +9689,8 @@
      "a": [
       "son livre"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "его (её) книга"
     },
     {
      "type": "transform",
@@ -9339,7 +9699,8 @@
      "a": [
       "leur maison"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "их дом"
     },
     {
      "type": "transform",
@@ -9348,7 +9709,8 @@
      "a": [
       "nos amis"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "наши друзья"
     },
     {
      "type": "transform",
@@ -9357,7 +9719,8 @@
      "a": [
       "nous jouons du piano"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "мы играем на пианино"
     },
     {
      "type": "transform",
@@ -9366,7 +9729,8 @@
      "a": [
       "je joue au tennis"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я играю в теннис"
     },
     {
      "type": "transform",
@@ -9375,7 +9739,8 @@
      "a": [
       "il joue de la guitare"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "он играет на гитаре"
     },
     {
      "type": "transform",
@@ -9384,7 +9749,8 @@
      "a": [
       "elle fait de la natation"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "она занимается плаванием"
     },
     {
      "type": "transform",
@@ -9393,7 +9759,8 @@
      "a": [
       "c'est mon amie léa"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "это моя подруга Леа"
     }
    ]
   },
@@ -9441,36 +9808,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E05 Le nouveau Président français",
-       "dur": "32:44",
-       "url": "https://www.youtube.com/watch?v=8GZI272O4u8",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "О ком этот эпизод?",
-         "o": [
-          "о президенте Эммануэле Макроне",
-          "о Франсуа Олланде",
-          "о Марин Ле Пен"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Чем удивительна его победа?",
-         "o": [
-          "он очень молод и ещё 4 года назад был никому не известен",
-          "он побеждал много раз",
-          "он не француз"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — A Dangerous Ride!",
+       "dur": "11:42",
+       "url": "https://www.youtube.com/watch?v=6i6g-0HJuPs",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -9638,7 +9980,8 @@
      "exRu": "Она молодая.",
      "forms": [
       "jeunes"
-     ]
+     ],
+     "tr": "жён"
     },
     {
      "id": "w-vieux",
@@ -9651,7 +9994,8 @@
       "vieux",
       "vieille",
       "vieil"
-     ]
+     ],
+     "tr": "вьё / вьей"
     },
     {
      "id": "w-beau",
@@ -9666,7 +10010,8 @@
       "beaux",
       "belles",
       "bel"
-     ]
+     ],
+     "tr": "бо / бель"
     },
     {
      "id": "w-joli",
@@ -9678,7 +10023,8 @@
      "forms": [
       "joli",
       "jolie"
-     ]
+     ],
+     "tr": "жоли / жоли"
     },
     {
      "id": "w-gentil",
@@ -9690,7 +10036,8 @@
      "forms": [
       "gentil",
       "gentille"
-     ]
+     ],
+     "tr": "жанти / жантий"
     },
     {
      "id": "w-sympa",
@@ -9699,7 +10046,8 @@
      "g": null,
      "ex": "Ton ami est sympa.",
      "exRu": "Твой друг классный.",
-     "forms": []
+     "forms": [],
+     "tr": "сэмпа"
     },
     {
      "id": "w-intelligent",
@@ -9711,7 +10059,8 @@
      "forms": [
       "intelligent",
       "intelligente"
-     ]
+     ],
+     "tr": "энтележан / энтележант"
     },
     {
      "id": "w-drole",
@@ -9720,7 +10069,8 @@
      "g": null,
      "ex": "Il est drôle.",
      "exRu": "Он смешной.",
-     "forms": []
+     "forms": [],
+     "tr": "дроль"
     },
     {
      "id": "w-serieux",
@@ -9732,7 +10082,8 @@
      "forms": [
       "sérieux",
       "sérieuse"
-     ]
+     ],
+     "tr": "серьё / серьёз"
     },
     {
      "id": "w-timide",
@@ -9741,7 +10092,8 @@
      "g": null,
      "ex": "Je suis un peu timide.",
      "exRu": "Я немного застенчивая.",
-     "forms": []
+     "forms": [],
+     "tr": "тимид"
     },
     {
      "id": "w-heureux",
@@ -9753,7 +10105,8 @@
      "forms": [
       "heureux",
       "heureuse"
-     ]
+     ],
+     "tr": "ёрё / ёрёз"
     },
     {
      "id": "w-triste",
@@ -9762,7 +10115,8 @@
      "g": null,
      "ex": "Pourquoi tu es triste ?",
      "exRu": "Почему ты грустишь?",
-     "forms": []
+     "forms": [],
+     "tr": "трист"
     },
     {
      "id": "w-mince",
@@ -9771,7 +10125,8 @@
      "g": null,
      "ex": "Elle est mince.",
      "exRu": "Она стройная.",
-     "forms": []
+     "forms": [],
+     "tr": "мэнс"
     },
     {
      "id": "w-fort",
@@ -9783,7 +10138,8 @@
      "forms": [
       "fort",
       "forte"
-     ]
+     ],
+     "tr": "фор / форт"
     },
     {
      "id": "w-blond",
@@ -9795,7 +10151,8 @@
      "forms": [
       "blond",
       "blonde"
-     ]
+     ],
+     "tr": "блон / блонд"
     },
     {
      "id": "w-brun",
@@ -9807,7 +10164,8 @@
      "forms": [
       "brun",
       "brune"
-     ]
+     ],
+     "tr": "брэн / брюн"
     },
     {
      "id": "w-roux",
@@ -9819,7 +10177,8 @@
      "forms": [
       "roux",
       "rousse"
-     ]
+     ],
+     "tr": "ру / рус"
     },
     {
      "id": "w-sportif",
@@ -9831,7 +10190,8 @@
      "forms": [
       "sportif",
       "sportive"
-     ]
+     ],
+     "tr": "спортиф / спортив"
     },
     {
      "id": "w-calme",
@@ -9840,7 +10200,8 @@
      "g": null,
      "ex": "C’est un enfant calme.",
      "exRu": "Это спокойный ребёнок.",
-     "forms": []
+     "forms": [],
+     "tr": "кальм"
     },
     {
      "id": "w-curieux",
@@ -9852,7 +10213,8 @@
      "forms": [
       "curieux",
       "curieuse"
-     ]
+     ],
+     "tr": "кюрьё / кюрьёз"
     },
     {
      "id": "w-genereux",
@@ -9864,7 +10226,8 @@
      "forms": [
       "généreux",
       "généreuse"
-     ]
+     ],
+     "tr": "женерё / женерёз"
     },
     {
      "id": "w-paresseux",
@@ -9876,7 +10239,8 @@
      "forms": [
       "paresseux",
       "paresseuse"
-     ]
+     ],
+     "tr": "паресё / паресёз"
     },
     {
      "id": "w-travailleur",
@@ -9888,7 +10252,8 @@
      "forms": [
       "travailleur",
       "travailleuse"
-     ]
+     ],
+     "tr": "травайёр / травайёз"
     },
     {
      "id": "w-cher",
@@ -9900,7 +10265,8 @@
      "forms": [
       "cher",
       "chère"
-     ]
+     ],
+     "tr": "шер / шер"
     }
    ],
    "topics": [
@@ -10062,7 +10428,8 @@
       "Elle est heureuse."
      ],
      "a": 1,
-     "id": "e12"
+     "id": "e12",
+     "tr": "Она счастлива."
     },
     {
      "type": "match",
@@ -10134,7 +10501,8 @@
      "a": [
       "il est jeune et sportif"
      ],
-     "id": "e16"
+     "id": "e16",
+     "tr": "Он молодой и спортивный."
     },
     {
      "type": "translate",
@@ -10166,7 +10534,8 @@
      "a": [
       "elle est heureuse"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "она счастлива"
     },
     {
      "type": "transform",
@@ -10175,7 +10544,8 @@
      "a": [
       "une fille sportive"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "спортивная девушка"
     },
     {
      "type": "transform",
@@ -10184,7 +10554,8 @@
      "a": [
       "elle est belle"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "она красивая"
     },
     {
      "type": "transform",
@@ -10193,7 +10564,8 @@
      "a": [
       "ma sœur est gentille"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "моя сестра добрая"
     },
     {
      "type": "transform",
@@ -10202,7 +10574,8 @@
      "a": [
       "une vieille maison"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "старый дом"
     },
     {
      "type": "transform",
@@ -10211,7 +10584,8 @@
      "a": [
       "elle est rousse"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "она рыжая"
     },
     {
      "type": "transform",
@@ -10220,7 +10594,8 @@
      "a": [
       "une femme intelligente"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "умная женщина"
     },
     {
      "type": "transform",
@@ -10229,7 +10604,8 @@
      "a": [
       "un petit chat"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "маленький кот"
     }
    ],
    "fun": {
@@ -10283,69 +10659,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E05 Le nouveau Président français",
-       "dur": "32:44",
-       "url": "https://www.youtube.com/watch?v=8GZI272O4u8",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Как французы выбирают президента?",
-         "o": [
-          "прямым всеобщим голосованием",
-          "через парламент",
-          "по жребию"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Когда кандидат побеждает уже в первом туре?",
-         "o": [
-          "если получает больше 50% голосов",
-          "если он самый молодой",
-          "никогда"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "Где Макрон работал до политики?",
-         "o": [
-          "в банке Ротшильда",
-          "в школе учителем",
-          "на телевидении"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Как называется движение Макрона?",
-         "o": [
-          "En marche",
-          "La France insoumise",
-          "Les Verts"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "С кем он встретился во втором туре?",
-         "o": [
-          "с Марин Ле Пен",
-          "с Франсуа Олландом",
-          "ни с кем"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Bob l’éponge (SpongeBob)",
+       "dur": "14:44",
+       "url": "https://www.youtube.com/watch?v=c1BvxMg5QrU",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -10483,7 +10801,8 @@
      "exRu": "Сначала я встаю.",
      "forms": [
       "abord"
-     ]
+     ],
+     "tr": "дабор"
     },
     {
      "id": "w-ensuite",
@@ -10492,7 +10811,8 @@
      "g": null,
      "ex": "Ensuite, je m’habille.",
      "exRu": "Затем я одеваюсь.",
-     "forms": []
+     "forms": [],
+     "tr": "ансюит"
     },
     {
      "id": "w-enfin",
@@ -10501,7 +10821,8 @@
      "g": null,
      "ex": "Enfin, je dors.",
      "exRu": "Наконец я сплю.",
-     "forms": []
+     "forms": [],
+     "tr": "анфэн"
     },
     {
      "id": "w-souvent",
@@ -10510,7 +10831,8 @@
      "g": null,
      "ex": "Je lis souvent.",
      "exRu": "Я часто читаю.",
-     "forms": []
+     "forms": [],
+     "tr": "суван"
     },
     {
      "id": "w-parfois",
@@ -10519,7 +10841,8 @@
      "g": null,
      "ex": "Parfois, je cuisine.",
      "exRu": "Иногда я готовлю.",
-     "forms": []
+     "forms": [],
+     "tr": "парфуа"
     },
     {
      "id": "w-de-temps",
@@ -10528,7 +10851,8 @@
      "g": null,
      "ex": "Je vais au cinéma de temps en temps.",
      "exRu": "Время от времени хожу в кино.",
-     "forms": []
+     "forms": [],
+     "tr": "дё тан зан тан"
     },
     {
      "id": "w-tous-les-jours",
@@ -10537,7 +10861,8 @@
      "g": null,
      "ex": "J’apprends le français tous les jours.",
      "exRu": "Я учу французский каждый день.",
-     "forms": []
+     "forms": [],
+     "tr": "ту ле жур"
     },
     {
      "id": "w-matin",
@@ -10548,7 +10873,8 @@
      "exRu": "Утром я бегаю.",
      "forms": [
       "matin"
-     ]
+     ],
+     "tr": "лё матэн"
     },
     {
      "id": "w-apres-midi",
@@ -10557,7 +10883,8 @@
      "g": "m",
      "ex": "L’après-midi, je travaille.",
      "exRu": "Днём я работаю.",
-     "forms": []
+     "forms": [],
+     "tr": "лапре-миди"
     },
     {
      "id": "w-soir",
@@ -10568,7 +10895,8 @@
      "exRu": "Вечером я отдыхаю.",
      "forms": [
       "soir"
-     ]
+     ],
+     "tr": "лё суар"
     },
     {
      "id": "w-nuit",
@@ -10579,7 +10907,8 @@
      "exRu": "Спокойной ночи!",
      "forms": [
       "nuit"
-     ]
+     ],
+     "tr": "ля нюи"
     },
     {
      "id": "w-week-end",
@@ -10588,7 +10917,8 @@
      "g": "m",
      "ex": "Le week-end, je me promène.",
      "exRu": "На выходных я гуляю.",
-     "forms": []
+     "forms": [],
+     "tr": "лё уикэнд"
     }
    ],
    "topics": [
@@ -10730,7 +11060,8 @@
       "ma"
      ],
      "a": 0,
-     "id": "e9"
+     "id": "e9",
+     "tr": "моя подруга Леа"
     },
     {
      "type": "listen",
@@ -10742,7 +11073,8 @@
       "Enfin, je prends un café."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Сначала я выпиваю кофе."
     },
     {
      "type": "order",
@@ -10779,7 +11111,8 @@
      "a": [
       "le week-end je me repose"
      ],
-     "id": "e13"
+     "id": "e13",
+     "tr": "По выходным я отдыхаю."
     },
     {
      "type": "dictation",
@@ -10787,7 +11120,8 @@
      "a": [
       "je fais du sport tous les jours"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Я занимаюсь спортом каждый день."
     },
     {
      "type": "translate",
@@ -10821,7 +11155,8 @@
      "a": [
       "d'abord je me lève ensuite je prends un café"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "сначала я встаю, потом пью кофе"
     },
     {
      "type": "transform",
@@ -10830,7 +11165,8 @@
      "a": [
       "je lis souvent"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "я часто читаю"
     },
     {
      "type": "transform",
@@ -10839,7 +11175,8 @@
      "a": [
       "je ne bois jamais de café le soir"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "я никогда не пью кофе вечером"
     },
     {
      "type": "transform",
@@ -10848,7 +11185,8 @@
      "a": [
       "nous nous habillons"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "мы одеваемся"
     },
     {
      "type": "transform",
@@ -10857,7 +11195,8 @@
      "a": [
       "je finis tard"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я заканчиваю поздно"
     },
     {
      "type": "transform",
@@ -10866,7 +11205,8 @@
      "a": [
       "ma sœur est sportive"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "моя сестра спортивная"
     },
     {
      "type": "transform",
@@ -10875,7 +11215,8 @@
      "a": [
       "il joue du violon"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "он играет на скрипке"
     },
     {
      "type": "transform",
@@ -10884,7 +11225,8 @@
      "a": [
       "je ne mange jamais de viande"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "я никогда не ем мясо"
     }
    ]
   },
@@ -10932,36 +11274,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E06 Les avantages cachés de l’apprentissage d’une langue",
-       "dur": "29:07",
-       "url": "https://www.youtube.com/watch?v=9rSS3DKctX8",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Тема эпизода —",
-         "o": [
-          "скрытые плюсы изучения языков",
-          "весна в Варшаве",
-          "французские сыры"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Какая репутация у французов в языках?",
-         "o": [
-          "их считают слабыми в иностранных языках",
-          "все говорят на пяти языках",
-          "никто не учит английский в школе"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson au Costa Rica",
+       "dur": "12:29",
+       "url": "https://www.youtube.com/watch?v=PSKhYAgdQu4",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -11120,7 +11437,8 @@
      "g": "m",
      "ex": "Lundi, je travaille.",
      "exRu": "В понедельник я работаю.",
-     "forms": []
+     "forms": [],
+     "tr": "лэнди"
     },
     {
      "id": "w-mardi",
@@ -11129,7 +11447,8 @@
      "g": "m",
      "ex": "Mardi, j’ai cours.",
      "exRu": "Во вторник у меня занятия.",
-     "forms": []
+     "forms": [],
+     "tr": "марди"
     },
     {
      "id": "w-mercredi",
@@ -11138,7 +11457,8 @@
      "g": "m",
      "ex": "Mercredi, je fais du sport.",
      "exRu": "В среду я занимаюсь спортом.",
-     "forms": []
+     "forms": [],
+     "tr": "меркрёди"
     },
     {
      "id": "w-jeudi",
@@ -11147,7 +11467,8 @@
      "g": "m",
      "ex": "À jeudi !",
      "exRu": "До четверга!",
-     "forms": []
+     "forms": [],
+     "tr": "жёди"
     },
     {
      "id": "w-vendredi",
@@ -11156,7 +11477,8 @@
      "g": "m",
      "ex": "Vendredi soir, on sort.",
      "exRu": "В пятницу вечером мы идём гулять.",
-     "forms": []
+     "forms": [],
+     "tr": "вандрёди"
     },
     {
      "id": "w-samedi",
@@ -11165,7 +11487,8 @@
      "g": "m",
      "ex": "Le samedi, je me repose.",
      "exRu": "По субботам я отдыхаю.",
-     "forms": []
+     "forms": [],
+     "tr": "самди"
     },
     {
      "id": "w-dimanche",
@@ -11174,7 +11497,8 @@
      "g": "m",
      "ex": "Dimanche, c’est le repos.",
      "exRu": "Воскресенье — отдых.",
-     "forms": []
+     "forms": [],
+     "tr": "диманш"
     },
     {
      "id": "w-mois-1",
@@ -11187,7 +11511,8 @@
       "janvier",
       "février",
       "mars"
-     ]
+     ],
+     "tr": "жанвье · феврие · марс"
     },
     {
      "id": "w-mois-2",
@@ -11200,7 +11525,8 @@
       "avril",
       "mai",
       "juin"
-     ]
+     ],
+     "tr": "аврил · ме · жюэн"
     },
     {
      "id": "w-mois-3",
@@ -11213,7 +11539,8 @@
       "juillet",
       "août",
       "septembre"
-     ]
+     ],
+     "tr": "жюийе · ут · септамбр"
     },
     {
      "id": "w-mois-4",
@@ -11226,7 +11553,8 @@
       "octobre",
       "novembre",
       "décembre"
-     ]
+     ],
+     "tr": "октобр · новамбр · десамбр"
     },
     {
      "id": "w-semaine",
@@ -11235,7 +11563,8 @@
      "g": "f",
      "ex": "Une fois par semaine.",
      "exRu": "Раз в неделю.",
-     "forms": []
+     "forms": [],
+     "tr": "юн сёмэн"
     },
     {
      "id": "w-mois",
@@ -11244,7 +11573,8 @@
      "g": "m",
      "ex": "Un mois de français.",
      "exRu": "Месяц французского.",
-     "forms": []
+     "forms": [],
+     "tr": "эн муа"
     },
     {
      "id": "w-midi",
@@ -11256,7 +11586,8 @@
      "forms": [
       "midi",
       "minuit"
-     ]
+     ],
+     "tr": "миди · минюи"
     },
     {
      "id": "w-et-quart",
@@ -11269,7 +11600,8 @@
       "quart",
       "demie",
       "demi"
-     ]
+     ],
+     "tr": "э кар · э дёми · муэн лё кар"
     },
     {
      "id": "w-mal-a",
@@ -11280,7 +11612,8 @@
      "exRu": "У меня болит горло.",
      "forms": [
       "mal"
-     ]
+     ],
+     "tr": "авуар маль а…"
     },
     {
      "id": "w-tete",
@@ -11289,7 +11622,8 @@
      "g": "f",
      "ex": "J’ai mal à la tête.",
      "exRu": "У меня болит голова.",
-     "forms": []
+     "forms": [],
+     "tr": "ля тэт"
     },
     {
      "id": "w-ventre",
@@ -11298,7 +11632,8 @@
      "g": "m",
      "ex": "J’ai mal au ventre.",
      "exRu": "У меня болит живот.",
-     "forms": []
+     "forms": [],
+     "tr": "лё вантр"
     },
     {
      "id": "w-gorge",
@@ -11307,7 +11642,8 @@
      "g": "f",
      "ex": "Il a mal à la gorge.",
      "exRu": "У него болит горло.",
-     "forms": []
+     "forms": [],
+     "tr": "ля горж"
     },
     {
      "id": "w-fievre",
@@ -11316,7 +11652,8 @@
      "g": "f",
      "ex": "J’ai de la fièvre.",
      "exRu": "У меня температура.",
-     "forms": []
+     "forms": [],
+     "tr": "ля фьевр"
     },
     {
      "id": "w-malade",
@@ -11325,7 +11662,8 @@
      "g": null,
      "ex": "Je suis malade.",
      "exRu": "Я болею.",
-     "forms": []
+     "forms": [],
+     "tr": "малад"
     },
     {
      "id": "w-rhume",
@@ -11334,7 +11672,8 @@
      "g": "m",
      "ex": "J’ai un rhume.",
      "exRu": "У меня простуда.",
-     "forms": []
+     "forms": [],
+     "tr": "эн рюм"
     },
     {
      "id": "w-grippe",
@@ -11343,7 +11682,8 @@
      "g": "f",
      "ex": "Il a la grippe.",
      "exRu": "У него грипп.",
-     "forms": []
+     "forms": [],
+     "tr": "ля грип"
     },
     {
      "id": "w-tousser",
@@ -11355,7 +11695,8 @@
      "forms": [
       "tousse",
       "tousses"
-     ]
+     ],
+     "tr": "тусе"
     },
     {
      "id": "w-pharmacie-m",
@@ -11367,7 +11708,8 @@
      "forms": [
       "médicament",
       "médicaments"
-     ]
+     ],
+     "tr": "эн медикаман"
     }
    ],
    "topics": [
@@ -11520,7 +11862,8 @@
       "2:00"
      ],
      "a": 0,
-     "id": "e9"
+     "id": "e9",
+     "tr": "Сейчас одиннадцать часов."
     },
     {
      "type": "listen",
@@ -11532,7 +11875,8 @@
       "5:45"
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Сейчас четверть седьмого."
     },
     {
      "type": "match",
@@ -11610,7 +11954,8 @@
      "a": [
       "il est midi et demi"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Сейчас половина первого дня."
     },
     {
      "type": "dictation",
@@ -11618,7 +11963,8 @@
      "a": [
       "je suis malade"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Я болею."
     },
     {
      "type": "translate",
@@ -11660,7 +12006,8 @@
      "a": [
       "il est trois heures et demie"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "сейчас половина четвёртого"
     },
     {
      "type": "transform",
@@ -11669,7 +12016,8 @@
      "a": [
       "il est huit heures moins le quart"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "сейчас без четверти восемь"
     },
     {
      "type": "transform",
@@ -11678,7 +12026,8 @@
      "a": [
       "il est minuit"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "сейчас полночь"
     },
     {
      "type": "transform",
@@ -11687,7 +12036,8 @@
      "a": [
       "je travaille le lundi"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "я работаю по понедельникам"
     },
     {
      "type": "transform",
@@ -11696,7 +12046,8 @@
      "a": [
       "j'ai mal au ventre"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "у меня болит живот"
     },
     {
      "type": "transform",
@@ -11705,7 +12056,8 @@
      "a": [
       "j'ai mal aux dents"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "у меня болят зубы"
     },
     {
      "type": "transform",
@@ -11714,7 +12066,8 @@
      "a": [
       "mon anniversaire est en mai"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "мой день рождения в мае"
     },
     {
      "type": "transform",
@@ -11723,7 +12076,8 @@
      "a": [
       "j'ai de la fièvre"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "у меня температура"
     }
    ],
    "fun": {
@@ -11753,15 +12107,15 @@
     },
     {
      "kind": "listening",
-     "title": "Подкаст для удовольствия",
+     "title": "Мультфильм для удовольствия",
      "min": 15,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E05 Le nouveau Président français",
-       "dur": "32:44",
-       "url": "https://www.youtube.com/watch?v=8GZI272O4u8",
-       "task": "Любой отрывок, без задач."
+       "src": "Totally Spies! Français",
+       "title": "Totally Spies ! Les Robots Attaquent (saison 1, épisode 24)",
+       "dur": "21:18",
+       "url": "https://www.youtube.com/watch?v=IqpwmM41jBg",
+       "task": "Целая серия на французском, без разбора. Включи французские субтитры и смотри, сколько интересно. Задач нет."
       }
      ]
     },
@@ -11842,69 +12196,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E06 Les avantages cachés de l’apprentissage d’une langue",
-       "dur": "29:07",
-       "url": "https://www.youtube.com/watch?v=9rSS3DKctX8",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Что показали исследования о детях-билингвах?",
-         "o": [
-          "им легче переключаться между задачами и учиться",
-          "они хуже учатся в школе",
-          "разницы нет"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Как автор чувствует себя после часа разговора по-польски?",
-         "o": [
-          "очень уставшим, как после спортзала",
-          "полным сил",
-          "голодным"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "Изучение языка делает нас…",
-         "o": [
-          "более открытыми и терпимыми",
-          "более уставшими навсегда",
-          "менее общительными"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Что автор советует при чтении незнакомого текста?",
-         "o": [
-          "понимать по контексту и сосредоточиться на понятном",
-          "переводить каждое слово",
-          "бросать текст"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "Какой вопрос автор задаёт в конце?",
-         "o": [
-          "какая у тебя «французская личность»",
-          "сколько тебе лет",
-          "где ты живёшь"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — Side Effects?!",
+       "dur": "14:22",
+       "url": "https://www.youtube.com/watch?v=eWzShqYEFh0",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -12084,7 +12380,8 @@
       "trois",
       "quatre",
       "cinq"
-     ]
+     ],
+     "tr": "зеро · эн · дё · труа · катр · сэнк"
     },
     {
      "id": "w-n-6-10",
@@ -12099,7 +12396,8 @@
       "huit",
       "neuf",
       "dix"
-     ]
+     ],
+     "tr": "сис · сет · юит · нёф · дис"
     },
     {
      "id": "w-n-11-16",
@@ -12115,7 +12413,8 @@
       "quatorze",
       "quinze",
       "seize"
-     ]
+     ],
+     "tr": "онз · дуз · трез · каторз · кэнз · сез"
     },
     {
      "id": "w-n-17-19",
@@ -12124,7 +12423,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "дисет · дизюит · дизнёф"
     },
     {
      "id": "w-n-20",
@@ -12133,7 +12433,8 @@
      "g": null,
      "ex": "J’ai vingt ans.",
      "exRu": "Мне 20 лет.",
-     "forms": []
+     "forms": [],
+     "tr": "вэн"
     },
     {
      "id": "w-n-21",
@@ -12142,7 +12443,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "вэнт э эн"
     },
     {
      "id": "w-n-30",
@@ -12151,7 +12453,8 @@
      "g": null,
      "ex": "Trente euros.",
      "exRu": "Тридцать евро.",
-     "forms": []
+     "forms": [],
+     "tr": "трант"
     },
     {
      "id": "w-n-40",
@@ -12160,7 +12463,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "карант"
     },
     {
      "id": "w-n-50",
@@ -12169,7 +12473,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "сэнкант"
     },
     {
      "id": "w-n-60",
@@ -12178,7 +12483,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "суасант"
     },
     {
      "id": "w-n-70",
@@ -12187,7 +12493,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "суасант-дис"
     },
     {
      "id": "w-n-71",
@@ -12196,7 +12503,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "суасант э онз"
     },
     {
      "id": "w-n-80",
@@ -12205,7 +12513,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "катрё-вэн"
     },
     {
      "id": "w-n-81",
@@ -12214,7 +12523,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "катрё-вэн-эн"
     },
     {
      "id": "w-n-90",
@@ -12223,7 +12533,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "катрё-вэн-дис"
     },
     {
      "id": "w-n-99",
@@ -12232,7 +12543,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "катрё-вэн-дизнёф"
     },
     {
      "id": "w-n-100",
@@ -12241,7 +12553,8 @@
      "g": null,
      "ex": "Cent pour cent !",
      "exRu": "Сто процентов!",
-     "forms": []
+     "forms": [],
+     "tr": "сан"
     },
     {
      "id": "w-n-200",
@@ -12250,7 +12563,8 @@
      "g": null,
      "ex": "",
      "exRu": "",
-     "forms": []
+     "forms": [],
+     "tr": "дё сан"
     },
     {
      "id": "w-n-1000",
@@ -12259,7 +12573,8 @@
      "g": null,
      "ex": "Mille mercis !",
      "exRu": "Тысяча благодарностей!",
-     "forms": []
+     "forms": [],
+     "tr": "миль"
     },
     {
      "id": "w-o-2",
@@ -12270,7 +12585,8 @@
      "exRu": "Третий этаж (второй над первым).",
      "forms": [
       "deuxième"
-     ]
+     ],
+     "tr": "дёзьем"
     },
     {
      "id": "w-o-3",
@@ -12281,7 +12597,8 @@
      "exRu": "Третья улица.",
      "forms": [
       "troisième"
-     ]
+     ],
+     "tr": "труазьем"
     },
     {
      "id": "w-numero",
@@ -12290,7 +12607,8 @@
      "g": "m",
      "ex": "Quel est ton numéro ?",
      "exRu": "Какой у тебя номер?",
-     "forms": []
+     "forms": [],
+     "tr": "эн нюмеро"
     },
     {
      "id": "w-combien",
@@ -12299,7 +12617,8 @@
      "g": null,
      "ex": "Ça coûte combien ?",
      "exRu": "Сколько это стоит?",
-     "forms": []
+     "forms": [],
+     "tr": "комбьен"
     }
    ],
    "topics": [
@@ -12357,7 +12676,8 @@
       "80"
      ],
      "a": 1,
-     "id": "e1"
+     "id": "e1",
+     "tr": "семьдесят"
     },
     {
      "type": "listen",
@@ -12369,7 +12689,8 @@
       "72"
      ],
      "a": 1,
-     "id": "e2"
+     "id": "e2",
+     "tr": "девяносто два"
     },
     {
      "type": "listen",
@@ -12381,7 +12702,8 @@
       "60"
      ],
      "a": 1,
-     "id": "e3"
+     "id": "e3",
+     "tr": "шестнадцать"
     },
     {
      "type": "listen",
@@ -12393,7 +12715,8 @@
       "14"
      ],
      "a": 0,
-     "id": "e4"
+     "id": "e4",
+     "tr": "сорок пять"
     },
     {
      "type": "gap",
@@ -12512,7 +12835,8 @@
       "j'ai trente ans",
       "j'ai 30 ans"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Мне тридцать лет."
     },
     {
      "type": "dictation",
@@ -12521,7 +12845,8 @@
       "ça coûte quatre-vingts euros",
       "ça coûte 80 euros"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Это стоит восемьдесят евро."
     },
     {
      "type": "translate",
@@ -12556,7 +12881,8 @@
      "a": [
       "dix-sept"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "семнадцать"
     },
     {
      "type": "transform",
@@ -12565,7 +12891,8 @@
      "a": [
       "soixante et onze"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "семьдесят один"
     },
     {
      "type": "transform",
@@ -12574,7 +12901,8 @@
      "a": [
       "quatre-vingts"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "восемьдесят"
     },
     {
      "type": "transform",
@@ -12583,7 +12911,8 @@
      "a": [
       "quatre-vingt-quinze"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "девяносто пять"
     },
     {
      "type": "transform",
@@ -12592,7 +12921,8 @@
      "a": [
       "vingt et un"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "двадцать один"
     },
     {
      "type": "transform",
@@ -12601,7 +12931,8 @@
      "a": [
       "trois cents"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "триста"
     },
     {
      "type": "transform",
@@ -12610,7 +12941,8 @@
      "a": [
       "j'ai trente-trois ans"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "мне тридцать три года"
     },
     {
      "type": "transform",
@@ -12619,7 +12951,8 @@
      "a": [
       "le deuxième jour"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "второй день"
     }
    ]
   },
@@ -12667,36 +13000,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E07 Les théories du complot",
-       "dur": "33:04",
-       "url": "https://www.youtube.com/watch?v=NGFUl2W_XYo",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Тема эпизода —",
-         "o": [
-          "теории заговора",
-          "полёты в космос",
-          "французское кино"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Какой пример теории заговора есть в эпизоде?",
-         "o": [
-          "что люди не высаживались на Луну",
-          "что Земля — куб",
-          "что Париж — не столица"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — Bart’s New Superpower!",
+       "dur": "15:51",
+       "url": "https://www.youtube.com/watch?v=IXo8ea9NhIg",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -12839,7 +13147,8 @@
      "g": "m",
      "ex": "Le corps humain.",
      "exRu": "Человеческое тело.",
-     "forms": []
+     "forms": [],
+     "tr": "лё кор"
     },
     {
      "id": "w-tete-2",
@@ -12850,7 +13159,8 @@
      "exRu": "Красивое лицо.",
      "forms": [
       "visage"
-     ]
+     ],
+     "tr": "лё визаж"
     },
     {
      "id": "w-yeux",
@@ -12862,7 +13172,8 @@
      "forms": [
       "œil",
       "yeux"
-     ]
+     ],
+     "tr": "эн ёй / дез ьё"
     },
     {
      "id": "w-nez",
@@ -12871,7 +13182,8 @@
      "g": "m",
      "ex": "J’ai le nez qui coule.",
      "exRu": "У меня течёт из носа.",
-     "forms": []
+     "forms": [],
+     "tr": "лё не"
     },
     {
      "id": "w-bouche",
@@ -12880,7 +13192,8 @@
      "g": "f",
      "ex": "Ouvre la bouche.",
      "exRu": "Открой рот.",
-     "forms": []
+     "forms": [],
+     "tr": "ля буш"
     },
     {
      "id": "w-oreille",
@@ -12892,7 +13205,8 @@
      "forms": [
       "oreille",
       "oreilles"
-     ]
+     ],
+     "tr": "лорей"
     },
     {
      "id": "w-cheveux",
@@ -12904,7 +13218,8 @@
      "forms": [
       "cheveu",
       "cheveux"
-     ]
+     ],
+     "tr": "ле шёвё"
     },
     {
      "id": "w-dent",
@@ -12915,7 +13230,8 @@
      "exRu": "Я чищу зубы.",
      "forms": [
       "dents"
-     ]
+     ],
+     "tr": "юн дан"
     },
     {
      "id": "w-bras",
@@ -12924,7 +13240,8 @@
      "g": "m",
      "ex": "J’ai mal au bras.",
      "exRu": "У меня болит рука.",
-     "forms": []
+     "forms": [],
+     "tr": "лё бра"
     },
     {
      "id": "w-jambe",
@@ -12935,7 +13252,8 @@
      "exRu": "У него длинные ноги.",
      "forms": [
       "jambes"
-     ]
+     ],
+     "tr": "ля жамб"
     },
     {
      "id": "w-pied",
@@ -12946,7 +13264,8 @@
      "exRu": "Я хожу на работу пешком.",
      "forms": [
       "pieds"
-     ]
+     ],
+     "tr": "лё пье"
     },
     {
      "id": "w-dos",
@@ -12955,7 +13274,8 @@
      "g": "m",
      "ex": "J’ai mal au dos.",
      "exRu": "У меня болит спина.",
-     "forms": []
+     "forms": [],
+     "tr": "лё до"
     },
     {
      "id": "w-vetements",
@@ -12967,7 +13287,8 @@
      "forms": [
       "vêtement",
       "vêtements"
-     ]
+     ],
+     "tr": "ле вэтман"
     },
     {
      "id": "w-pantalon",
@@ -12976,7 +13297,8 @@
      "g": "m",
      "ex": "Un pantalon noir.",
      "exRu": "Чёрные брюки.",
-     "forms": []
+     "forms": [],
+     "tr": "эн панталон"
     },
     {
      "id": "w-jean",
@@ -12985,7 +13307,8 @@
      "g": "m",
      "ex": "Il porte un jean.",
      "exRu": "На нём джинсы.",
-     "forms": []
+     "forms": [],
+     "tr": "эн джин"
     },
     {
      "id": "w-robe",
@@ -12996,7 +13319,8 @@
      "exRu": "Красивое платье.",
      "forms": [
       "robes"
-     ]
+     ],
+     "tr": "юн роб"
     },
     {
      "id": "w-jupe",
@@ -13005,7 +13329,8 @@
      "g": "f",
      "ex": "Une jupe courte.",
      "exRu": "Короткая юбка.",
-     "forms": []
+     "forms": [],
+     "tr": "юн жюп"
     },
     {
      "id": "w-chemise",
@@ -13014,7 +13339,8 @@
      "g": "f",
      "ex": "Une chemise blanche.",
      "exRu": "Белая рубашка.",
-     "forms": []
+     "forms": [],
+     "tr": "юн шёмиз"
     },
     {
      "id": "w-tee-shirt",
@@ -13023,7 +13349,8 @@
      "g": "m",
      "ex": "Un tee-shirt rouge.",
      "exRu": "Красная футболка.",
-     "forms": []
+     "forms": [],
+     "tr": "эн тишёрт"
     },
     {
      "id": "w-pull",
@@ -13032,7 +13359,8 @@
      "g": "m",
      "ex": "Je mets un pull.",
      "exRu": "Я надеваю свитер.",
-     "forms": []
+     "forms": [],
+     "tr": "эн пюль"
     },
     {
      "id": "w-manteau",
@@ -13043,7 +13371,8 @@
      "exRu": "Холодно, возьми пальто.",
      "forms": [
       "manteaux"
-     ]
+     ],
+     "tr": "эн манто"
     },
     {
      "id": "w-veste",
@@ -13052,7 +13381,8 @@
      "g": "f",
      "ex": "Une veste en cuir.",
      "exRu": "Кожаная куртка.",
-     "forms": []
+     "forms": [],
+     "tr": "юн вест"
     },
     {
      "id": "w-chaussures",
@@ -13063,7 +13393,8 @@
      "exRu": "Удобная обувь.",
      "forms": [
       "chaussure"
-     ]
+     ],
+     "tr": "де шосюр"
     },
     {
      "id": "w-chaussettes",
@@ -13074,7 +13405,8 @@
      "exRu": "Тёплые носки.",
      "forms": [
       "chaussette"
-     ]
+     ],
+     "tr": "де шосет"
     },
     {
      "id": "w-chapeau",
@@ -13085,7 +13417,8 @@
      "exRu": "Большая шляпа.",
      "forms": [
       "chapeaux"
-     ]
+     ],
+     "tr": "эн шапо"
     },
     {
      "id": "w-porter",
@@ -13100,7 +13433,8 @@
       "portons",
       "portez",
       "portent"
-     ]
+     ],
+     "tr": "порте"
     }
    ],
    "topics": [
@@ -13242,7 +13576,8 @@
       "les cheveux"
      ],
      "a": 1,
-     "id": "e10"
+     "id": "e10",
+     "tr": "волосы"
     },
     {
      "type": "match",
@@ -13319,7 +13654,8 @@
      "a": [
       "elle a les cheveux longs"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "У неё длинные волосы."
     },
     {
      "type": "dictation",
@@ -13327,7 +13663,8 @@
      "a": [
       "je mets mes chaussures"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Я надеваю обувь."
     },
     {
      "type": "translate",
@@ -13360,7 +13697,8 @@
      "a": [
       "des chapeaux"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "шляпы"
     },
     {
      "type": "transform",
@@ -13369,7 +13707,8 @@
      "a": [
       "des journaux"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "газеты"
     },
     {
      "type": "transform",
@@ -13378,7 +13717,8 @@
      "a": [
       "des yeux"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "глаза"
     },
     {
      "type": "transform",
@@ -13387,7 +13727,8 @@
      "a": [
       "des robes bleues"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "синие платья"
     },
     {
      "type": "transform",
@@ -13396,7 +13737,8 @@
      "a": [
       "les beaux manteaux"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "красивые пальто"
     },
     {
      "type": "transform",
@@ -13405,7 +13747,8 @@
      "a": [
       "nous portons un jean"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "мы носим джинсы"
     },
     {
      "type": "transform",
@@ -13414,7 +13757,8 @@
      "a": [
       "des chevaux"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "лошади"
     },
     {
      "type": "transform",
@@ -13423,7 +13767,8 @@
      "a": [
       "j'ai mal à la jambe"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "у меня болит нога"
     }
    ]
   },
@@ -13471,69 +13816,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E07 Les théories du complot",
-       "dur": "33:04",
-       "url": "https://www.youtube.com/watch?v=NGFUl2W_XYo",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "«Un complot» — это…",
-         "o": [
-          "тайный план группы людей, обычно против кого-то",
-          "детская игра",
-          "французское блюдо"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Что нужно, чтобы появилась теория заговора?",
-         "o": [
-          "крупное потрясение — война, кризис, теракт",
-          "хорошая погода",
-          "новый фильм"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "Что распространяет такие теории быстрее, чем «сарафанное радио»?",
-         "o": [
-          "интернет",
-          "газеты",
-          "телевидение"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Какое видение мира лежит в основе многих теорий?",
-         "o": [
-          "«манихейское»: только добро и зло, без серого",
-          "научное",
-          "детское"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "К чему приводит недоверие ко всем?",
-         "o": [
-          "к изоляции",
-          "к богатству",
-          "к счастью"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Bob l’éponge — Spongebob has a twin???",
+       "dur": "15:50",
+       "url": "https://www.youtube.com/watch?v=WJHt2aNz6cU",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -13670,7 +13957,8 @@
      "g": "f",
      "ex": "Ma famille est grande.",
      "exRu": "У меня большая семья.",
-     "forms": []
+     "forms": [],
+     "tr": "ля фамий"
     },
     {
      "id": "w-parents",
@@ -13679,7 +13967,8 @@
      "g": "m",
      "ex": "Mes parents habitent à Kazan.",
      "exRu": "Мои родители живут в Казани.",
-     "forms": []
+     "forms": [],
+     "tr": "ле паран"
     },
     {
      "id": "w-pere",
@@ -13691,7 +13980,8 @@
      "forms": [
       "père",
       "papa"
-     ]
+     ],
+     "tr": "лё пер · папа"
     },
     {
      "id": "w-mere",
@@ -13703,7 +13993,8 @@
      "forms": [
       "mère",
       "maman"
-     ]
+     ],
+     "tr": "ля мер · маман"
     },
     {
      "id": "w-frere",
@@ -13715,7 +14006,8 @@
      "forms": [
       "frère",
       "frères"
-     ]
+     ],
+     "tr": "лё фрер"
     },
     {
      "id": "w-soeur",
@@ -13727,7 +14019,8 @@
      "forms": [
       "sœur",
       "sœurs"
-     ]
+     ],
+     "tr": "ля сёр"
     },
     {
      "id": "w-fils",
@@ -13736,7 +14029,8 @@
      "g": "m",
      "ex": "Leur fils a dix ans.",
      "exRu": "Их сыну десять лет.",
-     "forms": []
+     "forms": [],
+     "tr": "лё фис"
     },
     {
      "id": "w-fille",
@@ -13747,7 +14041,8 @@
      "exRu": "Их дочь студентка.",
      "forms": [
       "filles"
-     ]
+     ],
+     "tr": "ля фий"
     },
     {
      "id": "w-grands-parents",
@@ -13760,7 +14055,8 @@
       "grand-père",
       "grand-mère",
       "grands-parents"
-     ]
+     ],
+     "tr": "лё гран-пер · ля гран-мер"
     },
     {
      "id": "w-oncle",
@@ -13772,7 +14068,8 @@
      "forms": [
       "oncle",
       "tante"
-     ]
+     ],
+     "tr": "лонкль · ля тант"
     },
     {
      "id": "w-cousin",
@@ -13784,7 +14081,8 @@
      "forms": [
       "cousin",
       "cousine"
-     ]
+     ],
+     "tr": "лё кузэн · ля кузин"
     },
     {
      "id": "w-mari",
@@ -13793,7 +14091,8 @@
      "g": "m",
      "ex": "Son mari est gentil.",
      "exRu": "Её муж добрый.",
-     "forms": []
+     "forms": [],
+     "tr": "лё мари"
     },
     {
      "id": "w-maison",
@@ -13805,7 +14104,8 @@
      "forms": [
       "maison",
       "maisons"
-     ]
+     ],
+     "tr": "ля мезон"
     },
     {
      "id": "w-appartement",
@@ -13814,7 +14114,8 @@
      "g": "m",
      "ex": "Un appartement au centre.",
      "exRu": "Квартира в центре.",
-     "forms": []
+     "forms": [],
+     "tr": "эн апартёман"
     },
     {
      "id": "w-cuisine",
@@ -13823,7 +14124,8 @@
      "g": "f",
      "ex": "On mange dans la cuisine.",
      "exRu": "Мы едим на кухне.",
-     "forms": []
+     "forms": [],
+     "tr": "ля кюизин"
     },
     {
      "id": "w-chambre",
@@ -13832,7 +14134,8 @@
      "g": "f",
      "ex": "Ma chambre est petite.",
      "exRu": "Моя комната маленькая.",
-     "forms": []
+     "forms": [],
+     "tr": "ля шамбр"
     },
     {
      "id": "w-salon",
@@ -13841,7 +14144,8 @@
      "g": "m",
      "ex": "On regarde la télé dans le salon.",
      "exRu": "Смотрим телевизор в гостиной.",
-     "forms": []
+     "forms": [],
+     "tr": "лё салон"
     },
     {
      "id": "w-salle-de-bains",
@@ -13850,7 +14154,8 @@
      "g": "f",
      "ex": "La salle de bains est à droite.",
      "exRu": "Ванная справа.",
-     "forms": []
+     "forms": [],
+     "tr": "ля саль дё бэн"
     },
     {
      "id": "w-toilettes",
@@ -13859,7 +14164,8 @@
      "g": "f",
      "ex": "Où sont les toilettes ?",
      "exRu": "Где туалет?",
-     "forms": []
+     "forms": [],
+     "tr": "ле туалет"
     },
     {
      "id": "w-jardin",
@@ -13868,7 +14174,8 @@
      "g": "m",
      "ex": "Les enfants jouent dans le jardin.",
      "exRu": "Дети играют в саду.",
-     "forms": []
+     "forms": [],
+     "tr": "лё жардэн"
     },
     {
      "id": "w-balcon",
@@ -13877,7 +14184,8 @@
      "g": "m",
      "ex": "Je bois un café sur le balcon.",
      "exRu": "Я пью кофе на балконе.",
-     "forms": []
+     "forms": [],
+     "tr": "лё балькон"
     },
     {
      "id": "w-fenetre",
@@ -13886,7 +14194,8 @@
      "g": "f",
      "ex": "J’ouvre la fenêtre.",
      "exRu": "Я открываю окно.",
-     "forms": []
+     "forms": [],
+     "tr": "ля фёнэтр"
     },
     {
      "id": "w-porte",
@@ -13895,7 +14204,8 @@
      "g": "f",
      "ex": "Ferme la porte !",
      "exRu": "Закрой дверь!",
-     "forms": []
+     "forms": [],
+     "tr": "ля порт"
     },
     {
      "id": "w-demain",
@@ -13904,7 +14214,8 @@
      "g": null,
      "ex": "À demain !",
      "exRu": "До завтра!",
-     "forms": []
+     "forms": [],
+     "tr": "дёмэн"
     },
     {
      "id": "w-prochain",
@@ -13916,7 +14227,8 @@
      "forms": [
       "prochain",
       "prochaine"
-     ]
+     ],
+     "tr": "прошэн / прошен"
     },
     {
      "id": "w-bientot-2",
@@ -13925,7 +14237,8 @@
      "g": null,
      "ex": "Ce soir, on va au cinéma.",
      "exRu": "Сегодня вечером идём в кино.",
-     "forms": []
+     "forms": [],
+     "tr": "сё суар"
     }
    ],
    "topics": [
@@ -14064,7 +14377,8 @@
       "Ils vont partir demain."
      ],
      "a": 1,
-     "id": "e8"
+     "id": "e8",
+     "tr": "Они приедут завтра."
     },
     {
      "type": "match",
@@ -14157,7 +14471,8 @@
      "a": [
       "ma grand-mère va faire un gâteau"
      ],
-     "id": "e13"
+     "id": "e13",
+     "tr": "Моя бабушка испечёт торт."
     },
     {
      "type": "dictation",
@@ -14165,7 +14480,8 @@
      "a": [
       "j'habite dans un petit appartement"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Я живу в маленькой квартире."
     },
     {
      "type": "translate",
@@ -14205,7 +14521,8 @@
      "a": [
       "je vais manger"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я сейчас поем"
     },
     {
      "type": "transform",
@@ -14214,7 +14531,8 @@
      "a": [
       "nous allons partir"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "мы скоро уйдём"
     },
     {
      "type": "transform",
@@ -14223,7 +14541,8 @@
      "a": [
       "ils vont arriver demain"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "они приедут завтра"
     },
     {
      "type": "transform",
@@ -14232,7 +14551,8 @@
      "a": [
       "tu vas travailler"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "ты будешь работать"
     },
     {
      "type": "transform",
@@ -14241,7 +14561,8 @@
      "a": [
       "je vais me reposer"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я отдохну"
     },
     {
      "type": "transform",
@@ -14250,7 +14571,8 @@
      "a": [
       "je ne vais pas sortir"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "я не пойду гулять"
     },
     {
      "type": "transform",
@@ -14259,7 +14581,8 @@
      "a": [
       "je vais manger"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "я сейчас поем"
     },
     {
      "type": "transform",
@@ -14268,7 +14591,8 @@
      "a": [
       "elle va arriver"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "она сейчас придёт"
     }
    ],
    "fun": {
@@ -14322,36 +14646,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E08 La vérité sur les Français",
-       "dur": "29:04",
-       "url": "https://www.youtube.com/watch?v=TyDeoPtRI5I",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Тема эпизода —",
-         "o": [
-          "стереотипы о французах",
-          "французская революция",
-          "мода"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Какое животное связано с французами в стереотипах?",
-         "o": [
-          "лягушка",
-          "кошка",
-          "лошадь"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — Marge watches what???",
+       "dur": "17:30",
+       "url": "https://www.youtube.com/watch?v=t7Dj6rV2wRc",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -14494,7 +14793,8 @@
      "g": "f",
      "ex": "J’habite dans cette rue.",
      "exRu": "Я живу на этой улице.",
-     "forms": []
+     "forms": [],
+     "tr": "ля рю"
     },
     {
      "id": "w-place",
@@ -14503,7 +14803,8 @@
      "g": "f",
      "ex": "La place de la Concorde.",
      "exRu": "Площадь Согласия.",
-     "forms": []
+     "forms": [],
+     "tr": "ля плас"
     },
     {
      "id": "w-quartier",
@@ -14512,7 +14813,8 @@
      "g": "m",
      "ex": "Un quartier calme.",
      "exRu": "Спокойный район.",
-     "forms": []
+     "forms": [],
+     "tr": "лё картье"
     },
     {
      "id": "w-gare",
@@ -14521,7 +14823,8 @@
      "g": "f",
      "ex": "Où est la gare ?",
      "exRu": "Где вокзал?",
-     "forms": []
+     "forms": [],
+     "tr": "ля гар"
     },
     {
      "id": "w-aeroport",
@@ -14532,7 +14835,8 @@
      "exRu": "Я еду в аэропорт.",
      "forms": [
       "aéroport"
-     ]
+     ],
+     "tr": "лаэропор"
     },
     {
      "id": "w-banque",
@@ -14541,7 +14845,8 @@
      "g": "f",
      "ex": "La banque est fermée.",
      "exRu": "Банк закрыт.",
-     "forms": []
+     "forms": [],
+     "tr": "ля банк"
     },
     {
      "id": "w-poste",
@@ -14550,7 +14855,8 @@
      "g": "f",
      "ex": "Je vais à la poste.",
      "exRu": "Я иду на почту.",
-     "forms": []
+     "forms": [],
+     "tr": "ля пост"
     },
     {
      "id": "w-magasin",
@@ -14561,7 +14867,8 @@
      "exRu": "Магазин одежды.",
      "forms": [
       "magasins"
-     ]
+     ],
+     "tr": "лё магазэн"
     },
     {
      "id": "w-supermarche",
@@ -14570,7 +14877,8 @@
      "g": "m",
      "ex": "On va au supermarché.",
      "exRu": "Идём в супермаркет.",
-     "forms": []
+     "forms": [],
+     "tr": "лё сюпермарше"
     },
     {
      "id": "w-pharmacie",
@@ -14579,7 +14887,8 @@
      "g": "f",
      "ex": "La pharmacie est à côté.",
      "exRu": "Аптека рядом.",
-     "forms": []
+     "forms": [],
+     "tr": "ля фармаси"
     },
     {
      "id": "w-hopital",
@@ -14590,7 +14899,8 @@
      "exRu": "Она работает в больнице.",
      "forms": [
       "hôpital"
-     ]
+     ],
+     "tr": "лопиталь"
     },
     {
      "id": "w-boulangerie",
@@ -14599,7 +14909,8 @@
      "g": "f",
      "ex": "J’achète du pain à la boulangerie.",
      "exRu": "Я покупаю хлеб в булочной.",
-     "forms": []
+     "forms": [],
+     "tr": "ля буланжри"
     },
     {
      "id": "w-metro",
@@ -14608,7 +14919,8 @@
      "g": "m",
      "ex": "Je prends le métro.",
      "exRu": "Я еду на метро.",
-     "forms": []
+     "forms": [],
+     "tr": "лё метро"
     },
     {
      "id": "w-bus",
@@ -14617,7 +14929,8 @@
      "g": "m",
      "ex": "Le bus arrive.",
      "exRu": "Автобус подъезжает.",
-     "forms": []
+     "forms": [],
+     "tr": "лё бюс"
     },
     {
      "id": "w-train",
@@ -14626,7 +14939,8 @@
      "g": "m",
      "ex": "Le train pour Bruxelles.",
      "exRu": "Поезд в Брюссель.",
-     "forms": []
+     "forms": [],
+     "tr": "лё трэн"
     },
     {
      "id": "w-voiture",
@@ -14635,7 +14949,8 @@
      "g": "f",
      "ex": "J’ai une petite voiture.",
      "exRu": "У меня маленькая машина.",
-     "forms": []
+     "forms": [],
+     "tr": "ля вуатюр"
     },
     {
      "id": "w-taxi",
@@ -14644,7 +14959,8 @@
      "g": "m",
      "ex": "On prend un taxi ?",
      "exRu": "Возьмём такси?",
-     "forms": []
+     "forms": [],
+     "tr": "лё такси"
     },
     {
      "id": "w-ticket",
@@ -14657,7 +14973,8 @@
       "ticket",
       "billet",
       "billets"
-     ]
+     ],
+     "tr": "эн тике / эн бийе"
     },
     {
      "id": "w-argent",
@@ -14668,7 +14985,8 @@
      "exRu": "У меня нет денег.",
      "forms": [
       "argent"
-     ]
+     ],
+     "tr": "ларжан"
     },
     {
      "id": "w-carte",
@@ -14679,7 +14997,8 @@
      "exRu": "Я плачу картой.",
      "forms": [
       "carte"
-     ]
+     ],
+     "tr": "ля карт банкер"
     },
     {
      "id": "w-euro",
@@ -14690,7 +15009,8 @@
      "exRu": "С вас десять евро.",
      "forms": [
       "euros"
-     ]
+     ],
+     "tr": "эн ёро"
     },
     {
      "id": "w-prix",
@@ -14699,7 +15019,8 @@
      "g": "m",
      "ex": "Quel est le prix ?",
      "exRu": "Какая цена?",
-     "forms": []
+     "forms": [],
+     "tr": "лё при"
     },
     {
      "id": "w-cout",
@@ -14711,7 +15032,8 @@
      "forms": [
       "coûte",
       "coûtent"
-     ]
+     ],
+     "tr": "куте"
     },
     {
      "id": "w-gauche",
@@ -14723,7 +15045,8 @@
      "forms": [
       "gauche",
       "droite"
-     ]
+     ],
+     "tr": "а гош · а друат"
     },
     {
      "id": "w-tout-droit",
@@ -14732,7 +15055,8 @@
      "g": null,
      "ex": "Allez tout droit.",
      "exRu": "Идите прямо.",
-     "forms": []
+     "forms": [],
+     "tr": "ту друа"
     },
     {
      "id": "w-tourner",
@@ -14744,7 +15068,8 @@
      "forms": [
       "tourne",
       "tournez"
-     ]
+     ],
+     "tr": "турне"
     }
    ],
    "topics": [
@@ -14887,7 +15212,8 @@
       "Allez tout droit."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Поверните направо."
     },
     {
      "type": "match",
@@ -14967,7 +15293,8 @@
      "a": [
       "prenez la deuxième rue à gauche"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Поверните на вторую улицу налево."
     },
     {
      "type": "dictation",
@@ -14975,7 +15302,8 @@
      "a": [
       "je paie par carte"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Я плачу картой."
     },
     {
      "type": "translate",
@@ -15009,7 +15337,8 @@
      "a": [
       "prends le bus"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "садись на автобус"
     },
     {
      "type": "transform",
@@ -15018,7 +15347,8 @@
      "a": [
       "tournez à gauche"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "поверните налево"
     },
     {
      "type": "transform",
@@ -15027,7 +15357,8 @@
      "a": [
       "allons au cinéma"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "пойдём в кино"
     },
     {
      "type": "transform",
@@ -15036,7 +15367,8 @@
      "a": [
       "sois gentil"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "будь добрым"
     },
     {
      "type": "transform",
@@ -15045,7 +15377,8 @@
      "a": [
       "dépêche-toi"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "поторопись"
     },
     {
      "type": "transform",
@@ -15054,7 +15387,8 @@
      "a": [
       "ne parle pas"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "не разговаривай"
     },
     {
      "type": "transform",
@@ -15063,7 +15397,8 @@
      "a": [
       "regarde"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "смотри"
     },
     {
      "type": "transform",
@@ -15072,7 +15407,8 @@
      "a": [
       "allez tout droit"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "идите прямо"
     }
    ]
   },
@@ -15120,69 +15456,11 @@
      "min": 40,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E08 La vérité sur les Français",
-       "dur": "29:04",
-       "url": "https://www.youtube.com/watch?v=TyDeoPtRI5I",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "«Французский парадокс» — это…",
-         "o": [
-          "французы едят жирную еду, но остаются стройными",
-          "французы не любят Францию",
-          "французы не пьют вино"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "«Une douche française» в шутку — это…",
-         "o": [
-          "дезодорант вместо душа",
-          "очень долгий душ",
-          "душ с вином"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "Какой «национальный спорт» у французов, по шутке автора?",
-         "o": [
-          "забастовка (la grève)",
-          "футбол",
-          "велоспорт"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Французов считают «râleurs». Это значит, что они…",
-         "o": [
-          "любят жаловаться",
-          "много смеются",
-          "быстро ходят"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "Почему парижане бывают не очень любезны с туристами, по мнению автора?",
-         "o": [
-          "они очень заняты — как в Нью-Йорке или Лондоне",
-          "они не любят иностранцев",
-          "они не говорят по-французски"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — Homer goes Hulk!",
+       "dur": "16:36",
+       "url": "https://www.youtube.com/watch?v=mBrhWJPFxxI",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       },
       {
        "src": "Easy French",
@@ -15331,7 +15609,8 @@
      "g": null,
      "ex": "Je viens de rentrer.",
      "exRu": "Я только что вернулась.",
-     "forms": []
+     "forms": [],
+     "tr": "вёнир дё + инфинитив"
     },
     {
      "id": "w-lunettes",
@@ -15342,7 +15621,8 @@
      "exRu": "Она носит очки.",
      "forms": [
       "lunettes"
-     ]
+     ],
+     "tr": "де люнет"
     },
     {
      "id": "w-barbe",
@@ -15351,7 +15631,8 @@
      "g": "f",
      "ex": "Il a une barbe.",
      "exRu": "У него борода.",
-     "forms": []
+     "forms": [],
+     "tr": "юн барб"
     },
     {
      "id": "w-moustache",
@@ -15360,7 +15641,8 @@
      "g": "f",
      "ex": "Mon grand-père a une moustache.",
      "exRu": "У дедушки усы.",
-     "forms": []
+     "forms": [],
+     "tr": "юн мусташ"
     },
     {
      "id": "w-long",
@@ -15374,7 +15656,8 @@
       "longue",
       "longs",
       "longues"
-     ]
+     ],
+     "tr": "лон / лонг"
     },
     {
      "id": "w-court",
@@ -15388,7 +15671,8 @@
       "courte",
       "courts",
       "courtes"
-     ]
+     ],
+     "tr": "кур / курт"
     },
     {
      "id": "w-couleurs-1",
@@ -15403,7 +15687,8 @@
       "vert",
       "verts",
       "marron"
-     ]
+     ],
+     "tr": "блё · вер · марон"
     },
     {
      "id": "w-couleurs-2",
@@ -15418,7 +15703,8 @@
       "blanc",
       "blanche",
       "gris"
-     ]
+     ],
+     "tr": "нуар · блан · гри"
     },
     {
      "id": "w-avoir-l-air",
@@ -15429,7 +15715,8 @@
      "exRu": "Ты выглядишь уставшей.",
      "forms": [
       "air"
-     ]
+     ],
+     "tr": "авуар лер"
     },
     {
      "id": "w-mesurer",
@@ -15440,7 +15727,8 @@
      "exRu": "Его рост 1,80.",
      "forms": [
       "mesure"
-     ]
+     ],
+     "tr": "мёзюре"
     },
     {
      "id": "w-ressembler",
@@ -15452,7 +15740,8 @@
      "forms": [
       "ressemble",
       "ressembles"
-     ]
+     ],
+     "tr": "рёсамбле а"
     }
    ],
    "topics": [
@@ -15612,7 +15901,8 @@
       "Il vient de partir."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Они только что ушли."
     },
     {
      "type": "match",
@@ -15663,7 +15953,8 @@
      "a": [
       "il a les yeux bleus et une barbe"
      ],
-     "id": "e13"
+     "id": "e13",
+     "tr": "У него голубые глаза и борода."
     },
     {
      "type": "dictation",
@@ -15671,7 +15962,8 @@
      "a": [
       "tu as l'air fatiguée"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Ты выглядишь усталой."
     },
     {
      "type": "translate",
@@ -15704,7 +15996,8 @@
      "a": [
       "je viens de manger"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я только что поела"
     },
     {
      "type": "transform",
@@ -15713,7 +16006,8 @@
      "a": [
       "il vient d'arriver"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "он только что пришёл"
     },
     {
      "type": "transform",
@@ -15722,7 +16016,8 @@
      "a": [
       "nous venons de finir"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "мы только что закончили"
     },
     {
      "type": "transform",
@@ -15731,7 +16026,8 @@
      "a": [
       "je vais partir"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "я скоро уйду"
     },
     {
      "type": "transform",
@@ -15740,7 +16036,8 @@
      "a": [
       "ils viennent de voir le film"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "они только что посмотрели фильм"
     },
     {
      "type": "transform",
@@ -15749,7 +16046,8 @@
      "a": [
       "il porte des lunettes"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "он носит очки"
     },
     {
      "type": "transform",
@@ -15758,7 +16056,8 @@
      "a": [
       "il vient d'arriver"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "он только что пришёл"
     },
     {
      "type": "transform",
@@ -15767,7 +16066,8 @@
      "a": [
       "elle a les cheveux longs"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "у неё длинные волосы"
     }
    ],
    "fun": {
@@ -16056,36 +16356,11 @@
      "min": 25,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E09 La décroissance",
-       "dur": "30:52",
-       "url": "https://www.youtube.com/watch?v=ub9ZNmMawLA",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Тема эпизода —",
-         "o": [
-          "«décroissance» — идея отказа от постоянного экономического роста",
-          "холодная война",
-          "история Японии"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Для каких стран предлагают «décroissance»?",
-         "o": [
-          "для развитых стран",
-          "для всех стран мира",
-          "только для Франции"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Bob l’éponge — SpongeBob Gets Tanned?!",
+       "dur": "18:28",
+       "url": "https://www.youtube.com/watch?v=qgEWg9RXRyA",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       }
      ]
     },
@@ -16201,7 +16476,8 @@
      "g": "f",
      "ex": "La météo annonce de la pluie.",
      "exRu": "Прогноз обещает дождь.",
-     "forms": []
+     "forms": [],
+     "tr": "ля метео"
     },
     {
      "id": "w-il-fait-beau",
@@ -16212,7 +16488,8 @@
      "exRu": "Сегодня хорошая погода.",
      "forms": [
       "fait"
-     ]
+     ],
+     "tr": "иль фе бо"
     },
     {
      "id": "w-chaud",
@@ -16223,7 +16500,8 @@
      "exRu": "В августе жарко.",
      "forms": [
       "chaud"
-     ]
+     ],
+     "tr": "иль фе шо"
     },
     {
      "id": "w-froid",
@@ -16234,7 +16512,8 @@
      "exRu": "Зимой холодно.",
      "forms": [
       "froid"
-     ]
+     ],
+     "tr": "иль фе фруа"
     },
     {
      "id": "w-pleut",
@@ -16246,7 +16525,8 @@
      "forms": [
       "pleut",
       "plu"
-     ]
+     ],
+     "tr": "иль плё"
     },
     {
      "id": "w-neige",
@@ -16257,7 +16537,8 @@
      "exRu": "В Москве идёт снег.",
      "forms": [
       "neige"
-     ]
+     ],
+     "tr": "иль нэж · ля нэж"
     },
     {
      "id": "w-vent",
@@ -16268,7 +16549,8 @@
      "exRu": "На пляже ветрено.",
      "forms": [
       "vent"
-     ]
+     ],
+     "tr": "иль я дю ван"
     },
     {
      "id": "w-soleil",
@@ -16277,7 +16559,8 @@
      "g": "m",
      "ex": "Il y a du soleil.",
      "exRu": "Солнечно.",
-     "forms": []
+     "forms": [],
+     "tr": "лё солей"
     },
     {
      "id": "w-nuage",
@@ -16288,7 +16571,8 @@
      "exRu": "Облачно.",
      "forms": [
       "nuages"
-     ]
+     ],
+     "tr": "эн нюаж"
     },
     {
      "id": "w-pluie",
@@ -16297,7 +16581,8 @@
      "g": "f",
      "ex": "J’aime la pluie.",
      "exRu": "Я люблю дождь.",
-     "forms": []
+     "forms": [],
+     "tr": "ля плюи"
     },
     {
      "id": "w-orage",
@@ -16306,7 +16591,8 @@
      "g": "m",
      "ex": "Un gros orage.",
      "exRu": "Сильная гроза.",
-     "forms": []
+     "forms": [],
+     "tr": "эн ораж"
     },
     {
      "id": "w-degres",
@@ -16318,7 +16604,8 @@
      "forms": [
       "degré",
       "degrés"
-     ]
+     ],
+     "tr": "ле дёгре"
     },
     {
      "id": "w-parapluie",
@@ -16327,7 +16614,8 @@
      "g": "m",
      "ex": "J’ai oublié mon parapluie.",
      "exRu": "Я забыла зонт.",
-     "forms": []
+     "forms": [],
+     "tr": "эн параплюи"
     },
     {
      "id": "w-hier",
@@ -16336,7 +16624,8 @@
      "g": null,
      "ex": "Hier, j’ai travaillé.",
      "exRu": "Вчера я работала.",
-     "forms": []
+     "forms": [],
+     "tr": "йер"
     },
     {
      "id": "w-il-y-a-temps",
@@ -16345,7 +16634,8 @@
      "g": null,
      "ex": "Il y a une semaine.",
      "exRu": "Неделю назад.",
-     "forms": []
+     "forms": [],
+     "tr": "иль я + срок"
     },
     {
      "id": "w-dernier-2",
@@ -16354,7 +16644,8 @@
      "g": null,
      "ex": "La semaine dernière, il a plu.",
      "exRu": "На прошлой неделе шёл дождь.",
-     "forms": []
+     "forms": [],
+     "tr": "ля сёмэн дерньер"
     }
    ],
    "topics": [
@@ -16546,7 +16837,8 @@
       "Il fait beau."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Вчера шёл дождь."
     },
     {
      "type": "match",
@@ -16596,7 +16888,8 @@
      "a": [
       "la semaine dernière il a fait froid"
      ],
-     "id": "e13"
+     "id": "e13",
+     "tr": "На прошлой неделе было холодно."
     },
     {
      "type": "dictation",
@@ -16605,7 +16898,8 @@
       "il fait vingt degrés",
       "il fait 20 degrés"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Сейчас двадцать градусов."
     },
     {
      "type": "translate",
@@ -16640,7 +16934,8 @@
      "a": [
       "j'ai mangé"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я поела"
     },
     {
      "type": "transform",
@@ -16649,7 +16944,8 @@
      "a": [
       "nous avons fini"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "мы закончили"
     },
     {
      "type": "transform",
@@ -16658,7 +16954,8 @@
      "a": [
       "ils ont attendu le bus"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "они ждали автобус"
     },
     {
      "type": "transform",
@@ -16667,7 +16964,8 @@
      "a": [
       "tu as regardé le film"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "ты посмотрела фильм"
     },
     {
      "type": "transform",
@@ -16676,7 +16974,8 @@
      "a": [
       "je n'ai pas mangé"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я не ела"
     },
     {
      "type": "transform",
@@ -16685,7 +16984,8 @@
      "a": [
       "hier j'ai travaillé"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "вчера я работала"
     },
     {
      "type": "transform",
@@ -16694,7 +16994,8 @@
      "a": [
       "j'ai fini"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "я закончила"
     },
     {
      "type": "transform",
@@ -16703,7 +17004,8 @@
      "a": [
       "il pleut"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "идёт дождь"
     }
    ]
   },
@@ -16751,69 +17053,18 @@
      "min": 25,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E09 La décroissance",
-       "dur": "30:52",
-       "url": "https://www.youtube.com/watch?v=ub9ZNmMawLA",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Какие минусы роста называет автор?",
-         "o": [
-          "вред природе и массовая безработица",
-          "слишком много отпусков",
-          "дешёвые машины"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Как, по этой идее, дать работу всем?",
-         "o": [
-          "каждому работать немного меньше",
-          "работать больше",
-          "закрыть заводы"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "«Le gaspillage» — это…",
-         "o": [
-          "расточительство: покупать еду и выбрасывать",
-          "экономия",
-          "поход в магазин"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Делает ли покупка всё новых вещей нас счастливее?",
-         "o": [
-          "нет, исследования говорят, что эффект проходит",
-          "да, всегда",
-          "только машины"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "Что сделал сам автор?",
-         "o": [
-          "сменил работу на ту, что считает полезной",
-          "купил большой дом",
-          "переехал в США"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Ratatouille",
+       "dur": "5:55",
+       "url": "https://www.youtube.com/watch?v=nL_t5X-bgKg",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
+      },
+      {
+       "src": "Totally Spies! Français",
+       "title": "Totally Spies ! Le Retour de Géraldine (saison 5, épisode 6)",
+       "dur": "21:53",
+       "url": "https://www.youtube.com/watch?v=nqJuaqFjebc",
+       "task": "Первые 15 минут серии, с французскими субтитрами. Задач нет."
       }
      ]
     },
@@ -16925,7 +17176,8 @@
      "exRu": "Я болела.",
      "forms": [
       "été"
-     ]
+     ],
+     "tr": "этр → эте"
     },
     {
      "id": "p-eu",
@@ -16936,7 +17188,8 @@
      "exRu": "Мне повезло.",
      "forms": [
       "eu"
-     ]
+     ],
+     "tr": "авуар → ю"
     },
     {
      "id": "p-fait",
@@ -16947,7 +17200,8 @@
      "exRu": "Я занималась спортом.",
      "forms": [
       "fait"
-     ]
+     ],
+     "tr": "фэр → фе"
     },
     {
      "id": "p-dit",
@@ -16958,7 +17212,8 @@
      "exRu": "Он сказал «здравствуйте».",
      "forms": [
       "dit"
-     ]
+     ],
+     "tr": "дир → ди"
     },
     {
      "id": "p-pris",
@@ -16969,7 +17224,8 @@
      "exRu": "Я поехала на метро.",
      "forms": [
       "pris"
-     ]
+     ],
+     "tr": "прандр → при"
     },
     {
      "id": "p-mis",
@@ -16980,7 +17236,8 @@
      "exRu": "Я надела свитер.",
      "forms": [
       "mis"
-     ]
+     ],
+     "tr": "метр → ми"
     },
     {
      "id": "p-vu",
@@ -16991,7 +17248,8 @@
      "exRu": "Ты видела этот фильм?",
      "forms": [
       "vu"
-     ]
+     ],
+     "tr": "вуар → вю"
     },
     {
      "id": "p-lu",
@@ -17002,7 +17260,8 @@
      "exRu": "Я прочитала книгу.",
      "forms": [
       "lu"
-     ]
+     ],
+     "tr": "лир → лю"
     },
     {
      "id": "p-bu",
@@ -17013,7 +17272,8 @@
      "exRu": "Я выпила кофе.",
      "forms": [
       "bu"
-     ]
+     ],
+     "tr": "буар → бю"
     },
     {
      "id": "p-ecrit",
@@ -17024,7 +17284,8 @@
      "exRu": "Она написала сообщение.",
      "forms": [
       "écrit"
-     ]
+     ],
+     "tr": "экрир → экри"
     },
     {
      "id": "p-pu",
@@ -17035,7 +17296,8 @@
      "exRu": "Я не смогла прийти.",
      "forms": [
       "pu"
-     ]
+     ],
+     "tr": "пувуар → пю"
     },
     {
      "id": "p-voulu",
@@ -17046,7 +17308,8 @@
      "exRu": "Он захотел уйти.",
      "forms": [
       "voulu"
-     ]
+     ],
+     "tr": "вулуар → вулю"
     },
     {
      "id": "p-du",
@@ -17057,7 +17320,8 @@
      "exRu": "Мне пришлось работать.",
      "forms": [
       "dû"
-     ]
+     ],
+     "tr": "дёвуар → дю"
     },
     {
      "id": "p-su",
@@ -17068,7 +17332,8 @@
      "exRu": "Я узнала новость.",
      "forms": [
       "su"
-     ]
+     ],
+     "tr": "савуар → сю"
     },
     {
      "id": "p-connu",
@@ -17079,7 +17344,8 @@
      "exRu": "Я познакомилась с Полем в Париже.",
      "forms": [
       "connu"
-     ]
+     ],
+     "tr": "конэтр → коню"
     },
     {
      "id": "p-recu",
@@ -17090,7 +17356,8 @@
      "exRu": "Я получила твоё сообщение.",
      "forms": [
       "reçu"
-     ]
+     ],
+     "tr": "рёсёвуар → рёсю"
     },
     {
      "id": "p-ouvert",
@@ -17101,7 +17368,8 @@
      "exRu": "Я открыла окно.",
      "forms": [
       "ouvert"
-     ]
+     ],
+     "tr": "уврир → увер"
     },
     {
      "id": "p-vecu",
@@ -17112,7 +17380,8 @@
      "exRu": "Я жила в Казани.",
      "forms": [
       "vécu"
-     ]
+     ],
+     "tr": "вивр → векю"
     },
     {
      "id": "p-compris",
@@ -17123,7 +17392,8 @@
      "exRu": "Ты поняла?",
      "forms": [
       "compris"
-     ]
+     ],
+     "tr": "компрандр → компри"
     },
     {
      "id": "p-appris",
@@ -17134,7 +17404,8 @@
      "exRu": "Я выучила десять слов.",
      "forms": [
       "appris"
-     ]
+     ],
+     "tr": "апрандр → апри"
     }
    ],
    "topics": [
@@ -17331,7 +17602,8 @@
       "J’ai pu un café."
      ],
      "a": 0,
-     "id": "e12"
+     "id": "e12",
+     "tr": "Я выпила кофе."
     },
     {
      "type": "order",
@@ -17354,7 +17626,8 @@
      "a": [
       "j'ai mis un pull"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Я надела свитер."
     },
     {
      "type": "dictation",
@@ -17362,7 +17635,8 @@
      "a": [
       "vous avez compris"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Вы поняли?"
     },
     {
      "type": "translate",
@@ -17396,7 +17670,8 @@
      "a": [
       "j'ai fait du sport"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я занималась спортом"
     },
     {
      "type": "transform",
@@ -17405,7 +17680,8 @@
      "a": [
       "il a pris le train"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "он поехал на поезде"
     },
     {
      "type": "transform",
@@ -17414,7 +17690,8 @@
      "a": [
       "nous avons vu un film"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "мы посмотрели фильм"
     },
     {
      "type": "transform",
@@ -17423,7 +17700,8 @@
      "a": [
       "elle a lu un livre"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "она прочитала книгу"
     },
     {
      "type": "transform",
@@ -17432,7 +17710,8 @@
      "a": [
       "tu as bu un café"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "ты выпила кофе"
     },
     {
      "type": "transform",
@@ -17441,7 +17720,8 @@
      "a": [
       "ils ont écrit un message"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "они написали сообщение"
     },
     {
      "type": "transform",
@@ -17450,7 +17730,8 @@
      "a": [
       "je n'ai pas pu venir"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "я не смогла прийти"
     },
     {
      "type": "transform",
@@ -17459,7 +17740,8 @@
      "a": [
       "j'ai pris le métro"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "я поехала на метро"
     }
    ]
   },
@@ -17507,36 +17789,11 @@
      "min": 25,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E10 L’expérience de Milgram",
-       "dur": "32:27",
-       "url": "https://www.youtube.com/watch?v=qyT269VhDeA",
-       "task": "Первое прослушивание: не останавливай и не переводи. Понимать 10–30% — нормально, это и есть нужный уровень.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "О каком эксперименте этот эпизод?",
-         "o": [
-          "эксперимент Милгрэма о подчинении авторитету",
-          "эксперимент с роботами",
-          "эксперимент о памяти у детей"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Где и когда родился Стэнли Милгрэм?",
-         "o": [
-          "в Нью-Йорке в 1933 году",
-          "в Париже в 1945",
-          "в Варшаве в 1920"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — The School Strikes Oil!",
+       "dur": "25:41",
+       "url": "https://www.youtube.com/watch?v=GOCYcQ7Dghk",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       }
      ]
     },
@@ -17642,7 +17899,8 @@
      "g": null,
      "ex": "Je t’attends devant la gare.",
      "exRu": "Жду тебя перед вокзалом.",
-     "forms": []
+     "forms": [],
+     "tr": "дёван"
     },
     {
      "id": "w-derriere",
@@ -17651,7 +17909,8 @@
      "g": null,
      "ex": "Le jardin est derrière la maison.",
      "exRu": "Сад за домом.",
-     "forms": []
+     "forms": [],
+     "tr": "дерьер"
     },
     {
      "id": "w-a-cote",
@@ -17662,7 +17921,8 @@
      "exRu": "Банк рядом с кафе.",
      "forms": [
       "côté"
-     ]
+     ],
+     "tr": "а коте дё"
     },
     {
      "id": "w-en-face",
@@ -17673,7 +17933,8 @@
      "exRu": "Остановка напротив школы.",
      "forms": [
       "face"
-     ]
+     ],
+     "tr": "ан фас дё"
     },
     {
      "id": "w-pres",
@@ -17684,7 +17945,8 @@
      "exRu": "Я живу недалеко отсюда.",
      "forms": [
       "près"
-     ]
+     ],
+     "tr": "пре дё"
     },
     {
      "id": "w-loin",
@@ -17695,7 +17957,8 @@
      "exRu": "Это далеко от вокзала?",
      "forms": [
       "loin"
-     ]
+     ],
+     "tr": "луэн дё"
     },
     {
      "id": "w-milieu",
@@ -17706,7 +17969,8 @@
      "exRu": "Посреди площади.",
      "forms": [
       "milieu"
-     ]
+     ],
+     "tr": "о мильё дё"
     },
     {
      "id": "w-pendant",
@@ -17715,7 +17979,8 @@
      "g": null,
      "ex": "Pendant les vacances.",
      "exRu": "Во время каникул.",
-     "forms": []
+     "forms": [],
+     "tr": "пандан"
     },
     {
      "id": "w-jusqu-a",
@@ -17726,7 +17991,8 @@
      "exRu": "Идите до вокзала.",
      "forms": [
       "jusqu"
-     ]
+     ],
+     "tr": "жюска"
     },
     {
      "id": "w-vers",
@@ -17735,7 +18001,8 @@
      "g": null,
      "ex": "J’arrive vers huit heures.",
      "exRu": "Приеду около восьми.",
-     "forms": []
+     "forms": [],
+     "tr": "вер"
     },
     {
      "id": "w-naitre",
@@ -17747,7 +18014,8 @@
      "forms": [
       "né",
       "née"
-     ]
+     ],
+     "tr": "нэтр → не"
     },
     {
      "id": "w-tomber",
@@ -17760,7 +18028,8 @@
       "tombé",
       "tombée",
       "tombe"
-     ]
+     ],
+     "tr": "томбе"
     },
     {
      "id": "w-monter",
@@ -17774,7 +18043,8 @@
       "monté",
       "descendre",
       "descendu"
-     ]
+     ],
+     "tr": "монте · десандр"
     }
    ],
    "topics": [
@@ -17931,7 +18201,8 @@
       "Il est parti."
      ],
      "a": 0,
-     "id": "e10"
+     "id": "e10",
+     "tr": "Она ушла."
     },
     {
      "type": "match",
@@ -17999,7 +18270,8 @@
      "a": [
       "nous sommes allés au cinéma"
      ],
-     "id": "e14"
+     "id": "e14",
+     "tr": "Мы ходили в кино."
     },
     {
      "type": "dictation",
@@ -18007,7 +18279,8 @@
      "a": [
       "il est tombé dans la rue"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Он упал на улице."
     },
     {
      "type": "translate",
@@ -18039,7 +18312,8 @@
      "a": [
       "je suis allée à paris"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я ездила в Париж"
     },
     {
      "type": "transform",
@@ -18048,7 +18322,8 @@
      "a": [
       "il est arrivé"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "он приехал"
     },
     {
      "type": "transform",
@@ -18057,7 +18332,8 @@
      "a": [
       "elles sont parties"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "они ушли"
     },
     {
      "type": "transform",
@@ -18066,7 +18342,8 @@
      "a": [
       "nous sommes restés à la maison"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "мы остались дома"
     },
     {
      "type": "transform",
@@ -18075,7 +18352,8 @@
      "a": [
       "je me suis levée"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я встала"
     },
     {
      "type": "transform",
@@ -18084,7 +18362,8 @@
      "a": [
       "elle est allée au cinéma"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "она ходила в кино"
     },
     {
      "type": "transform",
@@ -18093,7 +18372,8 @@
      "a": [
       "il a mangé une pomme"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "он съел яблоко"
     },
     {
      "type": "transform",
@@ -18102,7 +18382,8 @@
      "a": [
       "la banque est à côté du café"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "банк рядом с кафе"
     }
    ],
    "fun": {
@@ -18156,69 +18437,11 @@
      "min": 25,
      "items": [
       {
-       "src": "innerFrench",
-       "title": "E10 L’expérience de Milgram",
-       "dur": "32:27",
-       "url": "https://www.youtube.com/watch?v=qyT269VhDeA",
-       "task": "Повтор того же эпизода: слушай ещё раз и выпиши 10 новых слов в поле ниже.",
-       "quiz": [
-        {
-         "type": "choice",
-         "q": "Как объявление представляло эксперимент?",
-         "o": [
-          "как исследование памяти",
-          "как тест на здоровье",
-          "как конкурс"
-         ],
-         "a": 0,
-         "id": "L0-1"
-        },
-        {
-         "type": "choice",
-         "q": "Какие роли были в эксперименте?",
-         "o": [
-          "«учитель» и «ученик»",
-          "врач и пациент",
-          "король и министр"
-         ],
-         "a": 0,
-         "id": "L0-2"
-        },
-        {
-         "type": "choice",
-         "q": "До какого напряжения доходили «удары током»?",
-         "o": [
-          "450 В",
-          "45 В",
-          "4500 В"
-         ],
-         "a": 0,
-         "id": "L0-3"
-        },
-        {
-         "type": "choice",
-         "q": "Сколько участников дошли до конца в первой версии?",
-         "o": [
-          "65% — 26 из 40",
-          "10%",
-          "все"
-         ],
-         "a": 0,
-         "id": "L0-4"
-        },
-        {
-         "type": "choice",
-         "q": "Что на самом деле проверял эксперимент?",
-         "o": [
-          "подчинение авторитету",
-          "память",
-          "силу"
-         ],
-         "a": 0,
-         "id": "L0-5"
-        }
-       ],
-       "topicQuiz": false
+       "src": "FluentU French",
+       "title": "Les Simpson — Bart’s Prank Call to… Australia?",
+       "dur": "23:24",
+       "url": "https://www.youtube.com/watch?v=n3WtFQBlJBE",
+       "task": "Урок FluentU: сначала отрывок мультфильма на французском, потом разбор фраз и слов. Включи субтитры, повторяй фразы за героями вслух, нужные слова добавь в поле ниже."
       }
      ]
     },
@@ -18322,7 +18545,8 @@
      "g": null,
      "ex": "Il y a un café ici.",
      "exRu": "Здесь есть кафе.",
-     "forms": []
+     "forms": [],
+     "tr": "иль я"
     },
     {
      "id": "w-c-est",
@@ -18331,7 +18555,8 @@
      "g": null,
      "ex": "C’est mon frère. Ce sont mes amis.",
      "exRu": "Это мой брат. Это мои друзья.",
-     "forms": []
+     "forms": [],
+     "tr": "се · сё сон"
     },
     {
      "id": "w-d-accord",
@@ -18342,7 +18567,8 @@
      "exRu": "Хорошо, до завтра!",
      "forms": [
       "accord"
-     ]
+     ],
+     "tr": "дакор"
     },
     {
      "id": "w-bien-sur",
@@ -18351,7 +18577,8 @@
      "g": null,
      "ex": "Bien sûr, je viens.",
      "exRu": "Конечно, я приду.",
-     "forms": []
+     "forms": [],
+     "tr": "бьен сюр"
     },
     {
      "id": "w-pas-du-tout",
@@ -18360,7 +18587,8 @@
      "g": null,
      "ex": "Je ne suis pas du tout fatiguée.",
      "exRu": "Я совсем не устала.",
-     "forms": []
+     "forms": [],
+     "tr": "па дю ту"
     },
     {
      "id": "w-peut-etre",
@@ -18369,7 +18597,8 @@
      "g": null,
      "ex": "Peut-être demain.",
      "exRu": "Может быть, завтра.",
-     "forms": []
+     "forms": [],
+     "tr": "пётэтр"
     },
     {
      "id": "w-a-mon-avis",
@@ -18380,7 +18609,8 @@
      "exRu": "По-моему, это правда.",
      "forms": [
       "avis"
-     ]
+     ],
+     "tr": "а мон нави"
     },
     {
      "id": "w-ca-depend",
@@ -18391,7 +18621,8 @@
      "exRu": "— Придёшь? — Смотря как.",
      "forms": [
       "dépend"
-     ]
+     ],
+     "tr": "са депан"
     },
     {
      "id": "w-pas-mal",
@@ -18400,7 +18631,8 @@
      "g": null,
      "ex": "Ce film est pas mal.",
      "exRu": "Этот фильм неплохой.",
-     "forms": []
+     "forms": [],
+     "tr": "па маль"
     },
     {
      "id": "w-ca-marche",
@@ -18411,7 +18643,8 @@
      "exRu": "Завтра в десять? — Договорились!",
      "forms": [
       "marche"
-     ]
+     ],
+     "tr": "са марш"
     },
     {
      "id": "w-saisons",
@@ -18425,7 +18658,8 @@
       "hiver",
       "automne",
       "printemps"
-     ]
+     ],
+     "tr": "лете · ливер · лотон · лё прэнтан"
     },
     {
      "id": "w-aujourd-hui",
@@ -18436,7 +18670,8 @@
      "exRu": "Сегодня хорошая погода.",
      "forms": [
       "aujourd"
-     ]
+     ],
+     "tr": "ожурдюи"
     }
    ],
    "topics": [
@@ -18615,7 +18850,8 @@
       "Pas du tout !"
      ],
      "a": 0,
-     "id": "e12"
+     "id": "e12",
+     "tr": "Договорились, до завтра!"
     },
     {
      "type": "match",
@@ -18667,7 +18903,8 @@
      "a": [
       "au printemps il pleut souvent"
      ],
-     "id": "e15"
+     "id": "e15",
+     "tr": "Весной часто идут дожди."
     },
     {
      "type": "translate",
@@ -18701,7 +18938,8 @@
      "a": [
       "j'habite ici depuis un an"
      ],
-     "id": "D-1"
+     "id": "D-1",
+     "tr": "я живу здесь уже год"
     },
     {
      "type": "transform",
@@ -18710,7 +18948,8 @@
      "a": [
       "j'ai dormi pendant huit heures"
      ],
-     "id": "D-2"
+     "id": "D-2",
+     "tr": "я проспала восемь часов"
     },
     {
      "type": "transform",
@@ -18719,7 +18958,8 @@
      "a": [
       "il est parti il y a dix minutes"
      ],
-     "id": "D-3"
+     "id": "D-3",
+     "tr": "он ушёл десять минут назад"
     },
     {
      "type": "transform",
@@ -18728,7 +18968,8 @@
      "a": [
       "je suis allée au cinéma"
      ],
-     "id": "D-4"
+     "id": "D-4",
+     "tr": "я ходила в кино"
     },
     {
      "type": "transform",
@@ -18737,7 +18978,8 @@
      "a": [
       "je vais aller au cinéma"
      ],
-     "id": "D-5"
+     "id": "D-5",
+     "tr": "я пойду в кино"
     },
     {
      "type": "transform",
@@ -18746,7 +18988,8 @@
      "a": [
       "je viens d'aller au cinéma"
      ],
-     "id": "D-6"
+     "id": "D-6",
+     "tr": "я только что сходила в кино"
     },
     {
      "type": "transform",
@@ -18755,7 +18998,8 @@
      "a": [
       "au printemps"
      ],
-     "id": "D-7"
+     "id": "D-7",
+     "tr": "весной"
     },
     {
      "type": "transform",
@@ -18764,7 +19008,8 @@
      "a": [
       "je vais en france"
      ],
-     "id": "D-8"
+     "id": "D-8",
+     "tr": "я еду во Францию"
     }
    ]
   },
