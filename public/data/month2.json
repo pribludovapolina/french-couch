@@ -1,0 +1,3932 @@
+{
+ "month": 2,
+ "title": "Ноябрь 2026",
+ "start": "2026-11-07",
+ "end": "2026-11-14",
+ "note": "Готова неделя 1: возвращение и юнит « Souvenirs ». Юниты 2 и 3 появятся до их начала.",
+ "units": {
+  "1": {
+   "id": 1,
+   "name": "Souvenirs",
+   "situation": "Рассказать, как было: жизнь до переезда и первый день в новом городе.",
+   "can": [
+    "рассказать, как жила и что делала до переезда",
+    "рассказать историю первого дня в новом городе: фон и события",
+    "понять уличное интервью о прошлом опыте",
+    "собрать блог-пост на 120–150 слов — письменное задание 2 формата TCF"
+   ],
+   "task": "Vous venez de vous installer en France. Sur votre blog, vous racontez votre vie d’avant et votre premier jour dans votre nouvelle ville. (120–150 mots)",
+   "min": 120,
+   "max": 150,
+   "parts": [
+    {
+     "n": 1,
+     "fr": "Avant",
+     "ru": "где жила, кем работала"
+    },
+    {
+     "n": 2,
+     "fr": "Ma vie là-bas",
+     "ru": "привычки, обычный день"
+    },
+    {
+     "n": 3,
+     "fr": "Le départ",
+     "ru": "каким был день отъезда (фон)"
+    },
+    {
+     "n": 4,
+     "fr": "Le premier jour",
+     "ru": "что случилось (события)"
+    },
+    {
+     "n": 5,
+     "fr": "Aujourd’hui",
+     "ru": "что изменилось"
+    }
+   ]
+  }
+ },
+ "days": [
+  {
+   "date": "2026-11-07",
+   "type": "контроль",
+   "unit": 0,
+   "lesson": "0",
+   "minutes": 120,
+   "topic": "Возвращение: симуляция TCF #2",
+   "intro": "Долг 30 октября. Сегодня только симуляция и карточки, новой грамматики нет. Учебная часть ноября начинается в понедельник 9-го.",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Карточки",
+     "min": 15
+    },
+    {
+     "kind": "tcf",
+     "title": "Симуляция TCF #2 и разбор",
+     "min": 105,
+     "url": "https://apprendre.tv5monde.com/fr/tcf/simulation-du-tcf",
+     "label": "Открыть симулятор TCF",
+     "sub": "TV5MONDE · Test en conditions réelles · 90 мин",
+     "task": "90 минут в реальных условиях: без словаря и без пауз. Потом 15 минут разбора: запиши результат, сравни с 1 октября, а слова и конструкции, на которых ошиблась, добавь в карточки ниже.",
+     "compare": true,
+     "catch": "Слова и фразы, на которых ошиблась"
+    }
+   ],
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-08",
+   "type": "выходной",
+   "minutes": 0,
+   "steps": [],
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-09",
+   "type": "учебный",
+   "unit": 1,
+   "lesson": "1.1",
+   "minutes": 210,
+   "unitStart": true,
+   "topic": "Imparfait: как было раньше",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Разгон: карточки и спираль",
+     "min": 15
+    },
+    {
+     "kind": "doc",
+     "title": "Документ дня",
+     "min": 40
+    },
+    {
+     "kind": "observe",
+     "title": "Наблюдение и правило",
+     "min": 10
+    },
+    {
+     "kind": "theory",
+     "title": "Теория",
+     "min": 5
+    },
+    {
+     "kind": "exercises",
+     "title": "Упражнения",
+     "min": 30
+    },
+    {
+     "kind": "sprint",
+     "title": "TCF-спринт",
+     "min": 15
+    },
+    {
+     "kind": "course",
+     "title": "Онлайн-курс TV5",
+     "min": 30,
+     "url": "https://apprendre.tv5monde.com/fr/exercices/la-grammaire-en-a2/le-passe-compose-et-limparfait",
+     "stage": "Étapes 01 и 02",
+     "task": "Курс TV5MONDE « La grammaire en A2 », модуль « Le passé composé et l’imparfait ». Сегодня введение и « L’expression d’un événement au passé composé » (12 упражнений): это повтор октября перед завтрашней темой."
+    },
+    {
+     "kind": "listening",
+     "title": "Второе аудио",
+     "min": 35,
+     "items": [
+      {
+       "url": "https://www.youtube.com/watch?v=If_iJ4geb8A",
+       "title": "What Was Your First Job as a Student? | Easy French 235",
+       "src": "Easy French",
+       "dur": "9:48",
+       "task": "1. Первый просмотр с французскими субтитрами: для 4 человек запиши, кем они работали (1–3 слова на каждого). 2. Второй просмотр: выпиши 3 фразы с imparfait и 1 с passé composé — это корпус для завтрашнего урока. 3. По желанию: повтори вслух одну выписанную фразу. Проверка — по субтитрам: ключей к этим вопросам на сайте нет, вопросы открытые."
+      }
+     ]
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели",
+     "min": 15
+    },
+    {
+     "kind": "wrap",
+     "title": "Запас и итог дня",
+     "min": 15
+    }
+   ],
+   "warmup": [
+    {
+     "type": "transform",
+     "q": "Поставь в passé composé (начни с « Hier, »)",
+     "src": "Je prends le métro.",
+     "a": [
+      "Hier, j’ai pris le métro.",
+      "J’ai pris le métro."
+     ],
+     "id": "s1"
+    },
+    {
+     "type": "transform",
+     "q": "Поставь в passé composé (начни с « Hier, »)",
+     "src": "Nous allons à la gare.",
+     "a": [
+      "Hier, nous sommes allés à la gare.",
+      "Hier, nous sommes allées à la gare.",
+      "Nous sommes allés à la gare.",
+      "Nous sommes allées à la gare."
+     ],
+     "id": "s2"
+    },
+    {
+     "type": "transform",
+     "q": "Поставь в passé composé (начни с « Hier, »)",
+     "src": "Elle se lève tôt.",
+     "a": [
+      "Hier, elle s’est levée tôt.",
+      "Elle s’est levée tôt."
+     ],
+     "id": "s3"
+    },
+    {
+     "type": "transform",
+     "q": "Поставь в passé composé (начни с « Hier, »)",
+     "src": "Tu fais les courses ?",
+     "a": [
+      "Hier, tu as fait les courses ?",
+      "Tu as fait les courses ?"
+     ],
+     "id": "s4"
+    },
+    {
+     "type": "transform",
+     "q": "Поставь в passé composé (начни с « Hier, »)",
+     "src": "Je ne vois pas le film.",
+     "a": [
+      "Hier, je n’ai pas vu le film.",
+      "Je n’ai pas vu le film."
+     ],
+     "id": "s5"
+    }
+   ],
+   "doc": {
+    "title": "Ma vie d’avant",
+    "who": "Блог Ирины, разработчицы, которая год назад переехала в Лион. Текст написан для урока и нарочно почти целиком в imparfait.",
+    "pre": {
+     "type": "choice",
+     "q": "Заголовок: « Ma vie d’avant ». О чём, скорее всего, будет текст?",
+     "o": [
+      "о прошлом",
+      "о планах",
+      "жалоба",
+      "рецепт"
+     ],
+     "a": 0,
+     "id": "d0"
+    },
+    "listen": "Шаг 1. Послушай текст без букв (кнопка «Слушать») и ответь на вопросы TCF. Шаг 2. Открой текст, послушай ещё раз и проверь себя.",
+    "text": "Il y a un an, je vivais encore à Saint-Pétersbourg. J’avais un petit appartement près du métro et je travaillais dans une start-up. Tous les matins, je prenais un café en bas de chez moi, puis je marchais jusqu’au bureau. Le soir, j’étais souvent fatiguée, mais j’aimais ma vie. Le week-end, on allait au bord de la Neva avec des amis : on parlait pendant des heures et on mangeait des pirojki. En hiver, il faisait très froid, il neigeait presque tous les jours et la nuit tombait à quatre heures. Je ne parlais pas français, je ne connaissais personne en France… et je ne savais pas encore que tout allait changer.",
+    "ru": "Год назад я ещё жила в Петербурге. У меня была маленькая квартира у метро, и я работала в стартапе. Каждое утро я пила кофе внизу у дома, потом шла пешком до офиса. Вечером я часто уставала, но мне нравилась моя жизнь. По выходным мы с друзьями ходили на набережную Невы: болтали часами и ели пирожки. Зимой было очень холодно, снег шёл почти каждый день, а темнело в четыре. Я не говорила по-французски, никого не знала во Франции… и ещё не знала, что всё изменится.",
+    "quiz": [
+     {
+      "type": "choice",
+      "q": "Où vivait Irina il y a un an ?",
+      "o": [
+       "à Saint-Pétersbourg",
+       "à Lyon",
+       "à Moscou",
+       "à Kazan"
+      ],
+      "a": 0,
+      "id": "d1"
+     },
+     {
+      "type": "choice",
+      "q": "Que faisait-elle tous les matins ?",
+      "o": [
+       "elle prenait un café en bas de chez elle",
+       "elle courait au bord de la Neva",
+       "elle prenait le bus",
+       "elle travaillait à la maison"
+      ],
+      "a": 0,
+      "id": "d2"
+     },
+     {
+      "type": "choice",
+      "q": "Le texte parle surtout…",
+      "o": [
+       "d’habitudes passées",
+       "d’un voyage",
+       "de projets",
+       "d’un problème au travail"
+      ],
+      "a": 0,
+      "id": "d3"
+     },
+     {
+      "type": "choice",
+      "q": "Elle était souvent fatiguée le soir.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 0,
+      "fixed": true,
+      "id": "d4"
+     },
+     {
+      "type": "choice",
+      "q": "Elle parlait déjà un peu français.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 1,
+      "fixed": true,
+      "id": "d5"
+     },
+     {
+      "type": "choice",
+      "q": "Ses amis travaillaient aussi dans la start-up.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 2,
+      "fixed": true,
+      "id": "d6"
+     }
+    ],
+    "hunt": {
+     "q": "Охота на формы: нажми на все глаголы, которые описывают прошлое (imparfait). Их 17, одна форма встречается дважды.",
+     "forms": [
+      "vivais",
+      "avais",
+      "travaillais",
+      "prenais",
+      "marchais",
+      "étais",
+      "aimais",
+      "allait",
+      "parlait",
+      "mangeait",
+      "faisait",
+      "neigeait",
+      "tombait",
+      "parlais",
+      "connaissais",
+      "savais"
+     ]
+    },
+    "chunks": [
+     [
+      "il y a un an",
+      "год назад"
+     ],
+     [
+      "en bas de chez moi",
+      "внизу у моего дома"
+     ],
+     [
+      "j’étais souvent fatiguée",
+      "я часто уставала"
+     ],
+     [
+      "au bord de la Neva",
+      "на берегу Невы"
+     ],
+     [
+      "pendant des heures",
+      "часами"
+     ],
+     [
+      "presque tous les jours",
+      "почти каждый день"
+     ],
+     [
+      "la nuit tombait",
+      "темнело (наступала ночь)"
+     ],
+     [
+      "je ne connaissais personne",
+      "я никого не знала"
+     ]
+    ]
+   },
+   "observe": {
+    "intro": "Формы из текста Ирины, разложенные по лицам:",
+    "table": [
+     [
+      "je",
+      "vivais, avais, travaillais, prenais, marchais, étais, aimais, parlais, connaissais, savais"
+     ],
+     [
+      "il / on",
+      "allait, parlait, mangeait, faisait, neigeait, tombait"
+     ]
+    ],
+    "qs": [
+     {
+      "type": "gap",
+      "q": "je viv___",
+      "ru": "Какое окончание у je?",
+      "a": [
+       "ais"
+      ],
+      "id": "o1"
+     },
+     {
+      "type": "gap",
+      "q": "on mange___",
+      "ru": "Какое окончание у il / on?",
+      "a": [
+       "ait"
+      ],
+      "id": "o2"
+     }
+    ],
+    "rule": "Сравни: nous prenons → je prenais, nous faisons → il faisait. Откуда берётся основа?",
+    "model": "Основа — это форма nous в présent без -ons: nous pren-ons → pren-, nous fais-ons → fais-. К ней добавляются окончания -ais, -ais, -ait, -ions, -iez, -aient."
+   },
+   "theory": [
+    {
+     "h": "Форма",
+     "p": "Берём nous в présent, убираем -ons, добавляем -ais, -ais, -ait, -ions, -iez, -aient. Исключение одно: être → j’étais.",
+     "table": [
+      [
+       "nous finissons → je finissais",
+       "я заканчивала"
+      ],
+      [
+       "nous buvons → je buvais",
+       "я пила"
+      ],
+      [
+       "nous avons → il avait",
+       "у него было"
+      ],
+      [
+       "nous faisons → nous faisions",
+       "мы делали"
+      ],
+      [
+       "nous prenons → vous preniez",
+       "вы брали"
+      ],
+      [
+       "être → ils étaient",
+       "они были"
+      ]
+     ]
+    },
+    {
+     "h": "Ловушки написания",
+     "p": "На слух -ais, -ait, -aient звучат одинаково, различает только письмо.",
+     "ex": [
+      [
+       "je mangeais",
+       "я ела: e перед a остаётся"
+      ],
+      [
+       "je commençais",
+       "я начинала: ç перед a"
+      ],
+      [
+       "nous étudiions",
+       "мы учились: два i"
+      ]
+     ]
+    },
+    {
+     "h": "Когда imparfait",
+     "p": "Описание, привычка, состояние и фон в прошлом.",
+     "ex": [
+      [
+       "J’avais un petit appartement.",
+       "У меня была маленькая квартира."
+      ],
+      [
+       "Tous les matins, je prenais un café.",
+       "Каждое утро я пила кофе."
+      ],
+      [
+       "J’étais fatiguée, il faisait froid.",
+       "Я устала, было холодно."
+      ]
+     ]
+    },
+    {
+     "h": "Подсказка для русского уха",
+     "p": "Где по-русски несовершенный вид про прошлое (жила, работала, ходила), там почти всегда imparfait. Совершённый вид (переехала, встретила) — обычно passé composé, это завтра."
+    }
+   ],
+   "topics": [
+    {
+     "id": "t-imparfait",
+     "title": "Imparfait: форма",
+     "quiz": [
+      {
+       "q": "nous finissons → je …",
+       "o": [
+        "finissais",
+        "finais",
+        "finirais"
+       ],
+       "a": 0
+      },
+      {
+       "q": "être → j’…",
+       "o": [
+        "étais",
+        "êtais",
+        "avais"
+       ],
+       "a": 0
+      },
+      {
+       "q": "manger → nous …",
+       "o": [
+        "mangions",
+        "mangeions",
+        "mangons"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "choice",
+     "q": "nous finissons → je ___",
+     "o": [
+      "finissais",
+      "finais",
+      "finirais"
+     ],
+     "a": 0,
+     "id": "e1"
+    },
+    {
+     "type": "conj",
+     "verb": "avoir (imparfait)",
+     "rows": [
+      [
+       "j’",
+       "avais"
+      ],
+      [
+       "tu",
+       "avais"
+      ],
+      [
+       "il",
+       "avait"
+      ],
+      [
+       "nous",
+       "avions"
+      ],
+      [
+       "vous",
+       "aviez"
+      ],
+      [
+       "ils",
+       "avaient"
+      ]
+     ],
+     "q": "avoir в imparfait: «у меня было…»",
+     "id": "e2"
+    },
+    {
+     "type": "gap",
+     "q": "Quand j’étais petite, nous ___ à la campagne.",
+     "ru": "habiter",
+     "a": [
+      "habitions"
+     ],
+     "id": "e3"
+    },
+    {
+     "type": "gap",
+     "q": "Le samedi, mon père ___ des crêpes.",
+     "ru": "faire",
+     "a": [
+      "faisait"
+     ],
+     "id": "e4"
+    },
+    {
+     "type": "gap",
+     "q": "Vous ___ à la cantine ?",
+     "ru": "manger",
+     "a": [
+      "mangiez"
+     ],
+     "id": "e5"
+    },
+    {
+     "type": "gap",
+     "q": "Je ___ le travail à neuf heures.",
+     "ru": "commencer",
+     "a": [
+      "commençais"
+     ],
+     "id": "e6"
+    },
+    {
+     "type": "listen",
+     "say": "Je parlais avec ma voisine.",
+     "q": "Что прозвучало?",
+     "o": [
+      "je parle",
+      "je parlais",
+      "j’ai parlé"
+     ],
+     "a": 1,
+     "id": "e7"
+    },
+    {
+     "type": "listen",
+     "say": "J’ai parlé avec le directeur.",
+     "q": "Что прозвучало?",
+     "o": [
+      "je parle",
+      "je parlais",
+      "j’ai parlé"
+     ],
+     "a": 2,
+     "id": "e8"
+    },
+    {
+     "type": "listen",
+     "say": "Je parle avec mes collègues.",
+     "q": "Что прозвучало?",
+     "o": [
+      "je parle",
+      "je parlais",
+      "j’ai parlé"
+     ],
+     "a": 0,
+     "id": "e9"
+    },
+    {
+     "type": "translate",
+     "q": "Я каждый день ездила на метро.",
+     "a": [
+      "Je prenais le métro tous les jours.",
+      "Tous les jours, je prenais le métro.",
+      "Chaque jour, je prenais le métro.",
+      "Je prenais le métro chaque jour."
+     ],
+     "id": "e10"
+    },
+    {
+     "type": "translate",
+     "q": "Тогда я никого не знала во Франции.",
+     "a": [
+      "À l’époque, je ne connaissais personne en France.",
+      "À cette époque, je ne connaissais personne en France.",
+      "À l’époque, je ne connaissais personne en France.",
+      "Alors, je ne connaissais personne en France."
+     ],
+     "id": "e11"
+    },
+    {
+     "type": "order",
+     "q": "Собери: «По воскресеньям мы часто гуляли»",
+     "words": [
+      "Le dimanche,",
+      "on",
+      "se promenait",
+      "souvent"
+     ],
+     "a": [
+      "Le dimanche, on se promenait souvent."
+     ],
+     "id": "e12"
+    },
+    {
+     "type": "choice",
+     "q": "TCF · Avant, il ___ beaucoup à Lyon ; maintenant, il fait plus chaud.",
+     "o": [
+      "pleuvait",
+      "a plu",
+      "pleut",
+      "pleuvra"
+     ],
+     "a": 0,
+     "id": "e13"
+    },
+    {
+     "type": "piece",
+     "part": 1,
+     "q": "Где ты жила до переезда? Допиши: глагол в imparfait и город.",
+     "pre": "Avant, ",
+     "ph": "j’habitais à …",
+     "re": "\\b(habitais|vivais)\\b",
+     "want": "habitais или vivais",
+     "words": [
+      3,
+      5
+     ],
+     "id": "e14"
+    },
+    {
+     "type": "piece",
+     "part": 1,
+     "q": "Кем ты работала?",
+     "pre": "",
+     "ph": "Je travaillais comme …",
+     "re": "\\b(travaillais|étais)\\b",
+     "want": "travaillais (или j’étais + профессия)",
+     "words": [
+      3,
+      6
+     ],
+     "id": "e15"
+    },
+    {
+     "type": "piece",
+     "part": 2,
+     "q": "Твоя привычка до переезда (2–4 слова).",
+     "pre": "Tous les matins, je ",
+     "ph": "prenais le métro",
+     "re": "^(ne |n')?[a-zàâçéèêëîïôûùüÿœ]+ais\\b",
+     "want": "форма je в imparfait на -ais",
+     "words": [
+      2,
+      5
+     ],
+     "id": "e16"
+    }
+   ],
+   "sprint": [
+    {
+     "type": "choice",
+     "q": "Quand j’étais étudiante, je ___ dans un café le week-end.",
+     "o": [
+      "travaillais",
+      "ai travaillé",
+      "travaille",
+      "travaillerai"
+     ],
+     "a": 0,
+     "id": "t1"
+    },
+    {
+     "type": "choice",
+     "q": "Il ___ froid, alors j’ai mis mon manteau.",
+     "o": [
+      "faisait",
+      "était",
+      "avait",
+      "fait"
+     ],
+     "a": 0,
+     "id": "t2"
+    },
+    {
+     "type": "choice",
+     "q": "Hier soir, nous ___ au cinéma.",
+     "o": [
+      "sommes allés",
+      "allions",
+      "avons allé",
+      "irions"
+     ],
+     "a": 0,
+     "id": "t3"
+    },
+    {
+     "type": "choice",
+     "q": "Avant, nous ___ à la campagne.",
+     "o": [
+      "habitions",
+      "habitons",
+      "avons habité",
+      "habiterons"
+     ],
+     "a": 0,
+     "id": "t4"
+    },
+    {
+     "type": "choice",
+     "q": "Quand il était petit, mon frère ___ beaucoup de lait.",
+     "o": [
+      "buvait",
+      "boivait",
+      "a bu",
+      "boit"
+     ],
+     "a": 0,
+     "id": "t5"
+    },
+    {
+     "type": "choice",
+     "q": "Vous ___ souvent au restaurant à Moscou ?",
+     "o": [
+      "mangiez",
+      "mangez",
+      "mangeiez",
+      "mangeriez"
+     ],
+     "a": 0,
+     "id": "t6"
+    },
+    {
+     "type": "choice",
+     "q": "Ce matin, elle ___ à sept heures.",
+     "o": [
+      "s’est levée",
+      "se levait",
+      "s’a levée",
+      "est levée"
+     ],
+     "a": 0,
+     "id": "t7"
+    },
+    {
+     "type": "choice",
+     "q": "À l’époque, je ne ___ personne.",
+     "o": [
+      "connaissais",
+      "connaisais",
+      "connaîtrai",
+      "connaît"
+     ],
+     "a": 0,
+     "id": "t8"
+    },
+    {
+     "type": "choice",
+     "q": "Le dimanche, mes parents ___ au marché.",
+     "o": [
+      "allaient",
+      "allait",
+      "sont allés",
+      "vont aller"
+     ],
+     "a": 0,
+     "id": "t9"
+    },
+    {
+     "type": "choice",
+     "q": "Je vais ___ mes amis ce soir.",
+     "o": [
+      "voir",
+      "vu",
+      "vois",
+      "voyais"
+     ],
+     "a": 0,
+     "id": "t10"
+    }
+   ],
+   "wtext": {
+    "intro": "Каркас текста недели начинает заполняться: твои ответы из упражнений уже стоят в части 1 и 2.",
+    "micro": [
+     {
+      "type": "piece",
+      "part": 1,
+      "q": "Микрозадание: какой была твоя ville? Прилагательное в женском роде (grande, froide, belle…).",
+      "pre": "Ma ville était ",
+      "ph": "grande et froide",
+      "re": "\\b[a-zàâçéèêëîïôûùüÿœ]+e\\b",
+      "want": "прилагательное в женском роде (обычно на -e)",
+      "words": [
+       1,
+       3
+      ],
+      "id": "m1"
+     }
+    ]
+   },
+   "wrap": {
+    "task": "Доделай недоделанное или ещё раз послушай текст Ирины и повтори его вслух за озвучкой.",
+    "can": [
+     "образовать imparfait любого глагола от формы nous",
+     "описать свои привычки до переезда тремя фразами",
+     "различить на слух je parle / je parlais / j’ai parlé"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-10",
+   "type": "учебный",
+   "unit": 1,
+   "lesson": "1.2",
+   "minutes": 210,
+   "topic": "Passé composé и imparfait: фон и событие",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Разгон: карточки и спираль",
+     "min": 15
+    },
+    {
+     "kind": "doc",
+     "title": "Документ дня",
+     "min": 40
+    },
+    {
+     "kind": "observe",
+     "title": "Наблюдение и правило",
+     "min": 10
+    },
+    {
+     "kind": "theory",
+     "title": "Теория",
+     "min": 5
+    },
+    {
+     "kind": "exercises",
+     "title": "Упражнения",
+     "min": 30
+    },
+    {
+     "kind": "sprint",
+     "title": "TCF-спринт",
+     "min": 15
+    },
+    {
+     "kind": "course",
+     "title": "Онлайн-курс TV5",
+     "min": 30,
+     "url": "https://apprendre.tv5monde.com/fr/exercices/la-grammaire-en-a2/le-passe-compose-et-limparfait",
+     "stage": "Étape 03",
+     "task": "Курс TV5MONDE « La grammaire en A2 », модуль « Le passé composé et l’imparfait ». Сегодня « La description au passé avec l’imparfait » (12 упражнений)."
+    },
+    {
+     "kind": "listening",
+     "title": "Второе аудио",
+     "min": 35,
+     "items": [
+      {
+       "url": "https://www.youtube.com/watch?v=q0AUWJambhY",
+       "title": "French People’s Most Memorable Stories About School | Easy French 162",
+       "src": "Easy French",
+       "dur": "13:30",
+       "task": "1. Первый просмотр с французскими субтитрами: для 3 человек запиши одним-двумя словами, о чём их история. 2. Второй просмотр: выпиши 2 фразы-фона (imparfait) и 2 фразы-события (passé composé). 3. По желанию: перескажи вслух одну историю в трёх фразах. Проверка — по субтитрам: ключей к этим вопросам на сайте нет, вопросы открытые."
+      }
+     ]
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели",
+     "min": 15
+    },
+    {
+     "kind": "wrap",
+     "title": "Запас и итог дня",
+     "min": 15
+    }
+   ],
+   "warmup": [
+    {
+     "type": "gap",
+     "q": "Avant, je ___ à Saint-Pétersbourg.",
+     "ru": "habiter, imparfait",
+     "a": [
+      "habitais"
+     ],
+     "id": "s1"
+    },
+    {
+     "type": "gap",
+     "q": "Nous ___ souvent au cinéma.",
+     "ru": "aller, imparfait",
+     "a": [
+      "allions"
+     ],
+     "id": "s2"
+    },
+    {
+     "type": "gap",
+     "q": "Il ___ froid en hiver.",
+     "ru": "faire, imparfait",
+     "a": [
+      "faisait"
+     ],
+     "id": "s3"
+    },
+    {
+     "type": "gap",
+     "q": "Hier, j’___ mes clés.",
+     "ru": "perdre, passé composé",
+     "a": [
+      "ai perdu"
+     ],
+     "id": "s4"
+    },
+    {
+     "type": "gap",
+     "q": "Elle ___ à Lyon en mai.",
+     "ru": "arriver, passé composé",
+     "a": [
+      "est arrivée"
+     ],
+     "id": "s5"
+    }
+   ],
+   "doc": {
+    "title": "Le jour de mon arrivée",
+    "who": "Продолжение блога Ирины: её первый вечер в Лионе. Текст написан для урока, в нём смешаны фон и события.",
+    "pre": {
+     "type": "choice",
+     "q": "Заголовок: « Le jour de mon arrivée ». О чём будет история?",
+     "o": [
+      "о первом дне в новом городе",
+      "о дне рождения",
+      "о свадьбе",
+      "о работе мечты"
+     ],
+     "a": 0,
+     "id": "d0"
+    },
+    "listen": "Шаг 1. Послушай без текста и ответь на вопросы. Шаг 2. Открой текст, послушай ещё раз и найди события.",
+    "text": "Le jour de mon arrivée à Lyon, il pleuvait. Il était sept heures du soir et j’étais très fatiguée après le voyage. Je cherchais mon nouvel appartement avec une grosse valise et un plan sur mon téléphone. Les rues étaient vides, les magasins étaient fermés et je ne comprenais pas les panneaux. Soudain, mon téléphone s’est éteint : plus de batterie ! J’ai eu peur. Alors, je suis entrée dans une petite boulangerie qui était encore ouverte. La boulangère m’a souri, elle m’a donné un croissant et elle a appelé mon propriétaire. Vingt minutes plus tard, il est arrivé en voiture. Ce soir-là, j’ai compris une chose : à Lyon, je n’étais pas seule.",
+    "ru": "В день моего приезда в Лион шёл дождь. Было семь вечера, и я очень устала после дороги. Я искала свою новую квартиру с большим чемоданом и картой в телефоне. Улицы были пустыми, магазины закрыты, и я не понимала указателей. Вдруг мой телефон выключился: батарея села! Мне стало страшно. Тогда я зашла в маленькую булочную, которая ещё была открыта. Булочница мне улыбнулась, дала круассан и позвонила моему хозяину квартиры. Через двадцать минут он приехал на машине. В тот вечер я поняла одну вещь: в Лионе я не одна.",
+    "quiz": [
+     {
+      "type": "choice",
+      "q": "Quel temps faisait-il quand Irina est arrivée ?",
+      "o": [
+       "il pleuvait",
+       "il neigeait",
+       "il faisait beau",
+       "il faisait très chaud"
+      ],
+      "a": 0,
+      "id": "d1"
+     },
+     {
+      "type": "choice",
+      "q": "Quel problème a-t-elle eu ?",
+      "o": [
+       "son téléphone n’avait plus de batterie",
+       "elle a perdu sa valise",
+       "elle a raté son train",
+       "elle a oublié son adresse"
+      ],
+      "a": 0,
+      "id": "d2"
+     },
+     {
+      "type": "choice",
+      "q": "Qui l’a aidée ?",
+      "o": [
+       "une boulangère",
+       "une voisine",
+       "un policier",
+       "un chauffeur de taxi"
+      ],
+      "a": 0,
+      "id": "d3"
+     },
+     {
+      "type": "choice",
+      "q": "Irina était fatiguée après le voyage.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 0,
+      "fixed": true,
+      "id": "d4"
+     },
+     {
+      "type": "choice",
+      "q": "Le propriétaire est arrivé à pied.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 1,
+      "fixed": true,
+      "id": "d5"
+     },
+     {
+      "type": "choice",
+      "q": "La boulangère parlait anglais.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 2,
+      "fixed": true,
+      "id": "d6"
+     }
+    ],
+    "hunt": {
+     "q": "Охота на формы: нажми на причастие (вторую часть) каждого passé composé — это события истории. Их 8.",
+     "forms": [
+      "éteint",
+      "eu",
+      "entrée",
+      "souri",
+      "donné",
+      "appelé",
+      "arrivé",
+      "compris"
+     ]
+    },
+    "chunks": [
+     [
+      "le jour de mon arrivée",
+      "в день моего приезда"
+     ],
+     [
+      "une grosse valise",
+      "большой чемодан"
+     ],
+     [
+      "les rues étaient vides",
+      "улицы были пустыми"
+     ],
+     [
+      "soudain",
+      "вдруг"
+     ],
+     [
+      "plus de batterie",
+      "батарея села"
+     ],
+     [
+      "j’ai eu peur",
+      "мне стало страшно"
+     ],
+     [
+      "vingt minutes plus tard",
+      "через двадцать минут"
+     ],
+     [
+      "ce soir-là",
+      "в тот вечер"
+     ]
+    ]
+   },
+   "observe": {
+    "intro": "Две колонки из текста:",
+    "table": [
+     [
+      "фон: как было",
+      "il pleuvait · j’étais fatiguée · je cherchais · les rues étaient vides"
+     ],
+     [
+      "события: что случилось",
+      "mon téléphone s’est éteint · je suis entrée · elle a appelé · il est arrivé"
+     ]
+    ],
+    "qs": [
+     {
+      "type": "choice",
+      "q": "« Il pleuvait » — это…",
+      "o": [
+       "фон: как было",
+       "событие: что случилось"
+      ],
+      "a": 0,
+      "fixed": true,
+      "id": "o1"
+     },
+     {
+      "type": "choice",
+      "q": "« Il est arrivé en voiture » — это…",
+      "o": [
+       "фон: как было",
+       "событие: что случилось"
+      ],
+      "a": 1,
+      "fixed": true,
+      "id": "o2"
+     }
+    ],
+    "rule": "Когда автор выбирает imparfait, а когда passé composé? Ответь одной строкой.",
+    "model": "Imparfait — фон и описание: погода, время, состояние, что происходило. Passé composé — события, которые двигают историю: что случилось потом. Сигналы событий: soudain, alors, tout à coup, vingt minutes plus tard."
+   },
+   "theory": [
+    {
+     "h": "Фон и событие",
+     "p": "Imparfait — декорации сцены, passé composé — действие на сцене.",
+     "table": [
+      [
+       "Il pleuvait.",
+       "Шёл дождь. (фон)"
+      ],
+      [
+       "Soudain, le téléphone s’est éteint.",
+       "Вдруг телефон выключился. (событие)"
+      ]
+     ]
+    },
+    {
+     "h": "Одно действие прерывает другое",
+     "p": "Длинное действие — imparfait, то, что его прервало, — passé composé.",
+     "ex": [
+      [
+       "Je cherchais l’appartement quand mon téléphone s’est éteint.",
+       "Я искала квартиру, когда телефон выключился."
+      ],
+      [
+       "Je dormais quand tu as appelé.",
+       "Я спала, когда ты позвонил."
+      ]
+     ]
+    },
+    {
+     "h": "Слова-сигналы",
+     "p": "Imparfait: tous les jours, souvent, d’habitude, avant, à l’époque, le dimanche. Passé composé: hier, soudain, tout à coup, un jour, ce jour-là, deux fois."
+    },
+    {
+     "h": "Подсказка для русского уха",
+     "p": "Шла, искала, было — несовершенный вид, imparfait. Пришла, нашла, позвонила — совершённый, passé composé. Чувство в один момент («мне стало страшно») — тоже событие: j’ai eu peur."
+    }
+   ],
+   "topics": [
+    {
+     "id": "t-pc-imp",
+     "title": "Passé composé или imparfait",
+     "quiz": [
+      {
+       "q": "Il ___ quand je suis sortie.",
+       "o": [
+        "pleuvait",
+        "a plu",
+        "pleut"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Soudain, le téléphone ___ .",
+       "o": [
+        "a sonné",
+        "sonnait",
+        "sonne"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quand j’étais petite, je ___ à pied à l’école.",
+       "o": [
+        "allais",
+        "suis allée",
+        "vais"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "choice",
+     "q": "Quand je suis arrivée, il ___ .",
+     "o": [
+      "pleuvait",
+      "a plu",
+      "pleut",
+      "pleuvra"
+     ],
+     "a": 0,
+     "id": "e1"
+    },
+    {
+     "type": "choice",
+     "q": "Je dormais quand le téléphone ___ .",
+     "o": [
+      "a sonné",
+      "sonnait",
+      "sonne",
+      "sonnera"
+     ],
+     "a": 0,
+     "id": "e2"
+    },
+    {
+     "type": "gap",
+     "q": "Hier, il ___ beau, alors nous sommes allés au parc.",
+     "ru": "faire · фон: погода",
+     "a": [
+      "faisait"
+     ],
+     "id": "e3"
+    },
+    {
+     "type": "gap",
+     "q": "Je regardais la télé quand ma sœur ___ .",
+     "ru": "arriver · событие прерывает",
+     "a": [
+      "est arrivée"
+     ],
+     "id": "e4"
+    },
+    {
+     "type": "gap",
+     "q": "Quand j’étais petite, j’___ à l’école à pied.",
+     "ru": "aller · привычка",
+     "a": [
+      "allais"
+     ],
+     "id": "e5"
+    },
+    {
+     "type": "gap",
+     "q": "Un jour, j’___ mon voisin dans le métro.",
+     "ru": "rencontrer · одно событие",
+     "a": [
+      "ai rencontré"
+     ],
+     "id": "e6"
+    },
+    {
+     "type": "gap",
+     "q": "Les rues ___ vides et il faisait nuit.",
+     "ru": "être · описание",
+     "a": [
+      "étaient"
+     ],
+     "id": "e7"
+    },
+    {
+     "type": "gap",
+     "q": "Soudain, nous ___ un bruit.",
+     "ru": "entendre · soudain → событие",
+     "a": [
+      "avons entendu"
+     ],
+     "id": "e8"
+    },
+    {
+     "type": "listen",
+     "say": "Il faisait froid quand je suis sortie.",
+     "q": "Что прозвучало?",
+     "o": [
+      "il faisait froid quand je suis sortie",
+      "il a fait froid quand je sortais",
+      "il fait froid quand je sors"
+     ],
+     "a": 0,
+     "id": "e9"
+    },
+    {
+     "type": "translate",
+     "q": "Когда я жила в Москве, я работала в банке.",
+     "a": [
+      "Quand j’habitais à Moscou, je travaillais dans une banque.",
+      "Quand je vivais à Moscou, je travaillais dans une banque."
+     ],
+     "id": "e10"
+    },
+    {
+     "type": "translate",
+     "q": "Шёл снег, и вдруг я увидела друга.",
+     "a": [
+      "Il neigeait et soudain j’ai vu un ami.",
+      "Il neigeait et soudain j’ai vu mon ami.",
+      "Il neigeait et tout à coup j’ai vu un ami.",
+      "Il neigeait et tout à coup j’ai vu mon ami.",
+      "Il neigeait et soudain j’ai vu une amie.",
+      "Il neigeait et soudain j’ai vu mon amie."
+     ],
+     "id": "e11"
+    },
+    {
+     "type": "order",
+     "q": "Собери: «Я ждала автобус, когда начался дождь»",
+     "words": [
+      "J’attendais",
+      "le bus",
+      "quand",
+      "il a commencé",
+      "à pleuvoir"
+     ],
+     "a": [
+      "J’attendais le bus quand il a commencé à pleuvoir."
+     ],
+     "id": "e12"
+    },
+    {
+     "type": "choice",
+     "q": "TCF · Nous ___ depuis une heure quand le train est enfin arrivé.",
+     "o": [
+      "attendions",
+      "avons attendu",
+      "attendons",
+      "attendrons"
+     ],
+     "a": 0,
+     "id": "e13"
+    },
+    {
+     "type": "piece",
+     "part": 3,
+     "q": "Какая была погода в день отъезда?",
+     "pre": "Le jour de mon départ, il ",
+     "ph": "faisait froid / pleuvait",
+     "re": "\\b(faisait|pleuvait|neigeait|était|avait)\\b",
+     "want": "фон в imparfait: faisait, pleuvait, neigeait…",
+     "words": [
+      2,
+      5
+     ],
+     "id": "e14"
+    },
+    {
+     "type": "piece",
+     "part": 3,
+     "q": "Что ты чувствовала? Прилагательное в женском роде.",
+     "pre": "J’étais ",
+     "ph": "triste et contente",
+     "re": "e\\b",
+     "want": "прилагательное в женском роде: triste, fatiguée, nerveuse…",
+     "words": [
+      1,
+      4
+     ],
+     "id": "e15"
+    }
+   ],
+   "sprint": [
+    {
+     "type": "choice",
+     "q": "Quand je suis entrée, mes amis ___ un film.",
+     "o": [
+      "regardaient",
+      "ont regardé",
+      "regardent",
+      "regarderont"
+     ],
+     "a": 0,
+     "id": "t1"
+    },
+    {
+     "type": "choice",
+     "q": "Il était minuit quand le téléphone ___ .",
+     "o": [
+      "a sonné",
+      "sonnait",
+      "sonnera",
+      "sonne"
+     ],
+     "a": 0,
+     "id": "t2"
+    },
+    {
+     "type": "choice",
+     "q": "D’habitude, je ___ à huit heures.",
+     "o": [
+      "me levais",
+      "me suis levée",
+      "m’ai levée",
+      "me lèverais"
+     ],
+     "a": 0,
+     "id": "t3"
+    },
+    {
+     "type": "choice",
+     "q": "Ce jour-là, nous ___ le train de 7 heures.",
+     "o": [
+      "avons pris",
+      "prenions",
+      "prenons",
+      "avons prendu"
+     ],
+     "a": 0,
+     "id": "t4"
+    },
+    {
+     "type": "choice",
+     "q": "Elle ___ fatiguée, alors elle est rentrée.",
+     "o": [
+      "était",
+      "a été",
+      "est",
+      "sera"
+     ],
+     "a": 0,
+     "id": "t5"
+    },
+    {
+     "type": "choice",
+     "q": "Tout à coup, j’___ un bruit.",
+     "o": [
+      "ai entendu",
+      "entendais",
+      "entends",
+      "entendrai"
+     ],
+     "a": 0,
+     "id": "t6"
+    },
+    {
+     "type": "choice",
+     "q": "Avant, il y ___ un cinéma ici.",
+     "o": [
+      "avait",
+      "a eu",
+      "a",
+      "aura"
+     ],
+     "a": 0,
+     "id": "t7"
+    },
+    {
+     "type": "choice",
+     "q": "Demain, nous ___ partir tôt.",
+     "o": [
+      "allons",
+      "allez",
+      "sommes",
+      "avons"
+     ],
+     "a": 0,
+     "id": "t8"
+    },
+    {
+     "type": "choice",
+     "q": "Elle s’est ___ à 7 heures.",
+     "o": [
+      "réveillée",
+      "réveillé",
+      "réveiller",
+      "réveillait"
+     ],
+     "a": 0,
+     "id": "t9"
+    },
+    {
+     "type": "choice",
+     "q": "J’habite ___ France depuis un an.",
+     "o": [
+      "en",
+      "à",
+      "au",
+      "dans"
+     ],
+     "a": 0,
+     "id": "t10"
+    }
+   ],
+   "wtext": {
+    "intro": "Сегодня в каркас добавились части 3 и 4.",
+    "micro": [
+     {
+      "type": "piece",
+      "part": 4,
+      "q": "Микрозадание: закончи фразу про себя — фон и событие после soudain (4–8 слов).",
+      "pre": "Le jour de mon arrivée, il faisait ",
+      "ph": "beau et soudain j’ai vu la mer",
+      "re": "soudain.*\\b(ai|as|a|avons|avez|ont|suis|es|est|sommes|êtes|sont) [a-zàâçéèêëîïôûùüÿœ]+",
+      "want": "после soudain — событие в passé composé",
+      "words": [
+       4,
+       8
+      ],
+      "id": "m1"
+     }
+    ]
+   },
+   "wrap": {
+    "task": "Доделай недоделанное или ещё раз послушай историю Ирины и повтори вслух три события.",
+    "can": [
+     "отличить фон (imparfait) от события (passé composé)",
+     "рассказать короткую историю: il faisait…, soudain…",
+     "понять на слух, что было фоном, а что случилось"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-11",
+   "type": "учебный",
+   "unit": 1,
+   "lesson": "1.3",
+   "minutes": 210,
+   "topic": "Le / la / les в прошедшем времени · moi, toi, lui",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Разгон: карточки и спираль",
+     "min": 15
+    },
+    {
+     "kind": "doc",
+     "title": "Документ дня",
+     "min": 40
+    },
+    {
+     "kind": "observe",
+     "title": "Наблюдение и правило",
+     "min": 10
+    },
+    {
+     "kind": "theory",
+     "title": "Теория",
+     "min": 5
+    },
+    {
+     "kind": "exercises",
+     "title": "Упражнения",
+     "min": 30
+    },
+    {
+     "kind": "sprint",
+     "title": "TCF-спринт",
+     "min": 15
+    },
+    {
+     "kind": "course",
+     "title": "Онлайн-курс TV5",
+     "min": 30,
+     "url": "https://apprendre.tv5monde.com/fr/exercices/la-grammaire-en-a2/le-passe-compose-et-limparfait",
+     "stage": "Étape 04",
+     "task": "Курс TV5MONDE « La grammaire en A2 », модуль « Le passé composé et l’imparfait ». Сегодня « L’alternance du passé composé et de l’imparfait dans le récit » (12 упражнений)."
+    },
+    {
+     "kind": "listening",
+     "title": "Второе аудио",
+     "min": 35,
+     "items": [
+      {
+       "url": "https://www.youtube.com/watch?v=plbEfexGB5U",
+       "title": "Hélène Is Leaving Paris: A French Woman in England | Easy French 160",
+       "src": "Easy French",
+       "dur": "17:12",
+       "task": "1. Первый просмотр с французскими субтитрами: куда и почему уезжает Hélène? Ответь себе одной фразой по-русски. 2. Второй просмотр: выпиши 3 фразы, где она говорит о прошлом. 3. По желанию: скажи вслух 2 фразы о своём переезде. Проверка — по субтитрам: ключей к этим вопросам на сайте нет, вопросы открытые."
+      }
+     ]
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели",
+     "min": 15
+    },
+    {
+     "kind": "wrap",
+     "title": "Запас и итог дня",
+     "min": 15
+    }
+   ],
+   "warmup": [
+    {
+     "type": "gap",
+     "q": "Il ___ quand je suis arrivée.",
+     "ru": "pleuvoir · фон",
+     "a": [
+      "pleuvait"
+     ],
+     "id": "s1"
+    },
+    {
+     "type": "gap",
+     "q": "Soudain, mon téléphone ___ .",
+     "ru": "sonner · событие",
+     "a": [
+      "a sonné"
+     ],
+     "id": "s2"
+    },
+    {
+     "type": "gap",
+     "q": "Avant, nous ___ près du métro.",
+     "ru": "habiter",
+     "a": [
+      "habitions"
+     ],
+     "id": "s3"
+    },
+    {
+     "type": "gap",
+     "q": "Je ___ de chez moi à huit heures.",
+     "ru": "sortir · passé composé",
+     "a": [
+      "suis sortie",
+      "suis sorti"
+     ],
+     "id": "s4"
+    },
+    {
+     "type": "gap",
+     "q": "Elle ___ très fatiguée ce soir-là.",
+     "ru": "être · состояние",
+     "a": [
+      "était"
+     ],
+     "id": "s5"
+    }
+   ],
+   "doc": {
+    "title": "innerFrench · E13 « Les malheurs des gagnants du loto »",
+    "who": "Подкаст для среднего уровня (B1). Тебе пока не нужно понимать всё: цель — общий смысл и истории о прошлом.",
+    "video": {
+     "url": "https://www.youtube.com/watch?v=H-ZywB_iOmM",
+     "title": "E13 Les malheurs des gagnants du loto",
+     "src": "innerFrench",
+     "dur": "30:16"
+    },
+    "task": "Слушай первые 15 минут с французскими субтитрами, остальное — по желанию. Вопросы ниже — по официальному описанию выпуска. Потом запиши себе 3 проблемы, которые были у победителей лотереи (по-французски, 2–4 слова на каждую): ключа к ним на сайте нет, проверяй по субтитрам.",
+    "pre": {
+     "type": "choice",
+     "q": "Название: « Les malheurs des gagnants du loto ». О чём выпуск?",
+     "o": [
+      "о бедах тех, кто выиграл в лотерею",
+      "о том, как выиграть в лотерею",
+      "о казино в Париже",
+      "о лотерее для детей"
+     ],
+     "a": 0,
+     "id": "d0"
+    },
+    "quiz": [
+     {
+      "type": "choice",
+      "q": "Selon la présentation de l’épisode, la vie des gagnants a changé…",
+      "o": [
+       "d’une manière qu’ils n’attendaient pas",
+       "exactement comme ils l’imaginaient",
+       "très peu",
+       "seulement pour leur famille"
+      ],
+      "a": 0,
+      "id": "d1"
+     },
+     {
+      "type": "choice",
+      "q": "Qu’est-ce que la société de la loterie en France a mis en place ?",
+      "o": [
+       "une équipe d’experts pour aider les gagnants",
+       "un site pour vendre des billets",
+       "un jeu pour les enfants",
+       "une banque spéciale"
+      ],
+      "a": 0,
+      "id": "d2"
+     },
+     {
+      "type": "choice",
+      "q": "Ce podcast est pour qui ?",
+      "o": [
+       "des apprenants de niveau intermédiaire",
+       "des débutants complets",
+       "des enfants français",
+       "des professeurs"
+      ],
+      "a": 0,
+      "id": "d3"
+     }
+    ],
+    "chunks": [
+     [
+      "gagner au loto",
+      "выиграть в лотерею"
+     ],
+     [
+      "un billet gagnant",
+      "выигрышный билет"
+     ],
+     [
+      "changer de vie",
+      "изменить жизнь"
+     ],
+     [
+      "une équipe d’experts",
+      "команда экспертов"
+     ],
+     [
+      "aider quelqu’un",
+      "помогать кому-то"
+     ],
+     [
+      "dépenser de l’argent",
+      "тратить деньги"
+     ]
+    ],
+    "chunksNote": "Слова к теме выпуска."
+   },
+   "observe": {
+    "intro": "Диалог «Au bureau»: коллега расспрашивает тебя о переезде.",
+    "table": [
+     [
+      "— Tu as vu ta famille avant de partir ?",
+      "— Oui, je l’ai vue la veille."
+     ],
+     [
+      "— Et tes amis ?",
+      "— Je les ai invités chez moi."
+     ],
+     [
+      "— Ta valise, tu l’as faite quand ?",
+      "— Je l’ai faite la nuit avant le départ !"
+     ],
+     [
+      "— Tu es partie seule ?",
+      "— Non, avec mon chat. Lui, il n’était pas content !"
+     ]
+    ],
+    "qs": [
+     {
+      "type": "choice",
+      "q": "« Je les ai invités » — кого «les»?",
+      "o": [
+       "tes amis",
+       "ta famille",
+       "ta valise",
+       "toi"
+      ],
+      "a": 0,
+      "id": "o1"
+     },
+     {
+      "type": "gap",
+      "q": "Je l’ai vu___ la veille.",
+      "ru": "ta famille → какая буква добавилась к vu?",
+      "a": [
+       "e"
+      ],
+      "id": "o2"
+     }
+    ],
+    "rule": "Сравни: ta famille → je l’ai vue; tes amis → je les ai invités. Почему меняется причастие?",
+    "model": "Le / la / les заменяют прямое дополнение (кого? что?) и стоят перед глаголом. Если такое местоимение стоит перед avoir, причастие согласуется с ним: la → +e (vue), les → +s или +es (invités, prises)."
+   },
+   "theory": [
+    {
+     "h": "Le, la, l’, les: «его, её, их»",
+     "p": "Заменяют прямое дополнение и стоят перед глаголом.",
+     "table": [
+      [
+       "Je vois Marc. → Je le vois.",
+       "Я его вижу."
+      ],
+      [
+       "Je vois Anna. → Je la vois.",
+       "Я её вижу."
+      ],
+      [
+       "Je vois mes amis. → Je les vois.",
+       "Я их вижу."
+      ],
+      [
+       "J’aime cette ville. → Je l’aime.",
+       "Перед гласной — l’."
+      ]
+     ]
+    },
+    {
+     "h": "Место в предложении",
+     "p": "В passé composé — перед avoir. С отрицанием ne … pas обнимают местоимение вместе с avoir. С инфинитивом — перед инфинитивом.",
+     "ex": [
+      [
+       "Je l’ai vu.",
+       "Я его видела."
+      ],
+      [
+       "Je ne l’ai pas vu.",
+       "Я его не видела."
+      ],
+      [
+       "Je vais la voir.",
+       "Я её увижу."
+      ]
+     ]
+    },
+    {
+     "h": "Согласование причастия",
+     "p": "Если le / la / les стоит перед avoir, причастие получает род и число этого слова. На слух часто не слышно (vu — vue), но écrite, prise, faite слышно.",
+     "ex": [
+      [
+       "La lettre ? Je l’ai écrite.",
+       "Письмо? Я его написала (lettre — ж. р.)."
+      ],
+      [
+       "Les photos ? Je les ai prises.",
+       "Фото? Я их сделала."
+      ],
+      [
+       "Les billets ? Je les ai achetés.",
+       "Билеты? Я их купила."
+      ]
+     ]
+    },
+    {
+     "h": "Ударные местоимения: moi, toi, lui, elle, nous, vous, eux, elles",
+     "p": "После предлогов (chez moi, avec lui, pour eux), для выделения (Moi, j’habitais à Kazan.) и в коротких ответах (Et toi ? — Moi aussi.).",
+     "ex": [
+      [
+       "Je suis rentrée chez moi.",
+       "Я вернулась домой."
+      ],
+      [
+       "Lui, il n’était pas content.",
+       "А он был недоволен."
+      ],
+      [
+       "Je pense à eux.",
+       "Я думаю о них."
+      ]
+     ]
+    }
+   ],
+   "topics": [
+    {
+     "id": "t-cod-pp",
+     "title": "Le / la / les + согласование",
+     "quiz": [
+      {
+       "q": "Ta valise ? Je l’ai …",
+       "o": [
+        "faite",
+        "fait",
+        "faits"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Mes amis ? Je … ai invités.",
+       "o": [
+        "les",
+        "leur",
+        "la"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Il est parti sans …",
+       "o": [
+        "moi",
+        "me",
+        "je"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "choice",
+     "q": "Tu connais Marie ? — Oui, je ___ connais.",
+     "o": [
+      "la",
+      "le",
+      "lui",
+      "les"
+     ],
+     "a": 0,
+     "id": "e1"
+    },
+    {
+     "type": "choice",
+     "q": "Tu as vu mes clés ? — Non, je ne ___ ai pas vues.",
+     "o": [
+      "les",
+      "la",
+      "leur",
+      "le"
+     ],
+     "a": 0,
+     "id": "e2"
+    },
+    {
+     "type": "gap",
+     "q": "Le métro ? Je ___ prenais tous les jours.",
+     "ru": "le métro → местоимение",
+     "a": [
+      "le"
+     ],
+     "id": "e3"
+    },
+    {
+     "type": "gap",
+     "q": "Ta valise ? Je l’ai fai___ hier soir.",
+     "ru": "согласование с la (valise)",
+     "a": [
+      "te"
+     ],
+     "id": "e4"
+    },
+    {
+     "type": "gap",
+     "q": "Les photos ? Je les ai pri___ à Saint-Pétersbourg.",
+     "ru": "согласование с les (photos, ж. р. мн. ч.)",
+     "a": [
+      "ses"
+     ],
+     "id": "e5"
+    },
+    {
+     "type": "gap",
+     "q": "Mes amis ? Je ___ ai invités chez moi.",
+     "ru": "mes amis → ?",
+     "a": [
+      "les"
+     ],
+     "id": "e6"
+    },
+    {
+     "type": "translate",
+     "q": "Твою сестру? Я её видела вчера.",
+     "a": [
+      "Ta sœur ? Je l’ai vue hier.",
+      "Ta soeur ? Je l’ai vue hier.",
+      "Je l’ai vue hier."
+     ],
+     "id": "e7"
+    },
+    {
+     "type": "translate",
+     "q": "Я их не знала.",
+     "a": [
+      "Je ne les connaissais pas."
+     ],
+     "id": "e8"
+    },
+    {
+     "type": "choice",
+     "q": "___, j’habitais à Kazan. Et toi ?",
+     "o": [
+      "Moi",
+      "Je",
+      "Me",
+      "Mon"
+     ],
+     "a": 0,
+     "id": "e9"
+    },
+    {
+     "type": "choice",
+     "q": "Je suis rentrée chez ___ à minuit.",
+     "o": [
+      "moi",
+      "je",
+      "me",
+      "ma"
+     ],
+     "a": 0,
+     "id": "e10"
+    },
+    {
+     "type": "choice",
+     "q": "Mes parents ? Je pense souvent à ___ .",
+     "o": [
+      "eux",
+      "ils",
+      "les",
+      "leur"
+     ],
+     "a": 0,
+     "id": "e11"
+    },
+    {
+     "type": "order",
+     "q": "Собери: «Я её не видела»",
+     "words": [
+      "Je",
+      "ne",
+      "l’ai",
+      "pas",
+      "vue"
+     ],
+     "a": [
+      "Je ne l’ai pas vue."
+     ],
+     "id": "e12"
+    },
+    {
+     "type": "choice",
+     "q": "TCF · Ces chaussures ? Je les ai ___ à Lyon.",
+     "o": [
+      "achetées",
+      "acheté",
+      "achetés",
+      "achetée"
+     ],
+     "a": 0,
+     "id": "e13"
+    },
+    {
+     "type": "piece",
+     "part": 2,
+     "q": "Что вы делали с друзьями по выходным? Форма on в imparfait.",
+     "pre": "Le week-end, avec mes amis, on ",
+     "ph": "allait au café",
+     "re": "\\b[a-zàâçéèêëîïôûùüÿœ]+ait\\b",
+     "want": "форма on в imparfait на -ait",
+     "words": [
+      2,
+      5
+     ],
+     "id": "e14"
+    },
+    {
+     "type": "piece",
+     "part": 2,
+     "q": "Как часто ты видела семью? Используй la вместо «ma famille».",
+     "pre": "Ma famille ? Je ",
+     "ph": "la voyais le dimanche",
+     "re": "(^|\\s)(la|l'|les)\\b",
+     "want": "местоимение la / l’ перед глаголом",
+     "words": [
+      2,
+      5
+     ],
+     "id": "e15"
+    }
+   ],
+   "sprint": [
+    {
+     "type": "choice",
+     "q": "Ton passeport ? Je ___ ai oublié à la maison !",
+     "o": [
+      "l’",
+      "le",
+      "lui",
+      "les"
+     ],
+     "a": 0,
+     "id": "t1"
+    },
+    {
+     "type": "choice",
+     "q": "Les clés ? Je les ai ___ sur la table.",
+     "o": [
+      "laissées",
+      "laissé",
+      "laissés",
+      "laissée"
+     ],
+     "a": 0,
+     "id": "t2"
+    },
+    {
+     "type": "choice",
+     "q": "Il est parti sans ___ .",
+     "o": [
+      "moi",
+      "me",
+      "je",
+      "mon"
+     ],
+     "a": 0,
+     "id": "t3"
+    },
+    {
+     "type": "choice",
+     "q": "Cette chanson ? Je l’ai ___ à la radio.",
+     "o": [
+      "entendue",
+      "entendu",
+      "entendus",
+      "entendues"
+     ],
+     "a": 0,
+     "id": "t4"
+    },
+    {
+     "type": "choice",
+     "q": "___, ils habitaient à Nice.",
+     "o": [
+      "Eux",
+      "Ils",
+      "Leur",
+      "Les"
+     ],
+     "a": 0,
+     "id": "t5"
+    },
+    {
+     "type": "choice",
+     "q": "Quand j’étais petite, je ___ souvent chez ma grand-mère.",
+     "o": [
+      "allais",
+      "suis allée",
+      "irai",
+      "irais"
+     ],
+     "a": 0,
+     "id": "t6"
+    },
+    {
+     "type": "choice",
+     "q": "Nous dormions quand l’orage ___ .",
+     "o": [
+      "a commencé",
+      "commençait",
+      "commence",
+      "commencera"
+     ],
+     "a": 0,
+     "id": "t7"
+    },
+    {
+     "type": "choice",
+     "q": "Elles se sont ___ au café.",
+     "o": [
+      "retrouvées",
+      "retrouvé",
+      "retrouvés",
+      "retrouver"
+     ],
+     "a": 0,
+     "id": "t8"
+    },
+    {
+     "type": "choice",
+     "q": "Nous ___ dîner chez Paul ce soir.",
+     "o": [
+      "allons",
+      "avons",
+      "sommes",
+      "faisons"
+     ],
+     "a": 0,
+     "id": "t9"
+    },
+    {
+     "type": "choice",
+     "q": "Je viens ___ Russie.",
+     "o": [
+      "de",
+      "du",
+      "en",
+      "à"
+     ],
+     "a": 0,
+     "id": "t10"
+    }
+   ],
+   "wtext": {
+    "intro": "Сегодня соединяем твои фразы прошлых дней.",
+    "show": [
+     [
+      "2026-11-09",
+      "e14"
+     ],
+     [
+      "2026-11-09",
+      "e16"
+     ],
+     [
+      "2026-11-11",
+      "e14"
+     ]
+    ],
+    "micro": [
+     {
+      "type": "piece",
+      "part": 2,
+      "q": "Микрозадание: соедини две свои фразы о прошлой жизни связкой quand / mais / alors / donc (3–10 слов).",
+      "pre": "",
+      "ph": "Quand j’habitais à …, je … mais …",
+      "re": "\\b(quand|mais|alors|donc|parce que)\\b",
+      "want": "связка quand / mais / alors / donc",
+      "words": [
+       3,
+       10
+      ],
+      "id": "m1"
+     }
+    ],
+    "dialog": {
+     "title": "Диалог с Claude: коллега расспрашивает о прошлом",
+     "note": "По желанию — голосом. Скопируй запрос, вставь в Claude и отвечай по одной фразе.",
+     "prompt": "Давай разыграем диалог на французском (уровень A2). Ты — мой новый коллега в офисе в Лионе, тебя зовут Thomas. Ты расспрашиваешь меня о моей жизни до переезда: где я жила, кем работала, какие у меня были привычки и как прошёл мой первый день во Франции.\nПравила: задавай по одному короткому вопросу, говори просто, используй imparfait и passé composé. После каждого моего ответа сначала одной строкой по-русски исправь мои ошибки (если их нет — напиши «без ошибок»), потом задай следующий вопрос. После 8 вопросов закончи разговор и дай мне по-русски 3 совета: что повторить. Начни с приветствия и первого вопроса."
+    }
+   },
+   "wrap": {
+    "task": "Доделай недоделанное или перечитай диалог «Au bureau» вслух по ролям.",
+    "can": [
+     "заменить существительное местоимением le / la / les",
+     "согласовать причастие после la / les: je l’ai vue",
+     "сказать moi, toi, lui, eux после предлогов: chez moi, avec lui"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-12",
+   "type": "учебный",
+   "unit": 1,
+   "lesson": "1.4",
+   "minutes": 210,
+   "topic": "Depuis, il y a, pendant, quand, soudain",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Разгон: карточки и спираль",
+     "min": 15
+    },
+    {
+     "kind": "doc",
+     "title": "Документ дня",
+     "min": 40
+    },
+    {
+     "kind": "observe",
+     "title": "Наблюдение и правило",
+     "min": 10
+    },
+    {
+     "kind": "theory",
+     "title": "Теория",
+     "min": 5
+    },
+    {
+     "kind": "exercises",
+     "title": "Упражнения",
+     "min": 30
+    },
+    {
+     "kind": "sprint",
+     "title": "TCF-спринт",
+     "min": 15
+    },
+    {
+     "kind": "course",
+     "title": "Онлайн-курс TV5",
+     "min": 30,
+     "url": "https://apprendre.tv5monde.com/fr/exercices/la-grammaire-en-a2/le-passe-compose-et-limparfait",
+     "stage": "Étape 05",
+     "task": "Курс TV5MONDE « La grammaire en A2 », модуль « Le passé composé et l’imparfait ». Сегодня « L’organisation du récit avec les indicateurs de temps » (12 упражнений)."
+    },
+    {
+     "kind": "listening",
+     "title": "Второе аудио",
+     "min": 35,
+     "items": [
+      {
+       "url": "https://www.youtube.com/watch?v=YtFvaBtV1Cc",
+       "title": "What’s Your Life Story? We Asked French People to Share! | Easy French 228",
+       "src": "Easy French",
+       "dur": "9:14",
+       "task": "1. Первый просмотр с французскими субтитрами: для 3 человек запиши одну дату или срок (il y a…, depuis…, pendant…). 2. Второй просмотр: выпиши 2 фразы с depuis, il y a или pendant. 3. По желанию: расскажи вслух свою историю в четырёх фразах. Проверка — по субтитрам: ключей к этим вопросам на сайте нет, вопросы открытые."
+      }
+     ]
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели",
+     "min": 15
+    },
+    {
+     "kind": "wrap",
+     "title": "Запас и итог дня",
+     "min": 15
+    }
+   ],
+   "warmup": [
+    {
+     "type": "gap",
+     "q": "Ta valise ? Je l’ai fai___ .",
+     "ru": "согласование с la",
+     "a": [
+      "te"
+     ],
+     "id": "s1"
+    },
+    {
+     "type": "gap",
+     "q": "Mes amis ? Je ___ ai vus hier.",
+     "ru": "mes amis → ?",
+     "a": [
+      "les"
+     ],
+     "id": "s2"
+    },
+    {
+     "type": "gap",
+     "q": "Je dormais quand tu ___ .",
+     "ru": "appeler · событие",
+     "a": [
+      "as appelé"
+     ],
+     "id": "s3"
+    },
+    {
+     "type": "gap",
+     "q": "Il est parti sans ___ .",
+     "ru": "я → ударное",
+     "a": [
+      "moi"
+     ],
+     "id": "s4"
+    },
+    {
+     "type": "gap",
+     "q": "Avant, on ___ beaucoup.",
+     "ru": "sortir · imparfait",
+     "a": [
+      "sortait"
+     ],
+     "id": "s5"
+    }
+   ],
+   "doc": {
+    "title": "Deux ans à Lille",
+    "who": "Блог-пост Марты, испанки, которая переехала в Лилль. Это образец текста недели: те же 5 частей, что и в твоём каркасе. Написан для урока.",
+    "pre": {
+     "type": "choice",
+     "q": "Это блог-пост « Deux ans à Lille ». Чего ждать?",
+     "o": [
+      "истории переезда",
+      "рецепта",
+      "рекламы отеля",
+      "новостей"
+     ],
+     "a": 0,
+     "id": "d0"
+    },
+    "listen": "Шаг 1. Послушай без текста и ответь на вопросы. Шаг 2. Открой текст и найди в нём 5 частей: avant, ma vie là-bas, le départ, le premier jour, aujourd’hui.",
+    "text": "Bonjour à tous ! Il y a deux ans, j’ai quitté Madrid et je suis venue vivre à Lille. Avant, je travaillais dans une agence de voyages. J’habitais dans un petit studio au centre-ville et je sortais tous les soirs avec mes amis. Pendant mes dernières semaines à Madrid, j’étais triste et heureuse en même temps. Le jour de mon arrivée, il faisait gris et il y avait du vent. Je ne connaissais personne. Quand je suis sortie de la gare, j’ai pris un taxi pour aller chez ma colocataire, Julie. Soudain, le taxi s’est arrêté : un grand marché bloquait la rue ! Julie est venue me chercher à pied et nous avons acheté des gaufres ensemble. Aujourd’hui, j’habite à Lille depuis deux ans. Julie est ma meilleure amie et, moi, j’adore cette ville.",
+    "ru": "Всем привет! Два года назад я уехала из Мадрида и переехала жить в Лилль. Раньше я работала в турагентстве. Я жила в маленькой студии в центре и каждый вечер ходила куда-нибудь с друзьями. Последние недели в Мадриде мне было и грустно, и радостно одновременно. В день моего приезда было пасмурно и ветрено. Я никого не знала. Когда я вышла из вокзала, я взяла такси, чтобы доехать до соседки по квартире, Жюли. Вдруг такси остановилось: большой рынок перекрыл улицу! Жюли пришла за мной пешком, и мы вместе купили вафли. Сегодня я живу в Лилле уже два года. Жюли — моя лучшая подруга, а я обожаю этот город.",
+    "quiz": [
+     {
+      "type": "choice",
+      "q": "Quand Marta est-elle arrivée à Lille ?",
+      "o": [
+       "il y a deux ans",
+       "il y a deux mois",
+       "l’année dernière",
+       "il y a une semaine"
+      ],
+      "a": 0,
+      "id": "d1"
+     },
+     {
+      "type": "choice",
+      "q": "Que faisait-elle à Madrid ?",
+      "o": [
+       "elle travaillait dans une agence de voyages",
+       "elle était étudiante",
+       "elle travaillait dans une gare",
+       "elle était chauffeur de taxi"
+      ],
+      "a": 0,
+      "id": "d2"
+     },
+     {
+      "type": "choice",
+      "q": "Pourquoi le taxi s’est-il arrêté ?",
+      "o": [
+       "un marché bloquait la rue",
+       "il n’avait plus d’essence",
+       "il pleuvait trop",
+       "Julie l’a arrêté"
+      ],
+      "a": 0,
+      "id": "d3"
+     },
+     {
+      "type": "choice",
+      "q": "Marta était seulement triste de partir.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 1,
+      "fixed": true,
+      "id": "d4"
+     },
+     {
+      "type": "choice",
+      "q": "Julie habite toujours avec Marta.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 2,
+      "fixed": true,
+      "id": "d5"
+     },
+     {
+      "type": "choice",
+      "q": "Le jour de son arrivée, il faisait beau.",
+      "o": [
+       "vrai",
+       "faux",
+       "on ne sait pas"
+      ],
+      "a": 1,
+      "fixed": true,
+      "id": "d6"
+     }
+    ],
+    "hunt": {
+     "q": "Охота на формы: нажми на все глаголы в imparfait (фон и привычки). Их 8.",
+     "forms": [
+      "travaillais",
+      "habitais",
+      "sortais",
+      "étais",
+      "faisait",
+      "avait",
+      "connaissais",
+      "bloquait"
+     ]
+    },
+    "chunks": [
+     [
+      "il y a deux ans",
+      "два года назад"
+     ],
+     [
+      "j’ai quitté Madrid",
+      "я уехала из Мадрида"
+     ],
+     [
+      "une agence de voyages",
+      "турагентство"
+     ],
+     [
+      "en même temps",
+      "одновременно"
+     ],
+     [
+      "il y avait du vent",
+      "было ветрено"
+     ],
+     [
+      "ma colocataire",
+      "моя соседка по квартире"
+     ],
+     [
+      "venir chercher quelqu’un",
+      "прийти, заехать за кем-то"
+     ],
+     [
+      "depuis deux ans",
+      "уже два года"
+     ]
+    ]
+   },
+   "observe": {
+    "intro": "Слова времени из текста Марты:",
+    "table": [
+     [
+      "il y a deux ans, j’ai quitté…",
+      "точка в прошлом: «… назад»"
+     ],
+     [
+      "pendant mes dernières semaines",
+      "сколько длилось"
+     ],
+     [
+      "j’habite à Lille depuis deux ans",
+      "началось тогда и длится сейчас"
+     ],
+     [
+      "quand je suis sortie de la gare",
+      "в какой момент"
+     ],
+     [
+      "soudain, le taxi s’est arrêté",
+      "неожиданное событие"
+     ]
+    ],
+    "qs": [
+     {
+      "type": "choice",
+      "q": "« J’habite à Lille depuis deux ans » — Марта всё ещё живёт в Лилле?",
+      "o": [
+       "да",
+       "нет"
+      ],
+      "a": 0,
+      "fixed": true,
+      "id": "o1"
+     },
+     {
+      "type": "choice",
+      "q": "« Il y a deux ans, j’ai quitté Madrid » — il y a здесь значит…",
+      "o": [
+       "… назад",
+       "уже",
+       "в течение",
+       "с тех пор как"
+      ],
+      "a": 0,
+      "id": "o2"
+     }
+    ],
+    "rule": "Чем отличаются « il y a deux ans » и « depuis deux ans »? Ответь одной строкой.",
+    "model": "Il y a + срок = «… назад»: точка в прошлом, обычно с passé composé. Depuis + срок = «уже … / с …»: действие продолжается сейчас, глагол в présent."
+   },
+   "theory": [
+    {
+     "h": "Il y a — «назад»",
+     "p": "Точка в прошлом.",
+     "table": [
+      [
+       "Je suis arrivée il y a un an.",
+       "Я приехала год назад."
+      ],
+      [
+       "Il y a trois jours, j’ai vu Marc.",
+       "Три дня назад я видела Марка."
+      ]
+     ]
+    },
+    {
+     "h": "Depuis — «уже, с»",
+     "p": "Действие началось в прошлом и продолжается сейчас, поэтому глагол в présent — как и в русском «живу уже год».",
+     "table": [
+      [
+       "J’habite ici depuis un an.",
+       "Я живу здесь уже год."
+      ],
+      [
+       "J’apprends le français depuis septembre.",
+       "Я учу французский с сентября."
+      ]
+     ]
+    },
+    {
+     "h": "Pendant — «в течение, во время»",
+     "p": "Сколько длилось законченное действие.",
+     "table": [
+      [
+       "J’ai travaillé pendant cinq ans à Moscou.",
+       "Я пять лет работала в Москве."
+      ],
+      [
+       "Pendant le voyage, je dormais.",
+       "Во время поездки я спала."
+      ]
+     ]
+    },
+    {
+     "h": "Quand и soudain в рассказе",
+     "p": "Quand + момент, soudain / tout à coup + неожиданное событие в passé composé.",
+     "ex": [
+      [
+       "Quand je suis arrivée, il pleuvait.",
+       "Когда я приехала, шёл дождь."
+      ],
+      [
+       "Soudain, le taxi s’est arrêté.",
+       "Вдруг такси остановилось."
+      ]
+     ]
+    }
+   ],
+   "topics": [
+    {
+     "id": "t-temps",
+     "title": "Depuis / il y a / pendant",
+     "quiz": [
+      {
+       "q": "J’habite ici … un an.",
+       "o": [
+        "depuis",
+        "il y a",
+        "pendant"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Je suis arrivée … un an.",
+       "o": [
+        "il y a",
+        "depuis",
+        "pendant"
+       ],
+       "a": 0
+      },
+      {
+       "q": "«Я пять лет работала в банке» → J’ai travaillé … cinq ans.",
+       "o": [
+        "pendant",
+        "depuis",
+        "il y a"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "type": "choice",
+     "q": "J’habite à Lyon ___ un an.",
+     "o": [
+      "depuis",
+      "il y a",
+      "pendant",
+      "dans"
+     ],
+     "a": 0,
+     "id": "e1"
+    },
+    {
+     "type": "choice",
+     "q": "Je suis arrivée en France ___ un an.",
+     "o": [
+      "il y a",
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "a": 0,
+     "id": "e2"
+    },
+    {
+     "type": "choice",
+     "q": "«Я учила английский пять лет» → J’ai appris l’anglais ___ cinq ans.",
+     "o": [
+      "pendant",
+      "depuis",
+      "il y a",
+      "dans"
+     ],
+     "a": 0,
+     "id": "e3"
+    },
+    {
+     "type": "gap",
+     "q": "Je connais Julie ___ 2024.",
+     "ru": "с 2024 года",
+     "a": [
+      "depuis"
+     ],
+     "id": "e4"
+    },
+    {
+     "type": "gap",
+     "q": "___ trois jours, j’ai reçu une lettre.",
+     "ru": "три дня назад",
+     "a": [
+      "il y a"
+     ],
+     "id": "e5"
+    },
+    {
+     "type": "gap",
+     "q": "___ je suis arrivée, il pleuvait.",
+     "ru": "когда",
+     "a": [
+      "quand"
+     ],
+     "id": "e6"
+    },
+    {
+     "type": "gap",
+     "q": "Nous marchions dans la rue. ___, nous avons vu un accident.",
+     "ru": "вдруг",
+     "a": [
+      "soudain",
+      "tout à coup"
+     ],
+     "id": "e7"
+    },
+    {
+     "type": "translate",
+     "q": "Я живу во Франции уже год.",
+     "a": [
+      "J’habite en France depuis un an.",
+      "Je vis en France depuis un an."
+     ],
+     "id": "e8"
+    },
+    {
+     "type": "translate",
+     "q": "Я приехала в Лион два месяца назад.",
+     "a": [
+      "Je suis arrivée à Lyon il y a deux mois.",
+      "Il y a deux mois, je suis arrivée à Lyon.",
+      "Je suis venue à Lyon il y a deux mois."
+     ],
+     "id": "e9"
+    },
+    {
+     "type": "listen",
+     "say": "J’habite ici depuis trois ans.",
+     "q": "Что прозвучало?",
+     "o": [
+      "depuis trois ans",
+      "il y a trois ans",
+      "pendant trois ans"
+     ],
+     "a": 0,
+     "id": "e10"
+    },
+    {
+     "type": "order",
+     "q": "Собери: «Во время поездки я читала»",
+     "words": [
+      "Pendant",
+      "le voyage,",
+      "je",
+      "lisais"
+     ],
+     "a": [
+      "Pendant le voyage, je lisais."
+     ],
+     "id": "e11"
+    },
+    {
+     "type": "choice",
+     "q": "TCF · Il est parti ___ dix minutes, tu viens de le rater !",
+     "o": [
+      "il y a",
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "a": 0,
+     "id": "e12"
+    },
+    {
+     "type": "piece",
+     "part": 1,
+     "q": "Сколько лет ты жила в своём городе? pendant + срок.",
+     "pre": "J’ai vécu à ",
+     "ph": "Moscou pendant dix ans",
+     "re": "\\bpendant\\b",
+     "want": "pendant + срок",
+     "words": [
+      3,
+      6
+     ],
+     "id": "e13"
+    },
+    {
+     "type": "piece",
+     "part": 5,
+     "q": "Сколько ты живёшь на новом месте? depuis + срок.",
+     "pre": "Aujourd’hui, j’habite à ",
+     "ph": "Lyon depuis un an",
+     "re": "\\bdepuis\\b",
+     "want": "depuis + срок",
+     "words": [
+      3,
+      6
+     ],
+     "id": "e14"
+    }
+   ],
+   "sprint": [
+    {
+     "type": "choice",
+     "q": "Je fais du yoga ___ six mois.",
+     "o": [
+      "depuis",
+      "il y a",
+      "pendant",
+      "dans"
+     ],
+     "a": 0,
+     "id": "t1"
+    },
+    {
+     "type": "choice",
+     "q": "Je l’ai rencontré ___ deux ans, à Paris.",
+     "o": [
+      "il y a",
+      "depuis",
+      "pendant",
+      "dans"
+     ],
+     "a": 0,
+     "id": "t2"
+    },
+    {
+     "type": "choice",
+     "q": "Nous avons parlé ___ toute la soirée.",
+     "o": [
+      "pendant",
+      "depuis",
+      "il y a",
+      "dans"
+     ],
+     "a": 0,
+     "id": "t3"
+    },
+    {
+     "type": "choice",
+     "q": "___ j’étais petite, j’avais un chat.",
+     "o": [
+      "Quand",
+      "Pendant",
+      "Depuis",
+      "Il y a"
+     ],
+     "a": 0,
+     "id": "t4"
+    },
+    {
+     "type": "choice",
+     "q": "Je lisais ___ le téléphone a sonné.",
+     "o": [
+      "quand",
+      "pendant",
+      "depuis",
+      "soudain"
+     ],
+     "a": 0,
+     "id": "t5"
+    },
+    {
+     "type": "choice",
+     "q": "Ta lettre ? Je l’ai ___ hier.",
+     "o": [
+      "reçue",
+      "reçu",
+      "reçus",
+      "reçues"
+     ],
+     "a": 0,
+     "id": "t6"
+    },
+    {
+     "type": "choice",
+     "q": "Avant, je ___ en Russie.",
+     "o": [
+      "vivais",
+      "vis",
+      "ai vivé",
+      "vivrai"
+     ],
+     "a": 0,
+     "id": "t7"
+    },
+    {
+     "type": "choice",
+     "q": "Ils se ___ levés tôt.",
+     "o": [
+      "sont",
+      "ont",
+      "sommes",
+      "est"
+     ],
+     "a": 0,
+     "id": "t8"
+    },
+    {
+     "type": "choice",
+     "q": "Je vais ___ appeler demain.",
+     "o": [
+      "t’",
+      "te",
+      "toi",
+      "tu"
+     ],
+     "a": 0,
+     "id": "t9"
+    },
+    {
+     "type": "choice",
+     "q": "Elle n’___ jamais allée en Italie.",
+     "o": [
+      "est",
+      "a",
+      "ai",
+      "es"
+     ],
+     "a": 0,
+     "id": "t10"
+    }
+   ],
+   "wtext": {
+    "intro": "Разбор образца: так выглядит часть 4 у Марты. Замени три подчёркнутые детали своими.",
+    "model": "Le jour de mon arrivée, il faisait gris. Quand je suis sortie de [la gare], [j’ai pris un taxi]. Soudain, [le taxi s’est arrêté].",
+    "micro": [
+     {
+      "type": "piece",
+      "part": 4,
+      "q": "Деталь 1–2: откуда ты вышла и что сделала (событие).",
+      "pre": "Quand je suis sortie de ",
+      "ph": "l’aéroport, j’ai pris le bus",
+      "re": "\\b(ai|as|a|avons|avez|ont|suis|es|est|sommes|êtes|sont) [a-zàâçéèêëîïôûùüÿœ]+",
+      "want": "событие в passé composé: j’ai pris…",
+      "words": [
+       3,
+       8
+      ],
+      "id": "m1"
+     },
+     {
+      "type": "piece",
+      "part": 4,
+      "q": "Деталь 3: что вдруг случилось?",
+      "pre": "Soudain, ",
+      "ph": "mon téléphone s’est éteint",
+      "re": "\\b(ai|as|a|avons|avez|ont|suis|es|est|sommes|êtes|sont) [a-zàâçéèêëîïôûùüÿœ]+",
+      "want": "событие в passé composé",
+      "words": [
+       2,
+       6
+      ],
+      "id": "m2"
+     },
+     {
+      "type": "piece",
+      "part": 3,
+      "q": "И ещё одна деталь для части 3: что ты сделала накануне отъезда?",
+      "pre": "La veille de mon départ, j’ai ",
+      "ph": "dit au revoir à mes amis",
+      "re": "^[a-zàâçéèêëîïôûùüÿœ]+(é|i|is|u|it|ert)\\b",
+      "want": "participe passé после j’ai: dit, fait, vu…",
+      "words": [
+       2,
+       6
+      ],
+      "id": "m3"
+     }
+    ]
+   },
+   "wrap": {
+    "task": "Доделай недоделанное или перечитай вслух блог Марты и свой каркас.",
+    "can": [
+     "сказать, сколько что-то длится (depuis) или длилось (pendant)",
+     "сказать, когда что-то случилось: il y a…",
+     "построить рассказ: quand…, soudain…"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-13",
+   "type": "учебный",
+   "unit": 1,
+   "lesson": "1.5",
+   "minutes": 210,
+   "topic": "TCF-день: серия № 17 и итог недели",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Разгон: карточки и спираль",
+     "min": 15
+    },
+    {
+     "kind": "tcf",
+     "title": "TCF: серия № 17",
+     "min": 70,
+     "url": "https://apprendre.tv5monde.com/fr/tcf/test-dentrainement-au-tcf?tcf_lot_id=70",
+     "label": "Открыть серию № 17",
+     "sub": "TV5MONDE · Série d’entraînement n°17",
+     "links": [
+      [
+       "Structure de la langue",
+       "https://apprendre.tv5monde.com/fr/tcf/test-dentrainement-au-tcf?tcf_lot_id=70&competence=SL"
+      ],
+      [
+       "Compréhension écrite",
+       "https://apprendre.tv5monde.com/fr/tcf/test-dentrainement-au-tcf?tcf_lot_id=70&competence=CE"
+      ]
+     ],
+     "task": "Сегодня части «Structure de la langue» и «Compréhension écrite», аудирование — по желанию. Без словаря, засекай время. Потом запиши результат, а вопросы, где ошиблась, добавь в карточки ниже в виде «верная фраза — что было не так».",
+     "catch": "Журнал ошибок серии"
+    },
+    {
+     "kind": "exercises",
+     "title": "Итог недели: упражнения",
+     "min": 20
+    },
+    {
+     "kind": "sprint",
+     "title": "TCF-спринт",
+     "min": 15
+    },
+    {
+     "kind": "course",
+     "title": "Онлайн-курс TV5",
+     "min": 30,
+     "url": "https://apprendre.tv5monde.com/fr/exercices/la-grammaire-en-a2/le-passe-compose-et-limparfait",
+     "stage": "Étape 06",
+     "task": "Курс TV5MONDE « La grammaire en A2 », модуль « Le passé composé et l’imparfait ». Сегодня « Bilan : l’expression du passé » (14 упражнений) — итог модуля."
+    },
+    {
+     "kind": "listening",
+     "title": "Второе аудио",
+     "min": 35,
+     "items": [
+      {
+       "url": "https://www.youtube.com/watch?v=7n6U46hICDo",
+       "title": "Speaking about the past | Super Easy French 11",
+       "src": "Easy Languages",
+       "dur": "4:42",
+       "task": "1. Посмотри 2 раза с субтитрами. 2. Выпиши 4 вопроса о прошлом, которые задают на улице, и ответь на каждый письменно про себя. 3. Повтори вслух 5 ответов вслед за людьми (shadowing). Проверка — по субтитрам: ключей к этим вопросам на сайте нет, вопросы открытые."
+      }
+     ]
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели",
+     "min": 15
+    },
+    {
+     "kind": "wrap",
+     "title": "Запас и итог дня",
+     "min": 10
+    }
+   ],
+   "warmup": [
+    {
+     "type": "gap",
+     "q": "J’habite ici ___ six mois.",
+     "ru": "уже полгода",
+     "a": [
+      "depuis"
+     ],
+     "id": "s1"
+    },
+    {
+     "type": "gap",
+     "q": "Je suis arrivée ___ six mois.",
+     "ru": "полгода назад",
+     "a": [
+      "il y a"
+     ],
+     "id": "s2"
+    },
+    {
+     "type": "gap",
+     "q": "Les photos ? Je les ai pri___ .",
+     "ru": "согласование",
+     "a": [
+      "ses"
+     ],
+     "id": "s3"
+    },
+    {
+     "type": "gap",
+     "q": "Quand je suis entrée, il ___ nuit.",
+     "ru": "faire · фон",
+     "a": [
+      "faisait"
+     ],
+     "id": "s4"
+    },
+    {
+     "type": "gap",
+     "q": "Avec ___, je parle russe.",
+     "ru": "он → ударное",
+     "a": [
+      "lui"
+     ],
+     "id": "s5"
+    }
+   ],
+   "exercises": [
+    {
+     "type": "choice",
+     "q": "Quand j’___ petite, j’habitais à la campagne.",
+     "o": [
+      "étais",
+      "ai été",
+      "suis",
+      "serai"
+     ],
+     "a": 0,
+     "id": "e1"
+    },
+    {
+     "type": "choice",
+     "q": "Hier, il ___ quand je suis sortie.",
+     "o": [
+      "pleuvait",
+      "a plu",
+      "pleut",
+      "pleuvra"
+     ],
+     "a": 0,
+     "id": "e2"
+    },
+    {
+     "type": "gap",
+     "q": "Nous ___ quand Paul est arrivé.",
+     "ru": "dîner · фон",
+     "a": [
+      "dînions"
+     ],
+     "id": "e3"
+    },
+    {
+     "type": "gap",
+     "q": "Ce matin, j’___ mon bus.",
+     "ru": "rater · событие",
+     "a": [
+      "ai raté"
+     ],
+     "id": "e4"
+    },
+    {
+     "type": "gap",
+     "q": "Ta valise ? Je l’ai mi___ dans la voiture.",
+     "ru": "согласование с la",
+     "a": [
+      "se"
+     ],
+     "id": "e5"
+    },
+    {
+     "type": "gap",
+     "q": "J’apprends le français ___ septembre.",
+     "ru": "с сентября",
+     "a": [
+      "depuis"
+     ],
+     "id": "e6"
+    },
+    {
+     "type": "gap",
+     "q": "Je suis arrivée ___ trois mois.",
+     "ru": "три месяца назад",
+     "a": [
+      "il y a"
+     ],
+     "id": "e7"
+    },
+    {
+     "type": "choice",
+     "q": "Les enfants ? Je pense souvent à ___ .",
+     "o": [
+      "eux",
+      "ils",
+      "leur",
+      "les"
+     ],
+     "a": 0,
+     "id": "e8"
+    },
+    {
+     "type": "translate",
+     "q": "Когда я была маленькой, мы жили в Казани.",
+     "a": [
+      "Quand j’étais petite, nous habitions à Kazan.",
+      "Quand j’étais petite, nous vivions à Kazan.",
+      "Quand j’étais petite, on habitait à Kazan.",
+      "Quand j’étais petite, on vivait à Kazan."
+     ],
+     "id": "e9"
+    },
+    {
+     "type": "translate",
+     "q": "Я её не узнала.",
+     "a": [
+      "Je ne l’ai pas reconnue."
+     ],
+     "id": "e10"
+    },
+    {
+     "type": "dictation",
+     "say": "Il faisait nuit quand je suis arrivée.",
+     "a": [
+      "Il faisait nuit quand je suis arrivée."
+     ],
+     "id": "e11"
+    },
+    {
+     "type": "order",
+     "q": "Собери: «Мои фотографии? Я их потеряла»",
+     "words": [
+      "Mes photos ?",
+      "Je",
+      "les",
+      "ai",
+      "perdues"
+     ],
+     "a": [
+      "Mes photos ? Je les ai perdues."
+     ],
+     "id": "e12"
+    }
+   ],
+   "sprint": [
+    {
+     "type": "choice",
+     "q": "Je ___ dans ce quartier depuis 2023.",
+     "o": [
+      "vis",
+      "ai vécu",
+      "vivais",
+      "vivrai"
+     ],
+     "a": 0,
+     "id": "t1"
+    },
+    {
+     "type": "choice",
+     "q": "Quand nous étions enfants, nous ___ au foot.",
+     "o": [
+      "jouions",
+      "avons joué",
+      "jouons",
+      "jouerons"
+     ],
+     "a": 0,
+     "id": "t2"
+    },
+    {
+     "type": "choice",
+     "q": "Tes lunettes ? Je les ai ___ dans le salon.",
+     "o": [
+      "vues",
+      "vu",
+      "vus",
+      "vue"
+     ],
+     "a": 0,
+     "id": "t3"
+    },
+    {
+     "type": "choice",
+     "q": "Il a habité à Rome ___ dix ans, puis il est rentré.",
+     "o": [
+      "pendant",
+      "depuis",
+      "il y a",
+      "dans"
+     ],
+     "a": 0,
+     "id": "t4"
+    },
+    {
+     "type": "choice",
+     "q": "Je cuisinais quand, tout à coup, le chat ___ sur la table.",
+     "o": [
+      "a sauté",
+      "sautait",
+      "saute",
+      "sautera"
+     ],
+     "a": 0,
+     "id": "t5"
+    },
+    {
+     "type": "choice",
+     "q": "Avec ___, je parle toujours français.",
+     "o": [
+      "elle",
+      "la",
+      "sa",
+      "l’"
+     ],
+     "a": 0,
+     "id": "t6"
+    },
+    {
+     "type": "choice",
+     "q": "Hier soir, j’___ très fatiguée, alors je me suis couchée tôt.",
+     "o": [
+      "étais",
+      "ai",
+      "suis",
+      "serai"
+     ],
+     "a": 0,
+     "id": "t7"
+    },
+    {
+     "type": "choice",
+     "q": "Elle s’est ___ de train.",
+     "o": [
+      "trompée",
+      "trompé",
+      "trompés",
+      "tromper"
+     ],
+     "a": 0,
+     "id": "t8"
+    },
+    {
+     "type": "choice",
+     "q": "On ___ au restaurant ce soir ?",
+     "o": [
+      "va",
+      "vont",
+      "allons",
+      "est"
+     ],
+     "a": 0,
+     "id": "t9"
+    },
+    {
+     "type": "choice",
+     "q": "Il ___ Moscou il y a un an.",
+     "o": [
+      "a quitté",
+      "quittait",
+      "quitte",
+      "quittera"
+     ],
+     "a": 0,
+     "id": "t10"
+    }
+   ],
+   "wtext": {
+    "intro": "Перед субботой: перестрой одну свою фразу с местоимением.",
+    "micro": [
+     {
+      "type": "piece",
+      "part": 3,
+      "q": "Микрозадание: перестрой фразу «J’ai quitté ma ville en …» так, чтобы вместо «ma ville» было местоимение (5–8 слов).",
+      "pre": "",
+      "ph": "Ma ville ? Je l’ai quittée en juillet.",
+      "re": "(^|\\s)(l'|la|le|les)\\b",
+      "want": "местоимение l’ / la / le / les перед глаголом",
+      "words": [
+       4,
+       9
+      ],
+      "id": "m1"
+     }
+    ]
+   },
+   "wrap": {
+    "task": "Доделай недоделанное. Вопросы серии, где ошиблась, — в карточки.",
+    "can": [
+     "сделать «структуры языка» TCF на время",
+     "разобрать свои ошибки и превратить их в карточки"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  },
+  {
+   "date": "2026-11-14",
+   "type": "финал",
+   "unit": 1,
+   "lesson": "1.6",
+   "minutes": 120,
+   "topic": "Финал юнита: текст недели, Le Petit Prince, Lupin",
+   "steps": [
+    {
+     "kind": "review",
+     "title": "Карточки",
+     "min": 10
+    },
+    {
+     "kind": "wtext",
+     "title": "Текст недели: довести до 120–150 слов",
+     "min": 30,
+     "final": true
+    },
+    {
+     "kind": "reading",
+     "title": "Le Petit Prince",
+     "min": 30,
+     "chapters": "12–17",
+     "url": "https://www.ebooksgratuits.com/pdf/st_exupery_le_petit_prince.pdf",
+     "task": "Читай вслух. Нажимай на незнакомые слова и добавляй нужные в карточки.",
+     "gloss": [
+      [
+       "un buveur",
+       "пьяница"
+      ],
+      [
+       "boire",
+       "пить"
+      ],
+      [
+       "la honte",
+       "стыд"
+      ],
+      [
+       "oublier",
+       "забыть"
+      ],
+      [
+       "un businessman",
+       "деловой человек"
+      ],
+      [
+       "une étoile",
+       "звезда"
+      ],
+      [
+       "posséder",
+       "владеть"
+      ],
+      [
+       "compter",
+       "считать"
+      ],
+      [
+       "un allumeur de réverbères",
+       "фонарщик"
+      ],
+      [
+       "un réverbère",
+       "фонарь"
+      ],
+      [
+       "la consigne",
+       "уговор, распоряжение"
+      ],
+      [
+       "un géographe",
+       "географ"
+      ],
+      [
+       "un explorateur",
+       "путешественник, исследователь"
+      ],
+      [
+       "éphémère",
+       "эфемерный, недолговечный"
+      ],
+      [
+       "la Terre",
+       "Земля"
+      ],
+      [
+       "un milliard",
+       "миллиард"
+      ],
+      [
+       "un ballet",
+       "балет"
+      ],
+      [
+       "le sable",
+       "песок"
+      ],
+      [
+       "seul",
+       "одинокий, один"
+      ],
+      [
+       "un navire",
+       "корабль"
+      ],
+      [
+       "un anneau",
+       "кольцо"
+      ],
+      [
+       "regretter",
+       "скучать, сожалеть"
+      ]
+     ],
+     "quiz": [
+      {
+       "type": "choice",
+       "q": "Глава 12. Зачем пьёт пьяница?",
+       "o": [
+        "чтобы забыть, что ему стыдно, что он пьёт",
+        "потому что ему скучно",
+        "ему хочется пить"
+       ],
+       "a": 0,
+       "id": "R-1"
+      },
+      {
+       "type": "choice",
+       "q": "Глава 13. Чем занят деловой человек?",
+       "o": [
+        "считает звёзды, которыми «владеет»",
+        "продаёт цветы",
+        "строит дома"
+       ],
+       "a": 0,
+       "id": "R-2"
+      },
+      {
+       "type": "choice",
+       "q": "Что он говорит о себе?",
+       "o": [
+        "«я человек серьёзный»",
+        "«я очень счастлив»",
+        "«я ленивый»"
+       ],
+       "a": 0,
+       "id": "R-3"
+      },
+      {
+       "type": "choice",
+       "q": "Глава 14. Почему фонарщик всё время зажигает и гасит фонарь?",
+       "o": [
+        "его планета вращается раз в минуту, а уговор не изменился",
+        "ему так нравится",
+        "так приказал король"
+       ],
+       "a": 0,
+       "id": "R-4"
+      },
+      {
+       "type": "choice",
+       "q": "Почему принцу нравится фонарщик?",
+       "o": [
+        "он занят не только собой",
+        "он богатый",
+        "он смешной"
+       ],
+       "a": 0,
+       "id": "R-5"
+      },
+      {
+       "type": "choice",
+       "q": "Глава 15. Что не делает географ?",
+       "o": [
+        "сам не путешествует и не исследует",
+        "не пишет книги",
+        "не задаёт вопросов"
+       ],
+       "a": 0,
+       "id": "R-6"
+      },
+      {
+       "type": "choice",
+       "q": "Что значит «эфемерный» о цветке?",
+       "o": [
+        "которому грозит скорое исчезновение",
+        "очень красивый",
+        "ядовитый"
+       ],
+       "a": 0,
+       "id": "R-7"
+      },
+      {
+       "type": "choice",
+       "q": "Глава 16. Какой была седьмая планета?",
+       "o": [
+        "Земля",
+        "Марс",
+        "астероид B 612"
+       ],
+       "a": 0,
+       "id": "R-8"
+      },
+      {
+       "type": "choice",
+       "q": "Кого, по словам рассказчика, на Земле очень много?",
+       "o": [
+        "взрослых: королей, географов, деловых людей, пьяниц, честолюбцев",
+        "цветов и барашков",
+        "лётчиков"
+       ],
+       "a": 0,
+       "id": "R-9"
+      },
+      {
+       "type": "choice",
+       "q": "Глава 17. Кого принц первым встретил на Земле?",
+       "o": [
+        "змею",
+        "лиса",
+        "лётчика"
+       ],
+       "a": 0,
+       "id": "R-10"
+      },
+      {
+       "type": "choice",
+       "q": "Где он оказался?",
+       "o": [
+        "в пустыне, в Африке",
+        "в большом городе",
+        "на острове"
+       ],
+       "a": 0,
+       "id": "R-11"
+      },
+      {
+       "type": "choice",
+       "q": "Что змея говорит о людях?",
+       "o": [
+        "среди людей тоже одиноко",
+        "люди очень добрые",
+        "людей на Земле нет"
+       ],
+       "a": 0,
+       "id": "R-12"
+      },
+      {
+       "type": "match",
+       "q": "Соедини слова из глав",
+       "pairs": [
+        [
+         "une étoile",
+         "звезда"
+        ],
+        [
+         "boire",
+         "пить"
+        ],
+        [
+         "compter",
+         "считать"
+        ],
+        [
+         "un réverbère",
+         "фонарь"
+        ],
+        [
+         "oublier",
+         "забыть"
+        ]
+       ],
+       "id": "R-13"
+      }
+     ]
+    },
+    {
+     "kind": "film",
+     "title": "Lupin, серия 1",
+     "min": 40,
+     "film": "Lupin, сезон 1, серия 1",
+     "where": "Сериал идёт на Netflix: открой его в приложении. Ссылку не даю, она зависит от страны.",
+     "task": "Смотри с французскими субтитрами. В серии много рассказов о прошлом — лови imparfait и passé composé и выпиши 5 фраз в поле ниже."
+    },
+    {
+     "kind": "wrap",
+     "title": "Faites le point",
+     "min": 10
+    }
+   ],
+   "wtext": {
+    "intro": "Сайт собрал твои куски за неделю в черновик. Доведи его до 120–150 слов: добавь начало и концовку, две связки (d’abord, ensuite, alors, mais, enfin), проверь формы. Потом скопируй запрос для Claude, исправь 3 места, которые он отметит, и прочитай текст вслух.",
+    "checklist": [
+     "начало: обращение к читателям блога (Bonjour à tous !)",
+     "все 5 частей: avant, ma vie là-bas, le départ, le premier jour, aujourd’hui",
+     "фон в imparfait, события в passé composé",
+     "минимум две связки: d’abord, ensuite, alors, mais, enfin",
+     "il y a / depuis / pendant хотя бы по разу",
+     "концовка: что ты чувствуешь сейчас",
+     "от 120 до 150 слов"
+    ],
+    "micro": []
+   },
+   "wrap": {
+    "task": "Итог юнита. Отметь, что получается, — честно, без спешки. Что пока не получается, повтори на следующей неделе.",
+    "unit": true,
+    "can": [
+     "прочитать свой текст недели вслух без запинок"
+    ]
+   },
+   "queue": true,
+   "ready": true
+  }
+ ],
+ "lexicon": {
+  "il y a un an": {
+   "lemma": "il y a un an",
+   "ru": "год назад"
+  },
+  "en bas de chez moi": {
+   "lemma": "en bas de chez moi",
+   "ru": "внизу у моего дома"
+  },
+  "j'étais souvent fatiguée": {
+   "lemma": "j’étais souvent fatiguée",
+   "ru": "я часто уставала"
+  },
+  "au bord de la neva": {
+   "lemma": "au bord de la Neva",
+   "ru": "на берегу Невы"
+  },
+  "pendant des heures": {
+   "lemma": "pendant des heures",
+   "ru": "часами"
+  },
+  "presque tous les jours": {
+   "lemma": "presque tous les jours",
+   "ru": "почти каждый день"
+  },
+  "la nuit tombait": {
+   "lemma": "la nuit tombait",
+   "ru": "темнело (наступала ночь)"
+  },
+  "je ne connaissais personne": {
+   "lemma": "je ne connaissais personne",
+   "ru": "я никого не знала"
+  },
+  "le jour de mon arrivée": {
+   "lemma": "le jour de mon arrivée",
+   "ru": "в день моего приезда"
+  },
+  "une grosse valise": {
+   "lemma": "une grosse valise",
+   "ru": "большой чемодан"
+  },
+  "les rues étaient vides": {
+   "lemma": "les rues étaient vides",
+   "ru": "улицы были пустыми"
+  },
+  "soudain": {
+   "lemma": "soudain",
+   "ru": "вдруг"
+  },
+  "plus de batterie": {
+   "lemma": "plus de batterie",
+   "ru": "батарея села"
+  },
+  "j'ai eu peur": {
+   "lemma": "j’ai eu peur",
+   "ru": "мне стало страшно"
+  },
+  "vingt minutes plus tard": {
+   "lemma": "vingt minutes plus tard",
+   "ru": "через двадцать минут"
+  },
+  "ce soir-là": {
+   "lemma": "ce soir-là",
+   "ru": "в тот вечер"
+  },
+  "gagner au loto": {
+   "lemma": "gagner au loto",
+   "ru": "выиграть в лотерею"
+  },
+  "un billet gagnant": {
+   "lemma": "un billet gagnant",
+   "ru": "выигрышный билет"
+  },
+  "changer de vie": {
+   "lemma": "changer de vie",
+   "ru": "изменить жизнь"
+  },
+  "une équipe d'experts": {
+   "lemma": "une équipe d’experts",
+   "ru": "команда экспертов"
+  },
+  "aider quelqu'un": {
+   "lemma": "aider quelqu’un",
+   "ru": "помогать кому-то"
+  },
+  "dépenser de l'argent": {
+   "lemma": "dépenser de l’argent",
+   "ru": "тратить деньги"
+  },
+  "il y a deux ans": {
+   "lemma": "il y a deux ans",
+   "ru": "два года назад"
+  },
+  "j'ai quitté madrid": {
+   "lemma": "j’ai quitté Madrid",
+   "ru": "я уехала из Мадрида"
+  },
+  "une agence de voyages": {
+   "lemma": "une agence de voyages",
+   "ru": "турагентство"
+  },
+  "en même temps": {
+   "lemma": "en même temps",
+   "ru": "одновременно"
+  },
+  "il y avait du vent": {
+   "lemma": "il y avait du vent",
+   "ru": "было ветрено"
+  },
+  "ma colocataire": {
+   "lemma": "ma colocataire",
+   "ru": "моя соседка по квартире"
+  },
+  "venir chercher quelqu'un": {
+   "lemma": "venir chercher quelqu’un",
+   "ru": "прийти, заехать за кем-то"
+  },
+  "depuis deux ans": {
+   "lemma": "depuis deux ans",
+   "ru": "уже два года"
+  },
+  "buveur": {
+   "lemma": "un buveur",
+   "ru": "пьяница"
+  },
+  "boire": {
+   "lemma": "boire",
+   "ru": "пить"
+  },
+  "honte": {
+   "lemma": "la honte",
+   "ru": "стыд"
+  },
+  "oublier": {
+   "lemma": "oublier",
+   "ru": "забыть"
+  },
+  "businessman": {
+   "lemma": "un businessman",
+   "ru": "деловой человек"
+  },
+  "étoile": {
+   "lemma": "une étoile",
+   "ru": "звезда"
+  },
+  "posséder": {
+   "lemma": "posséder",
+   "ru": "владеть"
+  },
+  "compter": {
+   "lemma": "compter",
+   "ru": "считать"
+  },
+  "allumeur de réverbères": {
+   "lemma": "un allumeur de réverbères",
+   "ru": "фонарщик"
+  },
+  "réverbère": {
+   "lemma": "un réverbère",
+   "ru": "фонарь"
+  },
+  "consigne": {
+   "lemma": "la consigne",
+   "ru": "уговор, распоряжение"
+  },
+  "géographe": {
+   "lemma": "un géographe",
+   "ru": "географ"
+  },
+  "explorateur": {
+   "lemma": "un explorateur",
+   "ru": "путешественник, исследователь"
+  },
+  "éphémère": {
+   "lemma": "éphémère",
+   "ru": "эфемерный, недолговечный"
+  },
+  "terre": {
+   "lemma": "la Terre",
+   "ru": "Земля"
+  },
+  "milliard": {
+   "lemma": "un milliard",
+   "ru": "миллиард"
+  },
+  "ballet": {
+   "lemma": "un ballet",
+   "ru": "балет"
+  },
+  "sable": {
+   "lemma": "le sable",
+   "ru": "песок"
+  },
+  "seul": {
+   "lemma": "seul",
+   "ru": "одинокий, один"
+  },
+  "navire": {
+   "lemma": "un navire",
+   "ru": "корабль"
+  },
+  "anneau": {
+   "lemma": "un anneau",
+   "ru": "кольцо"
+  },
+  "regretter": {
+   "lemma": "regretter",
+   "ru": "скучать, сожалеть"
+  }
+ },
+ "unverified": []
+}
