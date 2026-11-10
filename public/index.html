@@ -48,7 +48,7 @@ a{color:var(--accent)}
 .sync{font-size:12px;color:var(--faint);display:flex;align-items:center;gap:6px}
 .sync i{width:7px;height:7px;border-radius:50%;background:var(--faint);display:inline-block}
 .sync.on i{background:var(--ok)} .sync.err i{background:var(--bad)}
-.tabs{display:flex;gap:4px;width:100%;margin-top:6px}
+.tabs{display:flex;gap:4px;width:100%;margin-top:6px;overflow-x:auto;scrollbar-width:none}
 .tab{appearance:none;border:0;background:none;padding:10px 12px 11px;font-size:15px;color:var(--muted);border-bottom:2px solid transparent;cursor:pointer}
 .tab[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
 
@@ -279,6 +279,74 @@ h2.sec{font-size:24px;font-weight:600;margin:28px 0 4px;letter-spacing:-.01em}
 .checks{display:flex;flex-direction:column;gap:10px;margin-top:10px}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:16px;cursor:pointer}
 .check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--accent);flex:none}
+/* теория */
+.reftoc{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.reftoc .btn{padding:7px 12px;font-size:14px}
+.refbody{margin-top:10px}
+details.refsec{border-top:1px solid var(--line)}
+details.refsec>summary{cursor:pointer;padding:16px 0;font-size:20px;font-weight:600;list-style-position:outside}
+details.refsec[open]>summary{padding-bottom:4px}
+details.refsec>div{padding-bottom:22px}
+.refh{font-size:17px;font-weight:600;margin:26px 0 6px}
+.refp{margin:6px 0 10px;max-width:68ch}
+.refnote{border-left:3px solid var(--accent);background:var(--accent-soft);padding:10px 14px;border-radius:0 10px 10px 0;margin:10px 0 14px;font-size:15px;max-width:72ch}
+.gridwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0 14px}
+table.ref{border-collapse:collapse;width:100%;font-size:15px}
+table.ref th{text-align:left;font-weight:500;color:var(--muted);font-size:13px;padding:6px 14px 6px 0;border-bottom:1px solid var(--line);vertical-align:bottom}
+table.ref td{padding:8px 14px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.ref td .fr{font-size:16px}
+table.ref td .ru{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+table.ref td.say{cursor:pointer}
+table.ref td.say:hover .fr{color:var(--accent)}
+table.ref.cards thead{display:none}
+table.ref.cards,table.ref.cards tbody,table.ref.cards tr,table.ref.cards td{display:block}
+table.ref.cards tr{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:10px 14px;margin-bottom:10px}
+table.ref.cards td{border:0;padding:3px 0}
+table.ref.cards td:empty{display:none}
+table.ref.cards td:first-child{font-weight:600;padding-bottom:6px}
+table.ref.cards td:first-child .fr{font-size:18px}
+table.ref.cards td:not(:first-child)[data-h]::before{content:attr(data-h);display:block;font-size:12px;color:var(--faint)}
+@media (min-width:641px){table.ref.cards tr{display:grid;grid-template-columns:1fr 1fr;gap:4px 22px}table.ref.cards td:first-child{grid-column:1/-1}}
+@media (max-width:640px){
+  table.ref.stack thead{display:none}
+  table.ref.stack,table.ref.stack tbody,table.ref.stack tr,table.ref.stack td{display:block}
+  table.ref.stack tr{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:10px 14px;margin-bottom:10px}
+  table.ref.stack td{border:0;padding:3px 0}
+  table.ref.stack td:empty{display:none}
+  table.ref.stack td:first-child{font-weight:600;padding-bottom:6px}
+  table.ref.stack td:first-child .fr{font-size:18px}
+  table.ref.stack td:not(:first-child)[data-h]::before{content:attr(data-h);display:block;font-size:12px;color:var(--faint)}
+}
+.tline{list-style:none;padding:0;margin:12px 0 18px;display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px}
+.tline li{border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;background:var(--surface)}
+.tline li.now{border-color:var(--accent)}
+.tline .lab{display:block;font-size:12px;color:var(--muted)}
+.tline .fr{display:block;font-size:16px;margin:2px 0}
+.tline .nm{display:block;font-size:12px;color:var(--faint)}
+.vcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:10px 0 16px}
+.vcard{border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;background:var(--surface)}
+.vcard .vh{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.vcard .vh .fr{font-size:20px;font-weight:600}
+.vcard .vru{color:var(--muted);font-size:14px}
+.vcard .vp{display:grid;grid-template-columns:1fr 1fr;gap:3px 12px;margin:8px 0 10px;font-size:16px}
+.vcard .vp span{cursor:pointer}
+.vcard .vt{font-size:14px;color:var(--muted)}
+.vcard .vt b{font-weight:400;color:var(--ink);font-family:var(--serif);font-size:15px}
+.vcard .vnote{font-size:13px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:6px}
+details.lday{border-bottom:1px solid var(--line)}
+details.lday>summary{cursor:pointer;padding:10px 0;display:flex;gap:12px;align-items:baseline}
+details.lday>summary .d{color:var(--muted);font-size:14px;min-width:52px}
+details.lday[open]{padding-bottom:16px}
+/* карточки по урокам */
+details.lessons>summary{cursor:pointer}
+.lgroups{border-top:1px solid var(--line)}
+.lgroup{display:flex;gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
+.lgroup .d{color:var(--muted);font-size:14px;min-width:52px}
+.lgroup .n{flex:1}
+.lgroup.off .n{color:var(--faint)}
+.lgroup .btn{padding:6px 12px;font-size:14px;flex:none}
+@media (max-width:420px){.tab{padding:10px 7px 11px;font-size:14px}}
+@media (max-width:350px){.tab{padding:10px 4px 11px;font-size:13px}}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-top:14px}
 .clist{margin-top:10px}
 .crow{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
@@ -334,6 +402,7 @@ h2.sec{font-size:24px;font-weight:600;margin:28px 0 4px;letter-spacing:-.01em}
       <button class="tab" data-route="today" id="tab-today">Сегодня</button>
       <button class="tab" data-route="plan" id="tab-plan">План</button>
       <button class="tab" data-route="cards" id="tab-cards">Карточки</button>
+      <button class="tab" data-route="theory" id="tab-theory">Теория</button>
     </nav>
   </div>
 </header>
@@ -681,6 +750,7 @@ function aiError(e) {
 const SRS = {
   grade(c, g) { // g: 0 снова, 1 трудно, 2 хорошо, 3 легко
     const q = [1, 3, 4, 5][g]; const n = Object.assign({}, c);
+    if (!n.last) n.first = today(); // день первого показа — по нему считаем лимит новых
     if (q < 3) { n.reps = 0; n.ivl = 0; n.lapses = (n.lapses || 0) + 1; n.due = today(); }
     else {
       n.reps = (n.reps || 0) + 1; let ivl;
@@ -695,7 +765,20 @@ const SRS = {
   preview(c, g) { const n = this.grade(c, g); return n.ivl === 0 ? 'сейчас' : fmtIvl(n.ivl); },
   fresh(base) { return Object.assign({ ef: 2.5, reps: 0, ivl: 0, lapses: 0, due: addDays(today(), 1), added: today() }, base); },
 };
-const dueCards = () => Object.values(Store.cards).filter(c => c.due && c.due <= today()).sort((a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : (a.added || '') < (b.added || '') ? -1 : 1);
+// Новые карточки (ни разу не повторялись) выдаются не больше NEW_PER_DAY в день, свежедобавленные первыми.
+// Отложенные (paused) в повторение не попадают, пока их не вернут.
+const NEW_PER_DAY = 20;
+const isNewCard = c => !c.last;
+const byDue = (a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : (a.added || '') < (b.added || '') ? -1 : 1;
+const byFresh = (a, b) => (a.added || '') > (b.added || '') ? -1 : (a.added || '') < (b.added || '') ? 1 : (a.day || '') < (b.day || '') ? -1 : (a.day || '') > (b.day || '') ? 1 : 0;
+function reviewPool() {
+  const t = today(), all = Object.values(Store.cards);
+  const ready = all.filter(c => !c.paused && c.due && c.due <= t);
+  const fresh = ready.filter(isNewCard).sort(byFresh);
+  const left = Math.max(0, NEW_PER_DAY - all.filter(c => c.first === t).length);
+  return { old: ready.filter(c => !isNewCard(c)).sort(byDue), fresh: fresh.slice(0, left), waiting: fresh.length - Math.min(left, fresh.length) };
+}
+const dueCards = () => { const p = reviewPool(); return p.old.concat(p.fresh); };
 
 /* ---------------- plan data ---------------- */
 let DATA = null, DAYS = {}, LEX = {}, TRS = {}, UNITS = {}, DATA_ERR = false, dataLoading = null;
@@ -850,7 +933,7 @@ function route() {
   if (!DATA) { render(); return; }
   const h = (location.hash || '').replace('#', '');
   if (h.startsWith('d-') && DAYS[h.slice(2)]) { UI.route = 'day'; UI.date = h.slice(2); }
-  else if (h === 'plan' || h === 'cards') UI.route = h;
+  else if (h === 'plan' || h === 'cards' || h === 'theory') UI.route = h;
   else { UI.route = 'today'; UI.date = currentDay(); }
   if (UI.route !== 'day' && UI.route !== 'today') UI.date = null;
   UI.review = null;
@@ -870,6 +953,7 @@ function render() {
   let view;
   if (UI.route === 'plan') view = renderPlan();
   else if (UI.route === 'cards') view = renderCards();
+  else if (UI.route === 'theory') view = renderTheory();
   else view = renderDay(DAYS[UI.date || currentDay()], UI.route === 'today');
   app.replaceChildren(view);
   window.scrollTo(0, y);
@@ -1121,12 +1205,23 @@ function onStepDone(day, step) {
   if (step.kind === 'theory' && day.topics) addTopicCards(day);
 }
 function addDayCards(day) {
+  // Слова урока, отложенные раньше, возвращаются в повторение: урок пройден заново.
+  const back = day.vocab.map(w => Store.cards[w.id]).filter(c => c && c.paused).map(c => { const n = Object.assign({}, c); delete n.paused; return n; });
+  if (back.length) Store.putCards(back);
   const list = day.vocab.filter(w => !Store.cards[w.id]).map(w => SRS.fresh({ id: w.id, type: 'word', fr: w.fr, ru: w.ru, g: w.g, ex: w.ex, exRu: w.exRu, src: 'lesson', day: day.date }));
   if (list.length) { Store.putCards(list); toast(list.length + ' ' + plural(list.length, 'слово', 'слова', 'слов') + ' в карточках — первое повторение завтра'); }
 }
 function addTopicCards(day) {
   const list = day.topics.filter(t => !Store.cards[t.id]).map(t => SRS.fresh({ id: t.id, type: 'topic', title: t.title, quiz: t.quiz, src: 'lesson', day: day.date }));
   if (list.length) Store.putCards(list);
+}
+
+// Теория урока: используется и в шаге дня, и во вкладке «Теория» → «Из уроков».
+function theoryList(list) {
+  return el('div', {}, list.map(s => el('div', { class: 'th' },
+    el('h3', { text: s.h }), el('p', { text: s.p }),
+    s.table ? el('div', { class: 'table' }, s.table.map(([a, b]) => [el('div', {}, frText(a), ' ', speakBtn(a.replace(/\s*\(.*?\)/g, '').replace(/ \/ /g, ', '))), el('div', { class: 'ru', text: b })])) : null,
+    s.ex ? el('div', { class: 'rows' }, s.ex.map(([fr, ru]) => el('div', { class: 'row' }, speakBtn(fr), frText(fr), el('span', { class: 'ru', text: ru })))) : null)));
 }
 
 /* ---------------- step renderers ---------------- */
@@ -1155,13 +1250,7 @@ const STEP_RENDER = {
     el('p', { class: 'lead small', text: step.task })),
   wtext: (day, step) => renderWeekText(day, step),
   wrap: (day) => renderWrap(day),
-  theory: (day) => {
-    if (!day.theory) return el('div', {}, pending(), planBlock(day));
-    return el('div', {}, day.theory.map(s => el('div', { class: 'th' },
-      el('h3', { text: s.h }), el('p', { text: s.p }),
-      s.table ? el('div', { class: 'table' }, s.table.map(([a, b]) => [el('div', {}, frText(a), ' ', speakBtn(a.replace(/\s*\(.*?\)/g, '').replace(/ \/ /g, ', '))), el('div', { class: 'ru', text: b })])) : null,
-      s.ex ? el('div', { class: 'rows' }, s.ex.map(([fr, ru]) => el('div', { class: 'row' }, speakBtn(fr), frText(fr), el('span', { class: 'ru', text: ru })))) : null)));
-  },
+  theory: (day) => day.theory ? theoryList(day.theory) : el('div', {}, pending(), planBlock(day)),
   vocab: (day) => {
     if (!day.vocab) return el('div', {}, pending(), planBlock(day));
     const inDeck = day.vocab.filter(w => Store.cards[w.id]).length;
@@ -1290,8 +1379,10 @@ function renderReview(day, standalone) {
       if (!standalone && day && !Store.peekDay(day.date).steps.review) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => setStep(day.date, 'review', true) }, ICON.check(), 'Готово')));
       return box;
     }
-    const n = Math.min(due.length, 50);
+    const n = Math.min(due.length, 50), pool = reviewPool();
     box.append(el('p', { class: 'lead' }, 'К повторению: ', el('b', { class: 'num', text: String(due.length) }), due.length > 50 ? ' (сегодня — первые 50)' : '', '. Пока очередь не пройдена, остальные шаги закрыты.'),
+      pool.waiting ? el('p', { class: 'small muted', style: 'margin:6px 0 0' }, 'Новых слов — не больше ' + NEW_PER_DAY + ' в день, ещё ' + pool.waiting + ' ждут своей очереди. Слова уроков, которые ты не проходила, можно отложить: ',
+        el('a', { href: '#cards', onclick: e => { e.preventDefault(); UI.lessonsOpen = true; go('cards'); setTimeout(() => { const x = document.getElementById('lessons'); if (x) x.scrollIntoView({ behavior: 'smooth' }); }, 60); } }, 'Карточки → Слова по урокам'), '.') : null,
       el('p', { class: 'small muted', style: 'margin:6px 0 0', text: 'Видишь слово — впиши перевод. Иногда наоборот: по-русски → по-французски. Оценка ставится сама.' }),
       el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => startReview(due.slice(0, n).map(c => c.id), { day: day && day.date }) }, 'Начать повторение')));
     return box;
@@ -2178,14 +2269,16 @@ function renderMonth(m, idx) {
 function renderCards() {
   const root = el('div');
   const all = Object.values(Store.cards);
-  const words = all.filter(c => c.type === 'word');
+  const words = all.filter(c => c.type === 'word' && !c.paused);
   const due = dueCards();
   const learned = all.filter(c => (c.ivl || 0) >= 21).length;
+  const paused = all.filter(c => c.paused).length;
   root.append(el('h2', { class: 'sec', text: 'Карточки' }),
     el('div', { class: 'stats' },
       el('div', { class: 'stat' }, el('b', { text: String(all.length) }), el('span', { text: 'в колоде' })),
       el('div', { class: 'stat' }, el('b', { text: String(due.length) }), el('span', { text: 'к повторению' })),
-      el('div', { class: 'stat' }, el('b', { text: String(learned) }), el('span', { text: 'выучено (≥ 3 нед)' }))));
+      el('div', { class: 'stat' }, el('b', { text: String(learned) }), el('span', { text: 'выучено (≥ 3 нед)' })),
+      paused ? el('div', { class: 'stat' }, el('b', { text: String(paused) }), el('span', { text: 'отложено' })) : null));
   if (UI.review || due.length) root.append(el('div', { class: 'panel' }, renderReview(null, true)));
   if (!UI.review && words.length) {
     const lastDay = words.reduce((m, c) => c.day && c.day > m ? c.day : m, '');
@@ -2200,6 +2293,7 @@ function renderCards() {
         hard.length ? el('button', { class: 'btn', onclick: () => go_(hard) }, 'Где ошибалась · ' + hard.length) : null,
         fromLast.length ? el('button', { class: 'btn', onclick: () => go_(fromLast) }, 'Слова ' + parse(lastDay).getDate() + ' ' + RU_MON[parse(lastDay).getMonth()] + ' · ' + fromLast.length) : null)));
   }
+  if (!UI.review && all.length) root.append(lessonsPanel(all));
   const fr = el('input', { class: 'inp', id: 'add-fr', placeholder: 'слово по-французски', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
   const ru = el('input', { class: 'inp', id: 'add-ru', placeholder: aiReady() ? 'перевод (необязательно)' : 'перевод', autocomplete: 'off' });
   const msg = el('p', { class: 'small muted', text: UI.addMsg || '' });
@@ -2215,12 +2309,179 @@ function renderCards() {
       el('div', {},
         el('div', { class: 'w' }, c.type === 'topic' ? 'Тема: ' + c.title : c.fr, c.type === 'word' ? speakBtn(sayFr(c.fr)) : null, c.type === 'word' && trOf(c.fr) ? el('span', { class: 'tsc', text: trOf(c.fr) }) : null),
         c.ru ? el('div', { class: 't', text: c.ru }) : null),
-      el('div', { class: 'due num' }, c.due <= today() ? 'сегодня' : 'через ' + fmtIvl(diffDays(today(), c.due)),
+      el('div', { class: 'due num' }, c.paused ? 'отложена' : c.due <= today() ? (isNewCard(c) ? 'новая' : 'сегодня') : 'через ' + fmtIvl(diffDays(today(), c.due)),
+        el('br'), el('button', { class: 'btn ghost small', style: 'padding:2px 0', onclick: () => setPaused([c], !c.paused) }, c.paused ? 'Вернуть' : 'Отложить'),
         el('br'), el('button', { class: 'btn ghost small', style: 'padding:2px 0', onclick: (e) => { const b = e.currentTarget; if (b.dataset.sure) { Store.delCard(c.id); } else { b.dataset.sure = '1'; b.textContent = 'Точно удалить?'; } } }, 'Удалить')))));
     if (!rows.length) listBox.append(el('p', { class: 'lead', text: all.length ? 'Ничего не найдено.' : 'Колода пустая. Слова появятся после шага «Словарь дня».' }));
   };
   q.addEventListener('input', paintList); paintList();
   root.append(q, listBox);
+  return root;
+}
+
+// Отложить или вернуть карточки. Расписание не трогаем: вернувшаяся карточка продолжит с того же места.
+function setPaused(list, on) {
+  const out = list.filter(c => !!c.paused !== on).map(c => { const n = Object.assign({}, c); if (on) n.paused = true; else delete n.paused; return n; });
+  if (out.length) Store.putCards(out);
+  return out.length;
+}
+// Был ли урок пройден на деле: есть ответы в упражнениях, практикуме или вопросах.
+const dayPracticed = date => Object.keys(Store.peekDay(date).ex || {}).length > 0;
+function lessonsPanel(all) {
+  const groups = {};
+  all.forEach(c => { const k = c.day && DAYS[c.day] ? c.day : ''; (groups[k] = groups[k] || []).push(c); });
+  const dates = Object.keys(groups).sort((a, b) => !a ? 1 : !b ? -1 : a < b ? -1 : 1);
+  // Кандидаты на «отложить»: ни разу не повторённые карточки уроков, где нет ни одного ответа в упражнениях.
+  const idle = dates.filter(d => d && !dayPracticed(d)).flatMap(d => groups[d].filter(c => isNewCard(c) && !c.paused));
+  const idleDays = new Set(idle.map(c => c.day)).size;
+  const box = el('details', { class: 'panel lessons', id: 'lessons', open: UI.lessonsOpen || null, ontoggle: e => { UI.lessonsOpen = e.currentTarget.open; } },
+    el('summary', {}, el('span', { style: 'font-weight:500', text: 'Слова по урокам' }), el('span', { class: 'small muted', text: ' · отложить непройденное' })));
+  box.append(el('p', { class: 'small muted', style: 'margin:8px 0 10px', text: 'Отложенные слова не приходят в повторение, пока ты их не вернёшь. Если пройти урок и нажать «Готово — в карточки» в его словаре, слова этого урока вернутся сами. Новых слов в повторении — не больше ' + NEW_PER_DAY + ' в день.' }));
+  if (idle.length) {
+    const b = el('button', { class: 'btn', onclick: () => { if (!b.dataset.sure) { b.dataset.sure = '1'; b.textContent = 'Точно отложить ' + idle.length + '?'; return; } const n = setPaused(idle, true); toast('Отложено: ' + n + ' ' + plural(n, 'карточка', 'карточки', 'карточек')); } },
+      'Отложить ' + idle.length + ' ' + plural(idle.length, 'новое слово', 'новых слова', 'новых слов') + ' из ' + idleDays + ' ' + plural(idleDays, 'урока', 'уроков', 'уроков') + ' без упражнений');
+    box.append(el('div', { class: 'line', style: 'margin-bottom:10px' }, b));
+  }
+  const list = el('div', { class: 'lgroups' });
+  dates.forEach(d => {
+    const cs = groups[d], off = cs.filter(c => c.paused).length, seen = cs.filter(c => !isNewCard(c)).length;
+    const day = DAYS[d], x = d ? parse(d) : null;
+    const name = !d ? 'Добавлены вручную и из текстов' : (day.lesson && day.lesson !== '0' ? day.lesson + ' · ' : '') + (day.topic || (day.type === 'выходной' ? 'выходной: чтение и тексты' : 'без темы'));
+    const all_off = off === cs.length;
+    list.append(el('div', { class: 'lgroup' + (all_off ? ' off' : '') },
+      el('span', { class: 'd num', text: x ? x.getDate() + ' ' + RU_MON[x.getMonth()].slice(0, 3) : '' }),
+      el('span', { class: 'n' }, name,
+        el('span', { class: 'small muted', text: ' · ' + cs.length + ' ' + plural(cs.length, 'карточка', 'карточки', 'карточек') + (seen ? ', повторяла ' + seen : '') + (off && !all_off ? ', отложено ' + off : '') + (d && !dayPracticed(d) ? ' · упражнений не было' : '') })),
+      el('button', { class: 'btn small', onclick: () => { const n = setPaused(cs, !all_off); toast((all_off ? 'Возвращено в повторение: ' : 'Отложено: ') + n); } }, all_off ? 'Вернуть' : 'Отложить')));
+  });
+  box.append(list);
+  return box;
+}
+
+/* ---------------- theory view ---------------- */
+// Справочник лежит в data/reference.json (собирает content/build_reference.py) и грузится при первом открытии вкладки.
+let REF = null, refState = '';
+function ensureRef() {
+  if (REF || refState === 'loading') return;
+  refState = 'loading';
+  withTimeout(fetch('data/reference.json', { cache: 'no-cache', credentials: 'same-origin' }), 25000, 'data')
+    .then(r => { if (!r.ok) throw r; return r.json(); })
+    .then(j => { REF = j; refState = ''; render(); }, () => { refState = 'error'; render(); });
+}
+const CYR = /[А-Яа-яЁё]/;
+const findKey = s => strip(norm(s));
+// Французскую ячейку можно нажать и послушать. Перевод после « — » показывается отдельной строкой.
+function refCell(text, fr) {
+  const t = String(text);
+  if (!fr) return el('td', { text: t });
+  const i = t.lastIndexOf(' — '), tail = i > 0 ? t.slice(i + 3) : '';
+  const head = tail && CYR.test(tail) ? t.slice(0, i) : t;
+  const say = head.replace(/\s*\(.*?\)/g, '').replace(/ \/ /g, ', ').replace(/ · /g, ', ').replace(/→/g, ',');
+  const ok = say.trim() && !CYR.test(say);
+  return el('td', ok ? { class: 'say', title: 'Нажми, чтобы послушать', onclick: () => speak(say) } : {},
+    el('span', { class: 'fr', text: head }), tail && head !== t ? el('span', { class: 'ru', text: tail }) : null);
+}
+function refBlock(b, q) {
+  const hit = x => !q || findKey(x).includes(q);
+  if (b.t === 'p') return hit(b.text) ? el('p', { class: 'refp', text: b.text }) : null;
+  if (b.t === 'h') return null; // подзаголовки ставит refSection
+  if (b.t === 'note') return hit(b.text) ? el('div', { class: 'refnote', text: b.text }) : null;
+  if (b.t === 'line') {
+    const items = b.items.filter(it => hit(it.join(' ')));
+    if (!items.length) return null;
+    return el('ol', { class: 'tline' }, items.map(([lab, fr, nm]) => el('li', { class: nm === 'présent' ? 'now' : null, onclick: () => speak(fr) },
+      el('span', { class: 'lab', text: lab }), el('span', { class: 'fr', text: fr }), el('span', { class: 'nm', text: nm }))));
+  }
+  if (b.t === 'grid') {
+    const rows = !q || hit(b.head.join(' ')) ? b.rows : b.rows.filter(r => hit(r.join(' ')));
+    if (!rows.length) return null;
+    // Таблица с длинными ячейками всегда складывается в карточки (строка — карточка, у ячейки подпись столбца),
+    // просто широкая — только на телефоне.
+    const fr = new Set(b.fr), long = b.rows.some(r => r.some(c => String(c).length > 70)), stack = long || b.head.length >= 5;
+    return el('div', { class: 'gridwrap' }, el('table', { class: 'ref' + (long ? ' cards' : stack ? ' stack' : '') },
+      b.head.some(Boolean) ? el('thead', {}, el('tr', {}, b.head.map(x => el('th', { text: x })))) : null,
+      el('tbody', {}, rows.map(r => el('tr', {}, r.map((c, i) => { const td = refCell(c, fr.has(i)); if (b.head[i]) td.dataset.h = b.head[i]; return td; }))))));
+  }
+  if (b.t === 'ex') {
+    const items = b.items.filter(it => hit(it.join(' ')));
+    return items.length ? el('div', { class: 'rows' }, items.map(([fr, ru]) => el('div', { class: 'row' }, speakBtn(fr), frText(fr), el('span', { class: 'ru', text: ru })))) : null;
+  }
+  if (b.t === 'verbs') {
+    const items = b.items.filter(v => hit([v.inf, v.ru, v.pc, v.imp, v.fut, v.note].concat(v.pres).join(' ')));
+    if (!items.length) return null;
+    return el('div', { class: 'vcards' }, items.map(v => el('div', { class: 'vcard' },
+      el('div', { class: 'vh' }, el('span', { class: 'fr', text: v.inf }), speakBtn(v.inf), el('span', { class: 'vru', text: v.ru })),
+      el('div', { class: 'vp' }, [0, 3, 1, 4, 2, 5].map(i => el('span', { class: 'fr', onclick: () => speak(v.pres[i]) }, v.pres[i]))),
+      el('div', { class: 'vt' }, 'passé composé: ', el('b', { text: v.pc })),
+      el('div', { class: 'vt' }, 'imparfait: ', el('b', { text: v.imp })),
+      el('div', { class: 'vt' }, 'futur: ', el('b', { text: v.fut })),
+      v.note ? el('div', { class: 'vnote', text: v.note }) : null)));
+  }
+  return null;
+}
+function refSection(sec, q, force) {
+  const body = [];
+  let head = null;
+  sec.blocks.forEach(b => {
+    if (b.t === 'h') { head = b; return; }
+    const node = refBlock(b, q);
+    if (!node) return;
+    if (head) { body.push(el('h3', { class: 'refh', text: head.text })); head = null; }
+    body.push(node);
+  });
+  if (q && !body.length) return findKey(sec.title).includes(q) ? refSection(sec, '', true) : null;
+  return refDetails(sec.id, sec.title, el('div', {}, sec.lead ? el('p', { class: 'lead small', text: sec.lead }) : null, body), !!q || force);
+}
+function refDetails(id, title, body, forceOpen) {
+  const open = forceOpen || UI.refOpen[id];
+  const d = el('details', { class: 'refsec', id: 'ref-' + id, open: open || null, ontoggle: e => { if (!forceOpen) UI.refOpen[id] = e.currentTarget.open; } },
+    el('summary', {}, el('span', { text: title })));
+  d.append(body);
+  return d;
+}
+// «Из уроков»: теория всех дней плана, по датам. Уроки после текущего помечены как будущие.
+function lessonTheory(q) {
+  const cur = currentDay();
+  const days = DATA.days.filter(d => d.theory && d.theory.length);
+  const items = days.filter(d => !q || findKey((d.topic || '') + ' ' + d.theory.map(t => [t.h, t.p].concat((t.table || []).flat(), (t.ex || []).flat()).join(' ')).join(' ')).includes(q));
+  if (q && !items.length) return null;
+  const body = el('div', {}, el('p', { class: 'lead small', text: 'Теория каждого урока — как она была в шаге «Теория» того дня.' }));
+  items.forEach(d => {
+    const x = parse(d.date), later = d.date > cur;
+    const k = 'day-' + d.date;
+    const det = el('details', { class: 'lday', open: q || UI.refOpen[k] ? true : null, ontoggle: e => { if (!q) UI.refOpen[k] = e.currentTarget.open; } },
+      el('summary', {}, el('span', { class: 'd num', text: x.getDate() + ' ' + RU_MON[x.getMonth()].slice(0, 3) }),
+        el('span', { class: 'n' }, (d.lesson && d.lesson !== '0' ? d.lesson + ' · ' : '') + (d.topic || ''), later ? el('span', { class: 'faint small', text: ' · впереди' }) : null)));
+    det.append(theoryList(d.theory));
+    body.append(det);
+  });
+  return refDetails('lessons', 'Из уроков', body, !!q);
+}
+function renderTheory() {
+  const root = el('div');
+  root.append(el('h2', { class: 'sec', text: 'Теория' }));
+  if (!REF) {
+    ensureRef();
+    root.append(el('p', { class: 'lead', text: refState === 'error' ? 'Не получилось загрузить справочник. Проверь связь и открой вкладку ещё раз.' : 'Загружаю справочник…' }));
+    if (refState === 'error') root.append(el('button', { class: 'btn', onclick: () => { refState = ''; render(); } }, 'Повторить'));
+    return root;
+  }
+  if (!UI.refOpen) UI.refOpen = { tenses: true };
+  const secs = REF.sections.concat([{ id: 'lessons', title: 'Из уроков' }]);
+  root.append(el('p', { class: 'lead', text: 'Справочник на всё время учёбы. Французский текст в таблицах можно нажать и послушать.' }),
+    el('nav', { class: 'reftoc', 'aria-label': 'Разделы теории' }, secs.map(sx => el('button', { class: 'btn small', onclick: () => {
+      UI.refOpen[sx.id] = true; const d = document.getElementById('ref-' + sx.id); if (d) { d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); } } }, sx.title))));
+  const q = el('input', { class: 'inp', id: 'ref-q', type: 'search', placeholder: 'Поиск: depuis, imparfait, venir, предлог…', value: UI.refQuery || '', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
+  const out = el('div', { class: 'refbody' });
+  const paint = () => {
+    UI.refQuery = q.value; const k = findKey(q.value);
+    const parts = REF.sections.map(sx => refSection(sx, k)).concat([lessonTheory(k)]).filter(Boolean);
+    out.replaceChildren(...parts);
+    if (!parts.length) out.append(el('p', { class: 'lead', text: 'Ничего не нашлось. Попробуй другое слово — например, инфинитив глагола.' }));
+  };
+  let t = 0; q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(paint, 150); });
+  paint();
+  root.append(q, out);
   return root;
 }
 
