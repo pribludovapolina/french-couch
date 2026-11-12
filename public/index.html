@@ -280,6 +280,9 @@ h2.sec{font-size:24px;font-weight:600;margin:28px 0 4px;letter-spacing:-.01em}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:16px;cursor:pointer}
 .check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--accent);flex:none}
 /* теория */
+.monthsw{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 -8px}
+.monthsw .btn{padding:7px 14px;font-size:14px}
+.monthsw .btn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .reftoc{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
 .reftoc .btn{padding:7px 12px;font-size:14px}
 .refbody{margin-top:10px}
@@ -771,10 +774,36 @@ const NEW_PER_DAY = 20;
 const isNewCard = c => !c.last;
 const byDue = (a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : (a.added || '') < (b.added || '') ? -1 : 1;
 const byFresh = (a, b) => (a.added || '') > (b.added || '') ? -1 : (a.added || '') < (b.added || '') ? 1 : (a.day || '') < (b.day || '') ? -1 : (a.day || '') > (b.day || '') ? 1 : 0;
+// Глагол узнаём по паре: французский инфинитив (-er, -ir, -re, -oir, можно с se) и русский инфинитив (-ть, -ти, -чь).
+// Частей речи в данных нет, а одна проверка ловит лишнее: «la mère — мать», «peut-être — может быть».
+const FR_INF = /^[a-zàâäçéèêëîïôöûùüÿœæ-]+(er|ir|re|oir)$/, RU_INF = /^[а-яё-]+(ть|ти|чь|ться|тись|чься)$/;
+function isVerb(c) {
+  if (!c || c.type !== 'word' || c.fix) return false;
+  const fr = String(c.fr || '').trim().toLowerCase().replace(/^(se\s+|s['’])/, '').split(/[\s\/·→,(…]/)[0];
+  const ru = String(c.ru || '').trim().toLowerCase().split(/[\s;,(·]/)[0];
+  // «prendre → pris — взял(а)» (причастия) и «venir de + infinitif» — тоже глаголы, хоть перевод и не инфинитив.
+  return FR_INF.test(fr) && (RU_INF.test(ru) || /→|\+ infinitif/.test(c.fr));
+}
+// Одно повторение — REVIEW_SIZE карточек, из них до VERB_SHARE глаголов. Если глаголов к сроку мало,
+// добавляются уже знакомые глаголы, которым срок ещё не подошёл (ближайшие первыми). Верный ответ на такой
+// «досрочный» глагол расписание не трогает, ошибка — возвращает его в повторение как обычно.
+const REVIEW_SIZE = 20, VERB_SHARE = 14;
+function reviewSession() {
+  const p = reviewPool(), due = p.old.concat(p.fresh);
+  const verbs = due.filter(isVerb), other = due.filter(c => !isVerb(c));
+  let pick = verbs.slice(0, VERB_SHARE), early = [];
+  if (pick.length < VERB_SHARE) {
+    const ids = new Set(due.map(c => c.id));
+    early = Object.values(Store.cards).filter(c => !c.paused && c.last && !ids.has(c.id) && isVerb(c)).sort(byDue).slice(0, VERB_SHARE - pick.length);
+  }
+  pick = pick.concat(early, other.slice(0, REVIEW_SIZE - pick.length - early.length));
+  if (pick.length < REVIEW_SIZE) pick = pick.concat(verbs.slice(VERB_SHARE, VERB_SHARE + REVIEW_SIZE - pick.length));
+  return { cards: shuffled(pick, 'rv' + today()), early: early.map(c => c.id), verbs: pick.filter(isVerb).length };
+}
 function reviewPool() {
   const t = today(), all = Object.values(Store.cards);
   const ready = all.filter(c => !c.paused && c.due && c.due <= t);
-  const fresh = ready.filter(isNewCard).sort(byFresh);
+  const fresh = ready.filter(isNewCard).sort((a, b) => isVerb(b) - isVerb(a) || byFresh(a, b));
   const left = Math.max(0, NEW_PER_DAY - all.filter(c => c.first === t).length);
   return { old: ready.filter(c => !isNewCard(c)).sort(byDue), fresh: fresh.slice(0, left), waiting: fresh.length - Math.min(left, fresh.length) };
 }
@@ -1379,12 +1408,14 @@ function renderReview(day, standalone) {
       if (!standalone && day && !Store.peekDay(day.date).steps.review) box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => setStep(day.date, 'review', true) }, ICON.check(), 'Готово')));
       return box;
     }
-    const n = Math.min(due.length, 50), pool = reviewPool();
-    box.append(el('p', { class: 'lead' }, 'К повторению: ', el('b', { class: 'num', text: String(due.length) }), due.length > 50 ? ' (сегодня — первые 50)' : '', '. Пока очередь не пройдена, остальные шаги закрыты.'),
+    const pool = reviewPool(), ses = reviewSession();
+    box.append(el('p', { class: 'lead' }, 'К повторению: ', el('b', { class: 'num', text: String(due.length) }), '. За раз — ', el('b', { class: 'num', text: String(ses.cards.length) }),
+      ses.verbs ? ', из них глаголов ' + ses.verbs : '', due.length > ses.cards.length ? '; остальное — следующим заходом, если захочешь' : '', '.',
+      day && !standalone ? ' Пока эти карточки не пройдены, остальные шаги закрыты.' : ''),
       pool.waiting ? el('p', { class: 'small muted', style: 'margin:6px 0 0' }, 'Новых слов — не больше ' + NEW_PER_DAY + ' в день, ещё ' + pool.waiting + ' ждут своей очереди. Слова уроков, которые ты не проходила, можно отложить: ',
         el('a', { href: '#cards', onclick: e => { e.preventDefault(); UI.lessonsOpen = true; go('cards'); setTimeout(() => { const x = document.getElementById('lessons'); if (x) x.scrollIntoView({ behavior: 'smooth' }); }, 60); } }, 'Карточки → Слова по урокам'), '.') : null,
       el('p', { class: 'small muted', style: 'margin:6px 0 0', text: 'Видишь слово — впиши перевод. Иногда наоборот: по-русски → по-французски. Оценка ставится сама.' }),
-      el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => startReview(due.slice(0, n).map(c => c.id), { day: day && day.date }) }, 'Начать повторение')));
+      el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', onclick: () => startReview(ses.cards.map(c => c.id), { day: day && day.date, early: Object.fromEntries(ses.early.map(id => [id, 1])) }) }, 'Начать повторение')));
     return box;
   }
   const R = UI.review;
@@ -1448,12 +1479,15 @@ function renderReview(day, standalone) {
   box.append(res, el('div', { class: 'stepfoot' },
     el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, g) }, 'Дальше'),
     cur.r === 'ok' ? el('button', { class: 'btn ghost', onclick: () => doGrade(card, 3) }, 'Слишком легко') : el('button', { class: 'btn ghost', onclick: () => doGrade(card, 2) }, 'Засчитать как верно')));
-  if (!R.free) box.append(el('p', { class: 'small faint', style: 'margin:6px 0 0', text: 'Следующий показ: ' + SRS.preview(card, g) + '.' }));
+  if (!R.free) box.append(el('p', { class: 'small faint', style: 'margin:6px 0 0', text: R.early && R.early[card.id] && g ? 'Глагол на закрепление: срок повторения не меняется.' : 'Следующий показ: ' + SRS.preview(card, g) + '.' }));
   return box;
 }
 function doGrade(card, g) {
   const R = UI.review;
-  if (!R.free) Store.putCard(SRS.grade(card, g));
+  // Досрочный глагол: верный ответ срок не двигает, ошибка — как обычно, и дальше он уже не досрочный.
+  const early = R.early && R.early[card.id];
+  if (!R.free && !(early && g)) Store.putCard(SRS.grade(card, g));
+  if (early && !g) delete R.early[card.id];
   R.queue.shift(); R.done++; if (g >= 2) R.right++;
   if (g === 0 && !(R.free && R.retried && R.retried[card.id])) { R.queue.push(card.id); if (R.free) (R.retried = R.retried || {})[card.id] = 1; }
   R.cur = null;
@@ -2220,8 +2254,12 @@ const SEG = [['ok', 'верно'], ['almost', 'почти'], ['wrong', 'неве
 const segBar = b => el('span', { class: 'mini' }, SEG.map(([k]) => b[k] > 0 ? el('i', { class: k, style: 'width:' + (b[k] * 100).toFixed(1) + '%' }) : null));
 function renderPlan() {
   const root = el('div');
-  // Свежий месяц сверху: прошлый остаётся ниже для истории.
-  DATA.months.slice().reverse().forEach((m, i) => root.append(renderMonth(m, i)));
+  // Месяцы переключаются кнопками сверху, по умолчанию — месяц текущего урока.
+  const months = DATA.months.slice().reverse();
+  const cur = months.find(m => m.month === UI.planMonth) || monthOf(DAYS[currentDay()]) || months[0];
+  if (months.length > 1) root.append(el('div', { class: 'monthsw', role: 'tablist' }, months.map(m =>
+    el('button', { class: 'btn' + (m === cur ? ' on' : ''), role: 'tab', 'aria-selected': m === cur ? 'true' : 'false', onclick: () => { UI.planMonth = m.month; render(); } }, m.title))));
+  root.append(renderMonth(cur, 0));
   return root;
 }
 function renderMonth(m, idx) {
@@ -2282,7 +2320,7 @@ function renderCards() {
   if (UI.review || due.length) root.append(el('div', { class: 'panel' }, renderReview(null, true)));
   if (!UI.review && words.length) {
     const lastDay = words.reduce((m, c) => c.day && c.day > m ? c.day : m, '');
-    const hard = words.filter(c => c.lapses > 0);
+    const hard = words.filter(c => c.lapses > 0), verbs = words.filter(isVerb);
     const fromLast = words.filter(c => c.day === lastDay);
     const go_ = list => startReview(shuffled(list, 'free' + Date.now()).slice(0, 20).map(c => c.id), { free: true });
     root.append(el('div', { class: 'panel' },
@@ -2290,6 +2328,7 @@ function renderCards() {
       el('p', { class: 'small muted', style: 'margin:4px 0 10px', text: 'Вписываешь перевод, как в повторении, но расписание карточек не меняется: можно гонять сколько хочется.' }),
       el('div', { class: 'line' },
         el('button', { class: 'btn', onclick: () => go_(words) }, '20 случайных'),
+        verbs.length ? el('button', { class: 'btn', onclick: () => go_(verbs) }, 'Глаголы · ' + verbs.length) : null,
         hard.length ? el('button', { class: 'btn', onclick: () => go_(hard) }, 'Где ошибалась · ' + hard.length) : null,
         fromLast.length ? el('button', { class: 'btn', onclick: () => go_(fromLast) }, 'Слова ' + parse(lastDay).getDate() + ' ' + RU_MON[parse(lastDay).getMonth()] + ' · ' + fromLast.length) : null)));
   }
