@@ -18,6 +18,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from nov_w1 import UNIT as UNIT1, DAYS as W1, PP_16_17  # noqa: E402
 from reading_quiz import READING  # noqa: E402
+from translations import TR  # noqa: E402
+from sentences import full_sentence  # noqa: E402
 
 OUT = os.path.join(HERE, "..", "public", "data", "month2.json")
 KINDS = {"review", "doc", "observe", "theory", "exercises", "sprint", "course", "listening", "wtext", "wrap", "tcf", "reading", "film"}
@@ -77,6 +79,17 @@ for d in days:
     for ref in d.get("wtext", {}).get("show", []):
         assert tuple(ref) in pieces, (d["date"], ref)
 
+# Перевод фразы после ответа: разминка, упражнения, спринт.
+no_tr = []
+for d in days:
+    for k in ("warmup", "exercises", "sprint"):
+        for e in d.get(k, []):
+            s = full_sentence(e)
+            if s and s in TR:
+                e["tr"] = TR[s]
+            elif s:
+                no_tr.append((d["date"], e["id"], s))
+
 # Перевод по нажатию: фразы-чанки и словарик глав.
 lex = {}
 for d in days:
@@ -109,3 +122,7 @@ print("дней", len(days), "· уроков", sum(1 for d in days if d.get("le
 for d in days:
     if d["type"] != "выходной":
         print(d["date"], d.get("lesson"), d["type"], sum(s["min"] for s in d["steps"]), "мин:", " → ".join(s["kind"] for s in d["steps"]))
+if no_tr:
+    print("без перевода (добавить в translations.py):")
+    for r in no_tr:
+        print("  ", *r)

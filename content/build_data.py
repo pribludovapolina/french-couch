@@ -170,6 +170,7 @@ from content_w3 import CONTENT as C3
 from content_w4 import CONTENT as C4
 from listening_quiz import INNER as LQ_INNER, SEF as LQ_SEF
 from reading_quiz import READING
+from sentences import full_sentence
 from urllib.parse import urlparse, parse_qs
 
 CONTENT = {}
@@ -286,6 +287,8 @@ no_tr, no_tsc = [], []
 for day in days:
     for ex in (day.get("exercises") or []) + (day.get("drill") or []):
         s = fr_sentence(ex)
+        if not (s and s in TR):  # общий сборщик фразы (sentences.py) ловит пропуски с подсказкой и сборку
+            s = full_sentence(ex) or s
         if s and s in TR: ex["tr"] = TR[s]
         elif s and "→" not in s: no_tr.append(s)
     for w in day.get("vocab") or []:

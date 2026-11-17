@@ -229,7 +229,7 @@ DAYS.append({
              "3. По желанию: перескажи вслух одну историю в трёх фразах. " + SAY_TASKS)]},
         course={"url": COURSE, "stage": "Étape 03", "task": TV5 + "Сегодня « La description au passé avec l’imparfait » (12 упражнений)."}),
     "warmup": [
-        G("Avant, je ___ à Saint-Pétersbourg.", "habiter, imparfait", "habitais"),
+        G("Avant, j’___ à Saint-Pétersbourg.", "habiter, imparfait", "habitais"),
         G("Nous ___ souvent au cinéma.", "aller, imparfait", "allions"),
         G("Il ___ froid en hiver.", "faire, imparfait", "faisait"),
         G("Hier, j’___ mes clés.", "perdre, passé composé", "ai perdu"),
@@ -411,7 +411,7 @@ DAYS.append({
         Q("Il est parti sans ___ .", ["moi", "me", "je", "mon"]),
         Q("Cette chanson ? Je l’ai ___ à la radio.", ["entendue", "entendu", "entendus", "entendues"]),
         Q("___, ils habitaient à Nice.", ["Eux", "Ils", "Leur", "Les"]),
-        Q("Quand j’étais petite, je ___ souvent chez ma grand-mère.", ["allais", "suis allée", "irai", "irais"]),
+        Q("Quand j’étais petite, ___ souvent chez ma grand-mère.", ["j’allais", "je suis allée", "j’irai", "j’irais"]),
         Q("Nous dormions quand l’orage ___ .", ["a commencé", "commençait", "commence", "commencera"]),
         Q("Elles se sont ___ au café.", ["retrouvées", "retrouvé", "retrouvés", "retrouver"]),
         Q("Nous ___ dîner chez Paul ce soir.", ["allons", "avons", "sommes", "faisons"]),

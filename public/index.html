@@ -113,6 +113,7 @@ a{color:var(--accent)}
 .th p{margin:0 0 10px;max-width:62ch}
 .rows{display:flex;flex-direction:column;border-top:1px solid var(--line)}
 .row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.ok-mark{color:var(--ok)}
 .row .fr{flex:1 1 45%;font-size:17px}
 .row .ru{flex:1 1 45%;color:var(--muted);font-size:15px}
 .table{display:grid;grid-template-columns:auto 1fr;gap:0 18px;margin:6px 0 12px;border-top:1px solid var(--line)}
@@ -945,14 +946,14 @@ function addCardButton(base) {
   } }, exists ? 'Уже в карточках' : '+ в карточки');
   return b;
 }
-async function addWordByText(fr, ru) {
+async function addWordByText(fr, ru, src) {
   fr = fr.trim(); ru = (ru || '').trim(); if (!fr) return 'Впиши слово по-французски.';
   const id = 'u-' + slug(fr);
   if (Store.cards[id]) return 'Это слово уже в карточках.';
   if (!ru) { const f = lookup(fr); if (f) ru = f.ru; }
   if (!ru && aiReady()) { try { ru = (await translateAI(fr, fr)).ru; } catch (e) { return aiError(e) || 'Не получилось перевести — впиши перевод сам.'; } }
   if (!ru) return 'Нет перевода — впиши его во второе поле.';
-  Store.putCard(SRS.fresh({ id, type: 'word', fr, ru, ex: '', exRu: '', g: null, src: 'user', day: UI.date || today() }));
+  Store.putCard(SRS.fresh({ id, type: 'word', fr, ru, ex: '', exRu: '', g: null, src: src || 'user', day: src ? today() : UI.date || today() }));
   return '';
 }
 
@@ -1339,13 +1340,13 @@ function glossBlock(day, step) {
       missing.length ? el('button', { class: 'btn', onclick: () => { Store.putCards(missing.map(([fr, ru]) => SRS.fresh({ id: 'r-' + slug(fr), type: 'word', fr, ru, ex: '', exRu: '', g: null, src: 'reading', day: day.date }))); toast(missing.length + ' ' + plural(missing.length, 'слово', 'слова', 'слов') + ' в карточках'); } }, 'Все в карточки') : el('span', { class: 'small muted', text: 'в карточках' })),
     el('div', { class: 'rows' }, step.gloss.map(([fr, ru]) => el('div', { class: 'row' }, speakBtn(fr), el('span', { class: 'fr', text: fr }), el('span', { class: 'ru', text: ru })))));
 }
-function wordCatcher(day, label) {
+function wordCatcher(day, label, src) {
   const idf = 'wc-fr-' + day.date + label.length, idr = 'wc-ru-' + day.date + label.length;
   const fr = el('input', { class: 'inp', id: idf, placeholder: 'слово по-французски', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
   const ru = el('input', { class: 'inp', id: idr, placeholder: aiReady() ? 'перевод (необязательно)' : 'перевод', autocomplete: 'off' });
   const msg = el('p', { class: 'small muted', text: '' });
-  const add = async () => { msg.textContent = 'Добавляю…'; const err = await addWordByText(fr.value, ru.value); msg.textContent = err || 'Добавлено: ' + fr.value.trim(); if (!err) { fr.value = ''; ru.value = ''; fr.focus(); } };
-  const mine = Object.values(Store.cards).filter(c => c.src === 'user' && c.day === day.date);
+  const add = async () => { msg.textContent = 'Добавляю…'; const err = await addWordByText(fr.value, ru.value, src); msg.textContent = err || 'Добавлено: ' + fr.value.trim(); if (!err) { fr.value = ''; ru.value = ''; fr.focus(); } };
+  const mine = Object.values(Store.cards).filter(c => c.src === (src || 'user') && c.day === day.date);
   return el('div', { class: 'panel' },
     el('div', { class: 'small', style: 'font-weight:500;margin-bottom:8px', text: label }),
     el('div', { class: 'line' }, fr, ru, el('button', { class: 'btn', onclick: add }, 'В карточки')),
@@ -1448,6 +1449,7 @@ function renderReview(day, standalone) {
     }
     return box;
   }
+  if (isPhrase(card)) return renderPhraseCard(box, card, id, R);
   const cur = R.cur && R.cur.id === id ? R.cur : (R.cur = { id, dir: dirFor(card), val: '', r: null });
   const fr = card.fr, toRu = cur.dir === 'fr';
   const frFront = () => el('div', { class: 'front' }, fr, card.g ? el('span', { class: 'g', text: card.g === 'm' ? 'm.' : 'f.' }) : null, speakBtn(sayFr(fr)));
@@ -1480,6 +1482,91 @@ function renderReview(day, standalone) {
     el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, g) }, 'Дальше'),
     cur.r === 'ok' ? el('button', { class: 'btn ghost', onclick: () => doGrade(card, 3) }, 'Слишком легко') : el('button', { class: 'btn ghost', onclick: () => doGrade(card, 2) }, 'Засчитать как верно')));
   if (!R.free) box.append(el('p', { class: 'small faint', style: 'margin:6px 0 0', text: R.early && R.early[card.id] && g ? 'Глагол на закрепление: срок повторения не меняется.' : 'Следующий показ: ' + SRS.preview(card, g) + '.' }));
+  return box;
+}
+// Видео для простого словаря: ссылка проверена в браузере (Easy French, Super Easy French 151, 14:03).
+// Слова из видео ученица добавляет сама — список слов мы не выдумываем, расшифровки у нас нет.
+const VOCAB_VIDEO = { url: 'https://www.youtube.com/watch?v=__Cu2nwgAjA', title: '100 French Words, Expressions & Sentences Every Beginner Should Know | Super Easy French 151', src: 'Easy French', dur: '14:03' };
+function vocabVideoPanel() {
+  const v = VOCAB_VIDEO, mine = Object.values(Store.cards).filter(c => c.src === 'video');
+  return el('div', { class: 'panel' },
+    el('div', { style: 'font-weight:500', text: 'Простые слова с Easy French' }),
+    el('p', { class: 'small muted', style: 'margin:4px 0 10px', text: 'Медленный французский для начинающих: 100 базовых слов, выражений и фраз с примерами.' }),
+    el('a', { class: 'btn big', href: v.url, target: '_blank', rel: 'noopener' }, el('span', { class: 'linkcard' }, el('span', { class: 'fr', text: v.title }), el('span', { class: 'sub', text: v.src + ' · ' + v.dur + ' · откроется YouTube' })), ICON.out()),
+    el('ol', { class: 'small', style: 'margin:12px 0 0;padding-left:20px;line-height:1.6' },
+      el('li', { text: 'Смотри с французскими субтитрами, кусками по 2–3 минуты.' }),
+      el('li', { text: 'Слово, которое не знаешь или не помнишь, сразу добавляй ниже: оно уйдёт в повторение. Если слово уже было в уроках, перевод подставится сам.' }),
+      el('li', { text: 'За один раз — не больше 15 слов, остальное в следующий заход.' }),
+      el('li', { text: 'В конце повтори вслух 5 фраз вслед за ведущими.' })),
+    wordCatcher({ date: today() }, 'Слова из видео', 'video'),
+    mine.length ? el('p', { class: 'small muted', style: 'margin:8px 0 0', text: 'Из этого видео в карточках: ' + mine.length + ' ' + plural(mine.length, 'слово', 'слова', 'слов') + '.' }) : null);
+}
+
+// Фразы писать целиком неудобно, поэтому у них своя проверка:
+// по-русски → собрать французскую фразу из плиток; по-французски → вспомнить смысл, открыть перевод и оценить себя.
+// Фраза — от 4 слов, а фразы из документов (c-…) и ошибки спринта (x-…) — от 3. Глаголы и «prendre → pris» сюда не входят.
+const phraseTiles = fr => String(fr || '').trim().split(/\s+/).reduce((a, w) => { if (/^[?!:;»—]+$/.test(w) && a.length) a[a.length - 1] += ' ' + w; else a.push(w); return a; }, []);
+function isPhrase(c) {
+  if (!c || c.type !== 'word' || isVerb(c) || /[→…+\/·]/.test(c.fr || '')) return false;
+  const n = phraseTiles(String(c.fr).replace(/\s*\(.*?\)/g, '')).length;
+  return n >= 4 || (n >= 3 && /^[cx]-/.test(c.id));
+}
+function renderPhraseCard(box, card, id, R) {
+  const fr = String(card.fr).replace(/\s*\(.*?\)/g, '').trim();
+  const cur = R.cur && R.cur.id === id ? R.cur : (R.cur = { id, dir: card.fix ? 'ru' : dirFor(card), used: [], r: null, shown: false });
+  const g = cur.r === 'ok' ? 2 : cur.r === 'almost' ? 1 : 0;
+  const nextLine = () => R.free ? null : el('p', { class: 'small faint', style: 'margin:6px 0 0', text: 'Следующий показ: ' + SRS.preview(card, g) + '.' });
+  const back = () => el('div', { class: 'back' },
+    el('div', { class: 'front' }, fr, speakBtn(sayFr(fr))),
+    card.fix ? null : el('div', { class: 't', text: card.ru }),
+    card.ex ? el('div', { class: 'e' }, frText(card.ex), card.exRu ? ' — ' + card.exRu : '') : null);
+
+  if (cur.dir === 'fr') {
+    // Французская фраза → вспомнить смысл. Писать перевод не нужно: открываешь и честно отмечаешь.
+    const c = el('div', { class: 'card' },
+      el('div', { class: 'faint small', text: 'Фраза: вспомни, что она значит' }),
+      el('div', { class: 'front' }, fr, speakBtn(sayFr(fr))),
+      trOf(fr) ? el('div', { class: 'tsc', text: trOf(fr) }) : null);
+    box.append(c);
+    if (!cur.shown) {
+      box.append(el('div', { class: 'stepfoot' }, el('button', { class: 'btn primary', id: 'rv-next', onclick: () => { cur.shown = true; render(); } }, 'Показать перевод')));
+      return box;
+    }
+    c.append(el('div', { class: 'back' }, el('div', { class: 't', text: card.ru }), card.ex ? el('div', { class: 'e' }, frText(card.ex), card.exRu ? ' — ' + card.exRu : '') : null));
+    box.append(el('p', { class: 'small muted', style: 'margin:10px 0 0', text: 'Ты вспомнила смысл?' }),
+      el('div', { class: 'stepfoot' },
+        el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, 2) }, 'Да, помню'),
+        el('button', { class: 'btn', onclick: () => doGrade(card, 1) }, 'Примерно'),
+        el('button', { class: 'btn ghost', onclick: () => doGrade(card, 0) }, 'Не вспомнила')));
+    return box;
+  }
+
+  // По-русски (или «исправь ошибку») → собрать французскую фразу из плиток.
+  const tiles = phraseTiles(fr), order = shuffled(tiles.map((t, i) => i), card.id + (card.reps || 0) + R.done);
+  const c = el('div', { class: 'card' },
+    el('div', { class: 'faint small', text: card.fix ? 'Собери фразу правильно' : 'Собери фразу по-французски' }),
+    el('div', { class: 'front ru', text: card.ru }));
+  box.append(c);
+  if (!cur.r) {
+    const line = el('div', { class: 'answerline', 'aria-label': 'Твоя фраза' }, cur.used.map((i, k) => el('button', { class: 'opt fr', onclick: () => { cur.used.splice(k, 1); render(); } }, tiles[i])));
+    const pool = el('div', { class: 'opts' }, order.map(i => el('button', { class: 'opt fr' + (cur.used.includes(i) ? ' gone' : ''), disabled: cur.used.includes(i), onclick: () => { cur.used.push(i); if (cur.used.length === tiles.length) doCheck(); else render(); } }, tiles[i])));
+    const doCheck = () => {
+      const mine = cur.used.map(i => tiles[i]).join(' ');
+      cur.r = strip(norm(mine)) === strip(norm(fr)) ? 'ok' : 'wrong'; cur.mine = mine; speak(sayFr(fr)); render();
+    };
+    box.append(line, pool, el('div', { class: 'stepfoot' },
+      cur.used.length ? el('button', { class: 'btn ghost', onclick: () => { cur.used = []; render(); } }, 'Сбросить') : null,
+      el('button', { class: 'btn ghost', onclick: () => { cur.r = 'wrong'; cur.mine = ''; speak(sayFr(fr)); render(); } }, 'Не помню')),
+      el('p', { class: 'small faint', style: 'margin:6px 0 0', text: 'Нажимай слова по порядку. Нажми слово в строке, чтобы убрать его.' }));
+    return box;
+  }
+  const res = el('div', { class: 'ans', role: 'status' });
+  if (cur.mine) res.append(el('div', { class: 'mine ' + cur.r }, el('span', { class: 'ic', text: RES_ICON[cur.r] }), el('span', { class: 'fr', text: cur.mine })));
+  c.append(back());
+  box.append(res, el('div', { class: 'stepfoot' },
+    el('button', { class: 'btn primary', id: 'rv-next', onclick: () => doGrade(card, g) }, 'Дальше'),
+    cur.r === 'ok' ? el('button', { class: 'btn ghost', onclick: () => doGrade(card, 3) }, 'Слишком легко') : null));
+  put(box, nextLine());
   return box;
 }
 function doGrade(card, g) {
@@ -1700,9 +1787,14 @@ function sprintResult(day, items, ex, picks) {
   };
   return el('div', {},
     el('p', { class: 'lead num', text: 'Верно ' + (items.length - wrong.length) + ' из ' + items.length + '.' }),
-    wrong.length ? el('div', { class: 'rows' }, rows.map(r => el('div', { class: 'row' }, el('span', { class: 'fr' },
-      r.bad ? el('s', { class: 'muted', text: r.bad }) : el('span', { class: 'muted', text: 'не успела' }), ' → ', el('b', { text: r.right })))))
-      : el('p', { text: 'Без ошибок!' }),
+    wrong.length ? null : el('p', { text: 'Без ошибок!' }),
+    // Все вопросы с переводом: ошибки — зачёркнутым → правильно, верные — просто фразой.
+    el('div', { class: 'rows' }, items.map(q => {
+      const r = rows.find(x => x.q === q), right = r ? r.right : fillGap(q.q, q.o[q.a]);
+      return el('div', { class: 'row', style: 'flex-direction:column;align-items:flex-start;gap:2px' },
+        el('span', { class: 'fr' }, r ? [r.bad ? el('s', { class: 'muted', text: r.bad }) : el('span', { class: 'muted', text: 'не успела' }), ' → ', el('b', { text: right })] : [el('span', { class: 'ok-mark', text: '✓ ' }), right]),
+        q.tr ? el('span', { class: 'small muted', text: q.tr }) : null);
+    })),
     el('div', { class: 'stepfoot' },
       missing.length ? el('button', { class: 'btn primary', onclick: toCards }, 'Ошибки в карточки') : wrong.length ? el('span', { class: 'small muted', text: 'Ошибки уже в карточках' }) : null,
       el('button', { class: 'btn ghost', onclick: () => { UI.sprint[day.date] = { run: false }; Store.setProgress(() => { const d = Store.day(day.date); items.forEach(q => { delete d.ex[q.id]; if (d.picks) delete d.picks[q.id]; }); }); } }, 'Пройти заново')));
@@ -2332,6 +2424,7 @@ function renderCards() {
         hard.length ? el('button', { class: 'btn', onclick: () => go_(hard) }, 'Где ошибалась · ' + hard.length) : null,
         fromLast.length ? el('button', { class: 'btn', onclick: () => go_(fromLast) }, 'Слова ' + parse(lastDay).getDate() + ' ' + RU_MON[parse(lastDay).getMonth()] + ' · ' + fromLast.length) : null)));
   }
+  if (!UI.review) root.append(vocabVideoPanel());
   if (!UI.review && all.length) root.append(lessonsPanel(all));
   const fr = el('input', { class: 'inp', id: 'add-fr', placeholder: 'слово по-французски', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
   const ru = el('input', { class: 'inp', id: 'add-ru', placeholder: aiReady() ? 'перевод (необязательно)' : 'перевод', autocomplete: 'off' });
